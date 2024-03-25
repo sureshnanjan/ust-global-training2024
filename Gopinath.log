@@ -1,0 +1,72 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20240325122020
+Username: 93891B6C4D2E562\Administrator
+RunAs User: 93891B6C4D2E562\Administrator
+Configuration Name: 
+Machine: 93891B6C4D2E562 (Microsoft Windows NT 10.0.19045.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 5612
+PSVersion: 5.1.19041.4046
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.4046
+BuildVersion: 10.0.19041.4046
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is Gopinath.log
+PS C:\Users\Administrator\Documents\Gopi_Automation> New-Item -Path C:\Users\Administrator\Documents\Gopi_Automation\Training -Name 'QA-Training' -ItemType Directory 
+
+
+    Directory: C:\Users\Administrator\Documents\Gopi_Automation\Training
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        25-03-2024     12:23                QA-Training
+
+
+PS C:\Users\Administrator\Documents\Gopi_Automation> git --version
+git version 2.44.0.windows.1
+PS C:\Users\Administrator\Documents\Gopi_Automation> git clone https://github.com/sureshnanjan/ust-global-training2024.git
+Cloning into 'ust-global-training2024'...
+remote: Enumerating objects: 15, done.
+remote: Counting objects: 100% (15/15), done.
+remote: Compressing objects: 100% (12/12), done.
+remote: Total 15 (delta 3), reused 11 (delta 2), pack-reused 0
+Receiving objects: 100% (15/15), done.
+Resolving deltas: 100% (3/3), done.
+PS C:\Users\Administrator\Documents\Gopi_Automation> Set-Location ust-global-training2024
+PS C:\Users\Administrator\Documents\Gopi_Automation\ust-global-training2024> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+PS C:\Users\Administrator\Documents\Gopi_Automation\ust-global-training2024> git checkout -b Gopinath-branch
+Switched to a new branch 'Gopinath-branch'
+PS C:\Users\Administrator\Documents\Gopi_Automation\ust-global-training2024> git status
+On branch Gopinath-branch
+nothing to commit, working tree clean
+PS C:\Users\Administrator\Documents\Gopi_Automation\ust-global-training2024> Stop transcript 
+Stop : The term 'Stop' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the 
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ Stop transcript
++ ~~~~
+    + CategoryInfo          : ObjectNotFound: (Stop:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+Stop : The term 'Stop' is not recognized as the name of a cmdlet, function, script file, or operable program. Check
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ Stop transcript
++ ~~~~
+    + CategoryInfo          : ObjectNotFound: (Stop:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\Administrator\Documents\Gopi_Automation\ust-global-training2024> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20240325122840
+**********************

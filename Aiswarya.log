@@ -1,0 +1,42 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20240326104651
+Username: FC81414AB7D555F\Administrator
+RunAs User: FC81414AB7D555F\Administrator
+Configuration Name: 
+Machine: FC81414AB7D555F (Microsoft Windows NT 10.0.19045.0)
+Host Application: PowerShell.exe -noexit -command Set-Location -literalPath 'C:\Users\Administrator\Desktop\QA Training'
+Process ID: 12516
+PSVersion: 5.1.19041.4046
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.4046
+BuildVersion: 10.0.19041.4046
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is Aiswarya.log
+PS C:\Users\Administrator\Desktop\QA Training> git --version
+git version 2.44.0.windows.1
+PS C:\Users\Administrator\Desktop\QA Training> git clone https://github.com/sureshnanjan/ust-global-training2024.git
+Cloning into 'ust-global-training2024'...
+remote: Enumerating objects: 72, done.
+remote: Counting objects: 100% (72/72), done.
+remote: Compressing objects: 100% (66/66), done.
+remote: Total 72 (delta 25), reused 48 (delta 4), pack-reused 0
+Receiving objects: 100% (72/72), 16.90 KiB | 911.00 KiB/s, done.
+Resolving deltas: 100% (25/25), done.
+PS C:\Users\Administrator\Desktop\QA Training> Set-Location ust-global-training2024
+PS C:\Users\Administrator\Desktop\QA Training\ust-global-training2024> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+PS C:\Users\Administrator\Desktop\QA Training\ust-global-training2024> git checkout -b Aiswarya-branch
+Switched to a new branch 'Aiswarya-branch'
+PS C:\Users\Administrator\Desktop\QA Training\ust-global-training2024> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20240326105115
+**********************

@@ -1,0 +1,45 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20240326144035
+Username: 9B61CD76D28E5C8\Administrator
+RunAs User: 9B61CD76D28E5C8\Administrator
+Configuration Name: 
+Machine: 9B61CD76D28E5C8 (Microsoft Windows NT 10.0.19045.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 2200
+PSVersion: 5.1.19041.4046
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.4046
+BuildVersion: 10.0.19041.4046
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is pranav.log
+PS C:\Users\Administrator> git --version
+git version 2.44.0.windows.1
+PS C:\Users\Administrator> git clone https://github.com/sureshnanjan/ust-global-training2024.git
+Cloning into 'ust-global-training2024'...
+remote: Enumerating objects: 107, done.
+remote: Counting objects: 100% (107/107), done.
+remote: Compressing objects: 100% (96/96), done.
+remote: Total 107 (delta 41), reused 72 (delta 9), pack-reused 0
+Receiving objects: 100% (107/107), 23.79 KiB | 1.70 MiB/s, done.
+Resolving deltas: 100% (41/41), done.
+PS C:\Users\Administrator> Set-Location ust-global-training2024
+PS C:\Users\Administrator\ust-global-training2024> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+PS C:\Users\Administrator\ust-global-training2024> git checkout -b pranav-branch
+Switched to a new branch 'pranav-branch'
+PS C:\Users\Administrator\ust-global-training2024> git status
+On branch pranav-branch
+nothing to commit, working tree clean
+PS C:\Users\Administrator\ust-global-training2024> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20240326145214
+**********************

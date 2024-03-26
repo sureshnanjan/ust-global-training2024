@@ -1,0 +1,56 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20240326175234
+Username: B35AD8F9647C5AC\Administrator
+RunAs User: B35AD8F9647C5AC\Administrator
+Configuration Name: 
+Machine: B35AD8F9647C5AC (Microsoft Windows NT 10.0.19045.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 10100
+PSVersion: 5.1.19041.4046
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.4046
+BuildVersion: 10.0.19041.4046
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is Nithin.log
+PS C:\Users\Administrator> New-Item -Path C:\Users\Administrator\Desktop\Automation -Name 'QA-Training' -ItemType Directory
+
+
+    Directory: C:\Users\Administrator\Desktop\Automation
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        26-03-2024     17:53                QA-Training
+
+
+PS C:\Users\Administrator> git --version
+git version 2.44.0.windows.1
+PS C:\Users\Administrator> git clone https://github.com/sureshnanjan/ust-global-training2024.git
+Cloning into 'ust-global-training2024'...
+remote: Enumerating objects: 113, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 113 (delta 2), reused 2 (delta 2), pack-reused 108
+Receiving objects: 100% (113/113), 25.50 KiB | 1.50 MiB/s, done.
+Resolving deltas: 100% (44/44), done.
+PS C:\Users\Administrator> set-Location ust-global-training2024
+PS C:\Users\Administrator\ust-global-training2024> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+PS C:\Users\Administrator\ust-global-training2024> git checkout -b nithin-branch 
+Switched to a new branch 'nithin-branch'
+PS C:\Users\Administrator\ust-global-training2024> git status
+On branch nithin-branch
+nothing to commit, working tree clean
+PS C:\Users\Administrator\ust-global-training2024> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20240326175555
+**********************

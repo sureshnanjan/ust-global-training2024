@@ -1,0 +1,45 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20240326092712
+Username: 675C330346F8500\Administrator
+RunAs User: 675C330346F8500\Administrator
+Configuration Name: 
+Machine: 675C330346F8500 (Microsoft Windows NT 10.0.19045.0)
+Host Application: PowerShell.exe -noexit -command Set-Location -literalPath 'C:\Users\Administrator\Desktop\QA Training'
+Process ID: 5256
+PSVersion: 5.1.19041.4046
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.4046
+BuildVersion: 10.0.19041.4046
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is Syama.log
+PS C:\Users\Administrator\Desktop\QA Training> git --version
+git version 2.44.0.windows.1
+PS C:\Users\Administrator\Desktop\QA Training> git clone https://github.com/sureshnanjan/ust-global-training2024
+Cloning into 'ust-global-training2024'...
+remote: Enumerating objects: 27, done.
+remote: Counting objects: 100% (27/27), done.
+remote: Compressing objects: 100% (24/24), done.
+remote: Total 27 (delta 5), reused 21 (delta 2), pack-reused 0
+Receiving objects: 100% (27/27), 7.12 KiB | 1.78 MiB/s, done.
+Resolving deltas: 100% (5/5), done.
+PS C:\Users\Administrator\Desktop\QA Training> Set-Location ust-global-training2024
+PS C:\Users\Administrator\Desktop\QA Training\ust-global-training2024> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+PS C:\Users\Administrator\Desktop\QA Training\ust-global-training2024> git checkout -b Syama
+Switched to a new branch 'Syama'
+PS C:\Users\Administrator\Desktop\QA Training\ust-global-training2024> git status
+On branch Syama
+nothing to commit, working tree clean
+PS C:\Users\Administrator\Desktop\QA Training\ust-global-training2024> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20240326093117
+**********************

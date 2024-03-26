@@ -1,0 +1,58 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20240326095325
+Username: 1F4327F9510155B\Administrator
+RunAs User: 1F4327F9510155B\Administrator
+Configuration Name: 
+Machine: 1F4327F9510155B (Microsoft Windows NT 10.0.19045.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 8332
+PSVersion: 5.1.19041.4046
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.4046
+BuildVersion: 10.0.19041.4046
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is Pooja.log
+PS C:\Users\Administrator> New-Item -Path C:\Users\Administrator\Desktop\Pooja\UST -Name 'QA-Training' -ItemType Directory
+
+
+    Directory: C:\Users\Administrator\Desktop\Pooja\UST
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        26-03-2024     09:55                QA-Training
+
+
+PS C:\Users\Administrator> git --version
+git version 2.44.0.windows.1
+PS C:\Users\Administrator> git clone https://github.com/sureshnanjan/ust-global-training2024.git
+Cloning into 'ust-global-training2024'...
+remote: Enumerating objects: 30, done.
+remote: Counting objects: 100% (30/30), done.
+remote: Compressing objects: 100% (27/27), done.
+remote: Total 30 (delta 7), reused 22 (delta 2), pack-reused 0
+Receiving objects: 100% (30/30), 7.60 KiB | 1.52 MiB/s, done.
+Resolving deltas: 100% (7/7), done.
+PS C:\Users\Administrator> Set-Location ust-global-training2024
+PS C:\Users\Administrator\ust-global-training2024> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+PS C:\Users\Administrator\ust-global-training2024> TerminatingError(TabExpansion2): "Cannot bind argument to parameter 'inputScript' because it is an empty string."
+PS C:\Users\Administrator\ust-global-training2024> git checkout -b Pooja-branch
+Switched to a new branch 'Pooja-branch'
+PS C:\Users\Administrator\ust-global-training2024> TerminatingError(TabExpansion2): "Cannot bind argument to parameter 'inputScript' because it is an empty string."
+PS C:\Users\Administrator\ust-global-training2024>  git status  
+On branch Pooja-branch
+nothing to commit, working tree clean
+PS C:\Users\Administrator\ust-global-training2024> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20240326102705
+**********************

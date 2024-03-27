@@ -1,0 +1,167 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20240326195328
+Username: EB44F3A3260B5E1\Administrator
+RunAs User: EB44F3A3260B5E1\Administrator
+Configuration Name: 
+Machine: EB44F3A3260B5E1 (Microsoft Windows NT 10.0.19045.0)
+Host Application: powershell
+Process ID: 7248
+PSVersion: 5.1.19041.4046
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.4046
+BuildVersion: 10.0.19041.4046
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is Sudha_csharp.log
+PS C:\Users\Administrator\ust-global-training2024\basics> $Env:Path "C:\Windows\Microsoft.NET\Framework64\v4.0.30319;" + $Env:Path
+At line:1 char:11
++ $Env:Path "C:\Windows\Microsoft.NET\Framework64\v4.0.30319;" + $Env:P ...
++           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Unexpected token '"C:\Windows\Microsoft.NET\Framework64\v4.0.30319;"' in expression or statement.
+At line:1 char:11
++ $Env:Path "C:\Windows\Microsoft.NET\Framework64\v4.0.30319;" + $Env:P ...
++           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Unexpected token '"C:\Windows\Microsoft.NET\Framework64\v4.0.30319;"' in expression or statement.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : UnexpectedToken
+
+PS C:\Users\Administrator\ust-global-training2024\basics> $Env:Path = "C:\Windows\Microsoft.NET\Framework64\v4.0.30319;" + $Env:Path
+PS C:\Users\Administrator\ust-global-training2024\basics> csc
+Microsoft (R) Visual C# Compiler version 4.8.4084.0
+for C# 5
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+This compiler is provided as part of the Microsoft (R) .NET Framework, but only supports language versions up to C# 5, which is no longer the latest version.
+ For compilers that support newer versions of the C# programming language, see http://go.microsoft.com/fwlink/?LinkID=533240
+
+warning CS2008: No source files specified
+error CS1562: Outputs without source must have the /out option specified
+PS C:\Users\Administrator\ust-global-training2024\basics> csc .\Minimalcsharpprogram.cs
+Microsoft (R) Visual C# Compiler version 4.8.4084.0
+for C# 5
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+This compiler is provided as part of the Microsoft (R) .NET Framework, but only supports language versions up to C# 5, which is no longer the latest version.
+ For compilers that support newer versions of the C# programming language, see http://go.microsoft.com/fwlink/?LinkID=533240
+PS C:\Users\Administrator\ust-global-training2024\basics> .\MinimalCSharpProgram.exe
+Automation Training_Assignment1
+PS C:\Users\Administrator\ust-global-training2024\basics> csc /target:library .\mylibrary.cs
+Microsoft (R) Visual C# Compiler version 4.8.4084.0
+for C# 5
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+This compiler is provided as part of the Microsoft (R) .NET Framework, but only supports language versions up to C# 5, which is no longer the latest version.
+ For compilers that support newer versions of the C# programming language, see http://go.microsoft.com/fwlink/?LinkID=533240
+PS C:\Users\Administrator\ust-global-training2024\basics> csc /reference:mylibrary.dll .\MinimalCSharpProgram.cs
+Microsoft (R) Visual C# Compiler version 4.8.4084.0
+for C# 5
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+This compiler is provided as part of the Microsoft (R) .NET Framework, but only supports language versions up to C# 5, which is no longer the latest version.
+ For compilers that support newer versions of the C# programming language, see http://go.microsoft.com/fwlink/?LinkID=533240
+
+MinimalCSharpProgram.cs(1,7): error CS0246: The type or namespace name 'sudha' could not be found (are you missing a using directive or an assembly
+        reference?)
+PS C:\Users\Administrator\ust-global-training2024\basics> csc .\Minimalcsharpprogram.cs
+Microsoft (R) Visual C# Compiler version 4.8.4084.0
+for C# 5
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+This compiler is provided as part of the Microsoft (R) .NET Framework, but only supports language versions up to C# 5, which is no longer the latest version.
+ For compilers that support newer versions of the C# programming language, see http://go.microsoft.com/fwlink/?LinkID=533240
+
+MinimalCSharpProgram.cs(1,7): error CS0246: The type or namespace name 'sudha' could not be found (are you missing a using directive or an assembly
+        reference?)
+PS C:\Users\Administrator\ust-global-training2024\basics> csc .\Minimalcsharpprogram.cs
+Microsoft (R) Visual C# Compiler version 4.8.4084.0
+for C# 5
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+This compiler is provided as part of the Microsoft (R) .NET Framework, but only supports language versions up to C# 5, which is no longer the latest version.
+ For compilers that support newer versions of the C# programming language, see http://go.microsoft.com/fwlink/?LinkID=533240
+PS C:\Users\Administrator\ust-global-training2024\basics> .\MinimalCSharpProgram.exe
+Automation Training_Assignment1
+PS C:\Users\Administrator\ust-global-training2024\basics> csc /reference:mylibrary.dll .\MinimalCSharpProgram.cs
+Microsoft (R) Visual C# Compiler version 4.8.4084.0
+for C# 5
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+This compiler is provided as part of the Microsoft (R) .NET Framework, but only supports language versions up to C# 5, which is no longer the latest version.
+ For compilers that support newer versions of the C# programming language, see http://go.microsoft.com/fwlink/?LinkID=533240
+PS C:\Users\Administrator\ust-global-training2024\basics> .\MinimalCSharpProgram.exe
+Automation Training_Assignment1
+PS C:\Users\Administrator\ust-global-training2024\basics> csc /target:library .\mylibrary.cs
+Microsoft (R) Visual C# Compiler version 4.8.4084.0
+for C# 5
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+This compiler is provided as part of the Microsoft (R) .NET Framework, but only supports language versions up to C# 5, which is no longer the latest version.
+ For compilers that support newer versions of the C# programming language, see http://go.microsoft.com/fwlink/?LinkID=533240
+PS C:\Users\Administrator\ust-global-training2024\basics> csc /target:library .\mylibrary.cs
+Microsoft (R) Visual C# Compiler version 4.8.4084.0
+for C# 5
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+This compiler is provided as part of the Microsoft (R) .NET Framework, but only supports language versions up to C# 5, which is no longer the latest version.
+ For compilers that support newer versions of the C# programming language, see http://go.microsoft.com/fwlink/?LinkID=533240
+PS C:\Users\Administrator\ust-global-training2024\basics> .\MinimalCSharpProgram.exe
+Automation Training_Assignment1
+PS C:\Users\Administrator\ust-global-training2024\basics> csc /target:library .\mylibrary.cs
+Microsoft (R) Visual C# Compiler version 4.8.4084.0
+for C# 5
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+This compiler is provided as part of the Microsoft (R) .NET Framework, but only supports language versions up to C# 5, which is no longer the latest version.
+ For compilers that support newer versions of the C# programming language, see http://go.microsoft.com/fwlink/?LinkID=533240
+PS C:\Users\Administrator\ust-global-training2024\basics> csc /reference:mylibrary.dll .\MinimalCSharpProgram.cs
+Microsoft (R) Visual C# Compiler version 4.8.4084.0
+for C# 5
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+This compiler is provided as part of the Microsoft (R) .NET Framework, but only supports language versions up to C# 5, which is no longer the latest version.
+ For compilers that support newer versions of the C# programming language, see http://go.microsoft.com/fwlink/?LinkID=533240
+
+MinimalCSharpProgram.cs(7,2): error CS0120: An object reference is required for the non-static field, method, or property
+        'sudha.training.TrainingDashboard.publish()'
+mylibrary.dll: (Location of symbol related to previous error)
+MinimalCSharpProgram.cs(8,2): error CS0120: An object reference is required for the non-static field, method, or property
+        'sudha.training.TrainingDashboard.generateReport()'
+mylibrary.dll: (Location of symbol related to previous error)
+PS C:\Users\Administrator\ust-global-training2024\basics> csc /reference:mylibrary.dll .\MinimalCSharpProgram.cs
+Microsoft (R) Visual C# Compiler version 4.8.4084.0
+for C# 5
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+This compiler is provided as part of the Microsoft (R) .NET Framework, but only supports language versions up to C# 5, which is no longer the latest version.
+ For compilers that support newer versions of the C# programming language, see http://go.microsoft.com/fwlink/?LinkID=533240
+
+MinimalCSharpProgram.cs(7,2): error CS0120: An object reference is required for the non-static field, method, or property
+        'sudha.training.TrainingDashboard.publish()'
+mylibrary.dll: (Location of symbol related to previous error)
+MinimalCSharpProgram.cs(8,2): error CS0120: An object reference is required for the non-static field, method, or property
+        'sudha.training.TrainingDashboard.generateReport()'
+mylibrary.dll: (Location of symbol related to previous error)
+PS C:\Users\Administrator\ust-global-training2024\basics> .\MinimalCSharpProgram.exe
+Automation Training_Assignment1
+PS C:\Users\Administrator\ust-global-training2024\basics> csc /target:library .\mylibrary.cs
+Microsoft (R) Visual C# Compiler version 4.8.4084.0
+for C# 5
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+This compiler is provided as part of the Microsoft (R) .NET Framework, but only supports language versions up to C# 5, which is no longer the latest version.
+ For compilers that support newer versions of the C# programming language, see http://go.microsoft.com/fwlink/?LinkID=533240
+PS C:\Users\Administrator\ust-global-training2024\basics> csc /reference:mylibrary.dll .\MinimalCSharpProgram.cs
+Microsoft (R) Visual C# Compiler version 4.8.4084.0
+for C# 5
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+This compiler is provided as part of the Microsoft (R) .NET Framework, but only supports language versions up to C# 5, which is no longer the latest version.
+ For compilers that support newer versions of the C# programming language, see http://go.microsoft.com/fwlink/?LinkID=533240
+PS C:\Users\Administrator\ust-global-training2024\basics> .\MinimalCSharpProgram.exe
+Automation Training_Assignment1
+Publish Training Report
+Generate Training Report

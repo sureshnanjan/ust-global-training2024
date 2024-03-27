@@ -1,0 +1,133 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20240327180905
+Username: 93891B6C4D2E562\Administrator
+RunAs User: 93891B6C4D2E562\Administrator
+Configuration Name: 
+Machine: 93891B6C4D2E562 (Microsoft Windows NT 10.0.19045.0)
+Host Application: powershell
+Process ID: 11944
+PSVersion: 5.1.19041.4046
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.4046
+BuildVersion: 10.0.19041.4046
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is firstprogram.log
+PS C:\Users\Administrator\Documents\Gopi_Automation\ust-global-training2024\BasicProgram> $Env:Path "C:\Windows\Microsoft.NET\Framework64\v4.0.30319;" + $Env:Path
+At line:1 char:11
++ $Env:Path "C:\Windows\Microsoft.NET\Framework64\v4.0.30319;" + $Env:P ...
++           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Unexpected token '"C:\Windows\Microsoft.NET\Framework64\v4.0.30319;"' in expression or statement.
+At line:1 char:11
++ $Env:Path "C:\Windows\Microsoft.NET\Framework64\v4.0.30319;" + $Env:P ...
++           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Unexpected token '"C:\Windows\Microsoft.NET\Framework64\v4.0.30319;"' in expression or statement.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : UnexpectedToken
+
+PS C:\Users\Administrator\Documents\Gopi_Automation\ust-global-training2024\BasicProgram> $Env:Path = "C:\Windows\Microsoft.NET\Framework64\v4.0.30319;" + $Env:Path
+PS C:\Users\Administrator\Documents\Gopi_Automation\ust-global-training2024\BasicProgram> csc
+Microsoft (R) Visual C# Compiler version 4.8.4084.0
+for C# 5
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+This compiler is provided as part of the Microsoft (R) .NET Framework, but only supports language versions up to C# 5, which i
+s no longer the latest version. For compilers that support newer versions of the C# programming language, see http://go.micros
+oft.com/fwlink/?LinkID=533240
+
+warning CS2008: No source files specified
+error CS1562: Outputs without source must have the /out option specified
+PS C:\Users\Administrator\Documents\Gopi_Automation\ust-global-training2024\BasicProgram> csc .\MinimalProgram.cs
+Microsoft (R) Visual C# Compiler version 4.8.4084.0
+for C# 5
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+This compiler is provided as part of the Microsoft (R) .NET Framework, but only supports language versions up to C# 5, which is no longer the latest version.
+ For compilers that support newer versions of the C# programming language, see http://go.microsoft.com/fwlink/?LinkID=533240
+
+error CS2001: Source file '.\MinimalProgram.cs' could not be found
+warning CS2008: No source files specified
+PS C:\Users\Administrator\Documents\Gopi_Automation\ust-global-training2024\BasicProgram> csc .\MinimalProgram.cs
+Microsoft (R) Visual C# Compiler version 4.8.4084.0
+for C# 5
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+This compiler is provided as part of the Microsoft (R) .NET Framework, but only supports language versions up to C# 5, which is no longer the latest version.
+ For compilers that support newer versions of the C# programming language, see http://go.microsoft.com/fwlink/?LinkID=533240
+
+error CS2001: Source file '.\MinimalProgram.cs' could not be found
+warning CS2008: No source files specified
+PS C:\Users\Administrator\Documents\Gopi_Automation\ust-global-training2024\BasicProgram> csc .\MinimalPrg.cs
+Microsoft (R) Visual C# Compiler version 4.8.4084.0
+for C# 5
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+This compiler is provided as part of the Microsoft (R) .NET Framework, but only supports language versions up to C# 5, which is no longer the latest version.
+ For compilers that support newer versions of the C# programming language, see http://go.microsoft.com/fwlink/?LinkID=533240
+PS C:\Users\Administrator\Documents\Gopi_Automation\ust-global-training2024\BasicProgram> csc .\MinimalPrg.exe
+Microsoft (R) Visual C# Compiler version 4.8.4084.0
+for C# 5
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+This compiler is provided as part of the Microsoft (R) .NET Framework, but only supports language versions up to C# 5, which is no longer the latest version.
+ For compilers that support newer versions of the C# programming language, see http://go.microsoft.com/fwlink/?LinkID=533240
+
+error CS2015: 'c:\Users\Administrator\Documents\Gopi_Automation\ust-global-training2024\BasicProgram\MinimalPrg.exe' is a binary file instead of a text file
+error CS1504: Source file 'c:\Users\Administrator\Documents\Gopi_Automation\ust-global-training2024\BasicProgram\MinimalPrg.exe' could not be opened
+        ('Unspecified error ')
+PS C:\Users\Administrator\Documents\Gopi_Automation\ust-global-training2024\BasicProgram> .\MinimalPrg.exe
+Automation Training_Assignment1
+PS C:\Users\Administrator\Documents\Gopi_Automation\ust-global-training2024\BasicProgram> csc ?.
+Microsoft (R) Visual C# Compiler version 4.8.4084.0
+for C# 5
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+This compiler is provided as part of the Microsoft (R) .NET Framework, but only supports language versions up to C# 5, which is no longer the latest version.
+ For compilers that support newer versions of the C# programming language, see http://go.microsoft.com/fwlink/?LinkID=533240
+
+error CS2001: Source file '?.' could not be found
+warning CS2008: No source files specified
+PS C:\Users\Administrator\Documents\Gopi_Automation\ust-global-training2024\BasicProgram> csc ?
+Microsoft (R) Visual C# Compiler version 4.8.4084.0
+for C# 5
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+This compiler is provided as part of the Microsoft (R) .NET Framework, but only supports language versions up to C# 5, which is no longer the latest version.
+ For compilers that support newer versions of the C# programming language, see http://go.microsoft.com/fwlink/?LinkID=533240
+
+error CS2001: Source file '?' could not be found
+warning CS2008: No source files specified
+PS C:\Users\Administrator\Documents\Gopi_Automation\ust-global-training2024\BasicProgram> csc /target:library .\FirstLib.cs
+Microsoft (R) Visual C# Compiler version 4.8.4084.0
+for C# 5
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+This compiler is provided as part of the Microsoft (R) .NET Framework, but only supports language versions up to C# 5, which i
+s no longer the latest version. For compilers that support newer versions of the C# programming language, see http://go.micros
+oft.com/fwlink/?LinkID=533240
+
+FirstLib.cs(4,9): warning CS0169: The field 'Gopinath.training.TrainingDashboard.TrainerName' is never used
+FirstLib.cs(5,9): warning CS0169: The field 'Gopinath.training.TrainingDashboard.startdate' is never used
+FirstLib.cs(6,9): warning CS0169: The field 'Gopinath.training.TrainingDashboard.enddate' is never used
+FirstLib.cs(7,11): warning CS0169: The field 'Gopinath.training.TrainingDashboard.participants' is never used
+FirstLib.cs(8,11): warning CS0169: The field 'Gopinath.training.TrainingDashboard.topics' is never used
+PS C:\Users\Administrator\Documents\Gopi_Automation\ust-global-training2024\BasicProgram> csc /reference:FirstLib.dll .\minimalprg.cs
+Microsoft (R) Visual C# Compiler version 4.8.4084.0
+for C# 5
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+This compiler is provided as part of the Microsoft (R) .NET Framework, but only supports language versions up to C# 5, which is no longer the latest version.
+ For compilers that support newer versions of the C# programming language, see http://go.microsoft.com/fwlink/?LinkID=533240
+PS C:\Users\Administrator\Documents\Gopi_Automation\ust-global-training2024\BasicProgram> .\MinimalPrg.exe
+Automation Training_Assignment1
+Publishing Report
+Generating Report
+PS C:\Users\Administrator\Documents\Gopi_Automation\ust-global-training2024\BasicProgram> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20240327184222
+**********************

@@ -1,0 +1,203 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20240326185546
+Username: 1F4327F9510155B\Administrator
+RunAs User: 1F4327F9510155B\Administrator
+Configuration Name: 
+Machine: 1F4327F9510155B (Microsoft Windows NT 10.0.19045.0)
+Host Application: powershell
+Process ID: 7028
+PSVersion: 5.1.19041.4046
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.4046
+BuildVersion: 10.0.19041.4046
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is pooja_csharp.log
+PS C:\Users\Administrator\ust-global-training2024\Basics> $Env:Path = "C:\Windows\Microsoft.NET\Framework64\v4.0.30319;" + $Env:Path
+PS C:\Users\Administrator\ust-global-training2024\Basics> csc
+Microsoft (R) Visual C# Compiler version 4.8.4084.0
+for C# 5
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+This compiler is provided as part of the Microsoft (R) .NET Framework, but only supports language versions up to C# 5, which is no long
+er the latest version. For compilers that support newer versions of the C# programming language, see http://go.microsoft.com/fwlink/?Li
+nkID=533240
+
+warning CS2008: No source files specified
+error CS1562: Outputs without source must have the /out option specified
+PS C:\Users\Administrator\ust-global-training2024\Basics> csc .\MinimalCSharpProgram.cs
+Microsoft (R) Visual C# Compiler version 4.8.4084.0
+for C# 5
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+This compiler is provided as part of the Microsoft (R) .NET Framework, but only supports language versions up to C# 5, which is no long
+er the latest version. For compilers that support newer versions of the C# programming language, see http://go.microsoft.com/fwlink/?Li
+nkID=533240
+
+MinimalCSharpProgram.cs(1,7): error CS0246: The type or namespace name 'pooja' could not be found (are you missing a using directive or
+        an assembly reference?)
+PS C:\Users\Administrator\ust-global-training2024\Basics> csc .\MinimalCSharpProgram.cs
+Microsoft (R) Visual C# Compiler version 4.8.4084.0
+for C# 5
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+This compiler is provided as part of the Microsoft (R) .NET Framework, but only supports language versions up to C# 5, which is no long
+er the latest version. For compilers that support newer versions of the C# programming language, see http://go.microsoft.com/fwlink/?Li
+nkID=533240
+
+MinimalCSharpProgram.cs(1,7): error CS0246: The type or namespace name 'pooja' could not be found (are you missing a using directive or
+        an assembly reference?)
+PS C:\Users\Administrator\ust-global-training2024\Basics> csc /target:library .\mylibrary.cs
+Microsoft (R) Visual C# Compiler version 4.8.4084.0
+for C# 5
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+This compiler is provided as part of the Microsoft (R) .NET Framework, but only supports language versions up to C# 5, which is no long
+er the latest version. For compilers that support newer versions of the C# programming language, see http://go.microsoft.com/fwlink/?Li
+nkID=533240
+
+mylibrary.cs(12,21): error CS1519: Invalid token '=' in class, struct, or interface member declaration
+mylibrary.cs(13,16): error CS1519: Invalid token '=' in class, struct, or interface member declaration
+mylibrary.cs(13,29): error CS0270: Array size cannot be specified in a variable declaration (try initializing with a 'new' expression)
+mylibrary.cs(13,32): error CS1519: Invalid token '{' in class, struct, or interface member declaration
+mylibrary.cs(14,9): error CS0116: A namespace cannot directly contain members such as fields or methods
+mylibrary.cs(14,22): error CS1518: Expected class, delegate, enum, interface, or struct
+mylibrary.cs(14,29): error CS1001: Identifier expected
+mylibrary.cs(16,17): error CS1518: Expected class, delegate, enum, interface, or struct
+mylibrary.cs(24,40): error CS1001: Identifier expected
+mylibrary.cs(25,40): error CS1001: Identifier expected
+mylibrary.cs(26,34): error CS1001: Identifier expected
+mylibrary.cs(29,34): error CS1001: Identifier expected
+mylibrary.cs(30,28): error CS1001: Identifier expected
+mylibrary.cs(31,34): error CS1001: Identifier expected
+mylibrary.cs(33,5): error CS1022: Type or namespace definition, or end-of-file expected
+mylibrary.cs(34,1): error CS1022: Type or namespace definition, or end-of-file expected
+PS C:\Users\Administrator\ust-global-training2024\Basics> csc /reference:mylibrary.dll .\MinimalCSharpProgram.cs
+Microsoft (R) Visual C# Compiler version 4.8.4084.0
+for C# 5
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+This compiler is provided as part of the Microsoft (R) .NET Framework, but only supports language versions up to C# 5, which is no long
+er the latest version. For compilers that support newer versions of the C# programming language, see http://go.microsoft.com/fwlink/?Li
+nkID=533240
+
+error CS0006: Metadata file 'mylibrary.dll' could not be found
+PS C:\Users\Administrator\ust-global-training2024\Basics> csc .\MinimalCSharpProgram.cs
+Microsoft (R) Visual C# Compiler version 4.8.4084.0
+for C# 5
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+This compiler is provided as part of the Microsoft (R) .NET Framework, but only supports language versions up to C# 5, which is no long
+er the latest version. For compilers that support newer versions of the C# programming language, see http://go.microsoft.com/fwlink/?Li
+nkID=533240
+
+MinimalCSharpProgram.cs(1,7): error CS0246: The type or namespace name 'pooja' could not be found (are you missing a using directive or
+        an assembly reference?)
+PS C:\Users\Administrator\ust-global-training2024\Basics> csc .\MinimalCSharpProgram.cs
+Microsoft (R) Visual C# Compiler version 4.8.4084.0
+for C# 5
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+This compiler is provided as part of the Microsoft (R) .NET Framework, but only supports language versions up to C# 5, which is no long
+er the latest version. For compilers that support newer versions of the C# programming language, see http://go.microsoft.com/fwlink/?Li
+nkID=533240
+PS C:\Users\Administrator\ust-global-training2024\Basics> csc /target:library .\mylibrary.cs
+Microsoft (R) Visual C# Compiler version 4.8.4084.0
+for C# 5
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+This compiler is provided as part of the Microsoft (R) .NET Framework, but only supports language versions up to C# 5, which is no long
+er the latest version. For compilers that support newer versions of the C# programming language, see http://go.microsoft.com/fwlink/?Li
+nkID=533240
+
+mylibrary.cs(12,21): error CS1519: Invalid token '=' in class, struct, or interface member declaration
+mylibrary.cs(13,16): error CS1519: Invalid token '=' in class, struct, or interface member declaration
+mylibrary.cs(13,29): error CS0270: Array size cannot be specified in a variable declaration (try initializing with a 'new' expression)
+mylibrary.cs(13,32): error CS1519: Invalid token '{' in class, struct, or interface member declaration
+mylibrary.cs(14,9): error CS0116: A namespace cannot directly contain members such as fields or methods
+mylibrary.cs(14,22): error CS1518: Expected class, delegate, enum, interface, or struct
+mylibrary.cs(14,29): error CS1001: Identifier expected
+mylibrary.cs(16,17): error CS1518: Expected class, delegate, enum, interface, or struct
+mylibrary.cs(35,5): error CS1022: Type or namespace definition, or end-of-file expected
+PS C:\Users\Administrator\ust-global-training2024\Basics> csc /target:library .\mylibrary.cs
+Microsoft (R) Visual C# Compiler version 4.8.4084.0
+for C# 5
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+This compiler is provided as part of the Microsoft (R) .NET Framework, but only supports language versions up to C# 5, which is no long
+er the latest version. For compilers that support newer versions of the C# programming language, see http://go.microsoft.com/fwlink/?Li
+nkID=533240
+
+mylibrary.cs(19,9): error CS0103: The name 'Console' does not exist in the current context
+PS C:\Users\Administrator\ust-global-training2024\Basics> csc /target:library .\mylibrary.cs
+Microsoft (R) Visual C# Compiler version 4.8.4084.0
+for C# 5
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+This compiler is provided as part of the Microsoft (R) .NET Framework, but only supports language versions up to C# 5, which is no long
+er the latest version. For compilers that support newer versions of the C# programming language, see http://go.microsoft.com/fwlink/?Li
+nkID=533240
+
+mylibrary.cs(5,16): warning CS0169: The field 'MyUtilityClass.trainerName' is never used
+mylibrary.cs(6,18): warning CS0169: The field 'MyUtilityClass.participants' is never used
+mylibrary.cs(7,18): warning CS0169: The field 'MyUtilityClass.topics' is never used
+PS C:\Users\Administrator\ust-global-training2024\Basics> csc /target:library .\mylibrary.cs
+Microsoft (R) Visual C# Compiler version 4.8.4084.0
+for C# 5
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+This compiler is provided as part of the Microsoft (R) .NET Framework, but only supports language versions up to C# 5, which is no long
+er the latest version. For compilers that support newer versions of the C# programming language, see http://go.microsoft.com/fwlink/?Li
+nkID=533240
+PS C:\Users\Administrator\ust-global-training2024\Basics> csc /reference:mylibrary.dll .\MinimalCSharpProgram.cs
+Microsoft (R) Visual C# Compiler version 4.8.4084.0
+for C# 5
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+This compiler is provided as part of the Microsoft (R) .NET Framework, but only supports language versions up to C# 5, which is no long
+er the latest version. For compilers that support newer versions of the C# programming language, see http://go.microsoft.com/fwlink/?Li
+nkID=533240
+PS C:\Users\Administrator\ust-global-training2024\Basics> .\MinimalCSharpProgram.exe
+This is Training Dashboard
+PS C:\Users\Administrator\ust-global-training2024\Basics> .\MinimalCSharpProgram.exe
+This is Training Dashboard
+PS C:\Users\Administrator\ust-global-training2024\Basics> csc /target:library .\mylibrary.cs
+Microsoft (R) Visual C# Compiler version 4.8.4084.0
+for C# 5
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+This compiler is provided as part of the Microsoft (R) .NET Framework, but only supports language versions up to C# 5, which is no longer the late
+st version. For compilers that support newer versions of the C# programming language, see http://go.microsoft.com/fwlink/?LinkID=533240
+PS C:\Users\Administrator\ust-global-training2024\Basics> csc /reference:mylibrary.dll .\MinimalCSharpProgram.cs
+Microsoft (R) Visual C# Compiler version 4.8.4084.0
+for C# 5
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+This compiler is provided as part of the Microsoft (R) .NET Framework, but only supports language versions up to C# 5, which is no longer the late
+st version. For compilers that support newer versions of the C# programming language, see http://go.microsoft.com/fwlink/?LinkID=533240
+PS C:\Users\Administrator\ust-global-training2024\Basics> .\MinimalCSharpProgram.exe
+This is Training Dashboard
+This is Publish Dashboard
+This is GenerateReport Dashboard
+PS C:\Users\Administrator\ust-global-training2024\Basics> csc /target:library .\mylibrary.cs
+Microsoft (R) Visual C# Compiler version 4.8.4084.0
+for C# 5
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+This compiler is provided as part of the Microsoft (R) .NET Framework, but only supports language versions up to C# 5, which is no longer the late
+st version. For compilers that support newer versions of the C# programming language, see http://go.microsoft.com/fwlink/?LinkID=533240
+PS C:\Users\Administrator\ust-global-training2024\Basics> csc /reference:mylibrary.dll .\MinimalCSharpProgram.cs
+Microsoft (R) Visual C# Compiler version 4.8.4084.0
+for C# 5
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+This compiler is provided as part of the Microsoft (R) .NET Framework, but only supports language versions up to C# 5, which is no longer the late
+st version. For compilers that support newer versions of the C# programming language, see http://go.microsoft.com/fwlink/?LinkID=533240
+PS C:\Users\Administrator\ust-global-training2024\Basics> .\MinimalCSharpProgram.exe
+This is Main Dashboard
+This is Publish Dashboard
+This is GenerateReport Dashboard

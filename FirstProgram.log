@@ -1,0 +1,37 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20240327153336
+Username: USTR\231206
+RunAs User: USTR\231206
+Configuration Name: 
+Machine: M305LTRV (Microsoft Windows NT 10.0.19045.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 14816
+PSVersion: 5.1.19041.3930
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.3930
+BuildVersion: 10.0.19041.3930
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is FirstProgram.log
+PS C:\Users\231206\ust-global-training2024> Get-ChildItem -Name *.log
+FirstProgram.log
+manjush.log
+PS C:\Users\231206\ust-global-training2024> git status
+On branch manjush-branch
+Your branch is up to date with 'origin/manjush-branch'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        FirstProgram.log
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\231206\ust-global-training2024> git add .
+
+PS C:\Users\231206\ust-global-training2024> git commit -m “Adding my first program to branch”
+[manjush-branch f0580f7] Adding my first program to branch
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 FirstProgram.log

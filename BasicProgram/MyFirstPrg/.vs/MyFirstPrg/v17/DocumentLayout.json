@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Administrator\\Documents\\Gopi_Automation\\ust-global-training2024\\BasicProgram\\MyFirstPrg\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8A08743A-D413-4B43-946F-6E9745F5BD83}|..\\MyLib\\MyLib.csproj|c:\\users\\administrator\\documents\\gopi_automation\\ust-global-training2024\\basicprogram\\mylib\\report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77FF8618-1AF5-40A2-9BD2-34110C1AAAD1}|MyFirstPrg.csproj|c:\\users\\administrator\\documents\\gopi_automation\\ust-global-training2024\\basicprogram\\myfirstprg\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77FF8618-1AF5-40A2-9BD2-34110C1AAAD1}|MyFirstPrg.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Report.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\Gopi_Automation\\ust-global-training2024\\BasicProgram\\MyLib\\Report.cs",
+              "RelativeDocumentMoniker": "..\\MyLib\\Report.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\Gopi_Automation\\ust-global-training2024\\BasicProgram\\MyLib\\Report.cs",
+              "RelativeToolTip": "..\\MyLib\\Report.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-27T14:23:25.271Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\Gopi_Automation\\ust-global-training2024\\BasicProgram\\MyFirstPrg\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\Gopi_Automation\\ust-global-training2024\\BasicProgram\\MyFirstPrg\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAswAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-27T14:19:06.246Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

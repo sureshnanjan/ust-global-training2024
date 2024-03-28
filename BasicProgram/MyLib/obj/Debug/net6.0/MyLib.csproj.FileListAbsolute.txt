@@ -1,0 +1,12 @@
+C:\Users\Administrator\Documents\Gopi_Automation\ust-global-training2024\BasicProgram\MyLib\bin\Debug\net6.0\MyLib.deps.json
+C:\Users\Administrator\Documents\Gopi_Automation\ust-global-training2024\BasicProgram\MyLib\bin\Debug\net6.0\MyLib.dll
+C:\Users\Administrator\Documents\Gopi_Automation\ust-global-training2024\BasicProgram\MyLib\bin\Debug\net6.0\MyLib.pdb
+C:\Users\Administrator\Documents\Gopi_Automation\ust-global-training2024\BasicProgram\MyLib\obj\Debug\net6.0\MyLib.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\Documents\Gopi_Automation\ust-global-training2024\BasicProgram\MyLib\obj\Debug\net6.0\MyLib.AssemblyInfoInputs.cache
+C:\Users\Administrator\Documents\Gopi_Automation\ust-global-training2024\BasicProgram\MyLib\obj\Debug\net6.0\MyLib.AssemblyInfo.cs
+C:\Users\Administrator\Documents\Gopi_Automation\ust-global-training2024\BasicProgram\MyLib\obj\Debug\net6.0\MyLib.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Documents\Gopi_Automation\ust-global-training2024\BasicProgram\MyLib\obj\Debug\net6.0\MyLib.sourcelink.json
+C:\Users\Administrator\Documents\Gopi_Automation\ust-global-training2024\BasicProgram\MyLib\obj\Debug\net6.0\MyLib.dll
+C:\Users\Administrator\Documents\Gopi_Automation\ust-global-training2024\BasicProgram\MyLib\obj\Debug\net6.0\refint\MyLib.dll
+C:\Users\Administrator\Documents\Gopi_Automation\ust-global-training2024\BasicProgram\MyLib\obj\Debug\net6.0\MyLib.pdb
+C:\Users\Administrator\Documents\Gopi_Automation\ust-global-training2024\BasicProgram\MyLib\obj\Debug\net6.0\ref\MyLib.dll

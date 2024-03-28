@@ -1,0 +1,43 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20240326094757
+Username: SURESHNANJAN\nanja
+RunAs User: SURESHNANJAN\nanja
+Configuration Name: 
+Machine: SURESHNANJAN (Microsoft Windows NT 10.0.22631.0)
+Host Application: powershell
+Process ID: 134996
+PSVersion: 5.1.22621.2506
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.2506
+BuildVersion: 10.0.22621.2506
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is suresh-demo.log
+PS C:\Trainings-2021\Vendors\IIHT\UST Global\ust-global-training2024\basics\msbuild-demo> dir
+
+
+    Directory: C:\Trainings-2021\Vendors\IIHT\UST Global\ust-global-training2024\basics\msbuild-demo
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        25-03-2024     22:45             94 build.cmd
+-a----        25-03-2024     22:44            694 BuildIncrementally.txtproj
+-a----        25-03-2024     22:24            214 HelloWorld.cs
+-a----        25-03-2024     22:46           3072 HelloWorld.exe
+-a----        25-03-2024     22:34            213 HelloWorld.txtproj
+-a----        25-03-2024     22:40            631 HelloWorldv1.txtproj
+-a----        26-03-2024     09:47              0 suresh-demo.log
+
+
+PS C:\Trainings-2021\Vendors\IIHT\UST Global\ust-global-training2024\basics\msbuild-demo> git --version
+
+PS C:\Trainings-2021\Vendors\IIHT\UST Global\ust-global-training2024\basics\msbuild-demo> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20240326094826
+**********************

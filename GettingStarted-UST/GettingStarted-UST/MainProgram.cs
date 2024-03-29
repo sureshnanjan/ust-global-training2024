@@ -10,7 +10,7 @@ namespace GettingStarted_UST
     {
         public static void Main(string[] args) {
             // call all your demo methods here
-            Console.WriteLine("Inside the Main program");
+            Console.WriteLine("C# literals declaration");
             UsingLiterals mypgm = new UsingLiterals();
             mypgm.showUsage();
         

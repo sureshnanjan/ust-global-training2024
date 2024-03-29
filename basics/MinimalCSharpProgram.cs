@@ -1,0 +1,1 @@
+#does not contain a static 'Main' method suitable for an entry point

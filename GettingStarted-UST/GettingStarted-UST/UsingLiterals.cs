@@ -14,15 +14,15 @@ namespace GettingStarted_UST
         // Hexa-decimal literals (Base 16)
         // Binary literals (Base 2)
         // Floating-point Literals
-<<<<<<< HEAD
+
         // double
         // float
         // exponential
-=======
+
             // double 123.45 
             // float
             // exponential
->>>>>>> suresh-trainer
+
         // Character Literals
         // Single quote
         // Unicode Representation
@@ -79,7 +79,7 @@ namespace GettingStarted_UST
 
 
 
-        }
+        
 //----------------------------Second assignment
 
             double numDouble = 89.9;

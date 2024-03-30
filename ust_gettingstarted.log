@@ -1,0 +1,76 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20240325110724
+Username: SURESHNANJAN\nanja
+RunAs User: SURESHNANJAN\nanja
+Configuration Name: 
+Machine: SURESHNANJAN (Microsoft Windows NT 10.0.22631.0)
+Host Application: powershell
+Process ID: 93752
+PSVersion: 5.1.22621.2506
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.2506
+BuildVersion: 10.0.22621.2506
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is ust_gettingstarted.log
+PS C:\Trainings-2021\Vendors\IIHT\UST Global> git --version
+git version 2.32.0.windows.2
+PS C:\Trainings-2021\Vendors\IIHT\UST Global> git clone https://github.com/sureshnanjan/ust-global-training2024.git
+Cloning into 'ust-global-training2024'...
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (4/4), done.
+PS C:\Trainings-2021\Vendors\IIHT\UST Global> dir
+
+
+    Directory: C:\Trainings-2021\Vendors\IIHT\UST Global
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        24-03-2024     22:18                ust-global-training-2024
+d-----        25-03-2024     11:08                ust-global-training2024
+-a----        22-03-2024     18:07            253 creds.txt
+-a----        19-03-2024     14:27         133396 Proposal_C#_Automation_API_WEB_DB_PERF.pdf
+-a----        18-03-2024     15:46          15877 Test Automation TOC_Revised - 11th Mar24_Updated.xlsx
+-a----        25-03-2024     11:07            624 ust_gettingstarted.log
+
+
+PS C:\Trainings-2021\Vendors\IIHT\UST Global> cd .\ust-global-training2024\
+PS C:\Trainings-2021\Vendors\IIHT\UST Global\ust-global-training2024> dir
+
+
+    Directory: C:\Trainings-2021\Vendors\IIHT\UST Global\ust-global-training2024
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        25-03-2024     11:08            482 .gitignore
+-a----        25-03-2024     11:08             84 README.md
+
+
+PS C:\Trainings-2021\Vendors\IIHT\UST Global\ust-global-training2024> git status
+
+PS C:\Trainings-2021\Vendors\IIHT\UST Global\ust-global-training2024> git status
+
+PS C:\Trainings-2021\Vendors\IIHT\UST Global\ust-global-training2024> git add .
+
+PS C:\Trainings-2021\Vendors\IIHT\UST Global\ust-global-training2024> git status
+
+PS C:\Trainings-2021\Vendors\IIHT\UST Global\ust-global-training2024> git commit -m "This is the first set of programs"
+
+PS C:\Trainings-2021\Vendors\IIHT\UST Global\ust-global-training2024> git status
+
+PS C:\Trainings-2021\Vendors\IIHT\UST Global\ust-global-training2024> git log
+
+PS C:\Trainings-2021\Vendors\IIHT\UST Global\ust-global-training2024> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20240325112554
+**********************

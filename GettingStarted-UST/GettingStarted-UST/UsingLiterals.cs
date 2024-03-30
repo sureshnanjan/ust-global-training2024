@@ -10,7 +10,11 @@ namespace GettingStarted_UST
     internal class UsingLiterals
     {
         // Integer Literals
+
         //decimal literals(Base 10);
+
+            // Decimal literals (Base 10)
+
             // Hexa-decimal literals (Base 16)
             // Binary literals (Base 2)
         // Floating-point Literals
@@ -32,9 +36,14 @@ namespace GettingStarted_UST
             //TODO: value 89
             int decINt = 89;
             int hexInt = 0x89;
+
             //int binInt = 1010;
             Console.WriteLine("Inside the method we have "+ decINt);
 
+
+        
+        
+//origin/suresh-trainer
         }
 
 

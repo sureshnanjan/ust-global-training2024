@@ -14,9 +14,15 @@ namespace GettingStarted_UST
         // Hexa-decimal literals (Base 16)
         // Binary literals (Base 2)
         // Floating-point Literals
+<<<<<<< HEAD
         // double
         // float
         // exponential
+=======
+            // double 123.45 
+            // float
+            // exponential
+>>>>>>> suresh-trainer
         // Character Literals
         // Single quote
         // Unicode Representation
@@ -34,6 +40,7 @@ namespace GettingStarted_UST
         {
 
             //TODO: value 89
+
             /// <summary>
             /// Integer literral declaration
             /// </summary>
@@ -45,6 +52,35 @@ namespace GettingStarted_UST
             /// <summary>
             /// Floating-point Literals
             /// </summary>
+
+           // int decINt = 89; // 4 byte - max mim // 1010 - 4 bytes 
+            long mylong = 0; // 8 bytes // 1020 - 1029, 1021, 1022, 1024, --- 1028
+           // int hexInt = 0x1F; // 15 X16 ^0 + 1 X 16 ^1
+            double mydbl = 123.45;
+            float nyflt = 123.45f;
+            //float @float 
+            //null != "null";
+            char newline = '\u0D19'; //1000  a 97 A 65 
+            string mynameinmalayalam = "\u0d19\u0d19";
+
+            List<string> students = new List<string>();
+
+            for (int studnum = 0; studnum < students.Count; studnum++)
+            {
+                Console.WriteLine(students[studnum]);
+            }
+
+            foreach (var item in students)
+            {
+                
+            }
+
+
+
+
+
+        }
+//----------------------------Second assignment
 
             double numDouble = 89.9;
             float myFloat = 89.7f;

@@ -1,19 +1,10 @@
-namespace sudha.training{
-public class TrainingDashboard{
-	// Properties
-	/*string TrainerName;
-	string startdate;
-	string enddate;
-	string[] participants;
-	string[] topics;*/
-	// Methods
-	public static void publish()
-	{
-		System.Console.WriteLine("Publish Training Report");
-	}
-	public static void generateReport()
-	{
-		System.Console.WriteLine("Generate Training Report");
+namespace ust.training{
+public class MyUtilityClass{
+	string name;
+	string course;
+	int marks;
+	public static void WriteLine(){
+		System.Console.WriteLine("I ama a utility functioin which you can use");
 	}
 }
 }

@@ -1,10 +1,9 @@
-using sudha.training;
+using ust.training;
 using System;
 class MyClass{
 static void Main(){
 	// Expected class, delegate, enum, interface, or struct
-	Console.WriteLine("Automation Training_Assignment1");
-	TrainingDashboard.publish();
-	TrainingDashboard.generateReport();
+	Console.WriteLine("This is automation class");
+	MyUtilityClass.WriteLine();
 }
 }

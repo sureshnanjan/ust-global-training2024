@@ -1,0 +1,58 @@
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch sudha-branch
+# Your branch is up to date with 'origin/sudha-branch'.
+#
+# Changes to be committed:
+#	new file:   basics/FirstProgram/.vs/FirstProgram/DesignTimeBuild/.dtbcache.v2
+#	new file:   basics/FirstProgram/.vs/FirstProgram/FileContentIndex/8320f849-00ed-4e27-b526-68de076ae48d.vsidx
+#	new file:   basics/FirstProgram/.vs/FirstProgram/FileContentIndex/8625944d-04f6-4cab-af9c-834b8eaf08d0.vsidx
+#	new file:   basics/FirstProgram/.vs/FirstProgram/FileContentIndex/b09de89b-bba0-4098-8897-2bda016f96fd.vsidx
+#	new file:   basics/FirstProgram/.vs/FirstProgram/FileContentIndex/bdbc4d41-5fda-4c4b-8e3f-3c2078865ef3.vsidx
+#	new file:   basics/FirstProgram/.vs/FirstProgram/v17/.futdcache.v2
+#	new file:   basics/FirstProgram/.vs/FirstProgram/v17/.suo
+#	new file:   basics/FirstProgram/.vs/FirstProgram/v17/DocumentLayout.json
+#	new file:   basics/FirstProgram/.vs/ProjectEvaluation/firstprogram.metadata.v7.bin
+#	new file:   basics/FirstProgram/.vs/ProjectEvaluation/firstprogram.projects.v7.bin
+#	new file:   basics/FirstProgram/FirstProgram.csproj
+#	new file:   basics/FirstProgram/FirstProgram.sln
+#	new file:   basics/FirstProgram/Program.cs
+#	new file:   basics/FirstProgram/bin/Debug/net8.0/FirstProgram.deps.json
+#	new file:   basics/FirstProgram/bin/Debug/net8.0/FirstProgram.runtimeconfig.json
+#	new file:   basics/FirstProgram/obj/Debug/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+#	new file:   basics/FirstProgram/obj/Debug/net8.0/FirstPro.DA7116A0.Up2Date
+#	new file:   basics/FirstProgram/obj/Debug/net8.0/FirstProgram.AssemblyInfo.cs
+#	new file:   basics/FirstProgram/obj/Debug/net8.0/FirstProgram.AssemblyInfoInputs.cache
+#	new file:   basics/FirstProgram/obj/Debug/net8.0/FirstProgram.GeneratedMSBuildEditorConfig.editorconfig
+#	new file:   basics/FirstProgram/obj/Debug/net8.0/FirstProgram.GlobalUsings.g.cs
+#	new file:   basics/FirstProgram/obj/Debug/net8.0/FirstProgram.assets.cache
+#	new file:   basics/FirstProgram/obj/Debug/net8.0/FirstProgram.csproj.AssemblyReference.cache
+#	new file:   basics/FirstProgram/obj/Debug/net8.0/FirstProgram.csproj.CoreCompileInputs.cache
+#	new file:   basics/FirstProgram/obj/Debug/net8.0/FirstProgram.csproj.FileListAbsolute.txt
+#	new file:   basics/FirstProgram/obj/Debug/net8.0/FirstProgram.genruntimeconfig.cache
+#	new file:   basics/FirstProgram/obj/Debug/net8.0/FirstProgram.sourcelink.json
+#	new file:   basics/FirstProgram/obj/FirstProgram.csproj.nuget.dgspec.json
+#	new file:   basics/FirstProgram/obj/FirstProgram.csproj.nuget.g.props
+#	new file:   basics/FirstProgram/obj/FirstProgram.csproj.nuget.g.targets
+#	new file:   basics/FirstProgram/obj/project.assets.json
+#	new file:   basics/FirstProgram/obj/project.nuget.cache
+#	new file:   basics/SudhaLibrary/SudhaLibrary.csproj
+#	new file:   basics/SudhaLibrary/UtilityClass.cs
+#	new file:   basics/SudhaLibrary/bin/Debug/net8.0/SudhaLibrary.deps.json
+#	new file:   basics/SudhaLibrary/obj/Debug/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+#	new file:   basics/SudhaLibrary/obj/Debug/net8.0/SudhaLibrary.AssemblyInfo.cs
+#	new file:   basics/SudhaLibrary/obj/Debug/net8.0/SudhaLibrary.AssemblyInfoInputs.cache
+#	new file:   basics/SudhaLibrary/obj/Debug/net8.0/SudhaLibrary.GeneratedMSBuildEditorConfig.editorconfig
+#	new file:   basics/SudhaLibrary/obj/Debug/net8.0/SudhaLibrary.GlobalUsings.g.cs
+#	new file:   basics/SudhaLibrary/obj/Debug/net8.0/SudhaLibrary.assets.cache
+#	new file:   basics/SudhaLibrary/obj/Debug/net8.0/SudhaLibrary.csproj.CoreCompileInputs.cache
+#	new file:   basics/SudhaLibrary/obj/Debug/net8.0/SudhaLibrary.csproj.FileListAbsolute.txt
+#	new file:   basics/SudhaLibrary/obj/Debug/net8.0/SudhaLibrary.sourcelink.json
+#	new file:   basics/SudhaLibrary/obj/SudhaLibrary.csproj.nuget.dgspec.json
+#	new file:   basics/SudhaLibrary/obj/SudhaLibrary.csproj.nuget.g.props
+#	new file:   basics/SudhaLibrary/obj/SudhaLibrary.csproj.nuget.g.targets
+#	new file:   basics/SudhaLibrary/obj/project.assets.json
+#	new file:   basics/SudhaLibrary/obj/project.nuget.cache
+#

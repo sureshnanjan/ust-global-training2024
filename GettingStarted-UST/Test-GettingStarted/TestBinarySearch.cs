@@ -10,7 +10,7 @@ namespace Test_GettingStarted
     public  class TestBinarySearch
     {
         [TestMethod]
-        public void test_for_existing_values() { 
+        public void Test_for_existing_values() { 
         
             int[] myinputArray =  { 1, 2, 3 };
             int searchTerm = 3;
@@ -23,10 +23,39 @@ namespace Test_GettingStarted
         }
 
         [TestMethod]
-        public void test_for_existing_values_inbeginning() { }
+        public void Test_for_existing_values_inbeginning() {
+            int[] myinputArray = { 1,2, 3 };
+            int searchItem = 1;
+            int expected = 1;
+            BinarySearcher searcher=new BinarySearcher(myinputArray,searchItem);
+            int actual = searcher.doSearch();
+            Assert.AreEqual(expected, actual);
+        }
 
         [TestMethod]
-        public void test_for_non_existing_items() {
+        public void Test_for_existing_values_inmiddle()
+        {
+            int[] myinputArray = { 1, 2, 3 };
+            int searchItem = 2;
+            int expected = 2;
+            BinarySearcher searcher = new BinarySearcher(myinputArray, searchItem);
+            int actual = searcher.doSearch();
+            Assert.AreEqual(expected, actual);
+        }
+        [TestMethod]
+        public void Test_for_existing_values_inend()
+        {
+            int[] myinputArray = { 1, 2, 3 };
+            int searchItem = 3;
+            int expected = 3;
+            BinarySearcher searcher = new BinarySearcher(myinputArray, searchItem);
+            int actual = searcher.doSearch();
+            Assert.AreEqual(expected, actual);
+        }
+
+
+        [TestMethod]
+        public void Test_for_non_existing_items() {
             int[] myinputArray = { 1, 2, 3 };
             int searchTerm = 4;
             int expected = ~4;
@@ -38,7 +67,7 @@ namespace Test_GettingStarted
 
 
         [TestMethod]
-        public void testing_non_existent_item() {
+        public void Testing_non_existent_item() {
 
             // If value is not found and value is less than one or more elements in array, the negative number returned is the
             // bitwise complement of the index of the first element that is larger than value. 

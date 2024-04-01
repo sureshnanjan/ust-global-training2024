@@ -1,4 +1,6 @@
 ﻿
+using System.Collections;
+
 namespace Test_GettingStarted
 {
     internal class BinarySearcher
@@ -14,7 +16,16 @@ namespace Test_GettingStarted
 
         internal int doSearch()
         {
-            throw new NotImplementedException();
+            // 
+            int searchitem = Array.BinarySearch(myinputArray, searchTerm);
+            if (searchitem >= 0)
+            { 
+                return searchitem + 1;
+            }
+            else
+            {
+                throw new NotImplementedException();
+            }
         }
     }
 }

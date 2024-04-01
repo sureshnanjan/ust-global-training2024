@@ -43,7 +43,7 @@ namespace Test_GettingStarted
             int expected = 1;
             BinarySearcher searcher = new BinarySearcher(myinputArray, searchTerm);
             int actual = searcher.doSearch();
-
+            //Console.WriteLine(actual);
             Assert.AreEqual(expected, actual);
 
         }

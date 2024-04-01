@@ -16,16 +16,27 @@ namespace Test_GettingStarted
 
         internal int doSearch()
         {
-            // 
-            int searchitem = Array.BinarySearch(myinputArray, searchTerm);
-            if (searchitem >= 0)
-            { 
-                return searchitem + 1;
-            }
-            else
+            int searchValue = Array.BinarySearch(myinputArray, searchTerm);
+            if (confirmsortedarray(myinputArray))
             {
-                throw new NotImplementedException();
+                if (searchValue >= 0)
+                {
+                    return searchValue + 1;
+                }
+                else
+                {
+                    return searchValue - 1;
+                }
             }
+            return -1;
+        }
+
+        private bool confirmsortedarray(int[] myinputArray)
+        {
+            for (int i = 1; i < myinputArray.Length; i++)
+                if (myinputArray[i - 1] > myinputArray[i])
+                    return false;
+            return true;
         }
     }
 }

@@ -1,15 +1,20 @@
-﻿namespace Test_GettingStarted
+﻿
+namespace Test_GettingStarted
 {
-    internal class Binarysearcher
+    internal class BinarySearcher
     {
-        internal int dosearch;
         private int[] myinputArray;
-        private object searchterm;
+        private int searchTerm;
 
-        public Binarysearcher(int[] myinputArray, object searchterm)
+        public BinarySearcher(int[] myinputArray, int searchTerm)
         {
             this.myinputArray = myinputArray;
-            this.searchterm = searchterm;
+            this.searchTerm = searchTerm;
+        }
+
+        internal int doSearch()
+        {
+            throw new NotImplementedException();
         }
     }
 }

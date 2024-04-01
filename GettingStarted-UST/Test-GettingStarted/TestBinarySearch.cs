@@ -23,7 +23,17 @@ namespace Test_GettingStarted
         }
 
         [TestMethod]
-        public void test_for_existing_values_inbeginning() { }
+        public void test_for_existing_values_inbeginning() {
+
+            int[] myinputArray = { 1, 2, 3 };
+            int searchTerm = 1;
+            int expected = 1;
+            BinarySearcher searcher = new BinarySearcher(myinputArray, searchTerm);
+            int actual = searcher.doSearch();
+
+            Assert.AreEqual(expected, actual);
+
+        }
 
         [TestMethod]
         public void test_for_non_existing_items() {

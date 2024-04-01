@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "InitialProgram/1.0.0": {
+        "dependencies": {
+          "PoohLibrary": "1.0.0"
+        },
+        "runtime": {
+          "InitialProgram.dll": {}
+        }
+      },
+      "PoohLibrary/1.0.0": {
+        "runtime": {
+          "PoohLibrary.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "InitialProgram/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PoohLibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

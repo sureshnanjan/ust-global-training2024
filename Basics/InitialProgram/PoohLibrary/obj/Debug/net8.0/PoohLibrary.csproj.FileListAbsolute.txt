@@ -1,0 +1,12 @@
+C:\Users\Administrator\ust-global-training2024\Basics\InitialProgram\PoohLibrary\bin\Debug\net8.0\PoohLibrary.deps.json
+C:\Users\Administrator\ust-global-training2024\Basics\InitialProgram\PoohLibrary\bin\Debug\net8.0\PoohLibrary.dll
+C:\Users\Administrator\ust-global-training2024\Basics\InitialProgram\PoohLibrary\bin\Debug\net8.0\PoohLibrary.pdb
+C:\Users\Administrator\ust-global-training2024\Basics\InitialProgram\PoohLibrary\obj\Debug\net8.0\PoohLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\ust-global-training2024\Basics\InitialProgram\PoohLibrary\obj\Debug\net8.0\PoohLibrary.AssemblyInfoInputs.cache
+C:\Users\Administrator\ust-global-training2024\Basics\InitialProgram\PoohLibrary\obj\Debug\net8.0\PoohLibrary.AssemblyInfo.cs
+C:\Users\Administrator\ust-global-training2024\Basics\InitialProgram\PoohLibrary\obj\Debug\net8.0\PoohLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\ust-global-training2024\Basics\InitialProgram\PoohLibrary\obj\Debug\net8.0\PoohLibrary.sourcelink.json
+C:\Users\Administrator\ust-global-training2024\Basics\InitialProgram\PoohLibrary\obj\Debug\net8.0\PoohLibrary.dll
+C:\Users\Administrator\ust-global-training2024\Basics\InitialProgram\PoohLibrary\obj\Debug\net8.0\refint\PoohLibrary.dll
+C:\Users\Administrator\ust-global-training2024\Basics\InitialProgram\PoohLibrary\obj\Debug\net8.0\PoohLibrary.pdb
+C:\Users\Administrator\ust-global-training2024\Basics\InitialProgram\PoohLibrary\obj\Debug\net8.0\ref\PoohLibrary.dll

@@ -1,20 +1,31 @@
 ﻿
+using System.Collections;
+
 namespace Test_GettingStarted
 {
     internal class BinarySearcher
     {
         private int[] myinputArray;
-        private int searchTerm;
+        private int searchItem;
 
-        public BinarySearcher(int[] myinputArray, int searchTerm)
+        public BinarySearcher(int[] myinputArray, int searchItem)
         {
             this.myinputArray = myinputArray;
-            this.searchTerm = searchTerm;
+            this.searchItem = searchItem;
         }
 
         internal int doSearch()
         {
-            throw new NotImplementedException();
+            // 
+            int itemSearch = Array.BinarySearch(myinputArray, searchItem);
+            if (itemSearch >= 0)
+            {
+                return itemSearch + 1;
+            }
+            else
+            {
+                throw new NotImplementedException();
+            }
         }
     }
 }

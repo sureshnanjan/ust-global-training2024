@@ -1,0 +1,100 @@
+namespace PetStoreProject
+{
+    internal class Apiresponse
+    {
+        public int code;
+        public string message;
+        public string type;
+        public Apiresponse()
+        {
+        }
+    }
+}
+
+---------------------------
+namespace PetStoreProject
+{
+    internal class User
+    {
+        public long id;
+        public string username;
+        public string firstName;
+        public string lastName;
+        public string email;
+        public string password;
+        public string phone;
+        public int userStatus;
+        public User()
+        {
+        }
+    }
+}
+---------------------------------
+namespace PetStoreProject
+{
+    internal class Order:Pet
+    {
+        public long id;
+        public long petId;
+        public int quantity;
+        public DateTime shipDate;
+        public Boolean complete;
+        public enum status { 
+        placed,
+        approved,
+        delivered
+        }
+        public Order(int id)
+        {
+            this.id = id;
+            
+        }
+    }
+}
+------------------------------
+namespace PetStoreProject
+{
+    public class Category
+    {
+        public Category()
+        {
+        }
+
+       
+    }
+}
+------------------------------
+using System.Formats.Asn1;
+using System.Reflection.Metadata;
+
+namespace PetStoreProject
+{
+    [TestClass]
+    internal abstract class Pet
+    {
+        public int id=10;
+        public string name;
+        public string photourls;
+        Category category = new Category();
+        Tag tags = new Tag();
+        public enum Status {
+            available,
+            pending,
+            sold
+        };
+        Order order = new Order(2);
+        User user = new User();
+        Apiresponse apiresp = new Apiresponse();
+    }
+}
+
+------------------------------------
+namespace PetStoreProject
+{
+    internal class Tag
+    {
+        public Tag()
+        {
+        }
+    }
+}

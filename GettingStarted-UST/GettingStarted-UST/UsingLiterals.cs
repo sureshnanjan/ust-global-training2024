@@ -14,7 +14,7 @@ namespace GettingStarted_UST
             // Hexa-decimal literals (Base 16)
             // Binary literals (Base 2)
         // Floating-point Literals
-            // double 123.45 
+            // double
             // float
             // exponential
         // Character Literals
@@ -30,33 +30,56 @@ namespace GettingStarted_UST
        
         public void showUsage() {
 
-            //TODO: value 89
-            int decINt = 89; // 4 byte - max mim // 1010 - 4 bytes 
-            long mylong = 0; // 8 bytes // 1020 - 1029, 1021, 1022, 1024, --- 1028
-            int hexInt = 0x1F; // 15 X16 ^0 + 1 X 16 ^1
-            double mydbl = 123.45;
-            float nyflt = 123.45f;
-            //float @float 
-            //null != "null";
-            char newline = '\u0D19'; //1000  a 97 A 65 
-            string mynameinmalayalam = "\u0d19\u0d19";
+            /// <summary>
+            /// Integer Literals
+            /// </summary>
 
-            List<string> students = new List<string>();
+            int decINt = 89;
+            int hexInt = 0x89;
+            int binInt = 1011001;
 
-            for (int studnum = 0; studnum < students.Count; studnum++)
-            {
-                Console.WriteLine(students[studnum]);
-            }
+            /// <summary>
+            /// Floating-point Literals
+            /// </summary>
 
-            foreach (var item in students)
-            {
-                
-            }
+            double doubleNum = 89.9;
+            float floatNum = 89.1f;
 
+            double baseNum = 89;
+            double exponentNum = 2;
+            double result = Math.Pow(baseNum, exponentNum); // Exponential Value           
 
+            /// <summary>
+            /// Character Literals
+            /// </summary>
 
+            char myChar = 'R';
+            char unicodeRep = '\u0061';
+            char escapeSeq = '\n';            
 
+            /// <summary>
+            /// String Literals
+            /// </summary>
+            
+            string firstName = "Renjitha";
+            string pathVar = @"C:\Users\Administrator\ust-global-training2024\MyFristAssaignment";
+            string lastName = "Jayan";
+            string fullName = $"Hello.... {firstName} {lastName}";            
 
+            // Null Literals
+
+            string s = null;
+
+            // Boolean Literals
+
+            bool boolT = true;
+            bool boolF = false;
+
+            Console.WriteLine("Decimal literal    :\t" + decINt + "\nHex-decimal literal:\t" + hexInt + "\nBinary literal     :\t" + binInt);
+            Console.WriteLine("Double literal     :\t" + doubleNum + "\nFloat literal      :\t" + floatNum + "\nExponential Value  :\t" + result);
+            Console.WriteLine("Single Quote       :\t" + myChar + "\nUnicode Representation:"   + unicodeRep + "\nEscape Sequence    :\t" + escapeSeq);
+            Console.WriteLine("String Value       :\t" + firstName + "\nPath Declaration   :\t" + pathVar + "\nString Interpolation:\t" + fullName);
+            Console.WriteLine("Null Literal       :\t" + s + "\nBoolean Literals   :\t" + boolT+  "&"  +boolF);
         }
 
 

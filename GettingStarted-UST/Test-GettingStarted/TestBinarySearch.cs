@@ -124,12 +124,20 @@ namespace Test_GettingStarted
             Assert.IsTrue(actual < 0);
         }
         /*Exceptions
-        ArgumentNullException array is null.
         RankException array is multidimensional.
         ArgumentException value is of a type that is not compatible with the elements of array.
         InvalidOperationException value does not implement comparison mechanism.
         */
+        [TestMethod]
 
+        public void NullInputArray_Throws_ArgumentNullException()
+        {
+            //ArgumentNullException array is null.
+            int[] input = null;
+            int searchItem = 0;
+            BinarySearcher searcher = new BinarySearcher(input, searchItem);
+            Assert.ThrowsException<ArgumentNullException>(() => searcher.doSearch());
+        }
 
     }
 }

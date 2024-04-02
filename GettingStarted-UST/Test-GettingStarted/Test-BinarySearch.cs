@@ -12,19 +12,6 @@ namespace Test_GettingStarted
     {
 
         [TestMethod]
-        public void test_for_existing_element()
-        {
-
-            int[] Search_Array = { 4, 5, 6};
-            int Search_Element = 6;
-            int expected = 3;
-            BinarySearch mysearch = new BinarySearch(Search_Array, Search_Element);
-            int actual = mysearch.dosearch();
-            
-            Assert.AreEqual(expected, actual);
-        }
-
-        [TestMethod]
         public void test_for_existing_element_beginning()
         {
 

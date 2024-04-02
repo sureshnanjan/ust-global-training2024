@@ -17,7 +17,7 @@ namespace PetStore
     }
 
     /// <summary>
-    /// Status of Pets
+    /// Status of Pets availability
     /// </summary>
     internal enum petStatus
     {

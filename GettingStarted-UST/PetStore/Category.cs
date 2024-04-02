@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace PetStore
 {
     /// <summary>
-    /// Have category details
+    /// Category details
     /// </summary>
     public class Category
     {

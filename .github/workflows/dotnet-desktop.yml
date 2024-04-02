@@ -59,4 +59,4 @@ jobs:
       uses: microsoft/setup-msbuild@v2
     # Execute all unit tests in the solution
     - name: Execute unit tests
-      run: dotnet test
+      run: dotnet test GettingStarted-UST\Test-GettingStarted.csproj

@@ -17,8 +17,6 @@ namespace GettingStarted_UST
 
             Console.WriteLine($"When I add 1,2 the resut is {result} when i subtract 2, 1 the result is {result1}");
 
-            UsingLiterals myobj = new UsingLiterals();
-            myobj.showUsage();
 
         }
     }

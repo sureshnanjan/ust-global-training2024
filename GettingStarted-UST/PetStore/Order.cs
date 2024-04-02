@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace PetStore
 {
+
+    /// <summary>
+    /// Details of an order placed
+    /// </summary>
     public class Order
     {
         public static void Main(string[] args)
@@ -25,6 +29,9 @@ namespace PetStore
         }        
     }
 
+    /// <summary>
+    /// Status of Order
+    /// </summary>
     internal enum Status
     {
         placed, approved, delivered

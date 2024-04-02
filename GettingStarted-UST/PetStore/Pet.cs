@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace PetStore
 {
+    /// <summary>
+    /// Pet details
+    /// </summary>
     public class Pet : Category
     {
         long id;
@@ -13,6 +16,9 @@ namespace PetStore
         string petStatus;
     }
 
+    /// <summary>
+    /// Status of Pets
+    /// </summary>
     internal enum petStatus
     {
         available, pending, sold

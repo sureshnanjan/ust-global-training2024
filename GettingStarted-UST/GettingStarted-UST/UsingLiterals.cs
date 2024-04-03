@@ -80,7 +80,7 @@ namespace GettingStarted_UST
 
 
         
-//----------------------------Second assignment
+//----------------------------My Second assignment
 
             double numDouble = 89.9;
             float myFloat = 89.7f;

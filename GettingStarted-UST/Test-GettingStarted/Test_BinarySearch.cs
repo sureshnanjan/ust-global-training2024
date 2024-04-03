@@ -76,6 +76,14 @@ namespace Test_GettingStarted
             int actual = mySearch.doSearch();
             Assert.AreEqual(expected, actual);
         }
+        public void nullInputArray_throws_ArgumentNullException()
+        {
+            int[] inputArray = null;
+            int searchItem = 0;
+            BinarySearch mySearch = new BinarySearch(inputArray, searchItem);
+            Assert.ThrowsException<ArgumentNullException>(() => { mySearch.doSearch(); });
+
+        }
 
     }
 }

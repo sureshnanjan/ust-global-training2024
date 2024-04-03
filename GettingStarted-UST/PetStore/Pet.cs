@@ -11,10 +11,10 @@ namespace PetStore
     /// </summary>
     public class Pet : Category
     {
-        long id;
-        string name;
-        string photoUrls;
-        string petStatus;
+        private long id;
+        private string name;
+        private string photoUrls;
+        private string petStatus;
     }
 
     /// <summary>

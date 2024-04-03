@@ -12,12 +12,12 @@ namespace PetStore
     /// </summary>
     public class Order
     {
-            long id;
-            long petId;
-            int quantity;
-            DateTime shipDate;
-            string status;
-            Boolean complete;
+            private long id;
+            private long petId;
+            private int quantity;
+            private DateTime shipDate;
+            private string status;
+            private Boolean complete;
     }
 
 }

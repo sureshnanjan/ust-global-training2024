@@ -11,36 +11,9 @@ namespace GettingStarted_UST
     {
         public static void Main(string[] args)
         {
-            int[] mynumbers = { 8, 3, 19, 21, 1, 2, 3, 4 };
-            SimpleClass[] myInstances = { new SimpleClass(8), new SimpleClass(3) , new SimpleClass(19) , new SimpleClass(21),
-            new SimpleClass(1), new SimpleClass(2) , new SimpleClass(3) , new SimpleClass(4)};
+            //int[] mynumbers = { 8, 3, 19, 21, 1, 2, 3, 4 };
 
-            string[] strings = { "A-One", "B-Two", "C-Three" };
-
-            Array.Sort(strings);
-            //strings.
-            
-            Console.WriteLine("Original Values in My Instances");
-            foreach (var item in myInstances)
-            {
-                Console.Write($"{item} , ");
-
-            }
-            
-            Console.WriteLine("\n Original Values in My Integer array mynumbers");
-            foreach (var item in mynumbers)
-            {
-                Console.Write($"{item} , ");
-
-            }
-
-            Array.Sort(mynumbers);
-            Console.WriteLine("\n AFTER SORTING  Values in My Integer array mynumbers");
-            foreach (var item in mynumbers)
-            {
-                Console.Write($"{item} , ");
-
-            }
+            SimpleClass[] myInstances = { new(1,2), new(2,3) , new(0,1) , new(1,3)};
 
             Array.Sort(myInstances);
             Console.WriteLine("\n AFTER SORTING  Values in My Integer MYINSTANCES ");
@@ -49,6 +22,34 @@ namespace GettingStarted_UST
                 Console.Write($"{item} , ");
 
             }
+            //string[] strings = { "A-One", "B-Two", "C-Three" };
+
+            //Array.Sort(strings);
+            //strings.
+
+            // Console.WriteLine("Original Values in My Instances");
+            // foreach (var item in myInstances)
+            // {
+            // Console.Write($"{item} , ");
+
+            // }
+
+            //Console.WriteLine("\n Original Values in My Integer array mynumbers");
+            //foreach (var item in mynumbers)
+            //{
+            //    Console.Write($"{item} , ");
+
+            //}
+
+            //Array.Sort(mynumbers);
+            //Console.WriteLine("\n AFTER SORTING  Values in My Integer array mynumbers");
+            //foreach (var item in mynumbers)
+            //{
+            //    Console.Write($"{item} , ");
+
+            //}
+
+
 
         }
 
@@ -56,16 +57,16 @@ namespace GettingStarted_UST
         {
             int test = 10;
             int another = 10;
-            SimpleClass scInstance = new SimpleClass(0);
-            SimpleClass scInstance2 = new SimpleClass(10);
-            SimpleClass scInsstance3 = new SimpleClass(10);
-            SimpleClass refer = scInsstance3;
-            Console.WriteLine(test);
-            Console.WriteLine(scInstance.ToString());
-            Console.WriteLine(scInstance2.Equals(scInstance)); // False
-            Console.WriteLine(scInsstance3.Equals(scInstance2));
-            Console.WriteLine(refer.Equals(scInsstance3));
-            Console.WriteLine(another.Equals(test));
+            //SimpleClass scInstance = new SimpleClass(0);
+            //SimpleClass scInstance2 = new SimpleClass(10);
+            //SimpleClass scInsstance3 = new SimpleClass(10);
+            //SimpleClass refer = scInsstance3;
+            //Console.WriteLine(test);
+            //Console.WriteLine(scInstance.ToString());
+            //Console.WriteLine(scInstance2.Equals(scInstance)); // False
+            //Console.WriteLine(scInsstance3.Equals(scInstance2));
+            //Console.WriteLine(refer.Equals(scInsstance3));
+            //Console.WriteLine(another.Equals(test));
         }
 
         private static void demo03April()

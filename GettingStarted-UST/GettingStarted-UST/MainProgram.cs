@@ -26,17 +26,25 @@ namespace GettingStarted_UST
 
             Console.WriteLine($"When I add 1,2 the resut is {result} when i subtract 2, 1 the result is {result1}");
             */
+            SortedArray[] myAssignment = {new SortedArray(5,10), new SortedArray(1, 2), new SortedArray(8, 9), new SortedArray(3, 3) };
+            Console.WriteLine("\n Two values written in string with hyphen ASSIGNMENT");
+            foreach (var item in myAssignment)
+            {
+                Console.Write($"{item} , ");
+            }
+
 
             int[] mynumbers = { 8, 3, 19, 21, 1, 2, 3, 4 };
-            SimpleClass[] myInstances = { new SimpleClass(8), new SimpleClass(3) , new SimpleClass(19) , new SimpleClass(21),
-            new SimpleClass(1), new SimpleClass(2) , new SimpleClass(3) , new SimpleClass(4)};
+            int[] numbers = {1,2,2,4 };
+            SimpleClass[] myInstances = { new SimpleClass(1), new SimpleClass(3) , new SimpleClass(6) , new SimpleClass(9),
+            new SimpleClass(7), new SimpleClass(5) , new SimpleClass(3) , new SimpleClass(4)};
 
             string[] strings = { "A-One", "B-Two", "C-Three" };
 
             Array.Sort(strings);
             //strings.
 
-            Console.WriteLine("Original Values in My Instances");
+            Console.WriteLine("\nOriginal Values in My Instances");
             foreach (var item in myInstances)
             {
                 Console.Write($"{item} , ");
@@ -65,16 +73,23 @@ namespace GettingStarted_UST
                 Console.Write($"{item} , ");
 
             }
+            Array.Sort(numbers);
+            Console.WriteLine("\n value sorting in arry");
+            foreach (var item in numbers)
+            {
+                Console.Write($"{item} , ");
+            }
+            
 
         }
-
+        /*
         private static void oeverridesDemo()
         {
             int test = 10;
-            int another = 10;
-            SimpleClass scInstance = new SimpleClass(0);
-            SimpleClass scInstance2 = new SimpleClass(10);
-            SimpleClass scInsstance3 = new SimpleClass(10);
+            int another = 10;          
+            SimpleClass scInstance = new SimpleClass(0,2);
+            SimpleClass scInstance2 = new SimpleClass(10, 5);
+            SimpleClass scInsstance3 = new SimpleClass(10,5);
             SimpleClass refer = scInsstance3;
             Console.WriteLine(test);
             Console.WriteLine(scInstance.ToString());
@@ -83,6 +98,8 @@ namespace GettingStarted_UST
             Console.WriteLine(refer.Equals(scInsstance3));
             Console.WriteLine(another.Equals(test));
         }
+
+        */
 
         private static void demo03April()
         {
@@ -114,9 +131,6 @@ namespace GettingStarted_UST
             }
 
             // myBrosweer = chrome
-
-
-
             // conside rall ingredenents and prepare for cookijg
             // Salt, Rice, Fish, Oil  class Salt : Coo
             List<IMoveable> allmymovingthings = new List<IMoveable>();

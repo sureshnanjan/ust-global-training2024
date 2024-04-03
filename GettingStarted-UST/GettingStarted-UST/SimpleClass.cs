@@ -13,14 +13,14 @@ namespace GettingStarted_UST
         public SimpleClass(int val)
         {
             this.value = val;
-            
+            //this.value2 = val1;
         }
 
         public int Value { get { return this.value; } }
 
         public override string? ToString()
         {
-            return this.value.ToString(); // SimpleClass(1,2) prints as  "value-value2"
+            return this.value.ToString();// SimpleClass(1,2) prints as  "value-value2"
         }
 
         public override bool Equals(object? obj)

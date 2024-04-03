@@ -18,6 +18,7 @@ namespace Test_GettingStarted
             BinarySearch mySearch = new BinarySearch(inPutArray, searchItem);
             int actual = mySearch.doSearch();
             Assert.AreEqual(expected, actual);
+            
 
         }
         [TestMethod]

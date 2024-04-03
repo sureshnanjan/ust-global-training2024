@@ -18,5 +18,10 @@ namespace GettingStarted_UST
 
 
         }
+
+        class PetStore
+        {
+
+        }
     }
 }

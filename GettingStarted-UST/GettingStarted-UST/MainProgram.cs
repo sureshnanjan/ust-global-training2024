@@ -9,8 +9,24 @@ namespace GettingStarted_UST
 {
     public class MainProgram
     {
+
         public static void Main(string[] args)
+
         {
+            /*
+            // call all your demo methods here
+            Console.WriteLine("C# literals declaration");
+            UsingLiterals mypgm = new UsingLiterals();
+            mypgm.showUsage();
+
+
+            Calculator calculator = new Calculator();
+            int result = calculator.add(10000, 20000);
+            int result1 = calculator.subtract(2, 1);
+
+            Console.WriteLine($"When I add 1,2 the resut is {result} when i subtract 2, 1 the result is {result1}");
+            */
+
             int[] mynumbers = { 8, 3, 19, 21, 1, 2, 3, 4 };
             SimpleClass[] myInstances = { new SimpleClass(8), new SimpleClass(3) , new SimpleClass(19) , new SimpleClass(21),
             new SimpleClass(1), new SimpleClass(2) , new SimpleClass(3) , new SimpleClass(4)};
@@ -19,14 +35,14 @@ namespace GettingStarted_UST
 
             Array.Sort(strings);
             //strings.
-            
+
             Console.WriteLine("Original Values in My Instances");
             foreach (var item in myInstances)
             {
                 Console.Write($"{item} , ");
 
             }
-            
+
             Console.WriteLine("\n Original Values in My Integer array mynumbers");
             foreach (var item in mynumbers)
             {
@@ -114,7 +130,8 @@ namespace GettingStarted_UST
             }
         }
 
-        private static void Move(string direction) {
+        private static void Move(string direction)
+        {
 
             switch (direction)
             {
@@ -125,7 +142,8 @@ namespace GettingStarted_UST
 
         }
 
-        private static void Move(Directions dir) {
+        private static void Move(Directions dir)
+        {
             switch (dir)
             {
                 case Directions.left:
@@ -180,7 +198,8 @@ namespace GettingStarted_UST
         }
     }
 
-    class Human {
+    class Human
+    {
         int age;
         string skincolor;
         string nationality;
@@ -188,7 +207,8 @@ namespace GettingStarted_UST
         string name;
     }
 
-    class Employee {
+    class Employee
+    {
         int age;
         //string skincolor;
         string nationality;
@@ -198,12 +218,6 @@ namespace GettingStarted_UST
         string skills;
         DateTime doj;
     }
-
-
-        }
-    }
-
-    
 
 
 }

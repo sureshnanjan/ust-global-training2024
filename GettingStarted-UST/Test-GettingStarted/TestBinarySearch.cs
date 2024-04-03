@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace Test_GettingStarted
 {
     [TestClass]
@@ -66,6 +67,25 @@ namespace Test_GettingStarted
             int actual = searcher.doSearch();
             Assert.AreEqual(expected, actual);
 
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public void nullinputarray_throws_ArgumentNullException() {
+            int[] input = null;
+            int searchTerm = 0;
+            BinarySearcher searcher = new BinarySearcher(input, searchTerm);
+
+            Assert.ThrowsException<ArgumentNullException>(() => { searcher.doSearch(); });
+            
+
+
+        }
+
+        public void someroutine() {
+        
+        
         }
     }
 }

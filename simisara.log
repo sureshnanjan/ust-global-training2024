@@ -17,3 +17,89 @@ PSRemotingProtocolVersion: 2.3
 SerializationVersion: 1.1.0.1
 **********************
 Transcript started, output file is simisara.log
+PS C:\Users\Administrator\ust-global-training2024> git commit -m "Adding first file to branch"
+On branch simisara-branch
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   simisara.log
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\Administrator\ust-global-training2024> git add .
+
+PS C:\Users\Administrator\ust-global-training2024> git status
+On branch simisara-branch
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   simisara.log
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   simisara.log
+PS C:\Users\Administrator\ust-global-training2024> git push
+fatal: The current branch simisara-branch has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin simisara-branch
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+PS C:\Users\Administrator\ust-global-training2024> git push --set -upstream origin simisara-branch
+error: unknown switch `p'
+usage: git push [<options>] [<repository> [<refspec>...]]
+
+    -v, --[no-]verbose    be more verbose
+    -q, --[no-]quiet      be more quiet
+    --[no-]repo <repository>
+                          repository
+    --[no-]all            push all branches
+    --[no-]branches       alias of --all
+    --[no-]mirror         mirror all refs
+    -d, --[no-]delete     delete refs
+    --[no-]tags           push tags (can't be used with --all or --branches or --mirror)
+    -n, --[no-]dry-run    dry run
+    --[no-]porcelain      machine-readable output
+    -f, --[no-]force      force updates
+    --[no-]force-with-lease[=<refname>:<expect>]
+                          require old value of ref to be at this value
+    --[no-]force-if-includes
+                          require remote updates to be integrated locally
+    --[no-]recurse-submodules (check|on-demand|no)
+                          control recursive pushing of submodules
+    --[no-]thin           use thin pack
+    --[no-]receive-pack <receive-pack>
+                          receive pack program
+    --[no-]exec <receive-pack>
+                          receive pack program
+    -u, --[no-]set-upstream
+                          set upstream for git pull/status
+    --[no-]progress       force progress reporting
+    --[no-]prune          prune locally removed refs
+    --no-verify           bypass pre-push hook
+    --verify              opposite of --no-verify
+    --[no-]follow-tags    push missing but relevant tags
+    --[no-]signed[=(yes|no|if-asked)]
+                          GPG sign the push
+    --[no-]atomic         request atomic transaction on remote side
+    -o, --[no-]push-option <server-specific>
+                          option to transmit
+    -4, --ipv4            use IPv4 addresses only
+    -6, --ipv6            use IPv6 addresses only
+PS C:\Users\Administrator\ust-global-training2024> git push --set-upstream origin simisara-branch
+info: please complete authentication in your browser...
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.36 KiB | 1.36 MiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'simisara-branch' on GitHub by visiting:
+remote:      https://github.com/sureshnanjan/ust-global-training2024/pull/new/simisara-branch
+remote:
+To https://github.com/sureshnanjan/ust-global-training2024.git
+ * [new branch]      simisara-branch -> simisara-branch
+branch 'simisara-branch' set up to track 'origin/simisara-branch'.
+PS C:\Users\Administrator\ust-global-training2024> git push
+Everything up-to-date

@@ -26,12 +26,14 @@ namespace GettingStarted_UST
 
             Console.WriteLine($"When I add 1,2 the resut is {result} when i subtract 2, 1 the result is {result1}");
             */
+
             SortedArray[] myAssignment = {new SortedArray(5,10), new SortedArray(1, 2), new SortedArray(8, 9), new SortedArray(3, 3) };
             Console.WriteLine("\n Two values written in string with hyphen ASSIGNMENT");
             foreach (var item in myAssignment)
             {
-                Console.Write($"{item} , ");
+                Console.Write($"\n{item} , \n");
             }
+
 
 
             int[] mynumbers = { 8, 3, 19, 21, 1, 2, 3, 4 };
@@ -39,7 +41,7 @@ namespace GettingStarted_UST
             SimpleClass[] myInstances = { new SimpleClass(1), new SimpleClass(3) , new SimpleClass(6) , new SimpleClass(9),
             new SimpleClass(7), new SimpleClass(5) , new SimpleClass(3) , new SimpleClass(4)};
 
-            string[] strings = { "A-One", "B-Two", "C-Three" };
+            string[] strings = { "\nA-One", "B-Two", "C-Three" };
 
             Array.Sort(strings);
             //strings.

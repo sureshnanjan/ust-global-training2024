@@ -12,15 +12,12 @@ namespace PetStore
     /// </summary>
     public class Order
     {
-        public static void Main(string[] args)
-        {
             long id;
             long petId;
             int quantity;
             DateTime shipDate;
             string status;
             Boolean complete;
-        }
     }
 
 }

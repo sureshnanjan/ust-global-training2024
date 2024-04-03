@@ -14,7 +14,7 @@ namespace GettingStarted_UST
             // Hexa-decimal literals (Base 16)
             // Binary literals (Base 2)
         // Floating-point Literals
-            // double
+            // double 
             // float
             // exponential
         // Character Literals

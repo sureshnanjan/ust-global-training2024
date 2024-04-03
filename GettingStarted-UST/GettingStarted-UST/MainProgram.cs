@@ -11,23 +11,34 @@ namespace GettingStarted_UST
     {
         public static void Main(string[] args)
         {
-            int[] mynumbers = { 8, 3, 19, 21, 1, 2, 3, 4 };
-            SimpleClass[] myInstances = { new SimpleClass(8), new SimpleClass(3) , new SimpleClass(19) , new SimpleClass(21),
-            new SimpleClass(1), new SimpleClass(2) , new SimpleClass(3) , new SimpleClass(4)};
+            //int[] mynumbers = { 8, 3, 19, 21, 1, 2, 3, 4 };
 
-            string[] strings = { "A-One", "B-Two", "C-Three" };
+            SimpleClass[] myInstances = new SimpleClass[]
+            { new SimpleClass(1,2),
+              new SimpleClass(3,4) ,
+              new SimpleClass(3,2) ,
+              new SimpleClass(2,1),
+            };
+            //string[] strings = { "A-One", "B-Two", "C-Three" };
 
-            Array.Sort(strings);
+            //Array.Sort(strings);
             //strings.
-            
-            Console.WriteLine("Original Values in My Instances");
+
+            Console.WriteLine("Original Values in My Instances_assignmnet");
+            foreach (var item in myInstances)
+            {
+                Console.Write($"\n{item}, ");
+            }
+
+           /* Array.Sort(myInstances);
+            Console.WriteLine("\n AFTER SORTING  Values in My Integer MYINSTANCES ");
             foreach (var item in myInstances)
             {
                 Console.Write($"{item} , ");
 
-            }
-            
-            Console.WriteLine("\n Original Values in My Integer array mynumbers");
+            }*/
+
+            /*Console.WriteLine("\n Original Values in My Integer array mynumbers");
             foreach (var item in mynumbers)
             {
                 Console.Write($"{item} , ");
@@ -40,19 +51,12 @@ namespace GettingStarted_UST
             {
                 Console.Write($"{item} , ");
 
-            }
+            }*/
 
-            Array.Sort(myInstances);
-            Console.WriteLine("\n AFTER SORTING  Values in My Integer MYINSTANCES ");
-            foreach (var item in myInstances)
-            {
-                Console.Write($"{item} , ");
-
-            }
 
         }
 
-        private static void oeverridesDemo()
+       /* private static void oeverridesDemo()
         {
             int test = 10;
             int another = 10;
@@ -67,7 +71,7 @@ namespace GettingStarted_UST
             Console.WriteLine(refer.Equals(scInsstance3));
             Console.WriteLine(another.Equals(test));
         }
-
+       */
         private static void demo03April()
         {
             //showDemoforTypes();

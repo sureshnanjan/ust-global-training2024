@@ -20,21 +20,7 @@ namespace PetStore
             DateTime shipDate;
             string status;
             Boolean complete;
-
-            /*foreach (string name in Enum.GetNames(typeof(status)))
-            {
-                Console.WriteLine(name);
-            }*/
-
-        }        
-    }
-
-    /// <summary>
-    /// Status of Order
-    /// </summary>
-    internal enum Status
-    {
-        placed, approved, delivered
+        }
     }
 
 }

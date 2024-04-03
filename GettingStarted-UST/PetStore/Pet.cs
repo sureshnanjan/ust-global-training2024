@@ -13,6 +13,7 @@ namespace PetStore
     {
         long id;
         string name;
+        string photoUrls;
         string petStatus;
     }
 

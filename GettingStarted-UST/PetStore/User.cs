@@ -11,7 +11,6 @@ namespace PetStore
     /// </summary>
     internal class User
     {
-
         long id;
         string username;
         string firstName;
@@ -20,7 +19,5 @@ namespace PetStore
         string password;
         string phone;
         int userStatus;
-
-
     }
 }

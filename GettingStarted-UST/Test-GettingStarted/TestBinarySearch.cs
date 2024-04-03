@@ -45,6 +45,14 @@ namespace Test_GettingStarted
 
         }
 
+        /*public void nullInputArray_arrgumentnullException()
+        {
+            int[] inptut = null;
+            int searchTrem = 0;
+            BinarySearcher searcher = new BinarySearcher(inptut, searchTrem);
+            Assert.ThrowsException<ArgumentNullException>(() => { searcher.doSearch(); });
+
+        }*/
 
         [TestMethod]
         public void testing_non_existent_item() {

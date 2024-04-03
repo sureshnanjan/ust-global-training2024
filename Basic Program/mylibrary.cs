@@ -1,4 +1,4 @@
-namespace Anu.training{
+namespace Anit.training{
 
 public class TrainingDashboard{
 

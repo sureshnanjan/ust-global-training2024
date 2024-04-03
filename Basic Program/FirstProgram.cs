@@ -1,4 +1,4 @@
-using Anu.training;
+using Anit.training;
 using System;
 class MyClass{
 	static void Main(){

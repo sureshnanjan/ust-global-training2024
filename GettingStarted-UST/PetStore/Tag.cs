@@ -1,8 +1,11 @@
 ﻿namespace PetStore
 {
-    internal class Tag :Pet
+    /// <summary>
+    /// Tag details of the ID and Name
+    /// </summary>
+    internal class Tag 
     {
-        public long id = 10;
-        public string name;
+        private long id;
+        private string name;
     }
 }

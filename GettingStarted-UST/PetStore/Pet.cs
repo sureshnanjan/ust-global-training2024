@@ -1,21 +1,17 @@
 ﻿namespace PetStore
 {
-    public abstract class Pet
+    /// <summary>
+    /// Contians Pet details like id, name, photourl, Category and Tag details 
+    /// </summary>
+
+    public partial class Pet
     {
-        public long id = 10;
-        public string name;
-        public string photourls;
+        private long id = 10;
+        private string name;
+        private string photourls;
         Category category = new Category();
         Tag tags = new Tag();
-        public enum Status
-        {
-            available,
-            pending,
-            sold
-        };
-        Order order = new Order(2);
-        User user = new User();
-        Apiresponse apiresp = new Apiresponse();
+        
 
     }
 }

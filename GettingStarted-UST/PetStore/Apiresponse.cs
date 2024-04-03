@@ -1,9 +1,13 @@
 ﻿namespace PetStore
 {
+    /// <summary>
+    /// Contains API response details like code, message and type
+    /// </summary>
+    
     internal class Apiresponse
     {
-        public int code;
-        public string message;
-        public string type;
+        private int code;
+        private string message;
+        private string type;
     }
 }

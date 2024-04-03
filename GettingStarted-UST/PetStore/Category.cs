@@ -1,8 +1,12 @@
 ﻿namespace PetStore
 {
-    internal class Category : Pet
+    /// <summary>
+    /// Contains Category details like id and name
+    /// </summary>
+    
+    internal class Category 
     {
-        public long id = 10;
-        public string name;
+        private long id;
+        private string name;
     }
 }

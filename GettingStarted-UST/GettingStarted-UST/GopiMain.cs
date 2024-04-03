@@ -8,13 +8,13 @@ using static System.Net.Mime.MediaTypeNames;
 
 namespace GettingStarted_UST
 {
-    public class MainProgram
+    public class GopiMain
     {
-        public static void Main(string[] args)
+        public class OverrideDual
         {
             int[] mynumbers = { 8, 3, 19, 21, 1, 2, 3, 4 };
             SimpleClass[] myInstances = { new SimpleClass(8, 1), new SimpleClass(2, 2), new SimpleClass(3, 1), new SimpleClass(1, 9), new SimpleClass(2, 2), new SimpleClass(8, 4), new SimpleClass(1, 1), new SimpleClass(1, 9), new SimpleClass(2, 1) };
-            
+
 
             string[] strings = { "A-One", "B-Two", "C-Three" };
             Array.Sort(strings);
@@ -66,9 +66,9 @@ namespace GettingStarted_UST
         {
             int test = 10;
             int another = 10;
-            SimpleClass scInstance = new SimpleClass(0,6);
-            SimpleClass scInstance2 = new SimpleClass(1,0);
-            SimpleClass scInsstance3 = new SimpleClass(1,0);
+            SimpleClass scInstance = new SimpleClass(0, 6);
+            SimpleClass scInstance2 = new SimpleClass(1, 0);
+            SimpleClass scInsstance3 = new SimpleClass(1, 0);
             SimpleClass refer = scInsstance3;
             Console.WriteLine(test);
             Console.WriteLine(scInstance.ToString());

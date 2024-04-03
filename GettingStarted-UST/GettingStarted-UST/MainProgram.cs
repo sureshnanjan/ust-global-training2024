@@ -11,6 +11,65 @@ namespace GettingStarted_UST
     {
         public static void Main(string[] args)
         {
+            int[] mynumbers = { 8, 3, 19, 21, 1, 2, 3, 4 };
+            SimpleClass[] myInstances = { new SimpleClass(8), new SimpleClass(3) , new SimpleClass(19) , new SimpleClass(21),
+            new SimpleClass(1), new SimpleClass(2) , new SimpleClass(3) , new SimpleClass(4)};
+
+            string[] strings = { "A-One", "B-Two", "C-Three" };
+
+            Array.Sort(strings);
+            //strings.
+            
+            Console.WriteLine("Original Values in My Instances");
+            foreach (var item in myInstances)
+            {
+                Console.Write($"{item} , ");
+
+            }
+            
+            Console.WriteLine("\n Original Values in My Integer array mynumbers");
+            foreach (var item in mynumbers)
+            {
+                Console.Write($"{item} , ");
+
+            }
+
+            Array.Sort(mynumbers);
+            Console.WriteLine("\n AFTER SORTING  Values in My Integer array mynumbers");
+            foreach (var item in mynumbers)
+            {
+                Console.Write($"{item} , ");
+
+            }
+
+            Array.Sort(myInstances);
+            Console.WriteLine("\n AFTER SORTING  Values in My Integer MYINSTANCES ");
+            foreach (var item in myInstances)
+            {
+                Console.Write($"{item} , ");
+
+            }
+
+        }
+
+        private static void oeverridesDemo()
+        {
+            int test = 10;
+            int another = 10;
+            SimpleClass scInstance = new SimpleClass(0);
+            SimpleClass scInstance2 = new SimpleClass(10);
+            SimpleClass scInsstance3 = new SimpleClass(10);
+            SimpleClass refer = scInsstance3;
+            Console.WriteLine(test);
+            Console.WriteLine(scInstance.ToString());
+            Console.WriteLine(scInstance2.Equals(scInstance)); // False
+            Console.WriteLine(scInsstance3.Equals(scInstance2));
+            Console.WriteLine(refer.Equals(scInsstance3));
+            Console.WriteLine(another.Equals(test));
+        }
+
+        private static void demo03April()
+        {
             //showDemoforTypes();
             // Launch a Browser
             // Navigate to a url
@@ -29,9 +88,60 @@ namespace GettingStarted_UST
             List<Fish> mypets = new List<Fish>();
             mypets.Add(fish);
             mypets.Add(new Fish());
-            
+
+
+
+            foreach (var item in mypets)
+            {
+                item.Feed();
+
+            }
+
+            // myBrosweer = chrome
+
+
+
+            // conside rall ingredenents and prepare for cookijg
+            // Salt, Rice, Fish, Oil  class Salt : Coo
+            List<IMoveable> allmymovingthings = new List<IMoveable>();
+            List<ICookable> ingredenients = new List<ICookable>();
+            ingredenients.Add(fish);
+            ingredenients.Add(new Rice());
+            //ingredenients.Add(new Salt())
+            foreach (var item in ingredenients)
+            {
+                item.GetCooked();
+            }
+        }
+
+        private static void Move(string direction) {
+
+            switch (direction)
+            {
+                case "left":
+                default:
+                    break;
+            }
 
         }
+
+        private static void Move(Directions dir) {
+            switch (dir)
+            {
+                case Directions.left:
+                    break;
+                case Directions.right:
+                    break;
+                case Directions.forward:
+                    break;
+                case Directions.backward:
+                    break;
+                default:
+                    break;
+            }
+        }
+
+
 
         private static void demoClassCreation()
         {

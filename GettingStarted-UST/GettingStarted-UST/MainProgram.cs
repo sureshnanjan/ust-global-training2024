@@ -10,13 +10,23 @@ namespace GettingStarted_UST
     public class MainProgram
     {
         public static void Main(string[] args) {
-           Calculator calculator = new Calculator();
-            int result = calculator.add(10000,20000);
-            int result1 = calculator.subtract(2,1);
+            SimpleClass[] myInstances = { new SimpleClass(1,2), new SimpleClass(1,3) , new SimpleClass(0,1) , new SimpleClass(1,0)};
+            Console.WriteLine("Original Values in My Instances");
+            foreach (var item in myInstances)
+            {
+                foreach (var item1 in myInstances)
+                {
+                    Console.Write($"{item},{item1}");
+                }
 
-            Console.WriteLine($"When I add 1,2 the resut is {result} when i subtract 2, 1 the result is {result1}");
+            }
+            /*Array.Sort(myInstances);
+            Console.WriteLine("\n AFTER SORTING  Values in My Integer MYINSTANCES ");
+            foreach (var item in myInstances)
+            {
+                Console.Write($"{item} , ");
 
-
+            }*/
         }
     }
 }

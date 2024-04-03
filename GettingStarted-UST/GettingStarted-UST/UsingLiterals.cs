@@ -39,18 +39,7 @@ namespace GettingStarted_UST
             //null != "null";
             char newline = '\u0D19'; //1000  a 97 A 65 
             string mynameinmalayalam = "\u0d19\u0d19";
-
-            List<string> students = new List<string>();
-
-            for (int studnum = 0; studnum < students.Count; studnum++)
-            {
-                Console.WriteLine(students[studnum]);
-            }
-
-            foreach (var item in students)
-            {
-                
-            }
+           
 
 
 

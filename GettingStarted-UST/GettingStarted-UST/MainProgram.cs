@@ -9,10 +9,6 @@ namespace GettingStarted_UST
 {
     public class MainProgram
     {
-        public static void Main(string[] args) {
-           Calculator calculator = new Calculator();
-            int result = calculator.add(10000,20000);
-            int result1 = calculator.subtract(2,1);
         public static void Main(string[] args)
         {
             int[] mynumbers = { 8, 3, 19, 21, 1, 2, 3, 4 };
@@ -168,9 +164,51 @@ namespace GettingStarted_UST
             UsingTypesStruct mystruct = new UsingTypesStruct();
             UsingTypesEnum mynumber = UsingTypesEnum.third;
 
+            int result = Int32.MaxValue;
+            int result1 = Int32.MinValue;
             Console.WriteLine($"When I add 1,2 the resut is {result} when i subtract 2, 1 the result is {result1}");
+            Console.WriteLine(mynumber);
 
 
+            Months month = Months.february;
+
+            switch (month)
+            {
+                case Months.february: Console.WriteLine(); ; break;
+                case Months.january: Console.WriteLine(); ; break;
+            }
         }
     }
+
+    class Human {
+        int age;
+        string skincolor;
+        string nationality;
+        string gender;
+        string name;
+    }
+
+    class Employee {
+        int age;
+        //string skincolor;
+        string nationality;
+        string gender;
+        string name;
+        string emp_code;
+        string skills;
+        DateTime doj;
+    }
+
+    class DateingPartner {
+    
+    }
+
+    enum FavColor {
+        Black,
+        Blue
+    }
+
+    
+
+
 }

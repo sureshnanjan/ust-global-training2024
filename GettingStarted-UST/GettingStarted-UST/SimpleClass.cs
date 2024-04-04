@@ -6,45 +6,46 @@ using System.Threading.Tasks;
 
 namespace GettingStarted_UST
 {
-    public class SimpleClass: IComparable<SimpleClass>
+    internal class SimpleClass: IComparable<SimpleClass>, ICloneable
     {
-        int value; // simpleClass(1,2)  simpleClass(1,3), simple(0,1), simpl(1,0)
+        int value1; // simpleClass(1,2)  simpleClass(1,3), simple(0,1), simpl(1,0)
         int value2;
-        public SimpleClass(int val1, int val2)
+        string name;
+        public SimpleClass(int val, string name)
         {
-            this.value = val1;
-            this.value2 = val2;
-            
-        }
+            this.value1 = val;
 
-        public int MyValue { get { return this.value ; } }
-        
-        /// <summary>
-        /// changed ToString
-        /// </summary>
-        
+            this.name = name;
+
+        }
+        public SimpleClass(int val)
+        {
+            this.value1 = val;
+            this.value2 = val;
+            this.name = String.Empty;
+        }
+        public int Value { get { return this.value1; } }
+
+        public string Name { get { return this.name; } }
+
         public override string? ToString()
         {
-            var returnValue = this.value.ToString() + "-" + this.value2.ToString();
-            return returnValue;//SimpleClass(1,2) prints as  "value-value2"
+            return $"{this.value1}-{this.name}"; // SimpleClass(1,2) prints as  "value1-value2"
         }
 
         public override bool Equals(object? obj)
         {
-            return this.value.Equals(((SimpleClass)obj).MyValue);
+            return this.value1.Equals(((SimpleClass)obj).Value);
         }
 
-        public int CompareTo(SimpleClass other)
+        public int CompareTo(SimpleClass? other)
         {
-            if(this.value.CompareTo(other.value)==0)
-            {
-                return this.value2.CompareTo(other.MyValue);
-            }
-            else
-            {
-                return this.value.CompareTo(other.MyValue);
+            return this.value1.CompareTo(other.Value);  //SimpleClass(1,2) SimpleClass(1,0),SimpleClass(2,2) SimpleClass(3,0),
+        }
 
-            }
+        public object Clone()
+        {
+            return new SimpleClass(this.value1);
         }
     }
 }

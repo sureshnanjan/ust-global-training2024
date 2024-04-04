@@ -11,7 +11,47 @@ namespace GettingStarted_UST
     {
         public static void Main(string[] args)
         {
-            //int[] mynumbers = { 8, 3, 19, 21, 1, 2, 3, 4 };
+            SimpleClass cl1 = new SimpleClass(8,"zA");
+            SimpleClass cl2 = new SimpleClass(2,"xB");
+            SimpleClass cl3 = new SimpleClass(9,"oZ");
+            SimpleClass cl4 = new SimpleClass(1,"AD");
+            SimpleClass cl5 = new SimpleClass(3,"bB");
+            SimpleClass[] mycoll = { cl1, cl1, cl3, cl4, cl5 };
+            Console.WriteLine("Sorting Default");
+            Array.Sort(mycoll);
+            foreach (var item in mycoll)
+            {
+                Console.WriteLine(item);
+            }
+            Console.WriteLine("Sorting By Name ");
+            Array.Sort(mycoll, new NameSorter());   
+            foreach (var item in mycoll)
+            {
+                Console.WriteLine(item);
+            }
+            Console.WriteLine("Sorting By Last Char ");
+            Array.Sort(mycoll, new LastCharSorter()); // AAA-HR-1234
+            foreach (var item in mycoll)
+            {
+                Console.WriteLine(item);
+            }
+
+
+        }
+
+        private static void comparableDemo()
+        {
+            int[] mynumbers = { 8, 3, 19, 21, 1, 2, 3, 4 };
+            SimpleClass[] myInstances = { new SimpleClass(8), new SimpleClass(3) , new SimpleClass(19) , new SimpleClass(21),
+            new SimpleClass(1), new SimpleClass(2) , new SimpleClass(3) , new SimpleClass(4)};
+            List<int> ints = new List<int>();
+
+            SimpleCollection mycoll = new SimpleCollection();
+
+            foreach (var item in mycoll)
+            {
+
+            }
 
             SimpleClass[] myInstances = new SimpleClass[]
             { new SimpleClass(1,2),
@@ -23,6 +63,8 @@ namespace GettingStarted_UST
 
             //Array.Sort(strings);
             //strings.
+
+            Console.WriteLine("Original Values in My Instances");
 
             Console.WriteLine("Original Values in My Instances_assignmnet");
             foreach (var item in myInstances)
@@ -37,6 +79,8 @@ namespace GettingStarted_UST
                 Console.Write($"{item} , ");
 
             }
+
+            Console.WriteLine("\n Original Values in My Integer array mynumbers");
 
             /*Console.WriteLine("\n Original Values in My Integer array mynumbers");
             foreach (var item in mynumbers)
@@ -54,6 +98,10 @@ namespace GettingStarted_UST
             }*/
 
 
+            }
+        }
+
+        private static void oeverridesDemo()
         }
 
        /* private static void oeverridesDemo()

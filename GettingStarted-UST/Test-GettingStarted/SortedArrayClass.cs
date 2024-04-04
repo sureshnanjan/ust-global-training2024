@@ -35,11 +35,8 @@ namespace Test_GettingStarted
 
         public int CompareTo(SortedArrayClass? other)
         {
-            if (this.value.CompareTo(other.Value) == 0)
-            {
-                
-            }
-            return this.value.CompareTo(other.Value);
+                    
+             return this.value.CompareTo(other.Value);
         }
     }
 }

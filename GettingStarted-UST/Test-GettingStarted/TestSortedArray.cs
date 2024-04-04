@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,8 +14,8 @@ namespace Test_GettingStarted
     public class TestSortedArray
     {
         [TestMethod]
-        //By default sorting will be based on the first element 
-        public void Sorting_FirstElementBased()
+        //Expected result should be Sorted Array 
+        public void SortedArray()
         {
             //Array of Integers
             int[] intArray = new int[] { 9, 2, 4, 3, 1, 5 };
@@ -27,8 +28,22 @@ namespace Test_GettingStarted
             }
         }
 
+        [TestMethod]
+        //By default sorting will be based on the first element   
+        public void Sorting_FromFirstElement()
+        {
+            //Array of Integers
+            int[] intArray = new int[] { 9, 2, 4, 3, 1, 5 };
+            //If array is 6 elements by default sorting based on 1st element
+            //Sort array from 1st to last element in the array
+            Array.Sort(intArray,1,5);
+            foreach (int i in intArray)
+            {
+                Console.WriteLine(i + "");
+            }
+        }
+
         //if first value is equal sort happens based on the second value
 
-        //Expected result should be Sorted Array
     }
 }

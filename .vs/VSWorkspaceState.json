@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\GettingStarted-UST",
+    "\\GettingStarted-UST\\Test-GettingStarted"
   ],
-  "SelectedNode": "\\GettingStarted-UST.sln",
+  "SelectedNode": "\\GettingStarted-UST\\Test-GettingStarted\\TestCalculator.cs",
   "PreviewInSolutionExplorer": false
 }

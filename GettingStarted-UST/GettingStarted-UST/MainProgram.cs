@@ -9,11 +9,18 @@ namespace GettingStarted_UST
 {
     public class MainProgram
     {
+        /// <summary>
+        /// Modified the Main to accomodate the single value array sort to 2 dimensional sort
+        /// </summary>
+        /// <param name="args"></param>
         public static void Main(string[] args)
         {
-            int[] mynumbers = { 8, 3, 19, 21, 1, 2, 3, 4 };
-            SimpleClass[] myInstances = { new SimpleClass(8), new SimpleClass(3) , new SimpleClass(19) , new SimpleClass(21),
-            new SimpleClass(1), new SimpleClass(2) , new SimpleClass(3) , new SimpleClass(4)};
+          int[] mynumbers = { 8, 3, 19, 21, 1, 2, 3, 4 };
+            int[,] multinumbers = { { 0, 1 } ,{ 7, 1 },{ 5, 4 },{ 5, 1 },{ 1, 5 } };
+          //  SimpleClass[] myInstances = { new SimpleClass(8), new SimpleClass(3) , new SimpleClass(19) , new SimpleClass(21),
+          //  new SimpleClass(1), new SimpleClass(2) , new SimpleClass(3) , new SimpleClass(4)};
+            SimpleClass[] myInstances = { new SimpleClass(0,1), new SimpleClass(7,1) , new SimpleClass(5,1) , new SimpleClass(5,4),
+            new SimpleClass(1,5)};
 
             string[] strings = { "A-One", "B-Two", "C-Three" };
 
@@ -26,22 +33,22 @@ namespace GettingStarted_UST
                 Console.Write($"{item} , ");
 
             }
-            
+            /*
             Console.WriteLine("\n Original Values in My Integer array mynumbers");
-            foreach (var item in mynumbers)
+            foreach (var item in multinumbers)
             {
                 Console.Write($"{item} , ");
 
             }
 
-            Array.Sort(mynumbers);
+            Array.Sort(multinumbers);
             Console.WriteLine("\n AFTER SORTING  Values in My Integer array mynumbers");
-            foreach (var item in mynumbers)
+            foreach (var item in multinumbers)
             {
                 Console.Write($"{item} , ");
 
             }
-
+            */
             Array.Sort(myInstances);
             Console.WriteLine("\n AFTER SORTING  Values in My Integer MYINSTANCES ");
             foreach (var item in myInstances)
@@ -56,9 +63,9 @@ namespace GettingStarted_UST
         {
             int test = 10;
             int another = 10;
-            SimpleClass scInstance = new SimpleClass(0);
-            SimpleClass scInstance2 = new SimpleClass(10);
-            SimpleClass scInsstance3 = new SimpleClass(10);
+            SimpleClass scInstance = new SimpleClass(0,5);
+            SimpleClass scInstance2 = new SimpleClass(10,1);
+            SimpleClass scInsstance3 = new SimpleClass(10,3);
             SimpleClass refer = scInsstance3;
             Console.WriteLine(test);
             Console.WriteLine(scInstance.ToString());

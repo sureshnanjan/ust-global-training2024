@@ -6,32 +6,46 @@ using System.Threading.Tasks;
 
 namespace GettingStarted_UST
 {
-    internal class SimpleClass: IComparable<SimpleClass>
+    internal class SimpleClass: IComparable<SimpleClass>, ICloneable
     {
-        int value; // simpleClass(1,2)  simpleClass(1,3), simple(0,1), simpl(1,0)
+        int value1; // simpleClass(1,2)  simpleClass(1,3), simple(0,1), simpl(1,0)
         int value2;
-        
-        public SimpleClass(int val, int v)
+        string name;
+        public SimpleClass(int val, string name)
         {
-            this.value = val;
-            this.value2 = v;
-        }
+            this.value1 = val;
 
-        public int Value { get { return this.value; } }
+            this.name = name;
+
+        }
+        public SimpleClass(int val)
+        {
+            this.value1 = val;
+            this.value2 = val;
+            this.name = String.Empty;
+        }
+        public int Value { get { return this.value1; } }
+
+        public string Name { get { return this.name; } }
 
         public override string? ToString()
         {
-            return this.value.ToString()+"-"+this.value2.ToString(); // SimpleClass(1,2) prints as  "value-value2"
+            return $"{this.value1}-{this.name}"; // SimpleClass(1,2) prints as  "value1-value2"
         }
 
         public override bool Equals(object? obj)
         {
-            return this.value.Equals(((SimpleClass)obj).Value);
+            return this.value1.Equals(((SimpleClass)obj).Value);
         }
 
         public int CompareTo(SimpleClass? other)
         {
-            return this.value.CompareTo(other.Value);
+            return this.value1.CompareTo(other.Value);  //SimpleClass(1,2) SimpleClass(1,0),SimpleClass(2,2) SimpleClass(3,0),
+        }
+
+        public object Clone()
+        {
+            return new SimpleClass(this.value1);
         }
     }
 }

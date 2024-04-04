@@ -12,9 +12,49 @@ namespace GettingStarted_UST
     {
         public static void Main(string[] args)
         {
+            SimpleClass cl1 = new SimpleClass(8,"zA");
+            SimpleClass cl2 = new SimpleClass(2,"xB");
+            SimpleClass cl3 = new SimpleClass(9,"oZ");
+            SimpleClass cl4 = new SimpleClass(1,"AD");
+            SimpleClass cl5 = new SimpleClass(3,"bB");
+            SimpleClass[] mycoll = { cl1, cl1, cl3, cl4, cl5 };
+            Console.WriteLine("Sorting Default");
+            Array.Sort(mycoll);
+            foreach (var item in mycoll)
+            {
+                Console.WriteLine(item);
+            }
+            Console.WriteLine("Sorting By Name ");
+            Array.Sort(mycoll, new NameSorter());   
+            foreach (var item in mycoll)
+            {
+                Console.WriteLine(item);
+            }
+            Console.WriteLine("Sorting By Last Char ");
+            Array.Sort(mycoll, new LastCharSorter()); // AAA-HR-1234
+            foreach (var item in mycoll)
+            {
+                Console.WriteLine(item);
+            }
+
+
+        }
+
+        private static void comparableDemo()
+        {
             int[] mynumbers = { 8, 3, 19, 21, 1, 2, 3, 4 };
-            SimpleClass[] myInstances = { new SimpleClass(8, 1), new SimpleClass(2, 2), new SimpleClass(3, 1), new SimpleClass(1, 9), new SimpleClass(2, 2), new SimpleClass(8, 4), new SimpleClass(1, 1), new SimpleClass(1, 9), new SimpleClass(2, 1) };
-            
+            SimpleClass[] myInstances = { new SimpleClass(8), new SimpleClass(3) , new SimpleClass(19) , new SimpleClass(21),
+            new SimpleClass(1), new SimpleClass(2) , new SimpleClass(3) , new SimpleClass(4)};
+            List<int> ints = new List<int>();
+
+            SimpleCollection mycoll = new SimpleCollection();
+
+            foreach (var item in mycoll)
+            {
+
+            }
+
+            string[] strings = { "A-One", "B-Two", "C-Three" };
 
             string[] strings = { "A-One", "B-Two", "C-Three" };
             Array.Sort(strings);
@@ -26,7 +66,7 @@ namespace GettingStarted_UST
                 Console.Write($"{item} , ");
 
             }
-            /*
+
             Console.WriteLine("\n Original Values in My Integer array mynumbers");
             foreach (var item in mynumbers)
             {
@@ -49,17 +89,6 @@ namespace GettingStarted_UST
                 Console.Write($"{item} , ");
 
             }
-
-            SimpleClass scInstance = new SimpleClass(0, 6);
-            SimpleClass scInstance2 = new SimpleClass(1, 0);
-            SimpleClass scInsstance3 = new SimpleClass(1, 0);
-            SimpleClass refer = scInsstance3;
-            Console.Write("Equal Verification");
-            Console.WriteLine(scInstance.ToString());
-            Console.WriteLine(scInstance2.Equals(scInstance)); // False
-            Console.WriteLine(scInsstance3.Equals(scInstance2));
-            Console.WriteLine(refer.Equals(scInsstance3));
-
         }
 
         private static void oeverridesDemo()

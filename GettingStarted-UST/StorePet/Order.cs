@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace PetStoreProject
+﻿namespace StorePet
 {
+    /// <summary>
+    /// Field declaration for order section
+    /// </summary>
     internal class Order
     {
         public long id;
@@ -21,7 +18,8 @@ namespace PetStoreProject
         }
         public Order(int id)
         {
-            this.id = id; 
+            this.id = id;
+
         }
     }
 }

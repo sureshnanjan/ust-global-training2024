@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyLIbrary", "MyLIbrary\MyLI
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test-GettingStarted", "Test-GettingStarted\Test-GettingStarted.csproj", "{50131221-1495-4CF8-B7A8-A6FFE46F8188}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetStoreProject", "TestProject1Pet\PetStoreProject.csproj", "{AA0153AD-6514-48C6-B309-6EE60E9C72B9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StorePet", "StorePet\StorePet.csproj", "{911656E3-A607-46BC-B653-3B1C92C1E688}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +29,10 @@ Global
 		{50131221-1495-4CF8-B7A8-A6FFE46F8188}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{50131221-1495-4CF8-B7A8-A6FFE46F8188}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{50131221-1495-4CF8-B7A8-A6FFE46F8188}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AA0153AD-6514-48C6-B309-6EE60E9C72B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AA0153AD-6514-48C6-B309-6EE60E9C72B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AA0153AD-6514-48C6-B309-6EE60E9C72B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AA0153AD-6514-48C6-B309-6EE60E9C72B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{911656E3-A607-46BC-B653-3B1C92C1E688}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{911656E3-A607-46BC-B653-3B1C92C1E688}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{911656E3-A607-46BC-B653-3B1C92C1E688}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{911656E3-A607-46BC-B653-3B1C92C1E688}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

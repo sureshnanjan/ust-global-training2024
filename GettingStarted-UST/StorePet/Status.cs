@@ -1,4 +1,4 @@
-﻿namespace PetStoreProject
+﻿namespace StorePet
 {
     /// <summary>
     /// Status Field - Values declaration

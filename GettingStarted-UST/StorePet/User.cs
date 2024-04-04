@@ -1,9 +1,9 @@
-﻿namespace PetStoreProject
+﻿namespace StorePet
 {
     /// <summary>
     /// Field declarations for user section
     /// </summary>
-    public class User
+    internal class User
     {
         private long id;
         private string username;
@@ -15,8 +15,6 @@
         private int userStatus;
         public User()
         {
-
         }
-
     }
 }

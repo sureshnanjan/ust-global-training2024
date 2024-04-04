@@ -30,13 +30,13 @@ namespace GettingStarted_UST
                 Console.Write($"\n{item}, ");
             }
 
-           /* Array.Sort(myInstances);
+            Array.Sort(myInstances);
             Console.WriteLine("\n AFTER SORTING  Values in My Integer MYINSTANCES ");
             foreach (var item in myInstances)
             {
                 Console.Write($"{item} , ");
 
-            }*/
+            }
 
             /*Console.WriteLine("\n Original Values in My Integer array mynumbers");
             foreach (var item in mynumbers)

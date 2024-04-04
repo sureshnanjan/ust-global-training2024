@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GettingStarted_UST
 {
-    internal class SimpleClass: IComparable<SimpleClass>
+    public class SimpleClass: IComparable<SimpleClass>
     {
         int value; // simpleClass(1,2)  simpleClass(1,3), simple(0,1), simpl(1,0)
         int value2;
@@ -17,7 +17,7 @@ namespace GettingStarted_UST
             
         }
 
-        public int Value { get { return this.value ; } }
+        public int MyValue { get { return this.value ; } }
         
         /// <summary>
         /// changed ToString
@@ -31,12 +31,20 @@ namespace GettingStarted_UST
 
         public override bool Equals(object? obj)
         {
-            return this.value.Equals(((SimpleClass)obj).Value);
+            return this.value.Equals(((SimpleClass)obj).MyValue);
         }
 
         public int CompareTo(SimpleClass other)
         {
-             return this.value.CompareTo(other.Value);
+            if(this.value.CompareTo(other.value)==0)
+            {
+                return this.value2.CompareTo(other.MyValue);
+            }
+            else
+            {
+                return this.value.CompareTo(other.MyValue);
+
+            }
         }
     }
 }

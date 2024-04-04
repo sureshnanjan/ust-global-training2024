@@ -21,8 +21,8 @@ namespace GettingStarted_UST
 
         public override string? ToString()
         {
-            return this.value2.ToString();
             return this.value.ToString();
+            return this.value2.ToString();
         }
 
         public int CompareTo(SimpleClass? other)

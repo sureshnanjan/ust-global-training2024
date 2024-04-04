@@ -13,47 +13,52 @@ namespace GettingStarted_UST
         public static void Main(string[] args)
 
         {
-            /*
-            // call all your demo methods here
-            Console.WriteLine("C# literals declaration");
-            UsingLiterals mypgm = new UsingLiterals();
-            mypgm.showUsage();
-
-
-            Calculator calculator = new Calculator();
-            int result = calculator.add(10000, 20000);
-            int result1 = calculator.subtract(2, 1);
-
-            Console.WriteLine($"When I add 1,2 the resut is {result} when i subtract 2, 1 the result is {result1}");
-            */
-
-            SortedArray[] myAssignment = { new SortedArray(5, 10), new SortedArray(1, 2), new SortedArray(8, 9), new SortedArray(3, 3) };
-            Console.WriteLine("\n Two values written in string with hyphen ASSIGNMENT");
-            foreach (var item in myAssignment)
+            SimpleClass cl1 = new SimpleClass(8,"zA");
+            SimpleClass cl2 = new SimpleClass(2,"xB");
+            SimpleClass cl3 = new SimpleClass(9,"oZ");
+            SimpleClass cl4 = new SimpleClass(1,"AD");
+            SimpleClass cl5 = new SimpleClass(3,"bB");
+            SimpleClass[] mycoll = { cl1, cl1, cl3, cl4, cl5 };
+            Console.WriteLine("Sorting Default");
+            Array.Sort(mycoll);
+            foreach (var item in mycoll)
             {
-                Console.Write($"\n{item} , \n");
+                Console.WriteLine(item);
             }
-            Array.Sort(myAssignment);
+            Console.WriteLine("Sorting By Name ");
+            Array.Sort(mycoll, new NameSorter());   
+            foreach (var item in mycoll)
+            {
+                Console.WriteLine(item);
+            }
+            Console.WriteLine("Sorting By Last Char ");
+            Array.Sort(mycoll, new LastCharSorter()); // AAA-HR-1234
+            foreach (var item in mycoll)
+            {
+                Console.WriteLine(item);
+            }
 
 
+        }
 
+        private static void comparableDemo()
+        {
             int[] mynumbers = { 8, 3, 19, 21, 1, 2, 3, 4 };
-            int[] numbers = { 1, 2, 2, 4 };
-            SimpleClass[] myInstances = { new SimpleClass(1,2), new SimpleClass(3,3) , new SimpleClass(6,6) , new SimpleClass(9,8),
-            new SimpleClass(7,6), new SimpleClass(5,9) , new SimpleClass(3,0) , new SimpleClass(4,8)};
+            SimpleClass[] myInstances = { new SimpleClass(8), new SimpleClass(3) , new SimpleClass(19) , new SimpleClass(21),
+            new SimpleClass(1), new SimpleClass(2) , new SimpleClass(3) , new SimpleClass(4)};
 
             string[] strings = { "\nA-One", "B-Two", "C-Three" };
 
             Array.Sort(strings);
             //strings.
-
-            Console.WriteLine("\nOriginal Values in My Instances");
+            
+            Console.WriteLine("Original Values in My Instances");
             foreach (var item in myInstances)
             {
                 Console.Write($"{item} , ");
 
             }
-            /*
+            
             Console.WriteLine("\n Original Values in My Integer array mynumbers");
             foreach (var item in mynumbers)
             {
@@ -76,13 +81,6 @@ namespace GettingStarted_UST
                 Console.Write($"{item} , ");
 
             }
-            Array.Sort(numbers);
-            Console.WriteLine("\n value sorting in arry");
-            foreach (var item in numbers)
-            {
-                Console.Write($"{item} , ");
-            }/*
-            
 
         }
         /*

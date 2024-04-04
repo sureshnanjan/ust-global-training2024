@@ -5,14 +5,19 @@ using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json.Linq;
 using System.Xml.Linq;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 
 namespace Test_GettingStarted
 {
+    /// <summary>
+    /// Binary Search Test cases 
+    /// </summary>
     [TestClass]
     public  class TestBinarySearch
     {
         [TestMethod]
+        //Test case for search value in the end 
         public void test_for_existing_values_inend() { 
         
             int[] myinputArray =  { 1, 2, 3 };
@@ -24,6 +29,7 @@ namespace Test_GettingStarted
         }
 
         [TestMethod]
+        //Test case for search value in the middle 
         public void test_for_existing_values_inmiddle()
         {
 
@@ -36,6 +42,7 @@ namespace Test_GettingStarted
         }
 
         [TestMethod]
+        //Test case for search value in the beginning 
         public void test_for_existing_values_inbeginning() {
             int[] myinputArray = { 1, 2, 3 };
             int searchTerm = 1;
@@ -48,6 +55,7 @@ namespace Test_GettingStarted
         }
 
         [TestMethod]
+        //Test case for non available search value in the array
         public void test_for_non_existing_items_higher() {
             int[] myinputArray = { 1, 2, 3 };
             int searchTerm = 4;
@@ -60,6 +68,7 @@ namespace Test_GettingStarted
 
 
         [TestMethod]
+        //Test case for non available search value in the array which the lowest of all  
         public void testing_non_existent_item_lower() {
 
             // If value is not found and value is less than one or more elements in array, the negative number returned is the
@@ -74,6 +83,7 @@ namespace Test_GettingStarted
         }
         
         [TestMethod]
+        //Test case for non available search value in the array which has both greater and lesser values in array 
         public void testing_non_existent_item_middle()
         {
 
@@ -89,6 +99,7 @@ namespace Test_GettingStarted
         }
 
         [TestMethod]
+        // Test case for non sorted array and unavailable item 
         public void testing_nonsortedarray_non_existent_item()
         {
             //Value less than non sorted array minimum value 
@@ -106,6 +117,7 @@ namespace Test_GettingStarted
             Assert.IsTrue(actual < 0);
         }
         [TestMethod]
+        // Test case for non sorted array and available item 
         public void testing_nonsortedarray_existent_item()
         {
 

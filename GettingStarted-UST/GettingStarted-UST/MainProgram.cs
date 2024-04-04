@@ -16,11 +16,11 @@ namespace GettingStarted_UST
         public static void Main(string[] args)
         {
           int[] mynumbers = { 8, 3, 19, 21, 1, 2, 3, 4 };
-            int[,] multinumbers = { { 0, 1 } ,{ 7, 1 },{ 5, 4 },{ 5, 1 },{ 1, 5 } };
+            int[,] multinumbers = { { 0, 1 } ,{ 7, 1 },{ 5, 4 },{ 5, 1 },{ 1, 5 },{ 2, 4} };
           //  SimpleClass[] myInstances = { new SimpleClass(8), new SimpleClass(3) , new SimpleClass(19) , new SimpleClass(21),
           //  new SimpleClass(1), new SimpleClass(2) , new SimpleClass(3) , new SimpleClass(4)};
             SimpleClass[] myInstances = { new SimpleClass(0,1), new SimpleClass(7,1) , new SimpleClass(5,1) , new SimpleClass(5,4),
-            new SimpleClass(1,5)};
+            new SimpleClass(1,5) , new SimpleClass(2,4)};
 
             string[] strings = { "A-One", "B-Two", "C-Three" };
 

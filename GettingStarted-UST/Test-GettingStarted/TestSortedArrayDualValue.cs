@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Test_GettingStarted
 {
@@ -17,7 +16,6 @@ namespace Test_GettingStarted
     {
 
         [TestMethod]
-        // Verify the format of v1-v2
         public  void verifyFormat()
         {
             SortingClass simpleClass = new(2, 3);
@@ -27,7 +25,6 @@ namespace Test_GettingStarted
         
         
         [TestMethod]
-        // Verify when there is no Dublicate 
         public void uniqueSorting(){
 
             SortingClass[] myInputArray = { new SortingClass(1, 9), new SortingClass(5, 4), new SortingClass(4, 2), new SortingClass(3, 1), new SortingClass(8, 6), };
@@ -48,7 +45,6 @@ namespace Test_GettingStarted
         }
 
         [TestMethod]
-        //TC to verify sorting when first value is duplicate
         public void firstValueDuplicateSorting()
         {
 
@@ -68,7 +64,6 @@ namespace Test_GettingStarted
             }
         }
         [TestMethod]
-        //TC to verify sorting when both values duplicate
         public void bothValuesDuplicateSorting()
         {
 
@@ -88,7 +83,6 @@ namespace Test_GettingStarted
             }
         }
         [TestMethod]
-        //TC to verify sorting when second value is duplicate
         public void secondValueDuplicateSorting()
         {
 

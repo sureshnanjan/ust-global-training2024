@@ -54,7 +54,9 @@ namespace GettingStarted_UST
 
             }
 
-            string[] strings = { "A-One", "B-Two", "C-Three" };          
+            string[] strings = { "A-One", "B-Two", "C-Three" };
+
+            string[] strings = { "A-One", "B-Two", "C-Three" };
             Array.Sort(strings);
             //strings.
 
@@ -79,7 +81,7 @@ namespace GettingStarted_UST
                 Console.Write($"{item} , ");
 
             }
-            
+            */
             Array.Sort(myInstances);
             Console.WriteLine("\n AFTER SORTING  Values in My Integer MYINSTANCES ");
             foreach (var item in myInstances)

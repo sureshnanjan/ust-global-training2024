@@ -1,22 +1,17 @@
 ﻿
 namespace Test_GettingStarted
 {
-    /// <summary>
-    /// Handling Binary search inside an Array
-    /// </summary>
     internal class BinarySearcher
     {
         private int[] myinputArray;
         private int searchTerm;
 
-        //Constructor to load values
         public BinarySearcher(int[] myinputArray, int searchTerm)
         {
             this.myinputArray = myinputArray;
             this.searchTerm = searchTerm;
         }
 
-        //Perform search action
         internal int doSearch()
         {
             int searchValue = Array.BinarySearch(myinputArray, searchTerm);
@@ -35,7 +30,6 @@ namespace Test_GettingStarted
             
         }
 
-        //Verify given array is sorted or not
         private bool confirmsortedarray(int[] myinputArray)
         {
             for(int i = 1;i< myinputArray.Length; i++)

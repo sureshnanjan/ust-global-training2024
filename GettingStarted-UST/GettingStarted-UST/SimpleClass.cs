@@ -24,17 +24,9 @@ namespace GettingStarted_UST
             this.value2 = val;
             this.name = String.Empty;
         }
-
-        public SimpleClass(int val, int v) : this(val)
-        {
-            V = v;
-        }
-
         public int Value { get { return this.value1; } }
 
         public string Name { get { return this.name; } }
-
-        public int V { get; }
 
         public override string? ToString()
         {

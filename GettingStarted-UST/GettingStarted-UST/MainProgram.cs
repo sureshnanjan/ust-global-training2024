@@ -11,11 +11,11 @@ namespace GettingStarted_UST
     {
         public static void Main(string[] args)
         {
-            SimpleClass cl1 = new SimpleClass(8,"zA");
-            SimpleClass cl2 = new SimpleClass(2,"xB");
-            SimpleClass cl3 = new SimpleClass(9,"oZ");
-            SimpleClass cl4 = new SimpleClass(1,"AD");
-            SimpleClass cl5 = new SimpleClass(3,"bB");
+            SimpleClass cl1 = new SimpleClass(8, "zA");
+            SimpleClass cl2 = new SimpleClass(2, "xB");
+            SimpleClass cl3 = new SimpleClass(9, "oZ");
+            SimpleClass cl4 = new SimpleClass(1, "AD");
+            SimpleClass cl5 = new SimpleClass(3, "bB");
             SimpleClass[] mycoll = { cl1, cl1, cl3, cl4, cl5 };
             Console.WriteLine("Sorting Default");
             Array.Sort(mycoll);
@@ -24,7 +24,7 @@ namespace GettingStarted_UST
                 Console.WriteLine(item);
             }
             Console.WriteLine("Sorting By Name ");
-            Array.Sort(mycoll, new NameSorter());   
+            Array.Sort(mycoll, new NameSorter());
             foreach (var item in mycoll)
             {
                 Console.WriteLine(item);
@@ -39,7 +39,7 @@ namespace GettingStarted_UST
 
         }
 
-        private static void comparableDemo()
+        public static void comparableDemo()
         {
             int[] mynumbers = { 8, 3, 19, 21, 1, 2, 3, 4 };
             SimpleClass[] myInstances = { new SimpleClass(8), new SimpleClass(3) , new SimpleClass(19) , new SimpleClass(21),
@@ -53,12 +53,12 @@ namespace GettingStarted_UST
 
             }
 
-            SimpleClass[] myInstances = new SimpleClass[]
+            /*SimpleClass[] myInstances = new SimpleClass[]
             { new SimpleClass(1,2),
               new SimpleClass(3,4) ,
               new SimpleClass(3,2) ,
               new SimpleClass(2,1),
-            };
+            };*/
             //string[] strings = { "A-One", "B-Two", "C-Three" };
 
             //Array.Sort(strings);
@@ -98,11 +98,11 @@ namespace GettingStarted_UST
             }*/
 
 
-            }
         }
-
-        private static void oeverridesDemo()
-        }
+    }
+}
+        //public static void oeverridesDemo() { }
+        
 
        /* private static void oeverridesDemo()
         {
@@ -120,8 +120,8 @@ namespace GettingStarted_UST
             Console.WriteLine(another.Equals(test));
         }
        */
-        private static void demo03April()
-        {
+       // public static void demo03April() { }
+        
             //showDemoforTypes();
             // Launch a Browser
             // Navigate to a url
@@ -135,7 +135,7 @@ namespace GettingStarted_UST
             // demoClassCreation();
 
             //Pet mypet = new Pet();
-            Fish fish = new Fish();
+            /*Fish fish = new Fish();
 
             List<Fish> mypets = new List<Fish>();
             mypets.Add(fish);
@@ -258,9 +258,9 @@ namespace GettingStarted_UST
     enum FavColor {
         Black,
         Blue
-    }
+    }*/
 
-    
+   
 
 
-}
+

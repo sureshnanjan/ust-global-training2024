@@ -27,19 +27,20 @@ namespace GettingStarted_UST
             Console.WriteLine($"When I add 1,2 the resut is {result} when i subtract 2, 1 the result is {result1}");
             */
 
-            SortedArray[] myAssignment = {new SortedArray(5,10), new SortedArray(1, 2), new SortedArray(8, 9), new SortedArray(3, 3) };
+            SortedArray[] myAssignment = { new SortedArray(5, 10), new SortedArray(1, 2), new SortedArray(8, 9), new SortedArray(3, 3) };
             Console.WriteLine("\n Two values written in string with hyphen ASSIGNMENT");
             foreach (var item in myAssignment)
             {
                 Console.Write($"\n{item} , \n");
             }
+            Array.Sort(myAssignment);
 
 
 
             int[] mynumbers = { 8, 3, 19, 21, 1, 2, 3, 4 };
-            int[] numbers = {1,2,2,4 };
-            SimpleClass[] myInstances = { new SimpleClass(1), new SimpleClass(3) , new SimpleClass(6) , new SimpleClass(9),
-            new SimpleClass(7), new SimpleClass(5) , new SimpleClass(3) , new SimpleClass(4)};
+            int[] numbers = { 1, 2, 2, 4 };
+            SimpleClass[] myInstances = { new SimpleClass(1,2), new SimpleClass(3,3) , new SimpleClass(6,6) , new SimpleClass(9,8),
+            new SimpleClass(7,6), new SimpleClass(5,9) , new SimpleClass(3,0) , new SimpleClass(4,8)};
 
             string[] strings = { "\nA-One", "B-Two", "C-Three" };
 
@@ -52,7 +53,7 @@ namespace GettingStarted_UST
                 Console.Write($"{item} , ");
 
             }
-
+            /*
             Console.WriteLine("\n Original Values in My Integer array mynumbers");
             foreach (var item in mynumbers)
             {
@@ -80,7 +81,7 @@ namespace GettingStarted_UST
             foreach (var item in numbers)
             {
                 Console.Write($"{item} , ");
-            }
+            }/*
             
 
         }
@@ -103,137 +104,139 @@ namespace GettingStarted_UST
 
         */
 
-        private static void demo03April()
-        {
-            //showDemoforTypes();
-            // Launch a Browser
-            // Navigate to a url
-            // Find the link for logo OOPs
-            // Abstraction
-            // Encapsulation
-            // Hiding all the implementation deatils and exposing only the needed ineterface
-            // Inheritance
-            // Polymorphism - static 
-            //  dynamic / runtime 
-            // demoClassCreation();
+            /* private static void demo03April()
+             {
+                 //showDemoforTypes();
+                 // Launch a Browser
+                 // Navigate to a url
+                 // Find the link for logo OOPs
+                 // Abstraction
+                 // Encapsulation
+                 // Hiding all the implementation deatils and exposing only the needed ineterface
+                 // Inheritance
+                 // Polymorphism - static 
+                 //  dynamic / runtime 
+                 // demoClassCreation();
 
-            //Pet mypet = new Pet();
-            Fish fish = new Fish();
+                 //Pet mypet = new Pet();
+                 Fish fish = new Fish();
 
-            List<Fish> mypets = new List<Fish>();
-            mypets.Add(fish);
-            mypets.Add(new Fish());
-
-
-
-            foreach (var item in mypets)
-            {
-                item.Feed();
-
-            }
-
-            // myBrosweer = chrome
-            // conside rall ingredenents and prepare for cookijg
-            // Salt, Rice, Fish, Oil  class Salt : Coo
-            List<IMoveable> allmymovingthings = new List<IMoveable>();
-            List<ICookable> ingredenients = new List<ICookable>();
-            ingredenients.Add(fish);
-            ingredenients.Add(new Rice());
-            //ingredenients.Add(new Salt())
-            foreach (var item in ingredenients)
-            {
-                item.GetCooked();
-            }
-        }
-
-        private static void Move(string direction)
-        {
-
-            switch (direction)
-            {
-                case "left":
-                default:
-                    break;
-            }
-
-        }
-
-        private static void Move(Directions dir)
-        {
-            switch (dir)
-            {
-                case Directions.left:
-                    break;
-                case Directions.right:
-                    break;
-                case Directions.forward:
-                    break;
-                case Directions.backward:
-                    break;
-                default:
-                    break;
-            }
-        }
+                 List<Fish> mypets = new List<Fish>();
+                 mypets.Add(fish);
+                 mypets.Add(new Fish());
 
 
 
-        private static void demoClassCreation()
-        {
-            MyClassDemo inst = new MyClassDemo("Red", 40, 25);
-            inst.Move(10);
-            MyClassDemo inst1 = new MyClassDemo("Blue", 40, 25);
-            inst1.Move(10);
-            Console.WriteLine($"{MyClassDemo.NoOfObjects} are cteated");
-            MyClassDemo inst2 = new MyClassDemo("Grey", 40, 25);
+                 foreach (var item in mypets)
+                 {
+                     item.Feed();
 
-            MyClassDemo defparamInstance = new MyClassDemo();
+                 }
 
-            inst2.Move(10);
-            MyClassDemo.CommonMethod();
-        }
+                 // myBrosweer = chrome
+                 // conside rall ingredenents and prepare for cookijg
+                 // Salt, Rice, Fish, Oil  class Salt : Coo
+                 List<IMoveable> allmymovingthings = new List<IMoveable>();
+                 List<ICookable> ingredenients = new List<ICookable>();
+                 ingredenients.Add(fish);
+                 ingredenients.Add(new Rice());
+                 //ingredenients.Add(new Salt())
+                 foreach (var item in ingredenients)
+                 {
+                     item.GetCooked();
+                 }
+             }
 
-        private static void showDemoforTypes()
-        {
-            UsingTypesClass myclass = new UsingTypesClass();
-            UsingTypesStruct mystruct = new UsingTypesStruct();
-            UsingTypesEnum mynumber = UsingTypesEnum.third;
+             private static void Move(string direction)
+             {
 
-            int result = Int32.MaxValue;
-            int result1 = Int32.MinValue;
-            Console.WriteLine($"When I add 1,2 the resut is {result} when i subtract 2, 1 the result is {result1}");
-            Console.WriteLine(mynumber);
+                 switch (direction)
+                 {
+                     case "left":
+                     default:
+                         break;
+                 }
+
+             }
+
+             private static void Move(Directions dir)
+             {
+                 switch (dir)
+                 {
+                     case Directions.left:
+                         break;
+                     case Directions.right:
+                         break;
+                     case Directions.forward:
+                         break;
+                     case Directions.backward:
+                         break;
+                     default:
+                         break;
+                 }
+             }
 
 
-            Months month = Months.february;
 
-            switch (month)
-            {
-                case Months.february: Console.WriteLine(); ; break;
-                case Months.january: Console.WriteLine(); ; break;
-            }
+             private static void demoClassCreation()
+             {
+                 MyClassDemo inst = new MyClassDemo("Red", 40, 25);
+                 inst.Move(10);
+                 MyClassDemo inst1 = new MyClassDemo("Blue", 40, 25);
+                 inst1.Move(10);
+                 Console.WriteLine($"{MyClassDemo.NoOfObjects} are cteated");
+                 MyClassDemo inst2 = new MyClassDemo("Grey", 40, 25);
+
+                 MyClassDemo defparamInstance = new MyClassDemo();
+
+                 inst2.Move(10);
+                 MyClassDemo.CommonMethod();
+             }
+
+         private static void showDemoforTypes()
+             {
+                 UsingTypesClass myclass = new UsingTypesClass();
+                 UsingTypesStruct mystruct = new UsingTypesStruct();
+                 UsingTypesEnum mynumber = UsingTypesEnum.third;
+
+                 int result = Int32.MaxValue;
+                 int result1 = Int32.MinValue;
+                 Console.WriteLine($"When I add 1,2 the resut is {result} when i subtract 2, 1 the result is {result1}");
+                 Console.WriteLine(mynumber);
+
+
+                 Months month = Months.february;
+
+                 switch (month)
+                 {
+                     case Months.february: Console.WriteLine(); ; break;
+                     case Months.january: Console.WriteLine(); ; break;
+                 }
+             }
+         }
+
+         class Human
+         {
+             int age;
+             string skincolor;
+             string nationality;
+             string gender;
+             string name;
+         }
+
+         class Employee
+         {
+             int age;
+             //string skincolor;
+             string nationality;
+             string gender;
+             string name;
+             string emp_code;
+             string skills;
+             DateTime doj;
+         }*/
+
+
         }
     }
-
-    class Human
-    {
-        int age;
-        string skincolor;
-        string nationality;
-        string gender;
-        string name;
-    }
-
-    class Employee
-    {
-        int age;
-        //string skincolor;
-        string nationality;
-        string gender;
-        string name;
-        string emp_code;
-        string skills;
-        DateTime doj;
-    }
-
-
 }

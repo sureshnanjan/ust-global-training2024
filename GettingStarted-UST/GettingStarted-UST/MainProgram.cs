@@ -41,7 +41,7 @@ namespace GettingStarted_UST
 
         }
 
-        private static void comparableDemo()
+        public static void comparableDemo()
         {
             int[] mynumbers = { 8, 3, 19, 21, 1, 2, 3, 4 };
             SimpleClass[] myInstances = { new SimpleClass(8), new SimpleClass(3) , new SimpleClass(19) , new SimpleClass(21),

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GettingStarted_UST
 {
-    internal class SimpleClass: IComparable<SimpleClass>, ICloneable
+    internal class SimpleClass : IComparable<SimpleClass>, ICloneable
     {
         int value1; // simpleClass(1,2)  simpleClass(1,3), simple(0,1), simpl(1,0)
         int value2;

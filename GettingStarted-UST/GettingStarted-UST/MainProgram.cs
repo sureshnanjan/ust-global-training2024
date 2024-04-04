@@ -9,17 +9,13 @@ namespace GettingStarted_UST
 {
     public class MainProgram
     {
-        /// <summary>
-        /// Modified the Main to accomodate the single value array sort to 2 dimensional sort
-        /// </summary>
-        /// <param name="args"></param>
         public static void Main(string[] args)
         {
-            SimpleClass cl1 = new SimpleClass(8,"zA");
-            SimpleClass cl2 = new SimpleClass(2,"xB");
-            SimpleClass cl3 = new SimpleClass(9,"oZ");
-            SimpleClass cl4 = new SimpleClass(1,"AD");
-            SimpleClass cl5 = new SimpleClass(3,"bB");
+            SimpleClass cl1 = new SimpleClass(8, "zA");
+            SimpleClass cl2 = new SimpleClass(2, "xB");
+            SimpleClass cl3 = new SimpleClass(9, "oZ");
+            SimpleClass cl4 = new SimpleClass(1, "AD");
+            SimpleClass cl5 = new SimpleClass(3, "bB");
             SimpleClass[] mycoll = { cl1, cl1, cl3, cl4, cl5 };
             Console.WriteLine("Sorting Default");
             Array.Sort(mycoll);
@@ -28,7 +24,7 @@ namespace GettingStarted_UST
                 Console.WriteLine(item);
             }
             Console.WriteLine("Sorting By Name ");
-            Array.Sort(mycoll, new NameSorter());   
+            Array.Sort(mycoll, new NameSorter());
             foreach (var item in mycoll)
             {
                 Console.WriteLine(item);
@@ -70,20 +66,20 @@ namespace GettingStarted_UST
             }
 
             Console.WriteLine("\n Original Values in My Integer array mynumbers");
-            foreach (var item in multinumbers)
+            foreach (var item in mynumbers)
             {
                 Console.Write($"{item} , ");
 
             }
 
-            Array.Sort(multinumbers);
+            Array.Sort(mynumbers);
             Console.WriteLine("\n AFTER SORTING  Values in My Integer array mynumbers");
-            foreach (var item in multinumbers)
+            foreach (var item in mynumbers)
             {
                 Console.Write($"{item} , ");
 
             }
-            */
+
             Array.Sort(myInstances);
             Console.WriteLine("\n AFTER SORTING  Values in My Integer MYINSTANCES ");
             foreach (var item in myInstances)
@@ -97,9 +93,9 @@ namespace GettingStarted_UST
         {
             int test = 10;
             int another = 10;
-            SimpleClass scInstance = new SimpleClass(0,5);
-            SimpleClass scInstance2 = new SimpleClass(10,1);
-            SimpleClass scInsstance3 = new SimpleClass(10,3);
+            SimpleClass scInstance = new SimpleClass(0);
+            SimpleClass scInstance2 = new SimpleClass(10);
+            SimpleClass scInsstance3 = new SimpleClass(10);
             SimpleClass refer = scInsstance3;
             Console.WriteLine(test);
             Console.WriteLine(scInstance.ToString());
@@ -155,7 +151,8 @@ namespace GettingStarted_UST
             }
         }
 
-        private static void Move(string direction) {
+        private static void Move(string direction)
+        {
 
             switch (direction)
             {
@@ -166,7 +163,8 @@ namespace GettingStarted_UST
 
         }
 
-        private static void Move(Directions dir) {
+        private static void Move(Directions dir)
+        {
             switch (dir)
             {
                 case Directions.left:
@@ -221,7 +219,8 @@ namespace GettingStarted_UST
         }
     }
 
-    class Human {
+    class Human
+    {
         int age;
         string skincolor;
         string nationality;
@@ -229,7 +228,8 @@ namespace GettingStarted_UST
         string name;
     }
 
-    class Employee {
+    class Employee
+    {
         int age;
         //string skincolor;
         string nationality;
@@ -240,16 +240,18 @@ namespace GettingStarted_UST
         DateTime doj;
     }
 
-    class DateingPartner {
-    
+    class DateingPartner
+    {
+
     }
 
-    enum FavColor {
+    enum FavColor
+    {
         Black,
         Blue
     }
 
-    
+
 
 
 }

@@ -2,13 +2,14 @@
 {
     class Car : IStartable {
         string make;
-        int wheels;
-        int cc;
+        private int wheels;
+        internal int cc;
         string color;
+        public string wheel_pub;
 
         public Car(string make, int wheels, int cc, string col)
         {
-            this.make = make;
+            //this.make = make;
             this.wheels = wheels;
             this.cc = cc;
             this.color = col;

@@ -1,0 +1,33 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20240326225446
+Username: 6F5BFAB6BAF357D\Administrator
+RunAs User: 6F5BFAB6BAF357D\Administrator
+Configuration Name: 
+Machine: 6F5BFAB6BAF357D (Microsoft Windows NT 10.0.19045.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 8808
+PSVersion: 5.1.19041.4046
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.4046
+BuildVersion: 10.0.19041.4046
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is AvinashLalith.log
+PS C:\Users\Administrator\ust-global-training2024> git --version
+git version 2.44.0.windows.1
+PS C:\Users\Administrator\ust-global-training2024> git status
+On branch AvinashLalith-branch
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        AvinashLalith.log
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\Administrator\ust-global-training2024> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20240326225634
+**********************

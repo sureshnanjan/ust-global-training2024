@@ -25,7 +25,7 @@ namespace Test_GettingStarted
         public void sorting_array_correctly()
         {
 
-            SimpleClass[] myInstances = { new SimpleClass(1, 7), new SimpleClass(3, 2), new SimpleClass(0, 1), new SimpleClass(9, 7) };
+            SimpleClass[] myInstances = { new SimpleClass(1, "7"), new SimpleClass(3, "2"), new SimpleClass(0, 1), new SimpleClass(9, 7) };
             SimpleClass[] Expected = { new SimpleClass(0, 1), new SimpleClass(1, 7), new SimpleClass(3, 2), new SimpleClass(9, 7) };
             Array.Sort(myInstances);
             //string actual = myInstances.ToString();

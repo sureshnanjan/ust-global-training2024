@@ -1,11 +1,12 @@
 ﻿namespace PetStoreProject
 {
-    public class Category
-    {
-        public Category()
-        {
-        }
+    /// <summary>
+    /// Contains Category details - id and name
+    /// </summary>
 
-       
+    internal class Category
+    {
+        private long id;
+        private string name;
     }
 }

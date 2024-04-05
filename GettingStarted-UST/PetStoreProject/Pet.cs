@@ -14,8 +14,6 @@ namespace PetStoreProject
         private string photourls;
         Category category = new Category();
         Tag tags = new Tag();
-        Order order = new Order(0);
-        User user = new User();
-        Apiresponse apiresp = new Apiresponse();
+       
     }
 }

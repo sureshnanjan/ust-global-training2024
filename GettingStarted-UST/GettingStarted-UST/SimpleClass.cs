@@ -45,6 +45,7 @@ namespace GettingStarted_UST
 
         public object Clone()
         {
+            //int? mynumber = null; //? is nullable type
             return new SimpleClass(this.value1);
         }
     }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SudhaLibrary")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e35f8551e6f7bea00eea415a11cfd314998edc5c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c4d5180ce9c3b06068544b187a86fca8f2c2c1dc")]
 [assembly: System.Reflection.AssemblyProductAttribute("SudhaLibrary")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SudhaLibrary")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

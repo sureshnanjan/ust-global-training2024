@@ -1,6 +1,6 @@
 ﻿namespace SudhaLibrary
 {
-    public class UtilityClass
+    public class PrintReport
     {
         // Properties
         /*string TrainerName;
@@ -9,11 +9,11 @@
         string[] participants;
         string[] topics;*/
         // Methods
-        public void publish()
+        public  void publish()
         {
             System.Console.WriteLine("Publish Training Report");
         }
-        public void generateReport()
+        public  void generateReport()
         {
             System.Console.WriteLine("Generate Training Report");
         }

@@ -13,7 +13,7 @@ namespace GettingStarted_UST
         {
             //int[] mynumbers = { 8, 3, 19, 21, 1, 2, 3, 4 };
 
-            SimpleClass[] myInstances = { new(1,2), new(2,3) , new(0,1) , new(1,3)};
+            SimpleClass[] myInstances = { new SimpleClass(1, 2), new SimpleClass(0, 1), new SimpleClass(2, 3), new SimpleClass(3, 4) };
 
             Array.Sort(myInstances);
             Console.WriteLine("\n AFTER SORTING  Values in My Integer MYINSTANCES ");

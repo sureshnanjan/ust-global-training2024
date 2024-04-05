@@ -9,7 +9,7 @@ namespace GettingStarted_UST
     /// <summary>
     /// Represents a simple class with two integer values.
     /// </summary>
-    internal class SimpleClass: IComparable<SimpleClass>
+    public class SimpleClass: IComparable<SimpleClass>
     {
         /// <summary>
         /// Gets or Sets first value.
@@ -41,11 +41,11 @@ namespace GettingStarted_UST
 
         public int CompareTo(SimpleClass? other)
         {
-            int result= this.FirstValue.CompareTo(other.FirstValue);
+            int result= FirstValue.CompareTo(other.FirstValue);
 
             if(result==0)
             {
-                result = this.SecondValue.CompareTo(other.SecondValue);
+                result = SecondValue.CompareTo(other.SecondValue);
             }
             return result;
         }

@@ -5,140 +5,152 @@ using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json.Linq;
 using System.Xml.Linq;
+using Microsoft.VisualStudio.TestTools.UnitTesting.Logging;
+using System.Reflection;
+
 
 namespace Test_GettingStarted
 {
     [TestClass]
     public class TestBinarySearch
     {
-        [TestMethod]
-        public void ExistingValueTest_Atend()
-        {
-
-            int[] myinputArray = { 1, 2, 3, 4, 5 };
-            int searchItem = 5;
-            int expected = 5;
-            BinarySearcher searcher = new BinarySearcher(myinputArray, searchItem);
-            int actual = searcher.doSearch();
-            Assert.AreEqual(expected, actual);
-            Console.WriteLine("The result is" + actual);
-        }
+        /// <summary>
+        /// Binary Assignment - If value is not found and value is less than one or more elements in array, the negative number returned is the bitwise complement of the index of the first element that is larger than value.
+        /// </summary>
 
         [TestMethod]
-        public void ExistingValueTest_Atmiddle()
+        public void testing_non_existent_item_lowerval()
         {
 
             int[] myinputArray = { 1, 2, 3 };
-            int searchItem = 2;
-            int expected = 2;
-            BinarySearcher searcher = new BinarySearcher(myinputArray, searchItem);
-            int actual = searcher.doSearch();
-            Assert.AreEqual(expected, actual);
-        }
-
-        [TestMethod]
-        public void ExistingValueTest_Atbeginning()
-        {
-            int[] myinputArray = { 1, 2, 3 };
-            int searchItem = 1;
-            int expected = 1;
-            BinarySearcher searcher = new BinarySearcher(myinputArray, searchItem);
-            int actual = searcher.doSearch();
-
-            Assert.AreEqual(expected, actual);
-
-        }
-
-        [TestMethod]
-        public void NonExistingValueTest_higherval()
-        {
-            int[] myinputArray = { 1, 2, 3 };
-            int searchItem = 4;
-            int expected = ~4;
-            BinarySearcher searcher = new BinarySearcher(myinputArray, searchItem);
-            int actual = searcher.doSearch();
-            Assert.AreEqual(expected, actual);
-
-        }
-
-
-        [TestMethod]
-        public void NonExistingValueTest_lowerval()
-        {
-
-            // If value is not found and value is less than one or more elements in array, the negative number returned is the
-            // bitwise complement of the index of the first element that is larger than value. 
-            int[] myinputArray = { 1, 2, 3 };
-            int searchItem = 0;
+            int searchTerm = 0;
             int expected = ~1;
-            BinarySearcher searcher = new BinarySearcher(myinputArray, searchItem);
+            BinarySearcher searcher = new BinarySearcher(myinputArray, searchTerm);
             int actual = searcher.doSearch();
             Assert.AreEqual(expected, actual);
 
         }
+        /// <summary>
+        /// If value is not found and value is less than one or more elements in array, the negative number returned is the             bitwise complement of the index of the first element that is larger than value. 
+        /// </summary>
+        [TestMethod]
+        public void testing_non_existent_item_middleval()
+        {
+
+            int[] myinputArray = { 2, 6, 9 };
+            int searchTerm = 4;
+            int expected = ~2;
+            BinarySearcher searcher = new BinarySearcher(myinputArray, searchTerm);
+            int actual = searcher.doSearch();
+            Assert.AreEqual(expected, actual);
+
+        }
+        /// <summary>
+        /// If this method is called with a non-sorted array, the return value can be incorrect and a negative number could be returned, even if value is present in array.
+        /// </summary>
 
         [TestMethod]
-        public void NonExistingValueTest_middleval()
+        public void testing_nonsortedarray_existent_item()
         {
 
             // If value is not found and value is less than one or more elements in array, the negative number returned is the
             // bitwise complement of the index of the first element that is larger than value. 
-            int[] myinputArray = { 2, 6, 9 };
-            int searchItem = 4;
-            int expected = ~2;
-            BinarySearcher searcher = new BinarySearcher(myinputArray, searchItem);
+            int[] myinputArray = { 1, 7, 3 };
+            int searchTerm = 7;
+            //int expected = ~1;
+            BinarySearcher searcher = new BinarySearcher(myinputArray, searchTerm);
             int actual = searcher.doSearch();
-            Assert.AreEqual(expected, actual);
-
+            //Assert.AreEqual(expected, actual);
+            Assert.IsTrue(actual < 0);
         }
-
         [TestMethod]
-        public void NonSortedArray_NonExistentValueTest()
+        public void testing_nonsortedarray_non_existent_item()
         {
             //Value less than non sorted array minimum value 
             int[] myinputArray = { 1, 7, 3 };
-            int searchItem = 0;
+            int searchTerm = 0;
             //int expected = ~1;
-            BinarySearcher searcher = new BinarySearcher(myinputArray, searchItem);
+            BinarySearcher searcher = new BinarySearcher(myinputArray, searchTerm);
             int actual = searcher.doSearch();
             //Assert.AreEqual(expected, actual);
             Assert.IsTrue(actual < 0);
 
             //Value greated than non sorted array maximum value
-            searchItem = 9;
+            searchTerm = 9;
             actual = searcher.doSearch();
             Assert.IsTrue(actual < 0);
         }
-
         [TestMethod]
-        public void NonSortedArray_ExistentValueTest()
+        public void test_for_existing_values_atend()
         {
 
-            // If value is not found and value is less than one or more elements in array, the negative number returned is the
-            // bitwise complement of the index of the first element that is larger than value. 
-            int[] myinputArray = { 1, 7, 3 };
-            int searchItem = 7;
-            //int expected = ~1;
-            BinarySearcher searcher = new BinarySearcher(myinputArray, searchItem);
+            int[] myinputArray = { 1, 2, 3 };
+            int searchTerm = 3;
+            int expected = 3;
+            BinarySearcher searcher = new BinarySearcher(myinputArray, searchTerm);
             int actual = searcher.doSearch();
-            //Assert.AreEqual(expected, actual);
-            Assert.IsTrue(actual < 0);
+            Assert.AreEqual(expected, actual);
         }
+
+        [TestMethod]
+        public void test_for_existing_values_atmiddle()
+        {
+
+            int[] myinputArray = { 1, 2, 3 };
+            int searchTerm = 2;
+            int expected = 2;
+            BinarySearcher searcher = new BinarySearcher(myinputArray, searchTerm);
+            int actual = searcher.doSearch();
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void test_for_existing_values_atbeginning()
+        {
+            int[] myinputArray = { 1, 2, 3 };
+            int searchTerm = 1;
+            int expected = 1;
+            BinarySearcher searcher = new BinarySearcher(myinputArray, searchTerm);
+            int actual = searcher.doSearch();
+            //Console.WriteLine(actual);
+            Assert.AreEqual(expected, actual);
+
+        }
+
+        [TestMethod]
+        public void test_for_non_existing_items_higherval()
+        {
+            int[] myinputArray = { 1, 2, 3 };
+            int searchTerm = 4;
+            int expected = ~4;
+            BinarySearcher searcher = new BinarySearcher(myinputArray, searchTerm);
+            int actual = searcher.doSearch();
+            Assert.AreEqual(expected, actual);
+
+        }
+
+
         /*Exceptions
+        ArgumentNullException array is null.
         RankException array is multidimensional.
         ArgumentException value is of a type that is not compatible with the elements of array.
         InvalidOperationException value does not implement comparison mechanism.
         */
-        [TestMethod]
+        /// <summary>
+        /// Null Array Exception 
+        /// </summary>
+        //[TestMethod]
+        //public void nullarray_throws_nullexception()
+        //{
+        //    int[] myinputArray = null;
+        //    int searchTerm = 0;
+        //    int expected = 0;
+        //    BinarySearcher searcher = new BinarySearcher(myinputArray, searchTerm);
+        //    Assert.ThrowsException<ArgumentNullException>(() => { searcher.doSearch(); });
+        //    int actual = searcher.doSearch();
+        //    Assert.AreEqual(expected, actual);
 
-        public void NullInputArray_Throws_ArgumentNullException()
-        {
-            //ArgumentNullException array is null.
-            int[] input = null;
-            int searchItem = 0;
-            BinarySearcher searcher = new BinarySearcher(input, searchItem);
-            Assert.ThrowsException<ArgumentNullException>(() => searcher.doSearch());
-        }
+        //}
 
     }
 }

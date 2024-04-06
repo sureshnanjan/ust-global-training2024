@@ -6,26 +6,37 @@ namespace Test_GettingStarted
     internal class BinarySearcher
     {
         private int[] myinputArray;
-        private int searchItem;
+        private int searchTerm;
 
-        public BinarySearcher(int[] myinputArray, int searchItem)
+        public BinarySearcher(int[] myinputArray, int searchTerm)
         {
             this.myinputArray = myinputArray;
-            this.searchItem = searchItem;
+            this.searchTerm = searchTerm;
         }
 
         internal int doSearch()
         {
-            // 
-            int itemSearch = Array.BinarySearch(myinputArray, searchItem);
-            if (itemSearch >= 0)
+            int searchValue = Array.BinarySearch(myinputArray, searchTerm);
+            if (confirmsortedarray(myinputArray))
             {
-                return itemSearch + 1;
+                if (searchValue >= 0)
+                {
+                    return searchValue + 1;
+                }
+                else
+                {
+                    return searchValue - 1;
+                }
             }
-            else
-            {
-                throw new NotImplementedException();
-            }
+            return -1;
+        }
+
+        private bool confirmsortedarray(int[] myinputArray)
+        {
+            for (int i = 1; i < myinputArray.Length; i++)
+                if (myinputArray[i - 1] > myinputArray[i])
+                    return false;
+            return true;
         }
     }
 }

@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace MyLIbrary
 {
-
+    /// <summary>
+    /// Test class for declaring variables.
+    /// </summary>
     public class SimpleDemo
     {
          

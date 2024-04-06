@@ -14,19 +14,17 @@ namespace GettingStarted_UST
             Console.WriteLine("Original Values in My Instances");
             foreach (var item in myInstances)
             {
-                foreach (var item1 in myInstances)
-                {
-                    Console.Write($"{item},{item1}");
-                }
+                    Console.Write($"{item} , ");
 
             }
-            /*Array.Sort(myInstances);
-            Console.WriteLine("\n AFTER SORTING  Values in My Integer MYINSTANCES ");
+            Array.Sort(myInstances);
+            Console.WriteLine("\n AFTER SORTING  Values in MYINSTANCES ");
             foreach (var item in myInstances)
             {
                 Console.Write($"{item} , ");
 
-            }*/
+            }
+
         }
     }
 }

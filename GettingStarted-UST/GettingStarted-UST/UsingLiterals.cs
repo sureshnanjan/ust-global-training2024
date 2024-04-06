@@ -9,44 +9,61 @@ namespace GettingStarted_UST
 {
     internal class UsingLiterals
     {
-        // Integer Literals
-            // Decimal literals (Base 10)
-            // Hexa-decimal literals (Base 16)
-            // Binary literals (Base 2)
-        // Floating-point Literals
-            // double 123.45 
-            // float
-            // exponential
-        // Character Literals
-            // Single quote
-            // Unicode Representation
-            // Escape Sequence
-        // String Literals
-            // ""
-            // @""
-            // string interpolation "The value of varname is :{varname}"
-        // Null Literals
-        // Boolean Literals
         public void showUsage() {
 
-            //TODO: value 89
-            int decINt = 89; // 4 byte - max mim // 1010 - 4 bytes 
-            long mylong = 0; // 8 bytes // 1020 - 1029, 1021, 1022, 1024, --- 1028
-            int hexInt = 0x1F; // 15 X16 ^0 + 1 X 16 ^1
-            double mydbl = 123.45;
-            float nyflt = 123.45f;
-            //float @float 
-            //null != "null";
-            char newline = '\u0D19'; //1000  a 97 A 65 
-            string mynameinmalayalam = "\u0d19\u0d19";
-           
+            // Integer Literals, TODO: value 89
+            int decINt = 89;
+            int hexInt = 0x59;
+            int binInt = 0b1011001;
 
+            // Floating-point Literals
+            float doublefloat = 123.456f;
+            float myFloat = 10.2f;
+            float expfloat = 3.14E-2f;
 
+            // Character Literals
+            char mychar = 'M';
+            char mychar1 = '\u0061';
+            char mychar2 = '\n';
 
+            // String Literals
+            string mystr = "Hi Team!";
+            string mystr1 = @"Hello Team!";
 
+            //Null literal
+            string s = null;
+
+            // Boolean Literals
+            bool mybool = true;
+            bool mybool1 = false;
+
+            Console.WriteLine($" Integer value of Decimal 89 is {decINt}");
+            Console.WriteLine($" Integer value of Hexa-Decimal 59 is {hexInt}");
+            Console.WriteLine($" Integer value of Binary 1011001 is {binInt} \n");
+
+            Console.WriteLine($" Float value of double 123.456 is {doublefloat}");
+            Console.WriteLine($" Float value of float 10.2 is {myFloat}");
+            Console.WriteLine($" Float value of exponential 3.14E-2 is {expfloat} \n");
+
+            Console.WriteLine($" Character literal in single quote M is {mychar}");
+            Console.WriteLine($" Character literal in unicode 0061 is {mychar1}");
+            Console.WriteLine($" Character literal in Escape sequence new line is {mychar2} \n");
+
+            // String Interpolation
+            Console.WriteLine($" String literals in double quote is {mystr}");
+            Console.WriteLine($" String literals in double quote with prefix of @ is {mystr1} \n");
+            
+            Console.WriteLine($" Boolean literals are {mybool} & {mybool1}");
+        }
+        /*
+        public static void Main(string[] args)
+        {
+
+            UsingLiterals usingLiterals = new UsingLiterals();  
+            usingLiterals.showUsage();
+
+        }*/
 
         }
 
-
     }
-}

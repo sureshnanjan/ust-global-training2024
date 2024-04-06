@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GettingStarted_UST
 {
-    internal class SimpleClass : IComparable<SimpleClass>
+    public class SimpleClass : IComparable<SimpleClass>
     {
         int value, value2;
 
@@ -21,14 +21,16 @@ namespace GettingStarted_UST
 
         public override string? ToString()
         {
-            return this.value.ToString();
-            return this.value2.ToString();
+            return this.value.ToString() + "-" + this.value2.ToString();
         }
 
         public int CompareTo(SimpleClass? other)
         {
-            return this.value.CompareTo(other.Value);
-            return this.value2.CompareTo(other.Value2);
+            if ((value.CompareTo(other.Value)) == 0)
+            {
+                return value2.CompareTo(other.Value2);
+            }
+            return value.CompareTo(other.Value);
         }
     }
 }

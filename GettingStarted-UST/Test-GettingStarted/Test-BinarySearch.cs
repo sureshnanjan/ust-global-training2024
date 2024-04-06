@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using GettingStarted_UST;
-
-namespace Test_GettingStarted
+﻿namespace Test_GettingStarted
 {
     [TestClass]
     public class Test_BinarySearch
@@ -15,11 +8,11 @@ namespace Test_GettingStarted
         public void test_for_existing_element_beginning()
         {
 
-            int[] Search_Array = { 4, 5, 6 };
-            int Search_Element = 4;
+            int[] inputArray = { 4, 5, 6 };
+            int key = 4;
             int expected = 1;
-            BinarySearch mysearch = new BinarySearch(Search_Array, Search_Element);
-            int actual = mysearch.dosearch();
+            BinarySearch mysearch = new BinarySearch(inputArray, key);
+            int actual = mysearch.dosearch(inputArray, key);
 
             Assert.AreEqual(expected, actual);
         }
@@ -28,11 +21,11 @@ namespace Test_GettingStarted
         public void test_for_existing_element_middle()
         {
 
-            int[] Search_Array = { 4, 5, 6 };
-            int Search_Element = 5;
+            int[] inputArray = { 4, 5, 6 };
+            int key = 5;
             int expected = 2;
-            BinarySearch mysearch = new BinarySearch(Search_Array, Search_Element);
-            int actual = mysearch.dosearch();
+            BinarySearch mysearch = new BinarySearch(inputArray, key);
+            int actual = mysearch.dosearch(inputArray, key);
 
             Assert.AreEqual(expected, actual);
         }
@@ -41,11 +34,11 @@ namespace Test_GettingStarted
         public void test_for_existing_element_end()
         {
 
-            int[] Search_Array = { 4, 5, 6 };
-            int Search_Element = 6;
+            int[] inputArray = { 4, 5, 6 };
+            int key = 6;
             int expected = 3;
-            BinarySearch mysearch = new BinarySearch(Search_Array, Search_Element);
-            int actual = mysearch.dosearch();
+            BinarySearch mysearch = new BinarySearch(inputArray, key);
+            int actual = mysearch.dosearch(inputArray, key);
 
             Assert.AreEqual(expected, actual);
         }
@@ -54,11 +47,11 @@ namespace Test_GettingStarted
         public void test_for_nonexisting_element()
         {
 
-            int[] Search_Array = { 4, 5, 6 };
-            int Search_Element = 2;
+            int[] inputArray = { 4, 5, 6 };
+            int key = 2;
             int expected = ~1;
-            BinarySearch mysearch = new BinarySearch(Search_Array, Search_Element);
-            int actual = mysearch.dosearch();
+            BinarySearch mysearch = new BinarySearch(inputArray, key);
+            int actual = mysearch.dosearch(inputArray, key);
 
             Assert.AreEqual(expected, actual);
         }
@@ -67,11 +60,11 @@ namespace Test_GettingStarted
         public void test_for_nonexisting_element_less_than()
         {
 
-            int[] Search_Array = { 4, 5, 6 };
-            int Search_Element = 2;
+            int[] inputArray = { 4, 5, 6 };
+            int key = 2;
             int expected = ~1;
-            BinarySearch mysearch = new BinarySearch(Search_Array, Search_Element);
-            int actual = mysearch.dosearch();
+            BinarySearch mysearch = new BinarySearch(inputArray, key);
+            int actual = mysearch.dosearch(inputArray, key);
 
             Assert.AreEqual(expected, actual);
         }
@@ -80,11 +73,11 @@ namespace Test_GettingStarted
         public void test_for_nonexisting_element_greater_than()
         {
 
-            int[] Search_Array = { 4, 5, 6 };
-            int Search_Element = 7;
+            int[] inputArray = { 4, 5, 6 };
+            int key = 7;
             int expected = ~(3+1);
-            BinarySearch mysearch = new BinarySearch(Search_Array, Search_Element);
-            int actual = mysearch.dosearch();
+            BinarySearch mysearch = new BinarySearch(inputArray, key);
+            int actual = mysearch.dosearch(inputArray, key);
 
             Assert.AreEqual(expected, actual);
         }

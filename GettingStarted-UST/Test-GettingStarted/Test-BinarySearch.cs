@@ -1,9 +1,14 @@
 ﻿namespace Test_GettingStarted
 {
+    /// <summary>
+    /// Test class for binary search
+    /// </summary>
     [TestClass]
     public class Test_BinarySearch
     {
-
+        /// <summary>
+        /// Test method once the search element is in the beginning of an array
+        /// </summary>
         [TestMethod]
         public void test_for_existing_element_beginning()
         {
@@ -17,6 +22,10 @@
             Assert.AreEqual(expected, actual);
         }
 
+        /// <summary>
+        /// Test method once the search element is in the middle of an array
+
+        /// </summary>
         [TestMethod]
         public void test_for_existing_element_middle()
         {
@@ -30,6 +39,9 @@
             Assert.AreEqual(expected, actual);
         }
 
+        /// <summary>
+        /// Test method once the search element is in the end of an array
+        /// </summary>
         [TestMethod]
         public void test_for_existing_element_end()
         {
@@ -43,6 +55,9 @@
             Assert.AreEqual(expected, actual);
         }
 
+        /// <summary>
+        /// Test method for non-existing element
+        /// </summary>
         [TestMethod]
         public void test_for_nonexisting_element()
         {
@@ -56,6 +71,9 @@
             Assert.AreEqual(expected, actual);
         }
 
+        /// <summary>
+        /// Test method for non-existing element less than the array elements
+        /// </summary>
         [TestMethod]
         public void test_for_nonexisting_element_less_than()
         {
@@ -69,6 +87,9 @@
             Assert.AreEqual(expected, actual);
         }
 
+        /// <summary>
+        /// Test method for non-existing element greater than the array elements
+        /// </summary>
         [TestMethod]
         public void test_for_nonexisting_element_greater_than()
         {

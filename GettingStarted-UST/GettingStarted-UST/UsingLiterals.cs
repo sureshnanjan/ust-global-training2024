@@ -7,8 +7,14 @@ using System.Threading.Tasks;
 
 namespace GettingStarted_UST
 {
+    /// <summary>
+    /// Example of different literals
+    /// </summary>
     internal class UsingLiterals
     {
+        /// <summary>
+        /// Method to show the examples of literals
+        /// </summary>
         public void showUsage() {
 
             // Integer Literals, TODO: value 89

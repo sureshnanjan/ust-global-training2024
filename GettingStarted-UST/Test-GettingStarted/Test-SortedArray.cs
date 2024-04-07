@@ -7,11 +7,14 @@ using GettingStarted_UST;
 
 namespace Test_GettingStarted
 {
+    /// <summary>
+    /// Test class for sorted array
+    /// </summary>
     [TestClass]
     public class Test_SortedArray
     {
         /// <summary>
-        /// Already Sorted Array
+        /// Test method for already Sorted Array
         /// </summary>
         [TestMethod]
         public void SortingForAlreadySortedArray()
@@ -30,7 +33,7 @@ namespace Test_GettingStarted
         }
 
         /// <summary>
-        /// Sorting based on first element
+        /// Test method for sorting based on first element
         /// </summary>
         [TestMethod]
         public void SortingBasedOnFirstElement()
@@ -44,7 +47,7 @@ namespace Test_GettingStarted
         }
 
         /// <summary>
-        /// If first elements are equal, sorting based on second element
+        /// Test method if first elements are equal, sorting based on second element
         /// </summary>
         public void SortingBasedOnSecondElement()
         {
@@ -57,7 +60,7 @@ namespace Test_GettingStarted
         }
 
         /// <summary>
-        /// Sorting when 2 instances are same
+        /// Test method for sorting when 2 instances are same
         /// </summary>
         [TestMethod]
         public void SortingWhen2instancesAreSame()
@@ -71,7 +74,7 @@ namespace Test_GettingStarted
         }
 
         /// <summary>
-        /// ToString method should return in the format item1 - item
+        /// Test method of ToString method that should return in the format item1 - item
         /// </summary>
         [TestMethod]
         public void FormatOfOutputAfterSorting()

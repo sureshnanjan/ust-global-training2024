@@ -7,6 +7,9 @@ using MyLIbrary;
 
 namespace GettingStarted_UST
 {
+    /// <summary>
+    /// Class to print and sort array
+    /// </summary>
     public class MainProgram
     {
         public static void Main(string[] args) {

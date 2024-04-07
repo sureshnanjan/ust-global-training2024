@@ -2,9 +2,15 @@ using GettingStarted_UST;
 
 namespace Test_GettingStarted
 {
+    /// <summary>
+    /// Test class for calculator
+    /// </summary>
     [TestClass]
     public class TestCalculator
     {
+        /// <summary>
+        /// Test method for addition of 10 & 20
+        /// </summary>
         [TestMethod]
         public void additionof10and20shouldbe30()
         {
@@ -14,6 +20,9 @@ namespace Test_GettingStarted
             Assert.AreEqual(expected, actual);
         }
 
+        /// <summary>
+        /// Test method for addition of 100000 & 200000
+        /// </summary>
         [TestMethod]
         public void additionof100000and20000shouldbe300000()
         {
@@ -23,6 +32,9 @@ namespace Test_GettingStarted
             Assert.AreEqual(expected, actual);
         }
 
+        /// <summary>
+        /// Test method for subtraction of 10 & 8
+        /// </summary>
         [TestMethod]
         public void subtracting10and8shouldbe2()
         {
@@ -32,6 +44,9 @@ namespace Test_GettingStarted
             Assert.AreEqual(expected, actual);
         }
 
+        /// <summary>
+        /// Test method for subtraction of 0 & 2
+        /// </summary>
         [TestMethod]
         public void subtracting0and2shouldbeminus2()
         {

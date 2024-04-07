@@ -9,7 +9,7 @@ namespace GettingStarted_UST
     /// <summary>
     /// Represents a simple class with two integer values.
     /// </summary>
-    public class SimpleClass
+    internal class MySimpleClass:IComparable<MySimpleClass>
     {
         /// <summary>
         /// Gets or Sets first value.
@@ -24,11 +24,11 @@ namespace GettingStarted_UST
         /// </summary>
         /// <param name="firstValue">The first integer value.</param>
         /// <param name="secondValue">The second integer value.</param>
-        public SimpleClass(int firstValue,int secondValue)
+        public MySimpleClass(int firstValue, int secondValue)
         {
             FirstValue = firstValue;
             SecondValue = secondValue;
-            
+
         }
         /// <summary>
         ///  This Function returns a string in the format "FirstValue-SecondValue".
@@ -39,6 +39,15 @@ namespace GettingStarted_UST
             return $"{FirstValue}-{SecondValue}"; // SimpleClass(1,2) prints as  "value-value2"
         }
 
-        
+        public int CompareTo(MySimpleClass? other)
+        {
+            int result = FirstValue.CompareTo(other.FirstValue);
+
+            if (result == 0)
+            {
+                result = SecondValue.CompareTo(other.SecondValue);
+            }
+            return result;
+        }
     }
 }

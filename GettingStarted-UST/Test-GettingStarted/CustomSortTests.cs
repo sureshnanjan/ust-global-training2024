@@ -13,13 +13,13 @@ namespace Test_GettingStarted
         [TestMethod]
         public void TestForSortArrayCorrectly()
         {
-            SimpleClass instanceOne = new(1, 2);
-            SimpleClass instanceTwo = new(2, 3);
+            MySimpleClass instanceOne = new(1, 2);
+            MySimpleClass instanceTwo = new(2, 3);
             //SimpleClass[] simpleClasses = { new SimpleClass(1, 2), new SimpleClass(0, 1), new SimpleClass(2, 3), new SimpleClass(3, 4) };
             //SimpleClass[] expected = { new SimpleClass(0, 1), new SimpleClass(1, 2), new SimpleClass(2, 3), new SimpleClass(3, 4) };
 
-            SimpleClass[] simpleClasses = { instanceTwo,instanceOne };
-            SimpleClass[] expected = { instanceOne,instanceTwo };
+            MySimpleClass[] simpleClasses = { instanceTwo,instanceOne };
+            MySimpleClass[] expected = { instanceOne,instanceTwo };
 
             Array.Sort(simpleClasses);
 
@@ -29,8 +29,8 @@ namespace Test_GettingStarted
         [TestMethod]
         public void TestForArrayWhenFirstValuesAreSame()
         {
-            SimpleClass[] simpleClasses = { new SimpleClass(1, 2), new SimpleClass(2, 3), new SimpleClass(1, 1), new SimpleClass(1, 3) };
-            SimpleClass[] expected = { new SimpleClass(1, 1), new SimpleClass(1, 2), new SimpleClass(1, 3), new SimpleClass(2, 3) };
+            MySimpleClass[] simpleClasses = { new(1, 2), new MySimpleClass(2, 3), new MySimpleClass(1, 1), new MySimpleClass(1, 3) };
+            MySimpleClass[] expected = { new MySimpleClass(1, 1), new MySimpleClass(1, 2), new MySimpleClass(1, 3), new MySimpleClass(2, 3) };
 
             Array.Sort(simpleClasses);
 
@@ -39,8 +39,8 @@ namespace Test_GettingStarted
         [TestMethod]
         public void TestForArrayWhenSecondValuesAreSame()
         {
-            SimpleClass[] simpleClasses = { new SimpleClass(1, 2), new SimpleClass(2, 2), new SimpleClass(3, 2), new SimpleClass(4, 5) };
-            SimpleClass[] expected = { new SimpleClass(1, 2), new SimpleClass(2, 2), new SimpleClass(3, 2), new SimpleClass(4, 5) };
+            MySimpleClass[] simpleClasses = { new MySimpleClass(1, 2), new MySimpleClass(2, 2), new MySimpleClass(3, 2), new MySimpleClass(4, 5) };
+            MySimpleClass[] expected = { new MySimpleClass(1, 2), new MySimpleClass(2, 2), new MySimpleClass(3, 2), new MySimpleClass(4, 5) };
 
             Array.Sort(simpleClasses);
 
@@ -49,7 +49,7 @@ namespace Test_GettingStarted
         [TestMethod]
         public void TestForCorrectFormat()
         {
-            SimpleClass simpleClass = new(1,2);
+            MySimpleClass simpleClass = new(1,2);
 
             string expectedString = "1-2";
 

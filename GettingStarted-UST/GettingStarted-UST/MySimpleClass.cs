@@ -9,7 +9,7 @@ namespace GettingStarted_UST
     /// <summary>
     /// Represents a simple class with two integer values.
     /// </summary>
-    internal class MySimpleClass:IComparable<MySimpleClass>
+    public class MySimpleClass : IComparable<MySimpleClass>
     {
         /// <summary>
         /// Gets or Sets first value.

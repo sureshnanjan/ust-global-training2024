@@ -11,11 +11,11 @@ namespace GettingStarted_UST
     {
         public static void Main(string[] args)
         {
-<<<<<<< HEAD
+
             //int[] mynumbers = { 8, 3, 19, 21, 1, 2, 3, 4 };
 
-            SimpleClass[] myInstances = { new(1, 2), new SimpleClass(0, 1), new SimpleClass(2, 3), new SimpleClass(3, 4) };
-=======
+            MySimpleClass[] myInstances = { new(1, 2), new (0, 1), new(2, 3), new (3, 4) };
+
             SimpleClass cl1 = new SimpleClass(8,"zA");
             SimpleClass cl2 = new SimpleClass(2,"xB");
             SimpleClass cl3 = new SimpleClass(9,"oZ");
@@ -84,7 +84,6 @@ namespace GettingStarted_UST
                 Console.Write($"{item} , ");
 
             }
->>>>>>> suresh-trainer
 
             Array.Sort(myInstances);
             Console.WriteLine("\n AFTER SORTING  Values in My Integer MYINSTANCES ");
@@ -93,7 +92,7 @@ namespace GettingStarted_UST
                 Console.Write($"{item} , ");
 
             }
-<<<<<<< HEAD
+
             //string[] strings = { "A-One", "B-Two", "C-Three" };
 
             //Array.Sort(strings);
@@ -123,8 +122,7 @@ namespace GettingStarted_UST
 
 
 
-=======
->>>>>>> suresh-trainer
+
         }
 
         private static void oeverridesDemo()

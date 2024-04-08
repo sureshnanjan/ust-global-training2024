@@ -10,7 +10,7 @@
         /// Test method once the search element is in the beginning of an array
         /// </summary>
         [TestMethod]
-        public void test_for_existing_element_beginning()
+        public void TestForExistingElementBeginning()
         {
 
             int[] inputArray = { 4, 5, 6 };
@@ -24,10 +24,9 @@
 
         /// <summary>
         /// Test method once the search element is in the middle of an array
-
         /// </summary>
         [TestMethod]
-        public void test_for_existing_element_middle()
+        public void TestForExistingElementMiddle()
         {
 
             int[] inputArray = { 4, 5, 6 };
@@ -43,7 +42,7 @@
         /// Test method once the search element is in the end of an array
         /// </summary>
         [TestMethod]
-        public void test_for_existing_element_end()
+        public void TestForExistingElementEnd()
         {
 
             int[] inputArray = { 4, 5, 6 };
@@ -59,7 +58,7 @@
         /// Test method for non-existing element
         /// </summary>
         [TestMethod]
-        public void test_for_nonexisting_element()
+        public void TestForNonexistingElement()
         {
 
             int[] inputArray = { 4, 5, 6 };
@@ -75,7 +74,7 @@
         /// Test method for non-existing element less than the array elements
         /// </summary>
         [TestMethod]
-        public void test_for_nonexisting_element_less_than()
+        public void TestForNonexistingElementLessThan()
         {
 
             int[] inputArray = { 4, 5, 6 };
@@ -91,7 +90,7 @@
         /// Test method for non-existing element greater than the array elements
         /// </summary>
         [TestMethod]
-        public void test_for_nonexisting_element_greater_than()
+        public void TestForNonexistingElementGreaterThan()
         {
 
             int[] inputArray = { 4, 5, 6 };

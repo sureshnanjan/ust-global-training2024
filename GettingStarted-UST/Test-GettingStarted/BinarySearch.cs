@@ -23,8 +23,8 @@ namespace Test_GettingStarted
         /// <summary>
         /// Method to perform binary search
         /// </summary>
-        /// <param name="inputArray"></param>
-        /// <param name="key"></param>
+        /// <param name="inputArray">Search Array</param>
+        /// <param name="key">Search Element</param>
         /// <returns></returns>
         public int dosearch(int[] inputArray, int key)
         {

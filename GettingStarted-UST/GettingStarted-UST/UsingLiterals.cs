@@ -15,7 +15,8 @@ namespace GettingStarted_UST
         /// <summary>
         /// Method to show the examples of literals
         /// </summary>
-        public void showUsage() {
+        public void ShowUsage()
+        {
 
             // Integer Literals, TODO: value 89
             int decINt = 89;
@@ -37,7 +38,7 @@ namespace GettingStarted_UST
             string mystr1 = @"Hello Team!";
 
             //Null literal
-            string s = null;
+            string? s;
 
             // Boolean Literals
             bool mybool = true;
@@ -59,17 +60,7 @@ namespace GettingStarted_UST
             Console.WriteLine($" String literals in double quote is {mystr}");
             Console.WriteLine($" String literals in double quote with prefix of @ is {mystr1} \n");
             
-            Console.WriteLine($" Boolean literals are {mybool} & {mybool1}");
+            Console.WriteLine($" Boolean literals are {mybool} & {mybool1} \n");
         }
-        /*
-        public static void Main(string[] args)
-        {
-
-            UsingLiterals usingLiterals = new UsingLiterals();  
-            usingLiterals.showUsage();
-
-        }*/
-
-        }
-
     }
+}

@@ -11,7 +11,7 @@ namespace PetStore
     /// </summary>
     public class Category
     {
-        private long id;
-        private string name;
+        long id;
+        string name;
     }
 }

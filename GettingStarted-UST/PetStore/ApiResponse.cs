@@ -11,8 +11,8 @@ namespace PetStore
     /// </summary>
     internal class ApiResponse
     {
-        private int code;
-        private string type;
-        private string message;
+        int code;
+        string type;
+        string message;
     }
 }

@@ -17,7 +17,6 @@ namespace GettingStarted_UST
             this.id = id;
         }
 
-
         // Wait for a order completion
         // Consumer - Receiver - Subscriber  - Pub-Sub - Chat
 

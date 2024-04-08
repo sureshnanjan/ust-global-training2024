@@ -18,7 +18,6 @@ namespace Test_GettingStarted
             int expected = 3;
             BinarySearcher searcher = new BinarySearcher(myinputArray, searchTerm);
             int actual = searcher.doSearch();
-
             Assert.AreEqual(expected, actual);
 
         }

@@ -3,13 +3,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Test_GettingStarted;
 
 
 namespace Test_GettingStarted
 {
+    /// <summary>
+    /// Contains unit tests for the BinarySearcher class, testing various scenarios.
+    /// </summary>
     [TestClass]
     public  class TestBinarySearch
     {
+        /// <summary>
+        /// Tests binary search for an existing value in the array.
+        /// </summary>
         [TestMethod]
         public void Test_for_existing_values() { 
         
@@ -21,7 +28,9 @@ namespace Test_GettingStarted
             Assert.AreEqual(expected, actual);
 
         }
-
+        /// <summary>
+        /// Tests binary search for an existing value at the beginning of the input array.
+        /// </summary>
         [TestMethod]
         public void Test_for_existing_values_inbeginning() {
             int[] myinputArray = { 1,2, 3 };
@@ -31,7 +40,9 @@ namespace Test_GettingStarted
             int actual = searcher.doSearch();
             Assert.AreEqual(expected, actual);
         }
-
+        /// <summary>
+        /// Tests binary search for an existing value in the middle of the input array.
+        /// </summary>
         [TestMethod]
         public void Test_for_existing_values_inmiddle()
         {
@@ -42,6 +53,9 @@ namespace Test_GettingStarted
             int actual = searcher.doSearch();
             Assert.AreEqual(expected, actual);
         }
+        /// <summary>
+        /// Tests binary search for an existing value at the end of the input array.
+        /// </summary>
         [TestMethod]
         public void Test_for_existing_values_inend()
         {
@@ -53,7 +67,9 @@ namespace Test_GettingStarted
             Assert.AreEqual(expected, actual);
         }
 
-
+        /// <summary>
+        /// Tests binary search for an non existing value in the input array.
+        /// </summary>
         [TestMethod]
         public void Test_for_non_existing_items() {
             int[] myinputArray = { 1, 2, 3 };
@@ -65,7 +81,9 @@ namespace Test_GettingStarted
 
         }
 
-
+        /// <summary>
+        /// Tests binary search for an non existing value in the input array.
+        /// </summary>
         [TestMethod]
         public void Testing_non_existent_item() {
 
@@ -81,7 +99,7 @@ namespace Test_GettingStarted
         }
 
         /// <summary>
-        /// 
+        /// Throws ArgumentNullException when the input array is null.
         /// </summary>
         public void nullinputarray_throws_ArgumentNullException() {
             int[] input = null;
@@ -91,12 +109,9 @@ namespace Test_GettingStarted
             Assert.ThrowsException<ArgumentNullException>(() => { searcher.doSearch(); });
             
 
-
         }
 
-        public void someroutine() {
-        
-        
-        }
     }
 }
+
+

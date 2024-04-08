@@ -42,7 +42,7 @@ namespace Test_GettingStarted
         {
             SampleClass element1 = new SampleClass(300);
             SampleClass element2 = new SampleClass(20);
-            var actual = element1 * element2;
+            var actual = element1 + element2;
             if ((element1 > element2).status)
                 Console.WriteLine("300 is greater than 20");
             else
@@ -57,7 +57,7 @@ namespace Test_GettingStarted
         {
             int[] mySequence = { 1, 2, 3, 4, 5 };
             SampleCollection scColl  = new SampleCollection();
-            Console.WriteLine(scColl[0].number);
+            
             for (int i = 0; i < mySequence.Length; i++)
             {
                 Console.WriteLine($" Collection Value: {scColl[i].number} and Sequence Value: {mySequence[i]}");

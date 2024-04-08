@@ -7,15 +7,105 @@ using MyLIbrary;
 
 namespace GettingStarted_UST
 {
+    delegate int typeIntTakeintStr(int param1, string some);
+    //public delegate TResult Func<in T, out TResult>(T arg);
     public class MainProgram
     {
         public static void Main(string[] args)
         {
-            SimpleClass cl1 = new SimpleClass(8,"zA");
-            SimpleClass cl2 = new SimpleClass(2,"xB");
-            SimpleClass cl3 = new SimpleClass(9,"oZ");
-            SimpleClass cl4 = new SimpleClass(1,"AD");
-            SimpleClass cl5 = new SimpleClass(3,"bB");
+            Kitchen kfc = new Kitchen(); // Publisher
+            Waiter waiter1 = new Waiter(1); // Consumers
+            Waiter waiter2 = new Waiter(2);
+            Waiter waiter3 = new Waiter(3);
+            Cashier cashier = new Cashier(1);
+            kfc.PlaceOrder(waiter1.ServeFood);
+            kfc.PlaceOrder(waiter2.ServeFood);
+            kfc.PlaceOrder(waiter3.ServeFood);
+            kfc.PlaceOrder(cashier.CollectMoney);
+            kfc.PrepareTheFood();
+            
+
+        }
+
+        private static void April06Demo()
+        {
+            //a0ril04Demo();
+            //DelegatesDemo();
+            int[] numbers = { 1, 2, 3, 4, 5, 6, 7, 8, 9, -9 };
+            int result = numbers.Aggregate((arg1, arg2) => arg1 * arg2);
+            Console.WriteLine(result);
+            bool isallnumbersGT0 = numbers.All(x => x > 0);
+            Console.WriteLine(isallnumbersGT0);
+            Func<int, int, string> mystringCovertor = (param1, param2) => (param1 - param2).ToString();
+        }
+
+        private static void DelegatesDemo()
+        {
+            Func<int, bool> predicate = x => x > 3; // Lambda
+            int[] mynumbers = { 1, 2, 3, 4, 5 };
+            var results = mynumbers.Where(param => param > 3).ToList();
+
+            foreach (int value in results)
+            {
+                Console.WriteLine(value);
+            }
+            results = mynumbers.Where(input => input < 3).ToList();
+            foreach (int value in results)
+            {
+                Console.WriteLine(value);
+            }
+
+            results = mynumbers.Where(input => input == 3).ToList();
+            foreach (int value in results)
+            {
+                Console.WriteLine(value);
+            }
+
+            SimpleClass myIns = new SimpleClass(10);
+            typeIntTakeintStr pointer = myMethod;
+
+            Func<int, string, int> myrefUsingFunc = myMethod;
+            pointer(10, "");
+            myrefUsingFunc = myIns.myIntReturningMethod;
+            pointer(10, "");
+            myrefUsingFunc = someOtherMethod;
+            pointer(10, "");
+        }
+
+        static bool lessthn3Filter(int param) {
+            // param => param < 3
+            return param < 3;
+        }
+
+        static bool greaterthn3Filter(int param)
+        {
+            // param => param > 3
+            return param > 3;
+        }
+
+        static bool get3Filter(int param)
+        {
+            //param => param == 3
+            return param == 3;
+        }
+
+        static int myMethod(int para1, string param2) {
+            Console.WriteLine("Execuring this inthe myMethod");
+            return 0;
+        }
+
+        private static int someOtherMethod(int para, string para2) {
+            Console.WriteLine("SOMEOTHER METHOD");
+            return 0;
+        }
+
+        private static void a0ril04Demo()
+        {
+            SimpleClass cl1 = new SimpleClass(8, "zA");
+            SimpleClass cl2 = new SimpleClass(2, "xB");
+            SimpleClass cl3 = new SimpleClass(9, "oZ");
+            SimpleClass cl4 = new SimpleClass(1, "AD");
+            SimpleClass cl5 = new SimpleClass(3, "bB");
             SimpleClass[] mycoll = { cl1, cl1, cl3, cl4, cl5 };
             Console.WriteLine("Sorting Default");
             Array.Sort(mycoll);
@@ -24,7 +114,7 @@ namespace GettingStarted_UST
                 Console.WriteLine(item);
             }
             Console.WriteLine("Sorting By Name ");
-            Array.Sort(mycoll, new NameSorter());   
+            Array.Sort(mycoll, new NameSorter());
             foreach (var item in mycoll)
             {
                 Console.WriteLine(item);
@@ -35,8 +125,6 @@ namespace GettingStarted_UST
             {
                 Console.WriteLine(item);
             }
-
-
         }
 
         private static void comparableDemo()

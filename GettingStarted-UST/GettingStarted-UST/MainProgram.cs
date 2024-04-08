@@ -23,14 +23,21 @@ namespace GettingStarted_UST
 
         {
             //OperatorIndexerAssignment();
+            List<int> numbers = new List<int>() { 3, 6, 9, 5, 2 };
+            LamdaAssign LamdaExpress = new LamdaAssign(numbers);
+            LamdaExpress.ShowList();
+            LamdaExpress.AddNumbers();
+            LamdaExpress.SubNumbers();
+            LamdaExpress.MultipliesNumbers();
+            LamdaExpress.SquareofNumbers();
 
-            GenericSimpleClass<int, string> genericSimpleClass = new GenericSimpleClass<int, string>();
+        }
+        /* GenericSimpleClass<int, string> genericSimpleClass = new GenericSimpleClass<int, string>();
             genericSimpleClass.MyCounter = 0;
             GenericSimpleClass<float, string> genericSimpleClass1 = new GenericSimpleClass<float, string>();
             genericSimpleClass1.MyCounter = 1.2f;
-            Action<int, float, string> action1 = (a, b, c) => { };
+            Action<int, float, string> action1 = (a, b, c) => { };   */
 
-        }
 
         private static void OperatorIndexerAssignment()
         {

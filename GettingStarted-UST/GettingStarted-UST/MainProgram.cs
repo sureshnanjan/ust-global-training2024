@@ -21,12 +21,12 @@ namespace GettingStarted_UST
         public static void Main(string[] args)
         {
             //OperatorIndexerAssignment();
-
-            GenericSimpleClass<int,string> genericSimpleClass = new GenericSimpleClass<int,string>();
+            EventsDemo();
+            /*GenericSimpleClass<int,string> genericSimpleClass = new GenericSimpleClass<int,string>();
             genericSimpleClass.MyCounter = 0;
             GenericSimpleClass<float,string> genericSimpleClass1 = new GenericSimpleClass<float,string>();
             genericSimpleClass1.MyCounter = 1.2f;
-            Action<int, float, string> action1 = (a,b,c) => { };
+            Action<int, float, string> action1 = (a,b,c) => { };*/
 
         }
         /// <summary>
@@ -40,6 +40,7 @@ namespace GettingStarted_UST
             int result = aNumber + another;
             SimpleClass class1 = new SimpleClass(10);
             SimpleClass class2 = new SimpleClass(100);
+            //var result1 = class1 + class2;
             // Assignemnt for Operators and Indexers
             /*
             var result = class1 + class2; // Operator 
@@ -61,6 +62,7 @@ namespace GettingStarted_UST
         /// </summary>
         private static void EventsDemo()
         {
+            Customer book = new Customer(1);
             Kitchen kfc = new Kitchen(); // Publisher
             Waiter waiter1 = new Waiter(1); // Consumers
             Waiter waiter2 = new Waiter(2);
@@ -69,8 +71,10 @@ namespace GettingStarted_UST
             kfc.PlaceOrder(waiter1.ServeFood);
             kfc.PlaceOrder(waiter2.ServeFood);
             kfc.PlaceOrder(waiter3.ServeFood);
+            kfc.PlaceOrder(book.Havefood);
             kfc.PlaceOrder(cashier.CollectMoney);
             kfc.PrepareTheFood();
+            
         }
 
         private static void April06Demo()

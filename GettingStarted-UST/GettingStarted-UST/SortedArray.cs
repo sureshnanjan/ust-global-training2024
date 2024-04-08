@@ -37,5 +37,10 @@ namespace GettingStarted_UST
             }
             return this.value.CompareTo(other.MyValue);
         }
+
+        public override int GetHashCode()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

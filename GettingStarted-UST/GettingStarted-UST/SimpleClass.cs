@@ -6,18 +6,18 @@ using System.Threading.Tasks;
 
 namespace GettingStarted_UST
 {
-    internal class SimpleClass: IComparable<SimpleClass>, ICloneable
+    public class SimpleClass: IComparable<SimpleClass>, ICloneable
     {
         int value1; // simpleClass(1,2)  simpleClass(1,3), simple(0,1), simpl(1,0)
         int value2;
         string name;
-        public SimpleClass(int val, string name)
-        {
-            this.value1 = val;
+        public SimpleClass(int val, int val1)
+         {
+          this.value1 = val;
 
-            this.name = name;
+           this.name = name;
 
-        }
+         }
         public SimpleClass(int val)
         {
             this.value1 = val;

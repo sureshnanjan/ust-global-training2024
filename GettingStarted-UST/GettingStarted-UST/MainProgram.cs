@@ -11,7 +11,53 @@ namespace GettingStarted_UST
     //public delegate TResult Func<in T, out TResult>(T arg);
     public class MainProgram
     {
+
+        // Fields
+        // Properties
+        // Methods
+        // Events
+        // Indexers
+        // Operators
         public static void Main(string[] args)
+        {
+            //OperatorIndexerAssignment();
+
+            GenericSimpleClass<int,string> genericSimpleClass = new GenericSimpleClass<int,string>();
+            genericSimpleClass.MyCounter = 0;
+            GenericSimpleClass<float,string> genericSimpleClass1 = new GenericSimpleClass<float,string>();
+            genericSimpleClass1.MyCounter = 1.2f;
+            Action<int, float, string> action1 = (a,b,c) => { };
+
+        }
+
+        private static void OperatorIndexerAssignment()
+        {
+            //EventsDemo();
+            int aNumber = 10;
+            int another = 100;
+            int result = aNumber + another;
+            SimpleClass class1 = new SimpleClass(10);
+            SimpleClass class2 = new SimpleClass(100);
+            // Assignemnt for Operators and Indexers
+            /*
+            var result = class1 + class2; // Operator 
+            if (class2 > class1) 
+            {
+                Console.WriteLine();
+            }
+
+            int[] mysequence = { 1, 2, 3 };
+
+            Console.WriteLine(mysequence[0]);
+            SimpleCollection scCollection = new SimpleCollection();
+            Console.WriteLine(scCollection[0]); // Indexer
+            */
+        }
+
+        /// <summary>
+        /// This method produces a Publisher Subscriber
+        /// </summary>
+        private static void EventsDemo()
         {
             Kitchen kfc = new Kitchen(); // Publisher
             Waiter waiter1 = new Waiter(1); // Consumers
@@ -23,8 +69,6 @@ namespace GettingStarted_UST
             kfc.PlaceOrder(waiter3.ServeFood);
             kfc.PlaceOrder(cashier.CollectMoney);
             kfc.PrepareTheFood();
-            
-
         }
 
         private static void April06Demo()

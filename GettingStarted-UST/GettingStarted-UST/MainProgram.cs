@@ -11,6 +11,9 @@ namespace GettingStarted_UST
     {
         public static void Main(string[] args)
         {
+
+
+            
             SimpleClass cl1 = new SimpleClass(8,"zA");
             SimpleClass cl2 = new SimpleClass(2,"xB");
             SimpleClass cl3 = new SimpleClass(9,"oZ");
@@ -36,7 +39,7 @@ namespace GettingStarted_UST
                 Console.WriteLine(item);
             }
 
-
+            
         }
 
         private static void comparableDemo()

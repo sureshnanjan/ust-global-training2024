@@ -21,12 +21,20 @@ namespace GettingStarted_UST
             this.name = name;
 
         }
+        public SimpleClass(int val, int val1)
+        {
+            this.value1 = val;
+
+            this.value2 = val1;
+
+        }
         public SimpleClass(int val)
         {
             this.value1 = val;
             this.value2 = val;
             this.name = String.Empty;
         }
+
         public int Value { get { return this.value1; } }
 
         public string Name { get { return this.name; } }

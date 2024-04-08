@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using MyLIbrary;
@@ -20,16 +21,24 @@ namespace GettingStarted_UST
         // Operators
         public static void Main(string[] args)
         {
-            //OperatorIndexerAssignment();
-
-            GenericSimpleClass<int,string> genericSimpleClass = new GenericSimpleClass<int,string>();
-            genericSimpleClass.MyCounter = 0;
-            GenericSimpleClass<float,string> genericSimpleClass1 = new GenericSimpleClass<float,string>();
-            genericSimpleClass1.MyCounter = 1.2f;
-            Action<int, float, string> action1 = (a,b,c) => { };
+            List<int> list = new List<int>() { 2,3,4,8,5};
+            LambdaAssignement lambdaExp = new LambdaAssignement(list);
+            lambdaExp.showList();
+            lambdaExp.addNumbers();
+            lambdaExp.subNumbers();
+            lambdaExp.productOfNumbers();
+            lambdaExp.squareOfNumbers();
 
         }
 
+        /*
+            //OperatorIndexerAssignment();
+
+                GenericSimpleClass<int, string> genericSimpleClass = new GenericSimpleClass<int, string>();
+            genericSimpleClass.MyCounter = 0;
+                GenericSimpleClass<float, string> genericSimpleClass1 = new GenericSimpleClass<float, string>();
+            genericSimpleClass1.MyCounter = 1.2f;
+                Action<int, float, string> action1 = (a, b, c) => { };*/
         private static void OperatorIndexerAssignment()
         {
             //EventsDemo();
@@ -52,187 +61,188 @@ namespace GettingStarted_UST
             SimpleCollection scCollection = new SimpleCollection();
             Console.WriteLine(scCollection[0]); // Indexer
             */
+
         }
-
-        /// <summary>
-        /// This method produces a Publisher Subscriber
-        /// </summary>
-        private static void EventsDemo()
-        {
-            Kitchen kfc = new Kitchen(); // Publisher
-            Waiter waiter1 = new Waiter(1); // Consumers
-            Waiter waiter2 = new Waiter(2);
-            Waiter waiter3 = new Waiter(3);
-            Cashier cashier = new Cashier(1);
-            kfc.PlaceOrder(waiter1.ServeFood);
-            kfc.PlaceOrder(waiter2.ServeFood);
-            kfc.PlaceOrder(waiter3.ServeFood);
-            kfc.PlaceOrder(cashier.CollectMoney);
-            kfc.PrepareTheFood();
-        }
-
-        private static void April06Demo()
-        {
-            //a0ril04Demo();
-            //DelegatesDemo();
-            int[] numbers = { 1, 2, 3, 4, 5, 6, 7, 8, 9, -9 };
-            int result = numbers.Aggregate((arg1, arg2) => arg1 * arg2);
-            Console.WriteLine(result);
-            bool isallnumbersGT0 = numbers.All(x => x > 0);
-            Console.WriteLine(isallnumbersGT0);
-            Func<int, int, string> mystringCovertor = (param1, param2) => (param1 - param2).ToString();
-        }
-
-        private static void DelegatesDemo()
-        {
-            Func<int, bool> predicate = x => x > 3; // Lambda
-            int[] mynumbers = { 1, 2, 3, 4, 5 };
-            var results = mynumbers.Where(param => param > 3).ToList();
-
-            foreach (int value in results)
+            /// <summary>
+            /// This method produces a Publisher Subscriber
+            /// </summary>
+            private static void EventsDemo()
             {
-                Console.WriteLine(value);
-            }
-            results = mynumbers.Where(input => input < 3).ToList();
-            foreach (int value in results)
-            {
-                Console.WriteLine(value);
+                Kitchen kfc = new Kitchen(); // Publisher
+                Waiter waiter1 = new Waiter(1); // Consumers
+                Waiter waiter2 = new Waiter(2);
+                Waiter waiter3 = new Waiter(3);
+                Cashier cashier = new Cashier(1);
+                kfc.PlaceOrder(waiter1.ServeFood);
+                kfc.PlaceOrder(waiter2.ServeFood);
+                kfc.PlaceOrder(waiter3.ServeFood);
+                kfc.PlaceOrder(cashier.CollectMoney);
+                kfc.PrepareTheFood();
             }
 
-            results = mynumbers.Where(input => input == 3).ToList();
-            foreach (int value in results)
+            private static void April06Demo()
             {
-                Console.WriteLine(value);
+                //a0ril04Demo();
+                //DelegatesDemo();
+                int[] numbers = { 1, 2, 3, 4, 5, 6, 7, 8, 9, -9 };
+                int result = numbers.Aggregate((arg1, arg2) => arg1 * arg2);
+                Console.WriteLine(result);
+                bool isallnumbersGT0 = numbers.All(x => x > 0);
+                Console.WriteLine(isallnumbersGT0);
+                Func<int, int, string> mystringCovertor = (param1, param2) => (param1 - param2).ToString();
             }
 
-            SimpleClass myIns = new SimpleClass(10);
-            typeIntTakeintStr pointer = myMethod;
-
-            Func<int, string, int> myrefUsingFunc = myMethod;
-            pointer(10, "");
-            myrefUsingFunc = myIns.myIntReturningMethod;
-            pointer(10, "");
-            myrefUsingFunc = someOtherMethod;
-            pointer(10, "");
-        }
-
-        static bool lessthn3Filter(int param) {
-            // param => param < 3
-            return param < 3;
-        }
-
-        static bool greaterthn3Filter(int param)
-        {
-            // param => param > 3
-            return param > 3;
-        }
-
-        static bool get3Filter(int param)
-        {
-            //param => param == 3
-            return param == 3;
-        }
-
-        static int myMethod(int para1, string param2) {
-            Console.WriteLine("Execuring this inthe myMethod");
-            return 0;
-        }
-
-        private static int someOtherMethod(int para, string para2) {
-            Console.WriteLine("SOMEOTHER METHOD");
-            return 0;
-        }
-
-        private static void a0ril04Demo()
-        {
-            SimpleClass cl1 = new SimpleClass(8, "zA");
-            SimpleClass cl2 = new SimpleClass(2, "xB");
-            SimpleClass cl3 = new SimpleClass(9, "oZ");
-            SimpleClass cl4 = new SimpleClass(1, "AD");
-            SimpleClass cl5 = new SimpleClass(3, "bB");
-            SimpleClass[] mycoll = { cl1, cl1, cl3, cl4, cl5 };
-            Console.WriteLine("Sorting Default");
-            Array.Sort(mycoll);
-            foreach (var item in mycoll)
+            private static void DelegatesDemo()
             {
-                Console.WriteLine(item);
-            }
-            Console.WriteLine("Sorting By Name ");
-            Array.Sort(mycoll, new NameSorter());
-            foreach (var item in mycoll)
-            {
-                Console.WriteLine(item);
-            }
-            Console.WriteLine("Sorting By Last Char ");
-            Array.Sort(mycoll, new LastCharSorter()); // AAA-HR-1234
-            foreach (var item in mycoll)
-            {
-                Console.WriteLine(item);
-            }
-        }
+                Func<int, bool> predicate = x => x > 3; // Lambda
+                int[] mynumbers = { 1, 2, 3, 4, 5 };
+                var results = mynumbers.Where(param => param > 3).ToList();
 
-        public static void comparableDemo()
-        {
-            int[] mynumbers = { 8, 3, 19, 21, 1, 2, 3, 4 };
-            SimpleClass[] myInstances = { new SimpleClass(8), new SimpleClass(3) , new SimpleClass(19) , new SimpleClass(21),
+                foreach (int value in results)
+                {
+                    Console.WriteLine(value);
+                }
+                results = mynumbers.Where(input => input < 3).ToList();
+                foreach (int value in results)
+                {
+                    Console.WriteLine(value);
+                }
+
+                results = mynumbers.Where(input => input == 3).ToList();
+                foreach (int value in results)
+                {
+                    Console.WriteLine(value);
+                }
+
+                SimpleClass myIns = new SimpleClass(10);
+                typeIntTakeintStr pointer = myMethod;
+
+                Func<int, string, int> myrefUsingFunc = myMethod;
+                pointer(10, "");
+                myrefUsingFunc = myIns.myIntReturningMethod;
+                pointer(10, "");
+                myrefUsingFunc = someOtherMethod;
+                pointer(10, "");
+            }
+
+            static bool lessthn3Filter(int param) {
+                // param => param < 3
+                return param < 3;
+            }
+
+            static bool greaterthn3Filter(int param)
+            {
+                // param => param > 3
+                return param > 3;
+            }
+
+            static bool get3Filter(int param)
+            {
+                //param => param == 3
+                return param == 3;
+            }
+
+            static int myMethod(int para1, string param2) {
+                Console.WriteLine("Execuring this inthe myMethod");
+                return 0;
+            }
+
+            public static int someOtherMethod(int para, string para2) {
+                Console.WriteLine("SOMEOTHER METHOD");
+                return 0;
+            }
+
+            private static void a0ril04Demo()
+            {
+                SimpleClass cl1 = new SimpleClass(8, "zA");
+                SimpleClass cl2 = new SimpleClass(2, "xB");
+                SimpleClass cl3 = new SimpleClass(9, "oZ");
+                SimpleClass cl4 = new SimpleClass(1, "AD");
+                SimpleClass cl5 = new SimpleClass(3, "bB");
+                SimpleClass[] mycoll = { cl1, cl1, cl3, cl4, cl5 };
+                Console.WriteLine("Sorting Default");
+                Array.Sort(mycoll);
+                foreach (var item in mycoll)
+                {
+                    Console.WriteLine(item);
+                }
+                Console.WriteLine("Sorting By Name ");
+                Array.Sort(mycoll, new NameSorter());
+                foreach (var item in mycoll)
+                {
+                    Console.WriteLine(item);
+                }
+                Console.WriteLine("Sorting By Last Char ");
+                Array.Sort(mycoll, new LastCharSorter()); // AAA-HR-1234
+                foreach (var item in mycoll)
+                {
+                    Console.WriteLine(item);
+                }
+            }
+
+            public static void comparableDemo()
+            {
+                int[] mynumbers = { 8, 3, 19, 21, 1, 2, 3, 4 };
+                SimpleClass[] myInstances = { new SimpleClass(8), new SimpleClass(3) , new SimpleClass(19) , new SimpleClass(21),
             new SimpleClass(1), new SimpleClass(2) , new SimpleClass(3) , new SimpleClass(4)};
-            List<int> ints = new List<int>();
+                List<int> ints = new List<int>();
 
-            SimpleCollection mycoll = new SimpleCollection();
+                SimpleCollection mycoll = new SimpleCollection();
 
-            foreach (var item in mycoll)
-            {
+                foreach (var item in mycoll)
+                {
+
+                }
+
+                /*SimpleClass[] myInstances = new SimpleClass[]
+                { new SimpleClass(1,2),
+                  new SimpleClass(3,4) ,
+                  new SimpleClass(3,2) ,
+                  new SimpleClass(2,1),
+                };*/
+                //string[] strings = { "A-One", "B-Two", "C-Three" };
+
+                //Array.Sort(strings);
+                //strings.
+
+                Console.WriteLine("Original Values in My Instances");
+
+                Console.WriteLine("Original Values in My Instances_assignmnet");
+                foreach (var item in myInstances)
+                {
+                    Console.Write($"\n{item}, ");
+                }
+
+                Array.Sort(myInstances);
+                Console.WriteLine("\n AFTER SORTING  Values in My Integer MYINSTANCES ");
+                foreach (var item in myInstances)
+                {
+                    Console.Write($"{item} , ");
+
+                }
+
+                Console.WriteLine("\n Original Values in My Integer array mynumbers");
+
+                /*Console.WriteLine("\n Original Values in My Integer array mynumbers");
+                foreach (var item in mynumbers)
+                {
+                    Console.Write($"{item} , ");
+
+                }
+
+                Array.Sort(mynumbers);
+                Console.WriteLine("\n AFTER SORTING  Values in My Integer array mynumbers");
+                foreach (var item in mynumbers)
+                {
+                    Console.Write($"{item} , ");
+
+                }*/
+
 
             }
-
-            /*SimpleClass[] myInstances = new SimpleClass[]
-            { new SimpleClass(1,2),
-              new SimpleClass(3,4) ,
-              new SimpleClass(3,2) ,
-              new SimpleClass(2,1),
-            };*/
-            //string[] strings = { "A-One", "B-Two", "C-Three" };
-
-            //Array.Sort(strings);
-            //strings.
-
-            Console.WriteLine("Original Values in My Instances");
-
-            Console.WriteLine("Original Values in My Instances_assignmnet");
-            foreach (var item in myInstances)
-            {
-                Console.Write($"\n{item}, ");
-            }
-
-            Array.Sort(myInstances);
-            Console.WriteLine("\n AFTER SORTING  Values in My Integer MYINSTANCES ");
-            foreach (var item in myInstances)
-            {
-                Console.Write($"{item} , ");
-
-            }
-
-            Console.WriteLine("\n Original Values in My Integer array mynumbers");
-
-            /*Console.WriteLine("\n Original Values in My Integer array mynumbers");
-            foreach (var item in mynumbers)
-            {
-                Console.Write($"{item} , ");
-
-            }
-
-            Array.Sort(mynumbers);
-            Console.WriteLine("\n AFTER SORTING  Values in My Integer array mynumbers");
-            foreach (var item in mynumbers)
-            {
-                Console.Write($"{item} , ");
-
-            }*/
-
-
         }
     }
-}
+
         //public static void oeverridesDemo() { }
         
 

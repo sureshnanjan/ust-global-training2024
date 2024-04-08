@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\Administrator\\ust-global-training2024\\Basics\\InitialProgram\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{3C6FAC75-8FE8-4B26-8E70-408FB66A135C}|InitialProgram\\InitialProgram.csproj|c:\\users\\administrator\\ust-global-training2024\\basics\\initialprogram\\initialprogram\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C6FAC75-8FE8-4B26-8E70-408FB66A135C}|InitialProgram\\InitialProgram.csproj|solutionrelative:initialprogram\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{372E51B3-26C6-44DB-88A2-87F035331B32}|PoohLibrary\\PoohLibrary.csproj|c:\\users\\administrator\\ust-global-training2024\\basics\\initialprogram\\poohlibrary\\myutilityclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{372E51B3-26C6-44DB-88A2-87F035331B32}|PoohLibrary\\PoohLibrary.csproj|solutionrelative:poohlibrary\\myutilityclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{46226537-C8B3-4A0B-A756-2EFE768B0260}|Test-InitialProgram\\Test_InitialProgram.csproj|c:\\users\\administrator\\ust-global-training2024\\basics\\initialprogram\\test-initialprogram\\testbinarysearch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{46226537-C8B3-4A0B-A756-2EFE768B0260}|Test-InitialProgram\\Test_InitialProgram.csproj|solutionrelative:test-initialprogram\\testbinarysearch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -18,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,7 +34,33 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MyUtilityClass.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\ust-global-training2024\\Basics\\InitialProgram\\PoohLibrary\\MyUtilityClass.cs",
+              "RelativeDocumentMoniker": "PoohLibrary\\MyUtilityClass.cs",
+              "ToolTip": "C:\\Users\\Administrator\\ust-global-training2024\\Basics\\InitialProgram\\PoohLibrary\\MyUtilityClass.cs",
+              "RelativeToolTip": "PoohLibrary\\MyUtilityClass.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-05T11:32:41.144Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\ust-global-training2024\\Basics\\InitialProgram\\InitialProgram\\Program.cs",
+              "RelativeDocumentMoniker": "InitialProgram\\Program.cs",
+              "ToolTip": "C:\\Users\\Administrator\\ust-global-training2024\\Basics\\InitialProgram\\InitialProgram\\Program.cs",
+              "RelativeToolTip": "InitialProgram\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-05T11:18:21.211Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "TestBinarySearch.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\ust-global-training2024\\Basics\\InitialProgram\\Test-InitialProgram\\TestBinarySearch.cs",
               "RelativeDocumentMoniker": "Test-InitialProgram\\TestBinarySearch.cs",
@@ -39,7 +73,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "BinarySearcher.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\ust-global-training2024\\Basics\\InitialProgram\\Test-InitialProgram\\BinarySearcher.cs",
               "RelativeDocumentMoniker": "Test-InitialProgram\\BinarySearcher.cs",

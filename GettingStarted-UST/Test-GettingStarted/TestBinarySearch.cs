@@ -1,4 +1,5 @@
-﻿using System;
+﻿// Test Binary Search Assignment
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;

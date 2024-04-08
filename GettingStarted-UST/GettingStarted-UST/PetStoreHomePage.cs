@@ -25,7 +25,8 @@ namespace GettingStarted_UST
 
         }
 
-        public void accessPet(string cat) {
+        public void accessPet(string cat) 
+        {
         
         }
         public void signIn() { }
@@ -50,4 +51,3 @@ namespace GettingStarted_UST
 
     }
 }
-

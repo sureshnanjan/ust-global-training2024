@@ -29,7 +29,9 @@ namespace GettingStarted_UST
             Action<int, float, string> action1 = (a,b,c) => { };
 
         }
-
+        /// <summary>
+        /// Assignment for Index
+        /// </summary>
         private static void OperatorIndexerAssignment()
         {
             //EventsDemo();

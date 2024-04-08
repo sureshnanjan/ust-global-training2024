@@ -10,16 +10,15 @@ namespace GettingStarted_UST
     internal class Kitchen
     {
         //int value;
-        public event Action<object, EventArgs> FoodISReady;
+        public event Action<object,EventArgs> FoodISReady;
         // Notify that the food is ready
         // Publisher
         private string[] ordersWaiting;
-
+      
         public void ReceiveOrder(string name, string orderid) { }
 
-        public void PrepareTheFood()
-        {
-            Thread.Sleep(2000);
+        public void PrepareTheFood() {
+           Thread.Sleep(2000);
             Console.WriteLine("Step1");
             Thread.Sleep(3000);
             Console.WriteLine("Step2");
@@ -28,11 +27,12 @@ namespace GettingStarted_UST
             FoodISReady?.Invoke(this, EventArgs.Empty);
         }
 
-        public void PlaceOrder(Action<object, EventArgs> handler)
-        {
+        public void PlaceOrder(Action<object,EventArgs> handler) {
 
-            FoodISReady += handler;
+            FoodISReady += handler;         
         }
+
+        
 
     }
 }

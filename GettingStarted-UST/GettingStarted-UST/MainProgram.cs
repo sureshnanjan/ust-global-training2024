@@ -71,7 +71,7 @@ namespace GettingStarted_UST
             kfc.PlaceOrder(waiter3.ServeFood);
             kfc.PlaceOrder(cashier.CollectMoney);
             kfc.PrepareTheFood(); }
-    
+
         private static void April06Demo()
         {
             //a0ril04Demo();
@@ -182,14 +182,14 @@ namespace GettingStarted_UST
 
             Array.Sort(strings);
             //strings.
-            
+
             Console.WriteLine("Original Values in My Instances");
             foreach (var item in myInstances)
             {
                 Console.Write($"{item} , ");
 
             }
-            
+
             Console.WriteLine("\n Original Values in My Integer array mynumbers");
             foreach (var item in mynumbers)
             {
@@ -233,7 +233,7 @@ namespace GettingStarted_UST
 
         */
 
-            /* private static void demo03April()
+        /* private static void demo03April()
              {
                  //showDemoforTypes();
                  // Launch a Browser
@@ -366,5 +366,5 @@ namespace GettingStarted_UST
          }*/
 
 
-        }
-    }
+   }
+}

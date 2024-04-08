@@ -30,7 +30,7 @@ namespace Test_GettingStarted
             Array.Sort(myInstances);
             //string actual = myInstances.ToString();
             Assert.AreEqual(myInstances, Expected);
-            
+
 
 
         }

@@ -13,7 +13,7 @@ namespace GettingStarted_UST
         int value2;
         string name;
 
-        
+
         public SimpleClass(int val, string name)
         {
             this.value1 = val;
@@ -21,6 +21,13 @@ namespace GettingStarted_UST
            this.name = name;
 
          }
+        public SimpleClass(int val, int val1)
+        {
+            this.value1 = val;
+
+            this.value2 = val1;
+
+        }
         public SimpleClass(int val)
         {
             this.value1 = val;
@@ -48,7 +55,7 @@ namespace GettingStarted_UST
 
         public object Clone()
         {
-            
+
             return new SimpleClass(this.value1);
         }
 

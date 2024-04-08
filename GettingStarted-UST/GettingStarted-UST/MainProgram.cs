@@ -24,11 +24,11 @@ namespace GettingStarted_UST
         {
             //OperatorIndexerAssignment();
 
-            GenericSimpleClass<int,string> genericSimpleClass = new GenericSimpleClass<int,string>();
+            GenericSimpleClass<int, string> genericSimpleClass = new GenericSimpleClass<int, string>();
             genericSimpleClass.MyCounter = 0;
-            GenericSimpleClass<float,string> genericSimpleClass1 = new GenericSimpleClass<float,string>();
+            GenericSimpleClass<float, string> genericSimpleClass1 = new GenericSimpleClass<float, string>();
             genericSimpleClass1.MyCounter = 1.2f;
-            Action<int, float, string> action1 = (a,b,c) => { };
+            Action<int, float, string> action1 = (a, b, c) => { };
 
         }
 
@@ -70,9 +70,8 @@ namespace GettingStarted_UST
             kfc.PlaceOrder(waiter2.ServeFood);
             kfc.PlaceOrder(waiter3.ServeFood);
             kfc.PlaceOrder(cashier.CollectMoney);
-            kfc.PrepareTheFood();
-        }
-
+            kfc.PrepareTheFood(); }
+    
         private static void April06Demo()
         {
             //a0ril04Demo();

@@ -7,7 +7,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GettingStarted-UST", "Getti
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyLIbrary", "MyLIbrary\MyLIbrary.csproj", "{EDE875E4-404F-4A7D-84EA-C9357A3334D4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test-GettingStarted", "Test-GettingStarted\Test-GettingStarted.csproj", "{50131221-1495-4CF8-B7A8-A6FFE46F8188}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test-GettingStarted", "Test-GettingStarted\Test-GettingStarted.csproj", "{50131221-1495-4CF8-B7A8-A6FFE46F8188}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6C624EAC-6D30-4A68-AC42-513DA5AC4AF0}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

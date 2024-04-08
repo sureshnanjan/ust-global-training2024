@@ -11,7 +11,7 @@ namespace GettingStarted_UST
     //public delegate TResult Func<in T, out TResult>(T arg);
     public class MainProgram
     {
-
+        //Summary
         // Fields
         // Properties
         // Methods

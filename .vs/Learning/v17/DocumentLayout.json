@@ -1,7 +1,44 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Administrator\\ust-global-training2024\\Learning\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Administrator\\ust-global-training2024\\Learning\\basics\\assignment.readme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:basics\\assignment.readme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Administrator\\ust-global-training2024\\Learning\\basics\\MinimalCSharpProgramv3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:basics\\MinimalCSharpProgramv3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Administrator\\ust-global-training2024\\Learning\\basics\\mylibrary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:basics\\mylibrary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Administrator\\ust-global-training2024\\Learning\\basics\\MinimalCSharpProgram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:basics\\MinimalCSharpProgram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Administrator\\ust-global-training2024\\Learning\\basics\\MinimalCSharpProgramv2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:basics\\MinimalCSharpProgramv2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Administrator\\ust-global-training2024\\Learning\\basics\\MinimalCSharpProgramv1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:basics\\MinimalCSharpProgramv1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Administrator\\ust-global-training2024\\Learning\\BasicProgram\\FirstProgram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BasicProgram\\FirstProgram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Administrator\\ust-global-training2024\\Learning\\BasicProgram\\mylibrary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BasicProgram\\mylibrary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Administrator\\ust-global-training2024\\Learning\\GettingStarted-UST\\GettingStarted-UST\\AnotherNamespace.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GettingStarted-UST\\GettingStarted-UST\\AnotherNamespace.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +46,124 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "assignment.readme.txt",
+              "DocumentMoniker": "C:\\Users\\Administrator\\ust-global-training2024\\Learning\\basics\\assignment.readme.txt",
+              "RelativeDocumentMoniker": "basics\\assignment.readme.txt",
+              "ToolTip": "C:\\Users\\Administrator\\ust-global-training2024\\Learning\\basics\\assignment.readme.txt",
+              "RelativeToolTip": "basics\\assignment.readme.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-04-03T15:46:41.235Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "mylibrary.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\ust-global-training2024\\Learning\\basics\\mylibrary.cs",
+              "RelativeDocumentMoniker": "basics\\mylibrary.cs",
+              "ToolTip": "C:\\Users\\Administrator\\ust-global-training2024\\Learning\\basics\\mylibrary.cs",
+              "RelativeToolTip": "basics\\mylibrary.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-03T15:46:33.37Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MinimalCSharpProgramv3.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\ust-global-training2024\\Learning\\basics\\MinimalCSharpProgramv3.cs",
+              "RelativeDocumentMoniker": "basics\\MinimalCSharpProgramv3.cs",
+              "ToolTip": "C:\\Users\\Administrator\\ust-global-training2024\\Learning\\basics\\MinimalCSharpProgramv3.cs",
+              "RelativeToolTip": "basics\\MinimalCSharpProgramv3.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-03T15:44:06.891Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MinimalCSharpProgram.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\ust-global-training2024\\Learning\\basics\\MinimalCSharpProgram.cs",
+              "RelativeDocumentMoniker": "basics\\MinimalCSharpProgram.cs",
+              "ToolTip": "C:\\Users\\Administrator\\ust-global-training2024\\Learning\\basics\\MinimalCSharpProgram.cs",
+              "RelativeToolTip": "basics\\MinimalCSharpProgram.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-02T16:50:11.888Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MinimalCSharpProgramv2.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\ust-global-training2024\\Learning\\basics\\MinimalCSharpProgramv2.cs",
+              "RelativeDocumentMoniker": "basics\\MinimalCSharpProgramv2.cs",
+              "ToolTip": "C:\\Users\\Administrator\\ust-global-training2024\\Learning\\basics\\MinimalCSharpProgramv2.cs",
+              "RelativeToolTip": "basics\\MinimalCSharpProgramv2.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-03T15:44:05.64Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MinimalCSharpProgramv1.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\ust-global-training2024\\Learning\\basics\\MinimalCSharpProgramv1.cs",
+              "RelativeDocumentMoniker": "basics\\MinimalCSharpProgramv1.cs",
+              "ToolTip": "C:\\Users\\Administrator\\ust-global-training2024\\Learning\\basics\\MinimalCSharpProgramv1.cs",
+              "RelativeToolTip": "basics\\MinimalCSharpProgramv1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-03T15:43:55.304Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "mylibrary.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\ust-global-training2024\\Learning\\BasicProgram\\mylibrary.cs",
+              "RelativeDocumentMoniker": "BasicProgram\\mylibrary.cs",
+              "ToolTip": "C:\\Users\\Administrator\\ust-global-training2024\\Learning\\BasicProgram\\mylibrary.cs",
+              "RelativeToolTip": "BasicProgram\\mylibrary.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-03T15:39:22.879Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FirstProgram.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\ust-global-training2024\\Learning\\BasicProgram\\FirstProgram.cs",
+              "RelativeDocumentMoniker": "BasicProgram\\FirstProgram.cs",
+              "ToolTip": "C:\\Users\\Administrator\\ust-global-training2024\\Learning\\BasicProgram\\FirstProgram.cs",
+              "RelativeToolTip": "BasicProgram\\FirstProgram.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-02T16:49:48.919Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AnotherNamespace.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\ust-global-training2024\\Learning\\GettingStarted-UST\\GettingStarted-UST\\AnotherNamespace.cs",
+              "RelativeDocumentMoniker": "GettingStarted-UST\\GettingStarted-UST\\AnotherNamespace.cs",
+              "ToolTip": "C:\\Users\\Administrator\\ust-global-training2024\\Learning\\GettingStarted-UST\\GettingStarted-UST\\AnotherNamespace.cs",
+              "RelativeToolTip": "GettingStarted-UST\\GettingStarted-UST\\AnotherNamespace.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-03T11:37:39.957Z"
             }
           ]
         }

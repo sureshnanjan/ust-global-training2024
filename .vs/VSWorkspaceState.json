@@ -1,7 +1,15 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\BasicProgram",
+    "\\basics",
+    "\\ConsoleApp1",
+    "\\ConsoleApp1\\ConsoleApp1",
+    "\\GettingStarted-UST",
+    "\\GettingStarted-UST\\GettingStarted-UST",
+    "\\GettingStarted-UST\\MyLIbrary",
+    "\\GettingStarted-UST\\Test-GettingStarted"
   ],
-  "SelectedNode": "\\GettingStarted-UST.sln",
+  "SelectedNode": "\\GettingStarted-UST\\GettingStarted-UST.sln",
   "PreviewInSolutionExplorer": false
 }

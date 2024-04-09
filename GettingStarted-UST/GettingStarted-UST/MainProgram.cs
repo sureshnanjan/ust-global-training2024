@@ -25,7 +25,7 @@ namespace GettingStarted_UST
             //GenericsIntro();
 
             Calculator calculator = new Calculator();
-            var results = calculator.add(10.1, 20.0);
+            var results = calculator.add(10, 20);
 
             Func<int, bool> mytester = (str) => str > 10;
             mytester(0);
@@ -33,11 +33,11 @@ namespace GettingStarted_UST
             int res = calculator.compare<int>(20, 20);
             int res1 = calculator.compare<string>("", "");
             int res2 = calculator.compare<SimpleClass>(new SimpleClass(0), new SimpleClass(10));
-;
+            ;
 
 
 
-           
+
 
         }
 
@@ -137,7 +137,8 @@ namespace GettingStarted_UST
             pointer(10, "");
         }
 
-        static bool lessthn3Filter(int param) {
+        static bool lessthn3Filter(int param)
+        {
             // param => param < 3
             return param < 3;
         }
@@ -154,12 +155,14 @@ namespace GettingStarted_UST
             return param == 3;
         }
 
-        static int myMethod(int para1, string param2) {
+        static int myMethod(int para1, string param2)
+        {
             Console.WriteLine("Execuring this inthe myMethod");
             return 0;
         }
 
-        private static int someOtherMethod(int para, string para2) {
+        private static int someOtherMethod(int para, string para2)
+        {
             Console.WriteLine("SOMEOTHER METHOD");
             return 0;
         }
@@ -304,7 +307,8 @@ namespace GettingStarted_UST
             }
         }
 
-        private static void Move(string direction) {
+        private static void Move(string direction)
+        {
 
             switch (direction)
             {
@@ -315,7 +319,8 @@ namespace GettingStarted_UST
 
         }
 
-        private static void Move(Directions dir) {
+        private static void Move(Directions dir)
+        {
             switch (dir)
             {
                 case Directions.left:

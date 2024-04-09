@@ -19,6 +19,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\GettingStarted-UST\GettingStarted-UST.csproj" />
+    <ProjectReference Include="..\MyLIbrary\MyLIbrary.csproj" />
   </ItemGroup>
 
 </Project>

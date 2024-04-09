@@ -7,7 +7,7 @@ using MyLIbrary;
 
 namespace GettingStarted_UST
 {
-    delegate int typeIntTakeintStr(int param1, string some);
+    //delegate int typeIntTakeintStr(int param1, string some);
     //public delegate TResult Func<in T, out TResult>(T arg);
     public class MainProgram
     {
@@ -20,14 +20,33 @@ namespace GettingStarted_UST
         // Operators
         public static void Main(string[] args)
         {
+            Kitchen kfc = new Kitchen(); // Publisher
+            Waiter waiter1 = new Waiter(1); // Consumers
+            Waiter waiter2 = new Waiter(2);
+            Waiter waiter3 = new Waiter(3);
+            Cashier cashier = new Cashier(1);
+            kfc.PlaceOrder(waiter1.ServeFood);
+            kfc.PlaceOrder(waiter2.ServeFood);
+            kfc.PlaceOrder(waiter3.ServeFood);
+            kfc.PlaceOrder(cashier.CollectMoney);
+            kfc.PrepareTheFood();
+
+        }
+
+    }
+}
+
+/*
+
+        private static void SimpleClassDemo1()
+        {
             //OperatorIndexerAssignment();
 
-            GenericSimpleClass<int,string> genericSimpleClass = new GenericSimpleClass<int,string>();
+            GenericSimpleClass<int, string> genericSimpleClass = new GenericSimpleClass<int, string>();
             genericSimpleClass.MyCounter = 0;
-            GenericSimpleClass<float,string> genericSimpleClass1 = new GenericSimpleClass<float,string>();
+            GenericSimpleClass<float, string> genericSimpleClass1 = new GenericSimpleClass<float, string>();
             genericSimpleClass1.MyCounter = 1.2f;
-            Action<int, float, string> action1 = (a,b,c) => { };
-
+            Action<int, float, string> action1 = (a, b, c) => { };
         }
 
         private static void OperatorIndexerAssignment()
@@ -51,7 +70,7 @@ namespace GettingStarted_UST
             Console.WriteLine(mysequence[0]);
             SimpleCollection scCollection = new SimpleCollection();
             Console.WriteLine(scCollection[0]); // Indexer
-            */
+            
         }
 
         /// <summary>
@@ -347,37 +366,45 @@ namespace GettingStarted_UST
                 case Months.january: Console.WriteLine(); ; break;
             }
         }
-    }
-
-    class Human {
-        int age;
-        string skincolor;
-        string nationality;
-        string gender;
-        string name;
-    }
-
-    class Employee {
-        int age;
-        //string skincolor;
-        string nationality;
-        string gender;
-        string name;
-        string emp_code;
-        string skills;
-        DateTime doj;
-    }
-
-    class DateingPartner {
-    
-    }
-
-    enum FavColor {
-        Black,
-        Blue
-    }
 
     
+    }
+        */
+        /*
+        class Human
+           {
+            int age;
+            string skincolor;
+            string nationality;
+            string gender;
+            string name;
+           }
+
+        class Employee 
+           {
+            int age;
+            //string skincolor;
+            string nationality;
+            string gender;
+            string name;
+            string emp_code;
+            string skills;
+            DateTime doj;
+           }
+
+        class DateingPartner
+           {
+
+           }
+
+        enum FavColor
+           {
+            Black,
+            Blue
+            }
+        */
+    
 
 
-}
+
+

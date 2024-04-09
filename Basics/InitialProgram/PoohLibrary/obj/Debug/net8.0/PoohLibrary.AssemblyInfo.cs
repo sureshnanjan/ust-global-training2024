@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PoohLibrary")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+36ddb5af1d1fa59c2e2ebc26db4da8e558c8eb8e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b63ef2a6f99a77c8ad04c0676a2a9741bc44ec8c")]
 [assembly: System.Reflection.AssemblyProductAttribute("PoohLibrary")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PoohLibrary")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

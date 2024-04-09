@@ -23,11 +23,10 @@ namespace GettingStarted_UST
 
         public string LogoColor { get { return "green"; } }
 
-        }
 
-        public void accessPet(string cat) 
+        public void accessPet(string cat)
         {
-        
+
         }
         public void signIn() { }
 
@@ -35,16 +34,12 @@ namespace GettingStarted_UST
 
         public void search() { }
 
-        public string getDescription() {
-           return String.Empty;
-
-        public void SignOut() 
+        public string getDescription()
         {
+            return String.Empty;
 
-        }
 
-        public void Search()
-        {
+
 
         }
 

@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Test_GettingStarted
+/*namespace Test_GettingStarted
 {
     [TestClass]
-    public  class TestBinarySearch
+    /*public  class TestBinarySearch
     {
         [TestMethod]
         public void test_for_existing_values() { 

@@ -25,7 +25,7 @@ namespace GettingStarted_UST
             //GenericsIntro();
 
             Calculator calculator = new Calculator();
-            var results = calculator.add(10.1, 20.0);
+            //var results = calculator.add(10.1, 20.0);
 
             Func<int, bool> mytester = (str) => str > 10;
             mytester(0);

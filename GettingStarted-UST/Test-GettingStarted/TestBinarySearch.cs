@@ -21,7 +21,7 @@ namespace Test_GettingStarted
         [TestMethod]
         public void testing_non_existent_item_lowerval()
         {
-
+        
             int[] myinputArray = { 1, 2, 3 };
             int searchTerm = 0;
             int expected = ~1;
@@ -48,6 +48,7 @@ namespace Test_GettingStarted
         /// <summary>
         /// If this method is called with a non-sorted array, the return value can be incorrect and a negative number could be returned, even if value is present in array.
         /// </summary>
+
 
         [TestMethod]
         public void testing_nonsortedarray_existent_item()
@@ -114,7 +115,7 @@ namespace Test_GettingStarted
             int actual = searcher.doSearch();
             //Console.WriteLine(actual);
             Assert.AreEqual(expected, actual);
-
+            
         }
 
         [TestMethod]
@@ -149,8 +150,9 @@ namespace Test_GettingStarted
         //    Assert.ThrowsException<ArgumentNullException>(() => { searcher.doSearch(); });
         //    int actual = searcher.doSearch();
         //    Assert.AreEqual(expected, actual);
-
+        
         //}
-
+        
+        }
     }
 }

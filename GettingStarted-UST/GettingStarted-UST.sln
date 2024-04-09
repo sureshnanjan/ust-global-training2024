@@ -11,8 +11,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test-GettingStarted", "Test
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StorePet", "StorePet\StorePet.csproj", "{911656E3-A607-46BC-B653-3B1C92C1E688}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFirstProgram", "MyFirstProgram\MyFirstProgram.csproj", "{59690D48-C07D-43E4-AC5D-8980CCF5442D}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,10 +33,6 @@ Global
 		{911656E3-A607-46BC-B653-3B1C92C1E688}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{911656E3-A607-46BC-B653-3B1C92C1E688}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{911656E3-A607-46BC-B653-3B1C92C1E688}.Release|Any CPU.Build.0 = Release|Any CPU
-		{59690D48-C07D-43E4-AC5D-8980CCF5442D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{59690D48-C07D-43E4-AC5D-8980CCF5442D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{59690D48-C07D-43E4-AC5D-8980CCF5442D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{59690D48-C07D-43E4-AC5D-8980CCF5442D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

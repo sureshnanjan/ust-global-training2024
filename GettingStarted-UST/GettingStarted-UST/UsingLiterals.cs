@@ -94,7 +94,7 @@ namespace GettingStarted_UST
             /// Printing C# Litterrals
             /// </summary>
 
-            Console.WriteLine("Integer -Decimal literals \t\t     : " + decINt + " \nInteger- Hexa-decimal literals \t\t     : " + hexInt + " \nInteger- Binary literals \t\t     : " + binaryInt);
+            //Console.WriteLine("Integer -Decimal literals \t\t     : " + decINt + " \nInteger- Hexa-decimal literals \t\t     : " + hexInt + " \nInteger- Binary literals \t\t     : " + binaryInt);
             Console.WriteLine("Floating Literals- double \t\t     : " + numDouble + "\nFloating Literals- float \t\t     : " + myFloat + "\nFloating Literals- Exponentialvalue \t     : " + reSult);
             Console.WriteLine("Character Literals - Single quote \t     : " + myChar + "\nCharacter Literals - Unicode Representation : " + uniCode + "\nCharacter Literals - Escape Sequence\t   : " + escSequence);
             Console.WriteLine("String Literals -single \t\t   : " + myString + "\nString Literals -Path declaration\t   :" + newPath + "\nString Literals - Interpolation \t   : " + name);

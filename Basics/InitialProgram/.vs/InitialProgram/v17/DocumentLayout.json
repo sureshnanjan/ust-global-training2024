@@ -3,36 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Administrator\\ust-global-training2024\\Basics\\InitialProgram\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3C6FAC75-8FE8-4B26-8E70-408FB66A135C}|InitialProgram\\InitialProgram.csproj|c:\\users\\administrator\\ust-global-training2024\\basics\\initialprogram\\initialprogram\\assignmentliterals.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C6FAC75-8FE8-4B26-8E70-408FB66A135C}|InitialProgram\\InitialProgram.csproj|solutionrelative:initialprogram\\assignmentliterals.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{46226537-C8B3-4A0B-A756-2EFE768B0260}|Test-InitialProgram\\Test_InitialProgram.csproj|c:\\users\\administrator\\ust-global-training2024\\basics\\initialprogram\\test-initialprogram\\testdelegate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{46226537-C8B3-4A0B-A756-2EFE768B0260}|Test-InitialProgram\\Test_InitialProgram.csproj|solutionrelative:test-initialprogram\\testdelegate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3C6FAC75-8FE8-4B26-8E70-408FB66A135C}|InitialProgram\\InitialProgram.csproj|c:\\users\\administrator\\ust-global-training2024\\basics\\initialprogram\\initialprogram\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C6FAC75-8FE8-4B26-8E70-408FB66A135C}|InitialProgram\\InitialProgram.csproj|solutionrelative:initialprogram\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{46226537-C8B3-4A0B-A756-2EFE768B0260}|Test-InitialProgram\\Test_InitialProgram.csproj|c:\\users\\administrator\\ust-global-training2024\\basics\\initialprogram\\test-initialprogram\\delegate class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{46226537-C8B3-4A0B-A756-2EFE768B0260}|Test-InitialProgram\\Test_InitialProgram.csproj|solutionrelative:test-initialprogram\\delegate class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3C6FAC75-8FE8-4B26-8E70-408FB66A135C}|InitialProgram\\InitialProgram.csproj|c:\\users\\administrator\\ust-global-training2024\\basics\\initialprogram\\initialprogram\\kitchen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C6FAC75-8FE8-4B26-8E70-408FB66A135C}|InitialProgram\\InitialProgram.csproj|solutionrelative:initialprogram\\kitchen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3C6FAC75-8FE8-4B26-8E70-408FB66A135C}|InitialProgram\\InitialProgram.csproj|c:\\users\\administrator\\ust-global-training2024\\basics\\initialprogram\\initialprogram\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C6FAC75-8FE8-4B26-8E70-408FB66A135C}|InitialProgram\\InitialProgram.csproj|solutionrelative:initialprogram\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3C6FAC75-8FE8-4B26-8E70-408FB66A135C}|InitialProgram\\InitialProgram.csproj|C:\\Users\\Administrator\\ust-global-training2024\\Basics\\InitialProgram\\initialprogram\\waiter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3C6FAC75-8FE8-4B26-8E70-408FB66A135C}|InitialProgram\\InitialProgram.csproj|solutionrelative:initialprogram\\waiter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{3C6FAC75-8FE8-4B26-8E70-408FB66A135C}|InitialProgram\\InitialProgram.csproj|c:\\users\\administrator\\ust-global-training2024\\basics\\initialprogram\\initialprogram\\kitchen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C6FAC75-8FE8-4B26-8E70-408FB66A135C}|InitialProgram\\InitialProgram.csproj|solutionrelative:initialprogram\\kitchen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3C6FAC75-8FE8-4B26-8E70-408FB66A135C}|InitialProgram\\InitialProgram.csproj|C:\\Users\\Administrator\\ust-global-training2024\\Basics\\InitialProgram\\initialprogram\\cashier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3C6FAC75-8FE8-4B26-8E70-408FB66A135C}|InitialProgram\\InitialProgram.csproj|solutionrelative:initialprogram\\cashier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3C6FAC75-8FE8-4B26-8E70-408FB66A135C}|InitialProgram\\InitialProgram.csproj|C:\\Users\\Administrator\\ust-global-training2024\\Basics\\InitialProgram\\initialprogram\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C6FAC75-8FE8-4B26-8E70-408FB66A135C}|InitialProgram\\InitialProgram.csproj|solutionrelative:initialprogram\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3C6FAC75-8FE8-4B26-8E70-408FB66A135C}|InitialProgram\\InitialProgram.csproj|C:\\Users\\Administrator\\ust-global-training2024\\Basics\\InitialProgram\\initialprogram\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3C6FAC75-8FE8-4B26-8E70-408FB66A135C}|InitialProgram\\InitialProgram.csproj|solutionrelative:initialprogram\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,70 +34,46 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AssignmentLiterals.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\ust-global-training2024\\Basics\\InitialProgram\\InitialProgram\\AssignmentLiterals.cs",
-              "RelativeDocumentMoniker": "InitialProgram\\AssignmentLiterals.cs",
-              "ToolTip": "C:\\Users\\Administrator\\ust-global-training2024\\Basics\\InitialProgram\\InitialProgram\\AssignmentLiterals.cs",
-              "RelativeToolTip": "InitialProgram\\AssignmentLiterals.cs",
-              "ViewState": "AQIAAG8AAAAAAAAAAAAqwIAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-09T03:35:57.792Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "TestDelegate.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\ust-global-training2024\\Basics\\InitialProgram\\Test-InitialProgram\\TestDelegate.cs",
-              "RelativeDocumentMoniker": "Test-InitialProgram\\TestDelegate.cs",
-              "ToolTip": "C:\\Users\\Administrator\\ust-global-training2024\\Basics\\InitialProgram\\Test-InitialProgram\\TestDelegate.cs",
-              "RelativeToolTip": "Test-InitialProgram\\TestDelegate.cs",
-              "ViewState": "AQIAACIAAAAAAAAAAAAAwDgAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-09T03:19:13.831Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "Delegate Class.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\ust-global-training2024\\Basics\\InitialProgram\\Test-InitialProgram\\Delegate Class.cs",
               "RelativeDocumentMoniker": "Test-InitialProgram\\Delegate Class.cs",
               "ToolTip": "C:\\Users\\Administrator\\ust-global-training2024\\Basics\\InitialProgram\\Test-InitialProgram\\Delegate Class.cs",
               "RelativeToolTip": "Test-InitialProgram\\Delegate Class.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAhAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-09T03:18:29.076Z",
+              "WhenOpened": "2024-04-09T04:17:19.844Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Customer.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\ust-global-training2024\\Basics\\InitialProgram\\InitialProgram\\Customer.cs",
-              "RelativeDocumentMoniker": "InitialProgram\\Customer.cs",
-              "ToolTip": "C:\\Users\\Administrator\\ust-global-training2024\\Basics\\InitialProgram\\InitialProgram\\Customer.cs",
-              "RelativeToolTip": "InitialProgram\\Customer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-08T16:18:00.519Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\ust-global-training2024\\Basics\\InitialProgram\\InitialProgram\\Program.cs",
               "RelativeDocumentMoniker": "InitialProgram\\Program.cs",
               "ToolTip": "C:\\Users\\Administrator\\ust-global-training2024\\Basics\\InitialProgram\\InitialProgram\\Program.cs",
               "RelativeToolTip": "InitialProgram\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAwCgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-08T16:07:42.842Z"
+              "WhenOpened": "2024-04-09T04:11:19.301Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\ust-global-training2024\\Basics\\InitialProgram\\InitialProgram\\Customer.cs",
+              "RelativeDocumentMoniker": "InitialProgram\\Customer.cs",
+              "ToolTip": "C:\\Users\\Administrator\\ust-global-training2024\\Basics\\InitialProgram\\InitialProgram\\Customer.cs",
+              "RelativeToolTip": "InitialProgram\\Customer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T03:54:21.172Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -115,31 +83,33 @@
               "RelativeDocumentMoniker": "InitialProgram\\Cashier.cs",
               "ToolTip": "C:\\Users\\Administrator\\ust-global-training2024\\Basics\\InitialProgram\\InitialProgram\\Cashier.cs",
               "RelativeToolTip": "InitialProgram\\Cashier.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAuwA4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-08T16:04:23.805Z"
+              "WhenOpened": "2024-04-08T16:04:23.805Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Waiter.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\ust-global-training2024\\Basics\\InitialProgram\\InitialProgram\\Waiter.cs",
               "RelativeDocumentMoniker": "InitialProgram\\Waiter.cs",
               "ToolTip": "C:\\Users\\Administrator\\ust-global-training2024\\Basics\\InitialProgram\\InitialProgram\\Waiter.cs",
               "RelativeToolTip": "InitialProgram\\Waiter.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-08T16:03:58.697Z"
+              "WhenOpened": "2024-04-08T16:03:58.697Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Kitchen.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\ust-global-training2024\\Basics\\InitialProgram\\InitialProgram\\Kitchen.cs",
               "RelativeDocumentMoniker": "InitialProgram\\Kitchen.cs",
               "ToolTip": "C:\\Users\\Administrator\\ust-global-training2024\\Basics\\InitialProgram\\InitialProgram\\Kitchen.cs",
               "RelativeToolTip": "InitialProgram\\Kitchen.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-08T16:03:45.046Z",
               "EditorCaption": ""

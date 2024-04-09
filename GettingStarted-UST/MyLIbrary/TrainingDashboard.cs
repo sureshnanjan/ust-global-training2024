@@ -19,7 +19,7 @@ namespace MyLIbrary
         string[] topics;
         int marks = 10; // 5667789 - 00001010
         float percent = 10.2f;
-        
+        int x;
         // Methods
         
         /// <summary>

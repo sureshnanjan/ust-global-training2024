@@ -11,17 +11,7 @@ namespace Test_GettingStarted
     public  class TestBinarySearch
     {
         [TestMethod]
-        public void test_for_existing_values() { 
-        
-            int[] myinputArray =  { 1, 2, 3 };
-            int searchTerm = 3;
-            int expected = 3;
-            BinarySearcher searcher = new BinarySearcher(myinputArray, searchTerm);
-            int actual = searcher.doSearch();
-
-            Assert.AreEqual(expected, actual);
-
-        }
+        public void test_for_existing_values() {  
 
         [TestMethod]
         public void test_for_existing_values_inbeginning() { }

@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "FirstProgram/1.0.0": {
+        "dependencies": {
+          "SudhaLibrary": "1.0.0"
+        },
+        "runtime": {
+          "FirstProgram.dll": {}
+        }
+      },
+      "SudhaLibrary/1.0.0": {
+        "runtime": {
+          "SudhaLibrary.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "FirstProgram/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SudhaLibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

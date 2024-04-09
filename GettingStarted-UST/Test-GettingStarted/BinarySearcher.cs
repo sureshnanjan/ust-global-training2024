@@ -1,9 +1,9 @@
 ﻿
-/*namespace Test_GettingStarted
+namespace Test_GettingStarted
 {
     internal class BinarySearcher
     {
-        /*private int[] myinputArray;
+        private int[] myinputArray;
         private int searchTerm;
 
         public BinarySearcher(int[] myinputArray, int searchTerm)

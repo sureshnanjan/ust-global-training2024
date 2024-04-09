@@ -1,19 +1,10 @@
-namespace Afshan.training{
-public class TrainingDashboard{
-	// Properties
-	string TrainerName;
-	string startdate;
-	string enddate;
-	string[] participants;
-	string[] topics;
-	// Methods
-	public static void publish(){
-		System.Console.WriteLine("Publishing training");
-	}
-	public static void generateReport(){
-		System.Console.WriteLine("Generating report");
+namespace ust.training{
+public class MyUtilityClass{
+	string name;
+	string course;
+	int marks;
+	public static void WriteLine(){
+		System.Console.WriteLine("I ama a utility functioin which you can use");
 	}
 }
 }
-
-// Make this library and create a main program and call the methods

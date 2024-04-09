@@ -7,3 +7,4 @@ static void Main(){
 	MyUtilityClass.WriteLine();
 }
 }
+

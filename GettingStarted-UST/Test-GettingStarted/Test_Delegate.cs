@@ -32,18 +32,18 @@ namespace Test_GettingStarted
         }
         [TestMethod]
         //Find values less than 10 with Func Delegate
-        public void DelegateTestFunc_Lessthan10Values() { 
+        public void DelegateTestFunc_Lessthan5Values() { 
             DelegateClass dc = new DelegateClass();
             int[] inputArray = { 1, 2, 2, 3, 5, 4, 2, 6, 17, 28, 59, 12 };
-            int[] expected = { 1, 2, 2, 3, 5, 4, 2, 6 };
+            int[] expected = {1,2,2,3,4,2};
             Func<int, bool> pointer = dc.lessThan5;
-            var actual = inputArray.Where(pointer).ToArray();
+            int[] actual = inputArray.Where(pointer).ToArray();
             foreach (var item in actual)
             {
-                Console.WriteLine( item);
+                Console.WriteLine(item);
             }
-            Assert.IsTrue(Array.Equals(expected, actual));
-        }
+            Assert.IsTrue(actual.SequenceEqual(expected));
+                  }
         [TestMethod]
         // Display values with the help of Action Delegate
         public  void DelegateTestAction_StringMerge()

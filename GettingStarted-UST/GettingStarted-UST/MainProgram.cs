@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MyLIbrary;
-using static System.Net.Mime.MediaTypeNames;
+using WebdriverDotnet;
 
 namespace GettingStarted_UST
 {
@@ -12,7 +12,76 @@ namespace GettingStarted_UST
     //public delegate TResult Func<in T, out TResult>(T arg);
     public class MainProgram
     {
+
+        // Fields
+        // Properties
+        // Methods
+        // Events
+        // Indexers
+        // Operators
         public static void Main(string[] args)
+        {
+            //genericsDemo();
+
+            MyBrowser brower = new MyBrowser();
+            brower.OpenWebsite("https://petstore.octoperf.com/actions/Catalog.action");
+            Console.WriteLine(brower.GetTitle());
+        }
+        private static void genericsDemo()
+        {
+            //OperatorIndexerAssignment();
+
+            //GenericsIntro();
+
+            Calculator calculator = new Calculator();
+            //var results = calculator.add(10.1, 20.0);
+
+            Func<int, bool> mytester = (str) => str > 10;
+            mytester(0);
+
+            int res = calculator.compare<int>(20, 20);
+            int res1 = calculator.compare<string>("", "");
+            int res2 = calculator.compare<SimpleClass>(new SimpleClass(0), new SimpleClass(10));
+        }
+
+        private static void GenericsIntro()
+        {
+            // Constructed Type
+            GenericSimpleClass<int, string> genericSimpleClass = new GenericSimpleClass<int, string>();
+            genericSimpleClass.MyCounter = 0;
+            GenericSimpleClass<float, string> genericSimpleClass1 = new GenericSimpleClass<float, string>();
+            genericSimpleClass1.MyCounter = 1.2f;
+            Action<int, float, string> action1 = (a, b, c) => { };
+        }
+
+        private static void OperatorIndexerAssignment()
+        {
+            //EventsDemo();
+            int aNumber = 10;
+            int another = 100;
+            int result = aNumber + another;
+            SimpleClass class1 = new SimpleClass(10);
+            SimpleClass class2 = new SimpleClass(100);
+            // Assignemnt for Operators and Indexers
+            /*
+            var result = class1 + class2; // Operator 
+            if (class2 > class1) 
+            {
+                Console.WriteLine();
+            }
+
+            int[] mysequence = { 1, 2, 3 };
+
+            Console.WriteLine(mysequence[0]);
+            SimpleCollection scCollection = new SimpleCollection();
+            Console.WriteLine(scCollection[0]); // Indexer
+            */
+        }
+
+        /// <summary>
+        /// This method produces a Publisher Subscriber
+        /// </summary>
+        private static void EventsDemo()
         {
             Kitchen kfc = new Kitchen(); // Publisher
             Waiter waiter1 = new Waiter(1); // Consumers
@@ -24,8 +93,6 @@ namespace GettingStarted_UST
             kfc.PlaceOrder(waiter3.ServeFood);
             kfc.PlaceOrder(cashier.CollectMoney);
             kfc.PrepareTheFood();
-            
-
         }
 
         private static void April06Demo()

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MyLIbrary;
+using ImplementationPetStore;
 
 namespace GettingStarted_UST
 {
@@ -20,6 +21,16 @@ namespace GettingStarted_UST
         // Operators
         public static void Main(string[] args)
         {
+           // EventHandlingDemo();
+           MyBrowser browser = new MyBrowser();
+           browser.Openurl("https://petstore.octoperf.com/actions/Catalog.action");
+           Console.WriteLine(browser.GetTitle());
+
+
+        }
+
+        private static void EventHandlingDemo()
+        {
             Kitchen kfc = new Kitchen(); // Publisher
             Waiter waiter1 = new Waiter(1); // Consumers
             Waiter waiter2 = new Waiter(2);
@@ -30,9 +41,7 @@ namespace GettingStarted_UST
             kfc.PlaceOrder(waiter3.ServeFood);
             kfc.PlaceOrder(cashier.CollectMoney);
             kfc.PrepareTheFood();
-
         }
-
     }
 }
 

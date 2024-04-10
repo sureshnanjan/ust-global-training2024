@@ -1,8 +1,9 @@
 ﻿namespace StorePet
 {
     /// <summary>
-    /// Field declaration for order section
+    /// Capturing order related details like id, petId,quantity,shipDate and complete
     /// </summary>
+    
     internal class Order
     {
         public long id;

@@ -1,8 +1,9 @@
 ﻿namespace StorePet
 {
     /// <summary>
-    /// Field declarations for user section
+    /// Contains user details like id,username,firstName, LastName, Email, Password, Phone number and User Status.
     /// </summary>
+    
     internal class User
     {
         private long id;

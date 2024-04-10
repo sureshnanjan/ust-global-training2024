@@ -10,9 +10,14 @@ using System.Xml.Linq;
 
 namespace Test_GettingStarted
 {
+    /// <summary>
+    /// Binary Search Test cases 
+    /// </summary>
+    
     [TestClass]
     public class TestBinarySearch
     {
+        //Test case for search value in the end 
         [TestMethod]
         public void ExistingValueTest_Atend()
         {
@@ -25,6 +30,7 @@ namespace Test_GettingStarted
             Assert.AreEqual(expected, actual);
         }
 
+        //Test case for search value in the middle 
         [TestMethod]
         public void ExistingValueTest_Atmiddle()
         {
@@ -37,6 +43,7 @@ namespace Test_GettingStarted
             Assert.AreEqual(expected, actual);
         }
 
+        //Test case for search value in the beginning 
         [TestMethod]
         public void ExistingValueTest_Atbeginning()
         {
@@ -50,6 +57,7 @@ namespace Test_GettingStarted
 
         }
 
+        //Test case for non available search value in the array which the highest of all
         [TestMethod]
         public void NonExistingValueTest_higherval()
         {
@@ -62,7 +70,7 @@ namespace Test_GettingStarted
 
         }
 
-
+        //Test case for non available search value in the array which the lowest of all 
         [TestMethod]
         public void NonExistingValueTest_lowerval()
         {
@@ -78,6 +86,7 @@ namespace Test_GettingStarted
 
         }
 
+        //Test case for non available search value in the array which has both greater and lesser values in array
         [TestMethod]
         public void NonExistingValueTest_middleval()
         {
@@ -93,6 +102,7 @@ namespace Test_GettingStarted
 
         }
 
+        // Test case for non sorted array and unavailable item
         [TestMethod]
         public void NonSortedArray_NonExistentValueTest()
         {
@@ -111,6 +121,7 @@ namespace Test_GettingStarted
             Assert.IsTrue(actual < 0);
         }
 
+        // Test case for non sorted array and available item 
         [TestMethod]
         public void NonSortedArray_ExistentValueTest()
         {
@@ -125,13 +136,9 @@ namespace Test_GettingStarted
             //Assert.AreEqual(expected, actual);
             Assert.IsTrue(actual < 0);
         }
-        /*Exceptions
-        RankException array is multidimensional.
-        ArgumentException value is of a type that is not compatible with the elements of array.
-        InvalidOperationException value does not implement comparison mechanism.
-        */
-        [TestMethod]
 
+        // Test case for Null Input Array throws ArgumentNullException
+        [TestMethod]
         public void NullInputArray_Throws_ArgumentNullException()
         {
             //ArgumentNullException array is null.

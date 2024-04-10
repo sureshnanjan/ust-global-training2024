@@ -5,8 +5,9 @@ using StorePet;
 namespace StorePet
 {
     /// <summary>
-    /// Declaration of fields in Pet section
+    /// Contians Pet details like id, name, photourl, Category and Tag details 
     /// </summary>
+    
     [TestClass]
     internal partial class Pet
     {

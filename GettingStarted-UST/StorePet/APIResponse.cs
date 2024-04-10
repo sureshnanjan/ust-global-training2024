@@ -1,8 +1,9 @@
 namespace StorePet
 {
     /// <summary>
-    /// Declaring the fields in APIResponse section
+    /// Contains API response details like code, message and type
     /// </summary>
+    
     internal class APIResponse
     {
         private int code;

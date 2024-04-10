@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\MyLIbrary\MyLIbrary.csproj" />
+    <ProjectReference Include="..\Petstore-Automation\Petstore-Automation.csproj" />
   </ItemGroup>
 
 </Project>

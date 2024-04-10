@@ -5,6 +5,7 @@ using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using MyLIbrary;
+using Petstore_Automation;
 
 namespace GettingStarted_UST
 {
@@ -21,6 +22,10 @@ namespace GettingStarted_UST
         // Operators
         public static void Main(string[] args)
         {
+            MyBrowser browser = new MyBrowser();
+            browser.OpenWebsite("https://petstore.octoperf.com/actions/Catalog.action");
+            Console.WriteLine(browser.GetTitle());
+
             List<int> list = new List<int>() { 2,3,4,8,5};
             LambdaAssignement lambdaExp = new LambdaAssignement(list);
             lambdaExp.showList();

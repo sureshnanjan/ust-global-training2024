@@ -9,6 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\ImplementPetStore\ImplementPetStore.csproj" />
     <ProjectReference Include="..\MyLIbrary\MyLIbrary.csproj" />
     <ProjectReference Include="..\WebdriverDotnet\WebdriverDotnet.csproj" />
   </ItemGroup>

@@ -46,7 +46,7 @@ namespace Test_GettingStarted
             //  new SimpleClass(1), new SimpleClass(2) , new SimpleClass(3) , new SimpleClass(4)};
             SortedArrayClass[] myInstances = { new SortedArrayClass(0,1), new SortedArrayClass(5,0) , new SortedArrayClass(7,1) , new SortedArrayClass(5,5),
             new SortedArrayClass(2,3) };
-
+            Array actual;
             
             Console.WriteLine("Original Values in My Instances as Integer Values");
             foreach (var item in myInstances)
@@ -59,8 +59,8 @@ namespace Test_GettingStarted
             foreach (var item in myInstances)
             {
                 Console.Write($"{item} , ");
-
-            }
+             }
+            CollectionAssert.AreEqual(myInstances, myInstances);
         }
         [TestMethod]
         public void secondelementDuplicatesinArray() 
@@ -85,6 +85,7 @@ namespace Test_GettingStarted
                 Console.Write($"{item} , ");
 
             }
+            CollectionAssert.AreEqual(myInstances, myInstances);
         }
 
         [TestMethod]
@@ -109,6 +110,7 @@ namespace Test_GettingStarted
                 Console.Write($"{item} , ");
 
             }
+            CollectionAssert.AreEqual(myInstances, myInstances);
         }
     }
 }

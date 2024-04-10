@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using MyLIbrary;
 using WebdriverDotnet;
+using ImplementPetStore;
 
 namespace GettingStarted_UST
 {
@@ -23,7 +24,7 @@ namespace GettingStarted_UST
         {
             //genericsDemo();
 
-            MyBrowser brower = new MyBrowser();
+            SudhaBrowser brower = new SudhaBrowser();
             brower.OpenWebsite("https://petstore.octoperf.com/actions/Catalog.action");
             Console.WriteLine(brower.GetTitle());
         }

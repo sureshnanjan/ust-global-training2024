@@ -35,10 +35,12 @@ namespace Test_GettingStarted
             if((element1 > element2).v)
             {
                 Console.WriteLine(element1.value1 +" is greater than " + element2.value1);
+                Assert.AreEqual(element1.value1, 120);
             }
             else 
             { 
-                Console.WriteLine(element1.value1 + " is lesser than " + element2.value1); 
+                Console.WriteLine(element1.value1 + " is lesser than " + element2.value1);
+                Assert.AreEqual(element2.value1, 120);
             }
         }
         [TestMethod]
@@ -60,6 +62,7 @@ namespace Test_GettingStarted
                 {
                     if (sample[k].value1 == sum[k])
                         Console.WriteLine($"{sample[k].value1}");
+                    Assert.AreEqual(sample[k].value1, sum[k]);
                 }
             //Console.WriteLine(sample[0].value1);
              }

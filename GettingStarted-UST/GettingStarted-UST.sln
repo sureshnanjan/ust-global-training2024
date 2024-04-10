@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyLIbrary", "MyLIbrary\MyLI
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test-GettingStarted", "Test-GettingStarted\Test-GettingStarted.csproj", "{50131221-1495-4CF8-B7A8-A6FFE46F8188}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebdriverDotnet", "WebdriverDotnet\WebdriverDotnet.csproj", "{7BA4B7AE-D9D4-4DFC-AD6B-15590A7D742A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebdriverDotnet", "WebdriverDotnet\WebdriverDotnet.csproj", "{7BA4B7AE-D9D4-4DFC-AD6B-15590A7D742A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImplementPetStore", "ImplementPetStore\ImplementPetStore.csproj", "{D39A77CB-A291-44B5-9526-49E0B3606DC3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{7BA4B7AE-D9D4-4DFC-AD6B-15590A7D742A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7BA4B7AE-D9D4-4DFC-AD6B-15590A7D742A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7BA4B7AE-D9D4-4DFC-AD6B-15590A7D742A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D39A77CB-A291-44B5-9526-49E0B3606DC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D39A77CB-A291-44B5-9526-49E0B3606DC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D39A77CB-A291-44B5-9526-49E0B3606DC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D39A77CB-A291-44B5-9526-49E0B3606DC3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -6,17 +6,26 @@ using System.Threading.Tasks;
 using MyLIbrary;
 
 
+
+
 namespace GettingStarted_UST
 {
     public class MainProgram
     {
         public static void Main(string[] args)
         {
-            SimpleClass cl1 = new SimpleClass(8,"zA");
-            SimpleClass cl2 = new SimpleClass(2,"xB");
-            SimpleClass cl3 = new SimpleClass(9,"oZ");
-            SimpleClass cl4 = new SimpleClass(1,"AD");
-            SimpleClass cl5 = new SimpleClass(3,"bB");
+            
+        }
+
+  
+
+        private static void simpleclassdemo()
+        {
+            SimpleClass cl1 = new SimpleClass(8, "zA");
+            SimpleClass cl2 = new SimpleClass(2, "xB");
+            SimpleClass cl3 = new SimpleClass(9, "oZ");
+            SimpleClass cl4 = new SimpleClass(1, "AD");
+            SimpleClass cl5 = new SimpleClass(3, "bB");
             SimpleClass[] mycoll = { cl1, cl1, cl3, cl4, cl5 };
             Console.WriteLine("Sorting Default");
             Array.Sort(mycoll);
@@ -25,7 +34,7 @@ namespace GettingStarted_UST
                 Console.WriteLine(item);
             }
             Console.WriteLine("Sorting By Name ");
-            Array.Sort(mycoll, new NameSorter());   
+            Array.Sort(mycoll, new NameSorter());
             foreach (var item in mycoll)
             {
                 Console.WriteLine(item);
@@ -36,8 +45,6 @@ namespace GettingStarted_UST
             {
                 Console.WriteLine(item);
             }
-
-
         }
 
         private static void comparableDemo()

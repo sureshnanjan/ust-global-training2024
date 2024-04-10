@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MyLIbrary;
+using PetStoreAutomation;
+
 
 namespace GettingStarted_UST
 {
@@ -22,6 +24,13 @@ namespace GettingStarted_UST
         public static void Main(string[] args)
 
         {
+
+            MyBrowser brower = new MyBrowser();
+            brower.OpenWebsite("https://petstore.octoperf.com/actions/Catalog.action");
+            Console.WriteLine(brower.GetTitle());
+
+
+
             //OperatorIndexerAssignment();
             List<int> numbers = new List<int>() { 3, 6, 9, 5, 2 };
             LamdaAssign LamdaExpress = new LamdaAssign(numbers);

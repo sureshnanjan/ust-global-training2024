@@ -7,10 +7,12 @@ namespace Test_GettingStarted
     /// </summary>
     internal class DelegateClass
     {
+        public string displayMessage;
         //Displays given 2 values
         internal void displayValues(int v1, int v2)
         {
             Console.WriteLine($"first Value: {v1}  and Second Value: {v2}");
+            displayMessage = $"first Value: {v1}  and Second Value: {v2}";
         }
 
         //Return true if the given value is less than 5, else false

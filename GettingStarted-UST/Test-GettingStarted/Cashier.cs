@@ -9,7 +9,7 @@
         string name;
         string orderId;
         int id;
-
+        public string notification;
 
         //COnstructor for Id fetch
         public Cashier(int id)
@@ -20,6 +20,7 @@
         //Shows status of collected monet details
         public void CollectMoney(object sender, EventArgs? args)
         {
+            notification = $"Cashier {this.id} is collecting the Money";
             Console.WriteLine($"Cashier {this.id} is collecting the Money");
             //Console.WriteLine($"{this.id} is Cleaning the Table");
         }

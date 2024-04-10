@@ -9,7 +9,7 @@
         string name;
         string orderId;
         int id;
-
+        public string notification;
         public Waiter(int id)
         {
             this.id = id;
@@ -21,7 +21,8 @@
         public void ServeFood(object sender, EventArgs? args)
         {
             Console.WriteLine($"Waiter {this.id} is Serving the Food");
-            Console.WriteLine($"Waiter {this.id} is Cleaning the Table");
+            notification = $"Waiter {this.id} is Serving the Food";
+            //Console.WriteLine($"Waiter {this.id} is Cleaning the Table");
         }
 
     }

@@ -17,7 +17,7 @@ namespace Test_GettingStarted
             int expected = 30;
             int actual = calculator.add(10, 20);
             Assert.AreEqual(expected, actual);
-            Console.WriteLine("Result 30 ddisplayed");
+            Console.WriteLine("Result 30 displayed");
         }
 
         [TestMethod]

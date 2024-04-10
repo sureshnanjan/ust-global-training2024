@@ -49,9 +49,7 @@ namespace Test_GettingStarted
             int expected = 1;
             BinarySearcher searcher = new BinarySearcher(myinputArray, searchTerm);
             int actual = searcher.doSearch();
-
             Assert.AreEqual(expected, actual);
-
         }
 
         [TestMethod]
@@ -137,7 +135,21 @@ namespace Test_GettingStarted
         ArgumentException value is of a type that is not compatible with the elements of array.
         InvalidOperationException value does not implement comparison mechanism.
         */
+        // Test case for null array
+        public void testing_nullarray_exception()
+        {
 
+            int[] myinputArray = null;
+            int searchTerm = 7;
+            BinarySearcher searcher = new BinarySearcher(myinputArray, searchTerm);
+            //Assert.ThrowsException<ArgumentNullException>(new searcher.doSearch()) where
+            //Func<int[],int, int> actualFunc = (myinputArray,searchTerm) => searcher.doSearch();
+            //Assert.ThrowsException<ArgumentNullException>(Func<searcher> ) where argumentNullException:exception
+
+
+            //public static ArgumentNullException ThrowsException<ArgumentNullException>(Action action, "Exception not displayed", params object[] parameters) where ArgumentNullException : Exception;
+
+    }
 
     }
 }

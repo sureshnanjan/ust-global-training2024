@@ -42,17 +42,20 @@ namespace Test_GettingStarted
             {
                 Console.WriteLine( item);
             }
-            Array.Equals(expected, actual);
+            Assert.IsTrue(Array.Equals(expected, actual));
         }
         [TestMethod]
         // Display values with the help of Action Delegate
         public  void DelegateTestAction_StringMerge()
         {
+            string expectedMessage = "first Value: 2  and Second Value: 10";
             DelegateClass dc = new DelegateClass();
             Action<int, int> display = dc.displayValues;
             display(2, 10);
+            Assert.AreEqual(dc.displayMessage, expectedMessage);
+            expectedMessage = "first Value: 2  and Second Value: 20";
             display(2, 20);
-
+            Assert.AreEqual(dc.displayMessage, expectedMessage);
         }
     }
 }

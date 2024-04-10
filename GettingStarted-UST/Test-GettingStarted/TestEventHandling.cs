@@ -19,11 +19,11 @@ namespace Test_GettingStarted
             Kitchen kfc = new Kitchen(); // Publisher
             Waiter waiter1 = new Waiter(1); // Consumers
             Waiter waiter2 = new Waiter(2);
-            Waiter waiter3 = new Waiter(3);
+            
             Cashier cashier = new Cashier(1);
             Customer cu1 = new Customer("Gopi");
             Customer cu2 = new Customer("Suresh");
-            Customer cu3 = new Customer("UST");
+            
 
             kfc.PlaceOrder(cu1.OrderFood);
             kfc.PlaceOrder(waiter1.ServeFood);
@@ -31,12 +31,17 @@ namespace Test_GettingStarted
             kfc.PlaceOrder(cashier.CollectMoney);
             kfc.PlaceOrder(cu2.OrderFood);
             kfc.PlaceOrder(waiter2.ServeFood);
-            kfc.PlaceOrder(cashier.CollectMoney);
-            kfc.PlaceOrder(cu3.OrderFood);
-            kfc.PlaceOrder(waiter3.ServeFood);
+            kfc.PlaceOrder(cu2.BillPayment);
             kfc.PlaceOrder(cashier.CollectMoney);
             kfc.PrepareTheFood();
-
+            Assert.AreEqual(cu1.notification, "Gopi is ordering the Food");
+            Assert.AreEqual(waiter1.notification, "Waiter 1 is Serving the Food");
+            Assert.AreEqual(cu1.notification2, "Gopi is Paying the Bill");
+            Assert.AreEqual(cashier.notification, "Cashier 1 is collecting the Money");
+            Assert.AreEqual(cu2.notification, "Suresh is ordering the Food");
+            Assert.AreEqual(waiter2.notification, "Waiter 2 is Serving the Food");
+            Assert.AreEqual(cu2.notification2, "Suresh is Paying the Bill");
+            Assert.AreEqual(cashier.notification, "Cashier 1 is collecting the Money");
         }
     }
 }

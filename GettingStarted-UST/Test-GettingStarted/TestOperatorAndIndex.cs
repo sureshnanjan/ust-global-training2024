@@ -35,6 +35,8 @@ namespace Test_GettingStarted
             else
                 Console.WriteLine("10 is grater than 20");
 
+            Assert.IsTrue((element1 < element2).status);
+
         }
         //Test case to validate > operator overloading
         [TestMethod]
@@ -47,7 +49,7 @@ namespace Test_GettingStarted
                 Console.WriteLine("300 is greater than 20");
             else
                 Console.WriteLine("300 is less than 20");
-
+            Assert.IsTrue((element1 > element2).status);
         }
 
 
@@ -64,6 +66,7 @@ namespace Test_GettingStarted
                 Assert.AreEqual(mySequence[i], scColl[i].number);
 
             }
+            //Assert.IsTrue(Array.Equals(mySequence, scColl.));
 
         }
     }

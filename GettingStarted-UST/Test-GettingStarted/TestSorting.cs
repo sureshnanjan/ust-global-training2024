@@ -19,10 +19,16 @@ namespace Test_GettingStarted
             SimpleClass cl4 = new SimpleClass(1, "AD");
             SimpleClass cl5 = new SimpleClass(3, "bB");
             SimpleClass[] mycoll = { cl1, cl1, cl3, cl4, cl5 };
-            // form the expected result
-            // Act
             Array.Sort(mycoll);
-            // assert that the result is as per expectation
+            string actual = null;
+            foreach (var item in mycoll)
+            {
+                Console.Write($"{item} , ");
+                actual += $"{item} , ";
+            }
+            Assert.AreEqual("1-AD , 3-bB , 8-zA , 8-zA , 9-oZ , ", actual);
+            Console.WriteLine(actual);
+            
         }
         [TestMethod]
         public void sort_works_with_name() {
@@ -33,11 +39,17 @@ namespace Test_GettingStarted
             SimpleClass cl4 = new SimpleClass(1, "AD");
             SimpleClass cl5 = new SimpleClass(3, "bB");
             SimpleClass[] mycoll = { cl1, cl1, cl3, cl4, cl5 };
+            string actual = null;
             NameSorter sorter = new NameSorter();
             // Act
             Array.Sort(mycoll,sorter);
             //CollectionAssert TDD
-
+            foreach (var item in mycoll)
+            {
+                Console.Write($"{item} , ");
+                actual += $"{item} , ";
+            }
+            Assert.AreEqual("1-AD , 3-bB , 9-oZ , 8-zA , 8-zA , ", actual);
         }
 
 

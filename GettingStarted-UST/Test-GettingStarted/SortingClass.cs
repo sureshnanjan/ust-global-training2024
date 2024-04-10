@@ -17,7 +17,7 @@
     }
 
     // Method to provide sent value
-    public int Value { get { return this.value2; } }
+    public int Value { get { return this.value; } }
 
     // Method to return value in "1-2" format
     public override string? ToString()

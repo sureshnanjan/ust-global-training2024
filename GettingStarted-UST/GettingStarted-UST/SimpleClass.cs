@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -11,11 +12,20 @@ namespace GettingStarted_UST
         int value1; // simpleClass(1,2)  simpleClass(1,3), simple(0,1), simpl(1,0)
         int value2;
         string name;
+
+
         public SimpleClass(int val, string name)
         {
             this.value1 = val;
 
-            this.name = name;
+           this.name = name;
+
+         }
+        public SimpleClass(int val, int val1)
+        {
+            this.value1 = val;
+
+            this.value2 = val1;
 
         }
         public SimpleClass(int val)
@@ -45,7 +55,16 @@ namespace GettingStarted_UST
 
         public object Clone()
         {
+
             return new SimpleClass(this.value1);
         }
+
+        public int myIntReturningMethod(int param1, string param2) 
+        {
+            Console.WriteLine("Execuring this inthe SimpleClass.myINtReturn Method");
+            return 0;
+        }
+
+
     }
 }

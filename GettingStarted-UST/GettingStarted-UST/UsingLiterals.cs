@@ -100,10 +100,10 @@ namespace GettingStarted_UST
             /// String Literals
             /// </summary>
 
-            string myString = "Chandni";
+            string myString = "Niveditha";
             string newPath = @"C:\Users\Administrator\ust-global-training2024\BasicProgram";
-            string firstString = "Gopalakrishnan";
-            string lastName = "Nair";
+            string firstString = "Daseena";
+            string lastName = "S";
             string name = $"{myString} {firstString} {lastName} ";
             
             /// <summary>

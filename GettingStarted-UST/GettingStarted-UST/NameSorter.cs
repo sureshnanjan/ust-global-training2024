@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GettingStarted_UST
 {
-    internal class NameSorter : IComparer<SimpleClass>
+    public class NameSorter : IComparer<SimpleClass>
     {
         public int Compare(SimpleClass? x, SimpleClass? y)
         {

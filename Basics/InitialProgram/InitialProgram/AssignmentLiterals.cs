@@ -10,25 +10,6 @@ namespace InitialProgram
  /// </summary>
     internal class AssignmentLiterals
     {
-        // Integer Literals
-        // Decimal literals (Base 10)
-        // Hexa-decimal literals (Base 16)
-        // Binary literals (Base 2)
-        // Floating-point Literals
-        // double 123.45 
-        // float
-        // exponential
-        // Character Literals
-        // Single quote
-        // Unicode Representation
-        // Escape Sequence
-        // String Literals
-        // ""
-        // @""
-        // string interpolation "The value of varname is :{varname}"
-        // Null Literals
-        // Boolean Literals
-        //public void showUsage()
         public static void literals()
         {
 
@@ -118,11 +99,7 @@ namespace InitialProgram
             Console.WriteLine("Null Literals\t\t\t\t   : " + s);
             Console.WriteLine("Boolean Literals \t\t\t   : " + gG + "\nBoolean Literals\t\t\t   : " + rR);
 
-
-
-
         }
-
 
     }
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using GettingStarted_UST;
 
 namespace Test_GettingStarted
 {
@@ -12,8 +13,9 @@ namespace Test_GettingStarted
     [TestClass]
     public class TestOperatorAndIndex
     {
-
-        //Test case to validate - operator overloading
+        /// </summary>
+        //Test method to validate - operator overloading
+        /// </summary>
         [TestMethod]
         public void MinusOperatorOverloading()
         {
@@ -23,7 +25,9 @@ namespace Test_GettingStarted
             Assert.AreEqual(actualResult.val1,20);
         }
 
-        //Test case to validate + operator overloading
+        /// </summary>
+        //Test method to validate + operator overloading
+        /// </summary>
         [TestMethod]
         public void PlusOperatorOverloading()
         {
@@ -33,7 +37,9 @@ namespace Test_GettingStarted
             Assert.AreEqual(actualResult.val1, 100);
         }
 
-        //Test case to validate < operator overloading
+        /// </summary>
+        //Test method to validate < operator overloading
+        /// </summary>
         [TestMethod]
         public void LessOperatorOverloading()
         {
@@ -42,29 +48,52 @@ namespace Test_GettingStarted
             if( (element1 < element2).val2)
             {
                 Console.WriteLine(element1.val1 + " is less than " + element2.val1);
+                Assert.IsTrue((element1 < element2).val2);
             }
             else
             {
                 Console.WriteLine(element1.val1 + " is greater than " + element2.val1);
+                
             }
            
         }
 
-        //Test case to validate > operator overloading
+        /// </summary>
+        //Test method to validate > operator overloading
+        /// </summary>
         [TestMethod]
         public void GreaterOperatorOverloading()
         {
             ClassSample element1 = new ClassSample(50);
             ClassSample element2 = new ClassSample(20);
-            if ((element1 < element2).val2)
+            if ((element1 > element2).val2)
             {
                 Console.WriteLine(element1.val1 + " is greater than " + element2.val1);
+                Assert.IsTrue((element1 > element2).val2);
             }
             else
             {
                 Console.WriteLine(element1.val1 + " is less than " + element2.val1);
+               
             }
 
+        }
+
+        /// <summary>
+        /// Test Method for IndexOverLoading
+        /// </summary> 
+        [TestMethod]
+        public void IndexOverloading()
+        {
+            int[] total = { 1, 2, 3, 4, 5};
+            CollectionSample sample = new CollectionSample();
+
+            for (int counter = 0; counter < total.Length; counter++)
+            {
+                Console.WriteLine($"Values of Collection: {sample[counter].val1}");
+                Assert.AreEqual(total[counter], sample[counter].val1);
+
+            }  
         }
 
     }

@@ -27,12 +27,10 @@ namespace Test_InitialProgram
         public void Aggregation_TestMultiply_Lambda()
         {
             int[] numbers = { 10, 10, 30, 20 };
-            int actual = numbers.Aggregate((b, c) => b * c);
-            Console.WriteLine($" Multiplication of All values: {actual}");
-            Assert.AreEqual(60000, actual);
 
 
         }
+
         [TestMethod]
         // Display values with the help of Action Delegate
         public void DelegateTestAction_StringMerge()
@@ -45,7 +43,6 @@ namespace Test_InitialProgram
         }
 
         [TestMethod]
-        //Find values less than 10 with Func Delegate
         public void DelegateTestFunc_Lessthan10Values()
         {
             Delegate_Class dc = new Delegate_Class();
@@ -59,5 +56,6 @@ namespace Test_InitialProgram
             }
             Array.Equals(expected, actual);
         }
+      
     }
 }

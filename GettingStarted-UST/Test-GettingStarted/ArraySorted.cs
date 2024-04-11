@@ -45,18 +45,17 @@ namespace Test_GettingStarted
         public void FirstElementDuplicateInArray()
         {
             /// int[,] multinumbers ={{0,1}, {7,1}, {1,5}}
-            ArraySortedClass[] myArray = { new ArraySortedClass(0, 1), new ArraySortedClass(5, 0), new ArraySortedClass(7, 1), new ArraySortedClass(5, 5), new ArraySortedClass(2, 3) };
-
+            ArraySortedClass[] myArray = { new ArraySortedClass(8, 6),new ArraySortedClass(5, 4), new ArraySortedClass(1,1), new ArraySortedClass(3,1), new ArraySortedClass(1, 2) };
             Console.WriteLine("Original Values in My Array");
             foreach (var item in myArray)
             {
-                Console.WriteLine($"{item}, ");
+                Console.Write($"{item}, ");
             }
             Array.Sort(myArray);
             Console.WriteLine("\n After Sorting Values in My Array");
             foreach (var item in myArray)
             {
-                Console.WriteLine($"{item}, ");
+                Console.Write($"{item}, ");
             }
         }
 
@@ -67,13 +66,11 @@ namespace Test_GettingStarted
         public void SecondElementDuplicatesInArray()
         {
 
-            ArraySortedClass[] myArray = { new ArraySortedClass(0,1), new ArraySortedClass(7,1) , new ArraySortedClass(5,0) , new ArraySortedClass(5,5),
-            new ArraySortedClass(1,5) , new ArraySortedClass(2,4)};
-
+            ArraySortedClass[] myArray = { new ArraySortedClass(2, 1), new ArraySortedClass(0, 1), new ArraySortedClass(5, 6), new ArraySortedClass(6, 9) };
             Console.WriteLine("Original Values in My Array");
             foreach (var item in myArray)
             {
-                Console.Write($"{item} , ");
+                Console.Write($"{item}, ");
 
             }
             Array.Sort(myArray);

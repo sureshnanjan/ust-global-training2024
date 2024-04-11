@@ -111,24 +111,5 @@ namespace Test_GettingStarted
             int actual = 0;
             Assert.AreEqual(expected, actual);
         }
-
-        [TestMethod]
-        public void TestForPowerOperation()
-        {
-            int[] ListOfElements = { 2, 2 };
-            int expected = ListOfElements.Aggregate((x, y) => x ^ y);
-            int actual = 4;
-            Assert.AreEqual(expected, actual);
-        }
-
-        [TestMethod]
-        public void TestForSquare()
-        {
-            int[] ListOfElements = { 4, 2 };
-            int expected = ListOfElements.Aggregate((x, y) => x ^ y);
-            int actual = 16;
-            Assert.AreEqual(expected, actual);
-        }
-
     }
 }

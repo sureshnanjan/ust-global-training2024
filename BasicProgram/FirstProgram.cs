@@ -1,7 +1,7 @@
- using System;
-using minnu.Training;
-class MyClass {
-    static void Main() {
+using System;
+using Minnu.Training;
+public class MyClass {
+public static void Main() {
         TrainingDashboard.publish();
         TrainingDashboard.generateReport();
     }

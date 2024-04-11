@@ -1,5 +1,5 @@
-namespace minnu.Training {
- class TrainingDashboard 
+namespace Minnu.Training {
+ public class TrainingDashboard
 {
     //properties
     string TrainerName;
@@ -11,12 +11,12 @@ namespace minnu.Training {
     //Methods
     public static void publish()
     {
-        System.Console.Writeline("This is publish function ");
+        System.Console.WriteLine("This is publish function ");
     }
 
     public static void generateReport()
     {
-        System.Console.Writeline("Generating Report");
+        System.Console.WriteLine("Generating Report");
     }
 }}
 

@@ -11,9 +11,9 @@ namespace GettingStarted_UST
 {
     delegate int typeIntTakeintStr(int param1, string some);
     //public delegate TResult Func<in T, out TResult>(T arg);
+ 
     public class MainProgram
     {
-
         // Fields
         // Properties
         // Methods
@@ -22,9 +22,20 @@ namespace GettingStarted_UST
         // Operators
         public static void Main(string[] args)
         {
-            MyBrowser browser = new MyBrowser();
+            
+            OperatorIndexer indexer = new OperatorIndexer();
+
+            indexer[0] = "Renjitha";
+            indexer[1] = "Manu";
+            indexer[2] = "Anandhu";
+            
+            Console.WriteLine($"Frist value in index[0] : {indexer[0]}");
+            Console.WriteLine($"Second value in index[1] : {indexer[1]}");
+            Console.WriteLine($"Third value in index[2] : {indexer[2]}");
+
+            /*MyBrowser browser = new MyBrowser();
             browser.OpenWebsite("https://petstore.octoperf.com/actions/Catalog.action");
-            Console.WriteLine(browser.GetTitle());
+            Console.WriteLine(browser.GetTitle());*/
 
             List<int> list = new List<int>() { 2,3,4,8,5};
             LambdaAssignement lambdaExp = new LambdaAssignement(list);
@@ -36,6 +47,9 @@ namespace GettingStarted_UST
 
         }
 
+       
+
+      
         /*
             //OperatorIndexerAssignment();
 
@@ -44,7 +58,7 @@ namespace GettingStarted_UST
                 GenericSimpleClass<float, string> genericSimpleClass1 = new GenericSimpleClass<float, string>();
             genericSimpleClass1.MyCounter = 1.2f;
                 Action<int, float, string> action1 = (a, b, c) => { };*/
-        private static void OperatorIndexerAssignment()
+        /*private static void OperatorIndexerAssignment()
         {
             //EventsDemo();
             int aNumber = 10;
@@ -53,8 +67,8 @@ namespace GettingStarted_UST
             SimpleClass class1 = new SimpleClass(10);
             SimpleClass class2 = new SimpleClass(100);
             // Assignemnt for Operators and Indexers
-            /*
-            var result = class1 + class2; // Operator 
+            
+            var result1 = class1 + class2; // Operator 
             if (class2 > class1) 
             {
                 Console.WriteLine();
@@ -65,9 +79,9 @@ namespace GettingStarted_UST
             Console.WriteLine(mysequence[0]);
             SimpleCollection scCollection = new SimpleCollection();
             Console.WriteLine(scCollection[0]); // Indexer
-            */
+           
 
-        }
+        }*/
             /// <summary>
             /// This method produces a Publisher Subscriber
             /// </summary>

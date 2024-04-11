@@ -7,12 +7,13 @@ using System.Threading.Tasks;
 
 namespace GettingStarted_UST
 {
-    internal class Waiter 
+    public class Waiter 
     {
+        //Capture Waiter and Order details
         string name;
         string orderId;
         int id;
-
+        public string notification;
         public Waiter(int id)
         {
             this.id = id;
@@ -20,16 +21,14 @@ namespace GettingStarted_UST
             this.orderId = "001";
         }
 
-        
-    // Wait for a order completion
-    // Consumer - Receiver - Subscriber  - Pub-Sub - Chat
-
-
-    public void ServeFood(object sender , EventArgs? args) {
-        Console.WriteLine($"{this.id} is Serving the Food");
-            Console.WriteLine($"{this.id } is Cleaning the Table");
+        // Captures the status of Food Serve
+        public void ServeFood(object sender, EventArgs? args)
+        {
+            Console.WriteLine($"Waiter {this.id} is Serving the Food");
+            notification = $"Waiter {this.id} is Serving the Food";
+            //Console.WriteLine($"Waiter {this.id} is Cleaning the Table");
         }
 
-       
+
     }
 }

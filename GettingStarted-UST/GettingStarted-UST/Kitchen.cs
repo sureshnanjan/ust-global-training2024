@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace GettingStarted_UST
 {
-    internal class Kitchen
+    public class Kitchen
     {
         //int value;
         public event Action<object,EventArgs> FoodISReady;

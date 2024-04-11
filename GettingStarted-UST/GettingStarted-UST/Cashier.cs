@@ -4,27 +4,30 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GettingStarted_UST
+namespace Test_GettingStarted
 {
-    internal class Cashier
+    /// <summary>
+    /// Capture cashier details and Billing status
+    /// </summary>
+    public class Cashier
     {
+        //Capture Cashier details
         string name;
         string orderId;
         int id;
+        public string notification;
 
+        //COnstructor for Id fetch
         public Cashier(int id)
         {
             this.id = id;
         }
 
-
-        // Wait for a order completion
-        // Consumer - Receiver - Subscriber  - Pub-Sub - Chat
-
-
+        //Shows status of collected monet details
         public void CollectMoney(object sender, EventArgs? args)
         {
-            Console.WriteLine($"{this.id} is collecting the Money");
+            notification = $"Cashier {this.id} is collecting the Money";
+            Console.WriteLine($"Cashier {this.id} is collecting the Money");
             //Console.WriteLine($"{this.id} is Cleaning the Table");
         }
     }

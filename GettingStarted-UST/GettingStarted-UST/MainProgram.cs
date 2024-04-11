@@ -5,12 +5,15 @@ using System.Text;
 using System.Threading.Tasks;
 using MyLIbrary;
 using PetStoreAutomation;
+using Test_GettingStarted;
 
 
 namespace GettingStarted_UST
 {
     delegate int typeIntTakeintStr(int param1, string some);
     //public delegate TResult Func<in T, out TResult>(T arg);
+    //public delegate int Number(int n);
+
     public class MainProgram
     {
 
@@ -21,9 +24,23 @@ namespace GettingStarted_UST
         // Indexers
         // Operators
 
+
         public static void Main(string[] args)
 
         {
+
+            //Operatorindexer
+            OperatorIndexer Index = new OperatorIndexer();
+            Index[0] = "D";
+            Index[1] = "arf";
+            Index[2] = "asdf";
+            Console.WriteLine("First value = {0}", Index[0]);
+            Console.WriteLine("Second value = {0}", Index[1]);
+            Console.WriteLine("Third value = {0}", Index[2]);
+
+
+
+            //PetStore Automation
 
             MyBrowser brower = new MyBrowser();
             brower.OpenWebsite("https://petstore.octoperf.com/actions/Catalog.action");
@@ -41,11 +58,14 @@ namespace GettingStarted_UST
             LamdaExpress.SquareofNumbers();
 
         }
+
+        
+
         /* GenericSimpleClass<int, string> genericSimpleClass = new GenericSimpleClass<int, string>();
-            genericSimpleClass.MyCounter = 0;
-            GenericSimpleClass<float, string> genericSimpleClass1 = new GenericSimpleClass<float, string>();
-            genericSimpleClass1.MyCounter = 1.2f;
-            Action<int, float, string> action1 = (a, b, c) => { };   */
+   genericSimpleClass.MyCounter = 0;
+   GenericSimpleClass<float, string> genericSimpleClass1 = new GenericSimpleClass<float, string>();
+   genericSimpleClass1.MyCounter = 1.2f;
+   Action<int, float, string> action1 = (a, b, c) => { };   */
 
 
         private static void OperatorIndexerAssignment()

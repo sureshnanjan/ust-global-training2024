@@ -1,4 +1,4 @@
-namespace Anu.training{
+namespace Hrishikesh.training{
 	/// <summary>
 	/// Class for Training Dashboard
 	/// </summary>

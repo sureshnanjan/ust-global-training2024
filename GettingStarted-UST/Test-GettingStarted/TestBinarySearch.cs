@@ -55,9 +55,9 @@ namespace Test_GettingStarted
         /// 
         /// </summary>
         public void nullinputarray_throws_ArgumentNullException() {
-            int[] input = null;
-            int searchTerm = 0;
-            BinarySearcher searcher = new BinarySearcher(input, searchTerm);
+           int[] input = null;
+          int searchTerm = 0;
+         BinarySearcher searcher = new BinarySearcher(input, searchTerm);
 
             Assert.ThrowsException<ArgumentNullException>(() => { searcher.doSearch(); });
             

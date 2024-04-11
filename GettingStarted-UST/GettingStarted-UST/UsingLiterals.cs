@@ -30,13 +30,24 @@ namespace GettingStarted_UST
         public void showUsage() {
 
             //TODO: value 89
-            int decINt = 89; // 4 byte - max mim // 1010 - 4 bytes 
-            long mylong = 0; // 8 bytes // 1020 - 1029, 1021, 1022, 1024, --- 1028
+            ///<summary>
+            ///Declaration of Integer literals value
+            ///</summary>
+            int decINt = 89; // 4 byte - max mim // 1010 - 4 bytes
             int hexInt = 0x1F; // 15 X16 ^0 + 1 X 16 ^1
-            double mydbl = 123.45;
-            float nyflt = 123.45f;
+            int binaryInt = 1011001;
+
+            ///<summary>
+            ///Float literal declaration
+            ///</summary>
+
+            double myDbl = 123.45;
+            float myFlt = 123.45f;
+            long mylong = (long)123.45; //8 bytes
+
             //float @float 
             //null != "null";
+           
             char newline = '\u0D19'; //1000  a 97 A 65 
             string mynameinmalayalam = "\u0d19\u0d19";
 
@@ -52,7 +63,16 @@ namespace GettingStarted_UST
                 
             }
 
+            ///<summary>
+            ///Null literals
+            ///</summary>
+            
+            string nullString = null;
 
+            ///<summary>
+            ///Boolean literal
+            ///</summary>
+            bool myBoolean = true; //or false
 
 
 

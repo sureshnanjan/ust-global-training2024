@@ -8,6 +8,7 @@ class MyClass{
 	/// <summary>
 	/// Method for publishing & generating report
 	/// </summary>
+	/// ///test
 	static void Main(){
 		Console.WriteLine("Starting....");
 		TrainingDashboard.publish();

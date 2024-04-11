@@ -15,12 +15,9 @@ namespace Test_GettingStarted
     public class TestSortedArray
 
     {
-
-        //Bydefault the sorting will be based on the first element
-
-        //if first value is equal sort happens based on the second value
-        // Expected result should be in sorted array 
-
+        /// <summary>
+        /// sorting of array correctly
+        /// </summary>
         [TestMethod]
         public void sorting_array_correctly()
         {
@@ -30,10 +27,10 @@ namespace Test_GettingStarted
             Array.Sort(myInstances);
             //string actual = myInstances.ToString();
             Assert.AreEqual(myInstances, Expected);
-
-
-
         }
+        /// <summary>
+        /// Display results in 1-2 format
+        /// </summary>
         [TestMethod]
 
         public void correctformat()
@@ -45,6 +42,9 @@ namespace Test_GettingStarted
 
 
         }
+        /// <summary>
+        /// Sorting of first value equals from an array
+        /// </summary>
         [TestMethod]
 
         public void sorting_first_value_equal()
@@ -55,6 +55,9 @@ namespace Test_GettingStarted
             Assert.AreEqual(myInstances, Expected);
 
         }
+        /// <summary>
+        /// Sorting of second value equals from an array
+        /// </summary>
         [TestMethod]
         public void sorting_second_value_equal()
         {
@@ -63,6 +66,9 @@ namespace Test_GettingStarted
             Array.Sort(myInstances);
             Assert.AreEqual(myInstances, Expected);
         }
+        /// <summary>
+        /// Sorting of array first value as zero
+        /// </summary>
         [TestMethod]
         public void sorting_array_firstvalue_zero()
         {

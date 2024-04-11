@@ -9,6 +9,9 @@ namespace Test_GettingStarted
     [TestClass]
     public class TestLambda
     {
+        /// <summary>
+        /// Lambda aggregate addition
+        /// </summary>
         [TestMethod]
         public void Lamda_Aggregate_Addition()
         {
@@ -19,6 +22,9 @@ namespace Test_GettingStarted
             Assert.AreEqual( expected, actual );
 
         }
+        /// <summary>
+        /// Multiplication using Lambda
+        /// </summary>
         [TestMethod]
         public void Lambda_Multiplication()
         {
@@ -29,6 +35,9 @@ namespace Test_GettingStarted
             Assert.AreEqual(expected, actual);
 
         }
+        /// <summary>
+        /// Substraction using Lambda
+        /// </summary>
         [TestMethod]
         public void Lambda_Substraction()
         {
@@ -38,6 +47,9 @@ namespace Test_GettingStarted
             Console.WriteLine($" Total Substraction value: {actual}");
             Assert.AreEqual(expected, actual);
         }
+        /// <summary>
+        /// Squares of number using Lambda
+        /// </summary>
         [TestMethod]
         public void Lambda_Square()
         {

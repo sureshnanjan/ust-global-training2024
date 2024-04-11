@@ -112,13 +112,23 @@ namespace Test_GettingStarted
             Assert.AreEqual(expected, actual);
         }
 
-        /// <summary>
-        /// Test to display value using Action
-        /// </summary>
         [TestMethod]
-        public void TestForDisplayingValues()
+        public void TestForPowerOperation()
         {
-            DelegateDemo delegateDemo = new DelegateDemo();
+            int[] ListOfElements = { 2, 2 };
+            int expected = ListOfElements.Aggregate((x, y) => x ^ y);
+            int actual = 4;
+            Assert.AreEqual(expected, actual);
         }
+
+        [TestMethod]
+        public void TestForSquare()
+        {
+            int[] ListOfElements = { 4, 2 };
+            int expected = ListOfElements.Aggregate((x, y) => x ^ y);
+            int actual = 16;
+            Assert.AreEqual(expected, actual);
+        }
+
     }
 }

@@ -11,16 +11,16 @@ namespace PetStore
     /// </summary>
     public class Pet : Category
     {
-        private long id;
-        private string name;
-        private string photoUrls;
-        private string petStatus;
+        long id;
+        string name;
+        string photoUrls;
+        string petStatus;
     }
 
     /// <summary>
     /// Status of Pets availability
     /// </summary>
-    internal enum petStatus
+    internal enum PetStatus
     {
         available, pending, sold
     }

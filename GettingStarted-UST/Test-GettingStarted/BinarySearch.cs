@@ -1,16 +1,20 @@
 ﻿
+using Microsoft.VisualStudio.TestPlatform.ObjectModel;
+
 namespace Test_GettingStarted
 {
     /// <summary>
     /// Class to perform binary search
     /// </summary>
-    internal class BinarySearch
+    public class BinarySearch
     {
+        //private const int V = 0;
         private int[] inputArray;
         private int key;
+        private int[,] inputArray1;
 
         /// <summary>
-        /// Constructor of binary search
+        /// Constructor of Single Dimensional Array
         /// </summary>
         /// <param name="inputArray">Array in which search needs to be done</param>
         /// <param name="key">Element to be searched for</param>
@@ -21,32 +25,78 @@ namespace Test_GettingStarted
         }
 
         /// <summary>
-        /// Method to perform binary search
+        /// Constructor of Multi-Dimensional Array
+        /// </summary>
+        /// <param name="inputArray1">Array in which search needs to be done</param>
+        /// <param name="key">Element to be searched for</param>
+        public BinarySearch(int[,] inputArray1, int key)
+        {
+            this.inputArray1 = inputArray1;
+            this.key = key;
+        }
+
+
+        /// <summary>
+        /// Method to perform binary search on Single dimensional array
         /// </summary>
         /// <param name="inputArray">Search Array</param>
         /// <param name="key">Search Element</param>
         /// <returns></returns>
-        public int dosearch(int[] inputArray, int key)
+        public int DoSearch(int[] inputArray, int key)
         {
-            int min = 0;
-            int max = inputArray.Length - 1;
-            while (min <= max)
+            int res = Array.BinarySearch(inputArray, key);
+            if (inputArray ==  null)
             {
-                int mid = (min + max) / 2;
-                if (key == inputArray[mid])
+                throw new ArgumentNullException("Array is cempty");
+            }
+            /*else if(inputArray.Rank > 1)
+            {
+                throw new RankException("Array is Multidimensional");
+
+            }*/
+            else if (res < 0)
+            {
+                Console.WriteLine("\nThe element to search for " + "({0}) is not found.", key);
+            }
+
+            else
+            {
+                Console.WriteLine("The element to search for "
+                                      + "({0}) is at index {1}.",
+                                  key, res);
+            }
+            return res;
+        }
+
+        /// <summary>
+        /// Determines if int array is sorted from 0 -> Max
+        /// </summary>
+        public int IsSorted(int[] inputArray)
+        {
+            for (int i = 1; i < inputArray.Length; i++)
+            {
+                if (inputArray[i - 1] > inputArray[i])
                 {
-                    return ++mid;
-                }
-                else if (key < inputArray[mid])
-                {
-                    max = mid - 1;
-                }
-                else
-                {
-                    min = mid + 1;
+                    return -1;
                 }
             }
             return 0;
         }
+
+        /// <summary>
+        /// To catch Multi-dimensional array exception
+        /// </summary>
+        /// <param name="inputarray1">Multi-dimensional Array</param>
+        /// <returns></returns>
+        /// <exception cref="RankException">To throw Multi-dimensional Array</exception>
+        public string MultiException(int[,] inputarray1)
+        {
+            if(inputarray1.Rank != 1)
+            {
+                throw new RankException("Array is Multi-dimensional");
+            }
+            return "Array is Multi-dimensional";
+        }
+
     }
 }

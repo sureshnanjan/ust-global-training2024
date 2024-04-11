@@ -25,11 +25,6 @@ namespace Test_GettingStarted
             Array.Sort(actual);
             SimpleClass[] expected = { instanceOne, instanceTwo };
             CollectionAssert.AreEqual(actual, expected);
-
-            /*SimpleClass[] actual = { new SimpleClass(1, 0), new SimpleClass(1, 2) };
-            SimpleClass[] expected = { new SimpleClass(1, 0), new SimpleClass(1, 2) };
-            Array.Sort(actual);
-            Assert.AreEqual(expected, actual);*/
         }
 
         /// <summary>

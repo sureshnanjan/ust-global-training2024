@@ -1,18 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace GettingStarted_UST
+﻿namespace GettingStarted_UST
 {
     internal class Kitchen
     {
-        public void PrepareTheFood()
-        {
-            Console.WriteLine("Starting preparation");
-            Console.WriteLine("Food preparation is complete");
 
+        public event Action<object, EventArgs> FoodIsReady;
+
+        public void CollectOrder()
+        {
+            
+            FoodIsReady?.Invoke(this, EventArgs.Empty);        
+        }
+
+        public void PlaceOrder(Action<object, EventArgs> handler)
+        {
+            FoodIsReady += handler;
         }
     }
 }

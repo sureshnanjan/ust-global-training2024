@@ -12,11 +12,17 @@ namespace GettingStarted_UST
     public class SimpleClass : IComparable<SimpleClass>
     {
         int value, value2;
+        private int v;
 
         public SimpleClass(int val, int val2)
         {
             this.value = val;
             this.value2 = val2;
+        }
+
+        public SimpleClass(int v)
+        {
+            this.v = v;
         }
 
         public int Value 
@@ -56,5 +62,12 @@ namespace GettingStarted_UST
             }
             return value.CompareTo(other.Value);
         }
+
+        public int myIntReturningMethod(int param1, string param2)
+        {
+            Console.WriteLine("Execuring this inthe SimpleClass.myINtReturn Method");
+            return 0;
+        }
+
     }
 }

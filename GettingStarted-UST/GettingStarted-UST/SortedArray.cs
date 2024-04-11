@@ -17,7 +17,7 @@ namespace GettingStarted_UST
             this.value = val;
             this.value1 = val1;
         }
-        public int myValue { get { return value; } }
+        public int MyValue { get { return value; } }
 
         public override string ToString()
         {
@@ -26,12 +26,21 @@ namespace GettingStarted_UST
 
         public override bool Equals(object? obj)
         {
-            return this.value.Equals(((SortedArray)obj).myValue);
+            return this.value.Equals(((SortedArray)obj).MyValue);
         }
 
         public int CompareTo(SortedArray? other)
         {
-            return this.value.CompareTo(other.myValue);
+            if(this.value.CompareTo(other.MyValue)==0)
+            {
+                return this.value1.CompareTo(other.MyValue);
+            }
+            return this.value.CompareTo(other.MyValue);
+        }
+
+        public override int GetHashCode()
+        {
+            throw new NotImplementedException();
         }
     }
 }

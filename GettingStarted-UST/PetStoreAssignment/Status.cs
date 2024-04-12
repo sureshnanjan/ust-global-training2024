@@ -6,7 +6,18 @@ using System.Threading.Tasks;
 
 namespace PetStoreAssignment
 {
-    internal class Status
-    {
-    }
+    
+            /// <summary>
+            /// Availabilty status of pets 
+            /// </summary>
+            enum Status
+            {
+                available,
+                pending,
+                sold
+            };
+
+   
+    
 }
+

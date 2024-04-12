@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GettingStarted-UST")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ed9362fbf03ce6e814db415f0d25e32fdd04b503")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ddfa2468569e87f898f0c2e1ac8ac44a275810f0")]
 [assembly: System.Reflection.AssemblyProductAttribute("GettingStarted-UST")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GettingStarted-UST")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

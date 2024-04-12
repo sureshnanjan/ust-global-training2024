@@ -14,25 +14,41 @@ namespace GettingStarted_UST
         int value, value2;
         private int v;
 
+        /// <summary>
+        /// constructor with 2 parameters
+        /// </summary>
+        /// <param name="val"></param>
+        /// <param name="val2"></param>
         public SimpleClass(int val, int val2)
         {
             this.value = val;
             this.value2 = val2;
         }
 
+        /// <summary>
+        /// Constructor with single parameter
+        /// </summary>
+        /// <param name="v"></param>
         public SimpleClass(int v)
         {
             this.v = v;
         }
 
-        public int Value 
+        /// <summary>
+        /// To get Value3
+        /// </summary>
+        public int Value3 
         { 
             get 
             { 
                 return this.value; 
             } 
         }
-        public int Value2 
+
+        /// <summary>
+        /// To get Value4
+        /// </summary>
+        public int Value4 
         { 
             get 
             {
@@ -56,18 +72,11 @@ namespace GettingStarted_UST
         /// <returns>Returns value after comparison</returns>
         public int CompareTo(SimpleClass? other)
         {
-            if ((value.CompareTo(other.Value)) == 0)
+            if ((value.CompareTo(other.value)) == 0)
             {
-                return value2.CompareTo(other.Value2);
+                return value2.CompareTo(other.value2);
             }
-            return value.CompareTo(other.Value);
+            return value.CompareTo(other.value);
         }
-
-        public int myIntReturningMethod(int param1, string param2)
-        {
-            Console.WriteLine("Execuring this inthe SimpleClass.myINtReturn Method");
-            return 0;
-        }
-
     }
 }

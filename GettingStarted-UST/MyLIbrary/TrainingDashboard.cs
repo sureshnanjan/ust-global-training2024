@@ -13,26 +13,26 @@ namespace MyLIbrary
         // Reference Types
 
         // Properties
-        string TrainerName = "suresh"; // 566794 - 456789
-        string enddate;
+        string trainerName = "suresh"; // 566794 - 456789
+        string endDate;
         string[] participants;
         string[] topics;
-        int marks = 10; // 5667789 - 00001010
-        float percent = 10.2f;
+        int Marks = 10; // 5667789 - 00001010
+        float Percent = 10.2f;
         
         // Methods
         
         /// <summary>
         /// Publish report about Training
         /// </summary>
-        public void publish() {
+        public void Publish() {
             Console.WriteLine("I am publishing the report");
             // marks = "suresh";
-            marks = (int)percent; // Explicit type converstion // TypeCasting
-            percent = marks;
+            Marks = (int)Percent; // Explicit type converstion // TypeCasting
+            Percent = Marks;
             
         }
-        public void generateReport() {
+        public void GenerateReport() {
             Console.WriteLine("Creating my wonderful report ");
         }
 
@@ -42,10 +42,10 @@ namespace MyLIbrary
         /// <param name="name"></param>
         /// <param name="param"></param>
         /// <returns></returns>
-        public string getTrainerName(string name, int param)
+        public string GetTrainerName(string name, int param)
         {
 
-            return this.TrainerName;
+            return this.trainerName;
         }
 
 

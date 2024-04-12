@@ -29,20 +29,20 @@ namespace GettingStarted_UST
             float expfloat = 3.14E-2f;
 
             // Character Literals
-            char mychar = 'M';
-            char mychar1 = '\u0061';
-            char mychar2 = '\n';
+            char myChar = 'M';
+            char myChar1 = '\u0061';
+            char myChar2 = '\n';
 
             // String Literals
-            string mystr = "Hi Team!";
-            string mystr1 = @"Hello Team!";
+            string myStr = "Hi Team!";
+            string myStr1 = @"Hello Team!";
 
             //Null literal
             string? s;
 
             // Boolean Literals
-            bool mybool = true;
-            bool mybool1 = false;
+            bool myBool = true;
+            bool myBool1 = false;
 
             Console.WriteLine($" Integer value of Decimal 89 is {decINt}");
             Console.WriteLine($" Integer value of Hexa-Decimal 59 is {hexInt}");
@@ -52,15 +52,15 @@ namespace GettingStarted_UST
             Console.WriteLine($" Float value of float 10.2 is {myFloat}");
             Console.WriteLine($" Float value of exponential 3.14E-2 is {expfloat} \n");
 
-            Console.WriteLine($" Character literal in single quote M is {mychar}");
-            Console.WriteLine($" Character literal in unicode 0061 is {mychar1}");
-            Console.WriteLine($" Character literal in Escape sequence new line is {mychar2} \n");
+            Console.WriteLine($" Character literal in single quote M is {myChar}");
+            Console.WriteLine($" Character literal in unicode 0061 is {myChar1}");
+            Console.WriteLine($" Character literal in Escape sequence new line is {myChar2} \n");
 
             // String Interpolation
-            Console.WriteLine($" String literals in double quote is {mystr}");
-            Console.WriteLine($" String literals in double quote with prefix of @ is {mystr1} \n");
+            Console.WriteLine($" String literals in double quote is {myStr}");
+            Console.WriteLine($" String literals in double quote with prefix of @ is {myStr1} \n");
             
-            Console.WriteLine($" Boolean literals are {mybool} & {mybool1} \n");
+            Console.WriteLine($" Boolean literals are {myBool} & {myBool1} \n");
         }
     }
 }

@@ -17,7 +17,7 @@ namespace GettingStarted_UST
         /// <param name="param1">First Integer of addition</param>
         /// <param name="param2">Second Integer of addition</param>
         /// <returns></returns>
-        public int add(int param1, int param2) 
+        public int Add(int param1, int param2)
         { 
             return param1 + param2; 
         }
@@ -28,7 +28,7 @@ namespace GettingStarted_UST
         /// <param name="param1">First Integer of subtraction</param>
         /// <param name="param2">Second Integer of subtraction</param>
         /// <returns></returns>
-        public int subtract(int param1, int param2) 
+        public int Subtract(int param1, int param2)
         { 
             return param1 - param2; 
         } 

@@ -6,26 +6,35 @@ using System.Threading.Tasks;
 
 namespace GettingStarted_UST
 {
+    /// <summary>
+    /// Class of Waiter
+    /// </summary>
     internal class Waiter
     {
-        int Waiterid;
+        int waiterId;
         string name;
         string orderId;
 
-        public Waiter(int Waiterid, string name, string orderId)
+        /// <summary>
+        /// Constructor of waiter
+        /// </summary>
+        /// <param name="waiterId">Id of Waiter</param>
+        /// <param name="name">Name of food</param>
+        /// <param name="orderId"></param>
+        public Waiter(int waiterId, string name, string orderId)
         {
-            this.Waiterid = Waiterid;
+            this.waiterId = waiterId;
             this.name = name;
             this.orderId = orderId;
         }
         public void ServeFood(object sender, EventArgs? args) 
         {
-            Console.WriteLine($"Waiter {this.Waiterid} is serving {this.name} for order {this.orderId}");
+            Console.WriteLine($"Waiter {this.waiterId} is serving {this.name} for order {this.orderId}");
         }
 
         public void CleanTable(object sender, EventArgs? args)
         {
-            Console.WriteLine($"Waiter {this.Waiterid} is cleaning the table");
+            Console.WriteLine($"Waiter {this.waiterId} is cleaning the table");
 
         }
     }

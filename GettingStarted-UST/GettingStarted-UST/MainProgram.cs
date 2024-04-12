@@ -25,7 +25,7 @@ namespace GettingStarted_UST
 
             Console.WriteLine("Example of Delegate :- ");
             InbuiltDelegateDemo();
-            UserdefinedDelegate();
+            UserDefinedDelegate();
             EventHandlingDemo();
 
             InstancesSort();
@@ -76,8 +76,13 @@ namespace GettingStarted_UST
             kfc.PlaceOrder(waiter3.CleanTable);
 
             Cashier cashier1 = new Cashier("C001");
-
             kfc.PlaceOrder(cashier1.CollectMoney);
+
+            Cashier cashier2 = new Cashier("C002");
+            kfc.PlaceOrder(cashier2.CollectMoney);
+
+            Cashier cashier3 = new Cashier("C003");
+            kfc.PlaceOrder(cashier3.CollectMoney);
 
             kfc.CollectOrder();
         }
@@ -93,7 +98,7 @@ namespace GettingStarted_UST
         /// <summary>
         /// Showcase the delagate usability
         /// </summary>
-        private static void UserdefinedDelegate()
+        private static void UserDefinedDelegate()
         {
             int[] myNumbers = { 1, 2, 3, 4, 5, 6, 7, 8 };
             var result = myNumbers.Where(param => param>2).ToList();
@@ -115,10 +120,10 @@ namespace GettingStarted_UST
         /// <summary>
         /// Normal method
         /// </summary>
-        /// <param name="para1">First Argument</param>
+        /// <param name="param1">First Argument</param>
         /// <param name="param2">Second Argument</param>
         /// <returns></returns>
-        public static int MyMethod(int para1, string param2)
+        public static int MyMethod(int param1, string param2)
         {
             Console.WriteLine("Executing in the myMethod \n");
             return 0;

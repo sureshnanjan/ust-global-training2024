@@ -16,8 +16,8 @@
             int[] inputArray = { 4, 5, 6 };
             int key = 4;
             int expected = 0;
-            BinarySearch mysearch = new BinarySearch(inputArray, key);
-            int actual = mysearch.DoSearch(inputArray, key);
+            BinarySearch mySearch = new BinarySearch(inputArray, key);
+            int actual = mySearch.DoSearch(inputArray, key);
             Assert.AreEqual(expected, actual);
         }
 
@@ -31,8 +31,8 @@
             int[] inputArray = { 4, 5, 6 };
             int key = 5;
             int expected = 1;
-            BinarySearch mysearch = new BinarySearch(inputArray, key);
-            int actual = mysearch.DoSearch(inputArray, key);
+            BinarySearch mySearch = new BinarySearch(inputArray, key);
+            int actual = mySearch.DoSearch(inputArray, key);
 
             Assert.AreEqual(expected, actual);
         }
@@ -47,8 +47,8 @@
             int[] inputArray = { 4, 5, 6 };
             int key = 6;
             int expected = 2;
-            BinarySearch mysearch = new BinarySearch(inputArray, key);
-            int actual = mysearch.DoSearch(inputArray, key);
+            BinarySearch mySearch = new BinarySearch(inputArray, key);
+            int actual = mySearch.DoSearch(inputArray, key);
 
             Assert.AreEqual(expected, actual);
         }
@@ -63,8 +63,8 @@
             int[] inputArray = { 4, 5, 6 };
             int key = 1;
             int expected = ~0;
-            BinarySearch mysearch = new BinarySearch(inputArray, key);
-            int actual = mysearch.DoSearch(inputArray, key);
+            BinarySearch mySearch = new BinarySearch(inputArray, key);
+            int actual = mySearch.DoSearch(inputArray, key);
 
             Assert.AreEqual(expected, actual);
         }
@@ -78,8 +78,8 @@
             int[] inputArray = { 4, 5, 6 };
             int key = 2;
             int expected = ~0;
-            BinarySearch mysearch = new BinarySearch(inputArray, key);
-            int actual = mysearch.DoSearch(inputArray, key);
+            BinarySearch mySearch = new BinarySearch(inputArray, key);
+            int actual = mySearch.DoSearch(inputArray, key);
 
             Assert.AreEqual(expected, actual);
         }
@@ -93,8 +93,8 @@
             int[] inputArray = { 2, 5, 7 };
             int key = 3;
             int expected = ~1;
-            BinarySearch mysearch = new BinarySearch(inputArray, key);
-            int actual = mysearch.DoSearch(inputArray, key);
+            BinarySearch mySearch = new BinarySearch(inputArray, key);
+            int actual = mySearch.DoSearch(inputArray, key);
 
             Assert.AreEqual(expected, actual);
         }
@@ -108,8 +108,8 @@
             int[] inputArray = { 2, 5, 7 };
             int key = 6;
             int expected = ~2;
-            BinarySearch mysearch = new BinarySearch(inputArray, key);
-            int actual = mysearch.DoSearch(inputArray, key);
+            BinarySearch mySearch = new BinarySearch(inputArray, key);
+            int actual = mySearch.DoSearch(inputArray, key);
 
             Assert.AreEqual(expected, actual);
         }
@@ -124,8 +124,8 @@
             int[] inputArray = { 4, 5, 6 };
             int key = 7;
             int expected = ~(2+1);
-            BinarySearch mysearch = new BinarySearch(inputArray, key);
-            int actual = mysearch.DoSearch(inputArray, key);
+            BinarySearch mySearch = new BinarySearch(inputArray, key);
+            int actual = mySearch.DoSearch(inputArray, key);
 
             Assert.AreEqual(expected, actual);
         }
@@ -140,8 +140,8 @@
             int[] inputArray = { 2, 4, 6 };
             int key = 5;
             int expected = ~(1 + 1);
-            BinarySearch mysearch = new BinarySearch(inputArray, key);
-            int actual = mysearch.DoSearch(inputArray, key);
+            BinarySearch mySearch = new BinarySearch(inputArray, key);
+            int actual = mySearch.DoSearch(inputArray, key);
 
             Assert.AreEqual(expected, actual);
         }
@@ -156,8 +156,8 @@
             int[] inputArray = { 2, 4, 6 };
             int key = 3;
             int expected = ~(0 + 1);
-            BinarySearch mysearch = new BinarySearch(inputArray, key);
-            int actual = mysearch.DoSearch(inputArray, key);
+            BinarySearch mySearch = new BinarySearch(inputArray, key);
+            int actual = mySearch.DoSearch(inputArray, key);
 
             Assert.AreEqual(expected, actual);
         }
@@ -171,8 +171,8 @@
             int[] inputArray = { 6, 2, 4 };
             int key = 2;
             int expected = -1;
-            BinarySearch mysearch = new BinarySearch(inputArray, key);
-            int actual = mysearch.IsSorted(inputArray);
+            BinarySearch mySearch = new BinarySearch(inputArray, key);
+            int actual = mySearch.IsSorted(inputArray);
             Assert.AreEqual(expected, actual);
         }
 
@@ -185,8 +185,8 @@
             int[] inputArray = { 6, 2, 4 };
             int key = 1;
             int expected = -1;
-            BinarySearch mysearch = new BinarySearch(inputArray, key);
-            int actual = mysearch.IsSorted(inputArray);
+            BinarySearch mySearch = new BinarySearch(inputArray, key);
+            int actual = mySearch.IsSorted(inputArray);
             Assert.AreEqual(expected, actual);
         }
 
@@ -199,8 +199,8 @@
             int[] inputArray = {};
             int key = 7;
             string expected = "Array is Empty";
-            BinarySearch mysearch = new BinarySearch(inputArray, key);
-            int actual = mysearch.DoSearch(inputArray, key);
+            BinarySearch mySearch = new BinarySearch(inputArray, key);
+            int actual = mySearch.DoSearch(inputArray, key);
             Equals(expected, actual);
         }
 
@@ -213,8 +213,8 @@
             int[,] inputArray = { { 1, 2, 3} , { 4, 5, 6} };
             int key = 7;
             string expected = "Array is Multi-dimensional";
-            BinarySearch mysearch = new BinarySearch(inputArray, key);
-            string actual = mysearch.MultiException(inputArray);
+            BinarySearch mySearch = new BinarySearch(inputArray, key);
+            string actual = mySearch.MultiException(inputArray);
             Equals(expected, actual);
         }
 
@@ -227,8 +227,8 @@
             int[] inputArray = { 3 };
             int key = 2;
             string expected = "Argument not valid";
-            BinarySearch mysearch = new BinarySearch(inputArray, key);
-            int actual = mysearch.DoSearch(inputArray, key);
+            BinarySearch mySearch = new BinarySearch(inputArray, key);
+            int actual = mySearch.DoSearch(inputArray, key);
             Equals(expected, actual);
         }
 
@@ -241,9 +241,9 @@
             int[] inputArray = { 1 };
             int key = 4;
             string expected = "Operation not valid";
-            BinarySearch mysearch = new BinarySearch(inputArray, key);
+            BinarySearch mySearch = new BinarySearch(inputArray, key);
             //int actual = mysearch.OperationExcep(inputArray, key);
-            Assert.AreEqual(expected, mysearch);
+            Assert.AreEqual(expected, mySearch);
         }
     }
 }

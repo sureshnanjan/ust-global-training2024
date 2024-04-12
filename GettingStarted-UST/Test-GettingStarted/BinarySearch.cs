@@ -86,12 +86,12 @@ namespace Test_GettingStarted
         /// <summary>
         /// To catch Multi-dimensional array exception
         /// </summary>
-        /// <param name="inputarray1">Multi-dimensional Array</param>
+        /// <param name="inputArray1">Multi-dimensional Array</param>
         /// <returns></returns>
         /// <exception cref="RankException">To throw Multi-dimensional Array</exception>
-        public string MultiException(int[,] inputarray1)
+        public string MultiException(int[,] inputArray1)
         {
-            if(inputarray1.Rank != 1)
+            if(inputArray1.Rank != 1)
             {
                 throw new RankException("Array is Multi-dimensional");
             }

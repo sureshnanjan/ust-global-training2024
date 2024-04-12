@@ -9,7 +9,9 @@ namespace Test_GettingStarted
 {
     internal class DelegateDemo
     {
-        
+        /// <summary>
+        /// Demo os Delegate usage
+        /// </summary>
         public DelegateDemo() 
         {
             Action<bool> display = DisplayValue;
@@ -17,6 +19,10 @@ namespace Test_GettingStarted
 
         }
 
+        /// <summary>
+        /// Method to display values
+        /// </summary>
+        /// <param name="val1"></param>
         private void DisplayValue(bool val1)
         {
             Console.WriteLine($"Value is {val1}");

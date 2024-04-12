@@ -14,7 +14,7 @@ namespace Test_GettingStarted
     /// Test Class of Delegate
     /// </summary>
     [TestClass]
-    public class Test_Delegate
+    public class Test_Lambda
     {
         /// <summary>
         /// Test to count repeated values in an array
@@ -41,6 +41,18 @@ namespace Test_GettingStarted
         }
 
         /// <summary>
+        /// Test to get list of values greater than 1
+        /// </summary>
+        [TestMethod]
+        public void TestForListOfValueForGreaterThanOperation()
+        {
+            int[] ListOfElements = { 3, 0, 2, 8, 6, 0, 1 };
+            var expected = ListOfElements.Where(x => x > 1).ToList();
+            int[] actual = { 3, 2, 8, 6 };
+            Equals(expected, actual);
+        }
+
+        /// <summary>
         /// Test to get count of values less than 2
         /// </summary>
         [TestMethod]
@@ -50,6 +62,18 @@ namespace Test_GettingStarted
             int expected = ListOfElements.Where(x => x < 2).Count();
             int actual = 3;
             Assert.AreEqual(expected, actual);
+        }
+
+        /// <summary>
+        /// Test to get list of values less than 2
+        /// </summary>
+        [TestMethod]
+        public void TestForListOfValuesForLessThanOperation()
+        {
+            int[] ListOfElements = { 3, 0, 2, 8, 6, 0, 1 };
+            var expected = ListOfElements.Where(x => x < 2).ToList();
+            int[] actual = {0, 0, 1};
+            Equals(expected, actual);
         }
 
         /// <summary>

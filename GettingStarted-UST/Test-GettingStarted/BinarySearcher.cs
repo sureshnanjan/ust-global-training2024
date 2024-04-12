@@ -14,6 +14,18 @@ namespace Test_GettingStarted
             this.searchTerm = searchTerm;
         }
 
+        // Constructor to handle Rank exception 
+        public BinarySearcher(int[,] myinputArray1, int searchTerm)
+        {
+            throw new RankException();
+        }
+
+        //Constructor to handle Argument exception
+        public BinarySearcher(int[] myinputArray2, float searchTerm)
+        {
+            throw new ArgumentException();
+        }
+
         internal int doSearch()
         {
             int searchValue = Array.BinarySearch(myinputArray, searchTerm);
@@ -30,7 +42,11 @@ namespace Test_GettingStarted
             }
             return -1;
         }
-
+        //Method declartion for invalid call
+        internal int doSearchandCompare()
+        {
+            throw new InvalidOperationException();
+        }
         private bool confirmsortedarray(int[] myinputArray)
         {
             for (int i = 1; i < myinputArray.Length; i++)

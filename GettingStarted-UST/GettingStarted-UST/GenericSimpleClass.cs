@@ -8,7 +8,9 @@ namespace GettingStarted_UST
 {
     internal class GenericSimpleClass<T1,T2>
     {
-        //int id;
+        // Generic   
+
+        //int id; //20022  UST-20001
         //int counter;
         //string name;
         T1 id;

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace PetStore
 {
     /// <summary>
-    /// User details
+    /// User Details
     /// </summary>
     internal class User
     {

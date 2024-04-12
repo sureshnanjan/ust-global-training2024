@@ -20,7 +20,7 @@ namespace PetStoreImplementation
         }
 
         /// <summary>
-        /// Method to open website
+        /// Method to launch website
         /// </summary>
         /// <param name="url">URL of webpage to be opened</param>
         public void OpenWebsite(string url) 

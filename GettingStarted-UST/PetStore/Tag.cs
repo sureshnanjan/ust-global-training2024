@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace PetStore
 {
     /// <summary>
-    /// Tag details
+    /// Tag Details
     /// </summary>
     internal class Tag
     {

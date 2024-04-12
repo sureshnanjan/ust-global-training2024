@@ -11,9 +11,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test-GettingStarted", "Test
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebdriverDotnet", "WebdriverDotnet\WebdriverDotnet.csproj", "{7BA4B7AE-D9D4-4DFC-AD6B-15590A7D742A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HerokuAppOperations", "HerokuAppOperations\HerokuAppOperations.csproj", "{5D55DC41-B727-47AC-9DC2-553F0913D78A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HerokuAppOperations", "HerokuAppOperations\HerokuAppOperations.csproj", "{5D55DC41-B727-47AC-9DC2-553F0913D78A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestHerokuApp", "TestHerokuApp\TestHerokuApp.csproj", "{D9B346FC-18AA-478F-ABA7-CC56D8563560}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestHerokuApp", "TestHerokuApp\TestHerokuApp.csproj", "{D9B346FC-18AA-478F-ABA7-CC56D8563560}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ImplementPetStore", "ImplementPetStore\ImplementPetStore.csproj", "{9ECF346F-2F21-4EC4-A746-C944FC6217DC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetStoreProject", "PetStoreProject\PetStoreProject.csproj", "{2338853D-1CF1-40DD-864C-C130657E0967}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +49,14 @@ Global
 		{D9B346FC-18AA-478F-ABA7-CC56D8563560}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D9B346FC-18AA-478F-ABA7-CC56D8563560}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D9B346FC-18AA-478F-ABA7-CC56D8563560}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9ECF346F-2F21-4EC4-A746-C944FC6217DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9ECF346F-2F21-4EC4-A746-C944FC6217DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9ECF346F-2F21-4EC4-A746-C944FC6217DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9ECF346F-2F21-4EC4-A746-C944FC6217DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2338853D-1CF1-40DD-864C-C130657E0967}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2338853D-1CF1-40DD-864C-C130657E0967}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2338853D-1CF1-40DD-864C-C130657E0967}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2338853D-1CF1-40DD-864C-C130657E0967}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

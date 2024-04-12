@@ -8,7 +8,7 @@ namespace TestHerokuApp
     public class HomePageTests
     {
         /// <summary>
-        /// 
+        /// Title - Homepage verification
         /// </summary>
         [Test]
         public void homePageTitleisCorrect() {
@@ -21,7 +21,9 @@ namespace TestHerokuApp
             Assert.That(actualTitle, Is.EqualTo(expectedTitle)); // NUNIT
                 
         }
-
+        /// <summary>
+        /// Subtitle Verification
+        /// </summary>
         [Test]
         public void homePageSubTitleisCorrect() {
             IHomePage page = null;
@@ -31,7 +33,9 @@ namespace TestHerokuApp
             // A
             Assert.That(actualTitle, Is.EqualTo(expectedSubTitle)); // NUNIT
         }
-
+        /// <summary>
+        /// Multiple links - Single Method
+        /// </summary>
         [Test]
         public void homePageHas44Links() {
             IHomePage page = null;
@@ -49,6 +53,20 @@ namespace TestHerokuApp
             string actualTitle = page.getTitle();
             Assert.That(actualTitle, Is.EqualTo(expectedTitle));
         }
-
+        /// <summary>
+        /// Multiple Link - Parametrization
+        /// </summary>
+                
+            [TestCaseSource(typeof(MyDataClass), nameof(MyDataClass.TestCases))]
+            public void MultipleLinksselectionusingSingleTest(string pagetovisit, string expectedtitle)
+            {
+                IHomePage page = null;
+                //string pagetovisit = "A/B Testing";
+                string expectedTitle = "A/B Test Variation 1";
+                page.goToExample(pagetovisit);
+                string actualTitle = page.getTitle();
+                Assert.That(actualTitle, Is.EqualTo(expectedTitle));
+            }
+       
     }
 }

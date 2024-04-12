@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using MyLIbrary;
 using WebdriverDotnet;
+using Test_GettingStarted;
 
 
 namespace GettingStarted_UST
@@ -49,9 +50,9 @@ namespace GettingStarted_UST
 
             //genericsDemo();
 
-            MyBrowser brower = new MyBrowser();
-            brower.OpenWebsite("https://petstore.octoperf.com/actions/Catalog.action");
-            Console.WriteLine(brower.GetTitle());
+            //MyBrowser brower = new MyBrowser();
+            // brower.OpenWebsite("https://petstore.octoperf.com/actions/Catalog.action");
+            //Console.WriteLine(brower.GetTitle());
         }
         private static void genericsDemo()
         {
@@ -86,15 +87,15 @@ namespace GettingStarted_UST
             genericSimpleClass1.MyCounter = 1.2f;
             Action<int, float, string> action1 = (a, b, c) => { };
         }
-        }
 
-        
+
+
 
         /* GenericSimpleClass<int, string> genericSimpleClass = new GenericSimpleClass<int, string>();
-   genericSimpleClass.MyCounter = 0;
-   GenericSimpleClass<float, string> genericSimpleClass1 = new GenericSimpleClass<float, string>();
-   genericSimpleClass1.MyCounter = 1.2f;
-   Action<int, float, string> action1 = (a, b, c) => { };   */
+    genericSimpleClass.MyCounter = 0;
+    GenericSimpleClass<float, string> genericSimpleClass1 = new GenericSimpleClass<float, string>();
+    genericSimpleClass1.MyCounter = 1.2f;
+    Action<int, float, string> action1 = (a, b, c) => { };   */
 
 
         private static void OperatorIndexerAssignment()
@@ -135,7 +136,8 @@ namespace GettingStarted_UST
             kfc.PlaceOrder(waiter2.ServeFood);
             kfc.PlaceOrder(waiter3.ServeFood);
             kfc.PlaceOrder(cashier.CollectMoney);
-            kfc.PrepareTheFood(); }
+            kfc.PrepareTheFood();
+        }
 
         private static void April06Demo()
         {
@@ -182,7 +184,8 @@ namespace GettingStarted_UST
             pointer(10, "");
         }
 
-        static bool lessthn3Filter(int param) {
+        static bool lessthn3Filter(int param)
+        {
             // param => param < 3
             return param < 3;
         }
@@ -199,12 +202,14 @@ namespace GettingStarted_UST
             return param == 3;
         }
 
-        static int myMethod(int para1, string param2) {
+        static int myMethod(int para1, string param2)
+        {
             Console.WriteLine("Execuring this inthe myMethod");
             return 0;
         }
 
-        private static int someOtherMethod(int para, string para2) {
+        private static int someOtherMethod(int para, string para2)
+        {
             Console.WriteLine("SOMEOTHER METHOD");
             return 0;
         }
@@ -431,5 +436,6 @@ namespace GettingStarted_UST
          }*/
 
 
-   }
+    }
+
 }

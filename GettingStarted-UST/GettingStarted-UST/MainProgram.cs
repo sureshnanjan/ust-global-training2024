@@ -5,7 +5,7 @@ using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using MyLIbrary;
-using Petstore_Automation;
+using WebdriverDotnet;
 
 namespace GettingStarted_UST
 {
@@ -22,29 +22,37 @@ namespace GettingStarted_UST
         // Operators
         public static void Main(string[] args)
         {
-            
-            OperatorIndexer indexer = new OperatorIndexer();
+            //genericsDemo();
 
-            indexer[0] = "Renjitha";
-            indexer[1] = "Manu";
-            indexer[2] = "Anandhu";
-            
-            Console.WriteLine($"Frist value in index[0] : {indexer[0]}");
-            Console.WriteLine($"Second value in index[1] : {indexer[1]}");
-            Console.WriteLine($"Third value in index[2] : {indexer[2]}");
+            MyBrowser brower = new MyBrowser();
+            brower.OpenWebsite("https://petstore.octoperf.com/actions/Catalog.action");
+            Console.WriteLine(brower.GetTitle());
+        }
+        private static void genericsDemo()
+        {
+            //OperatorIndexerAssignment();
 
-            /*MyBrowser browser = new MyBrowser();
-            browser.OpenWebsite("https://petstore.octoperf.com/actions/Catalog.action");
-            Console.WriteLine(browser.GetTitle());*/
+            //GenericsIntro();
 
-            List<int> list = new List<int>() { 2,3,4,8,5};
-            LambdaAssignement lambdaExp = new LambdaAssignement(list);
-            lambdaExp.showList();
-            lambdaExp.addNumbers();
-            lambdaExp.subNumbers();
-            lambdaExp.productOfNumbers();
-            lambdaExp.squareOfNumbers();
+            Calculator calculator = new Calculator();
+            //var results = calculator.add(10.1, 20.0);
 
+            Func<int, bool> mytester = (str) => str > 10;
+            mytester(0);
+
+            int res = calculator.compare<int>(20, 20);
+            int res1 = calculator.compare<string>("", "");
+            int res2 = calculator.compare<SimpleClass>(new SimpleClass(0), new SimpleClass(10));
+        }
+
+        private static void GenericsIntro()
+        {
+            // Constructed Type
+            GenericSimpleClass<int, string> genericSimpleClass = new GenericSimpleClass<int, string>();
+            genericSimpleClass.MyCounter = 0;
+            GenericSimpleClass<float, string> genericSimpleClass1 = new GenericSimpleClass<float, string>();
+            genericSimpleClass1.MyCounter = 1.2f;
+            Action<int, float, string> action1 = (a, b, c) => { };
         }
 
        

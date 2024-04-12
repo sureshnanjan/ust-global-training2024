@@ -182,7 +182,7 @@ namespace Test_GettingStarted
             int searchTerm = 7;
             BinarySearcher searcher = new BinarySearcher(myinputArray, searchTerm);
         }
-
+        
         // Test case for non int type array
         [TestMethod]
         [ExpectedException(typeof(InvalidOperationException),

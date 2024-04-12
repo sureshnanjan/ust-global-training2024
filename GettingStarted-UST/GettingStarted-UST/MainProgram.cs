@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MyLIbrary;
+using PetStoreImplementations;
+
 
 namespace GettingStarted_UST
 {
@@ -20,25 +22,33 @@ namespace GettingStarted_UST
         // Operators
         public static void Main(string[] args)
         {
-<<<<<<< HEAD
+            HomePage browser= new HomePage();
+            browser.OpenWebsite("https://petstore.octoperf.com/actions/Catalog.action");
+            Console.WriteLine(browser.GetTitle());
 
             //int[] mynumbers = { 8, 3, 19, 21, 1, 2, 3, 4 };
 
-            MySimpleClass[] myInstances = { new(1, 2), new (0, 1), new(2, 3), new (3, 4) };
+            //MySimpleClass[] myInstances = { new(1, 2), new (0, 1), new(2, 3), new (3, 4) };
 
-            SimpleClass cl1 = new SimpleClass(8,"zA");
-            SimpleClass cl2 = new SimpleClass(2,"xB");
-            SimpleClass cl3 = new SimpleClass(9,"oZ");
-            SimpleClass cl4 = new SimpleClass(1,"AD");
-            SimpleClass cl5 = new SimpleClass(3,"bB");
-=======
+            //Array.Sort(myInstances);
+
+            //foreach (MySimpleClass myInstance in myInstances)
+            //{
+            //    Console.Write(myInstance.ToString()+" ,");
+            //}
+
+            //SimpleClass cl1 = new SimpleClass(8,"zA");
+            //SimpleClass cl2 = new SimpleClass(2,"xB");
+            //SimpleClass cl3 = new SimpleClass(9,"oZ");
+            //SimpleClass cl4 = new SimpleClass(1,"AD");
+
             //OperatorIndexerAssignment();
 
-            GenericSimpleClass<int,string> genericSimpleClass = new GenericSimpleClass<int,string>();
-            genericSimpleClass.MyCounter = 0;
-            GenericSimpleClass<float,string> genericSimpleClass1 = new GenericSimpleClass<float,string>();
-            genericSimpleClass1.MyCounter = 1.2f;
-            Action<int, float, string> action1 = (a,b,c) => { };
+            //GenericSimpleClass<int,string> genericSimpleClass = new GenericSimpleClass<int,string>();
+            //genericSimpleClass.MyCounter = 0;
+            //GenericSimpleClass<float,string> genericSimpleClass1 = new GenericSimpleClass<float,string>();
+            //genericSimpleClass1.MyCounter = 1.2f;
+            //Action<int, float, string> action1 = (a,b,c) => { };
 
         }
 
@@ -51,19 +61,16 @@ namespace GettingStarted_UST
             SimpleClass class1 = new SimpleClass(10);
             SimpleClass class2 = new SimpleClass(100);
             // Assignemnt for Operators and Indexers
-            /*
-            var result = class1 + class2; // Operator 
-            if (class2 > class1) 
-            {
-                Console.WriteLine();
-            }
 
-            int[] mysequence = { 1, 2, 3 };
+            var resultOne = class1 + class2; // Operator 
+                Console.WriteLine(resultOne);
 
-            Console.WriteLine(mysequence[0]);
-            SimpleCollection scCollection = new SimpleCollection();
-            Console.WriteLine(scCollection[0]); // Indexer
-            */
+            //int[] mysequence = { 1, 2, 3 };
+
+            //Console.WriteLine(mysequence[0]);
+            //SimpleCollection scCollection = new SimpleCollection();
+            //Console.WriteLine(scCollection[0]); // Indexer
+
         }
 
         /// <summary>
@@ -162,7 +169,6 @@ namespace GettingStarted_UST
             SimpleClass cl3 = new SimpleClass(9, "oZ");
             SimpleClass cl4 = new SimpleClass(1, "AD");
             SimpleClass cl5 = new SimpleClass(3, "bB");
->>>>>>> suresh-trainer
             SimpleClass[] mycoll = { cl1, cl1, cl3, cl4, cl5 };
             Console.WriteLine("Sorting Default");
             Array.Sort(mycoll);

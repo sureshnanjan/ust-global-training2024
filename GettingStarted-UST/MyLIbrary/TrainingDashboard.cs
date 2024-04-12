@@ -25,15 +25,11 @@ namespace MyLIbrary
         /// <summary>
         /// Publish report about Training
         /// </summary>
-        public void publish() {
-            Console.WriteLine("I am publishing the report");
-            // marks = "suresh";
-            marks = (int)percent; // Explicit type converstion // TypeCasting
-            percent = marks;
-            
+        public static void publish() {
+            Console.WriteLine("I am publishing the report");     
         }
-        public void generateReport() {
-            Console.WriteLine("Creating my wonderful report ");
+        public static void generateReport() {
+            Console.WriteLine("Creating my report ");
         }
 
         /// <summary>

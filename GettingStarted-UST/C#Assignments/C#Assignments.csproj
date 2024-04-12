@@ -2,15 +2,15 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net6.0</TargetFramework>
-    <RootNamespace>GettingStarted_UST</RootNamespace>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>C_Assignments</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\MyLIbrary\MyLIbrary.csproj" />
-    <ProjectReference Include="..\PetStoreImplementations\PetStoreImplementations.csproj" />
+    <ProjectReference Include="..\PetStore\PetStore.csproj" />
   </ItemGroup>
 
 </Project>

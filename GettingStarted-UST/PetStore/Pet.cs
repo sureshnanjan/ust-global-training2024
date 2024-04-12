@@ -9,7 +9,7 @@ namespace PetStore
     /// <summary>
     /// Represents a pet in the pet store.
     /// </summary>
-    internal class Pet
+    public class Pet
     {
         private int id;
         private Category? category;

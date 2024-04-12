@@ -9,7 +9,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyLIbrary", "MyLIbrary\MyLI
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test-GettingStarted", "Test-GettingStarted\Test-GettingStarted.csproj", "{50131221-1495-4CF8-B7A8-A6FFE46F8188}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetStore", "PetStore\PetStore.csproj", "{739D60CB-EC88-4476-956B-0B7AB97F1D3C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetStore", "PetStore\PetStore.csproj", "{739D60CB-EC88-4476-956B-0B7AB97F1D3C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "C#Assignments", "C#Assignments\C#Assignments.csproj", "{91BE8299-B730-4E6A-B3C2-E4DD57720669}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTestsAssignments", "UnitTestsAssignments\UnitTestsAssignments.csproj", "{75B807ED-E527-44CB-914C-FD8A76F08270}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetStoreImplementations", "PetStoreImplementations\PetStoreImplementations.csproj", "{BA982A8C-E1C3-4D6C-A516-2D1B6F89277C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +39,18 @@ Global
 		{739D60CB-EC88-4476-956B-0B7AB97F1D3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{739D60CB-EC88-4476-956B-0B7AB97F1D3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{739D60CB-EC88-4476-956B-0B7AB97F1D3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91BE8299-B730-4E6A-B3C2-E4DD57720669}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91BE8299-B730-4E6A-B3C2-E4DD57720669}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91BE8299-B730-4E6A-B3C2-E4DD57720669}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91BE8299-B730-4E6A-B3C2-E4DD57720669}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75B807ED-E527-44CB-914C-FD8A76F08270}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75B807ED-E527-44CB-914C-FD8A76F08270}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75B807ED-E527-44CB-914C-FD8A76F08270}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75B807ED-E527-44CB-914C-FD8A76F08270}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA982A8C-E1C3-4D6C-A516-2D1B6F89277C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA982A8C-E1C3-4D6C-A516-2D1B6F89277C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA982A8C-E1C3-4D6C-A516-2D1B6F89277C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA982A8C-E1C3-4D6C-A516-2D1B6F89277C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

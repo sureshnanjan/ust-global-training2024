@@ -9,7 +9,7 @@ namespace PetStore
     /// <summary>
     /// Represents a tag.
     /// </summary>
-    internal class Tag
+    public class Tag
     {
 		private int id;
 		private int name;

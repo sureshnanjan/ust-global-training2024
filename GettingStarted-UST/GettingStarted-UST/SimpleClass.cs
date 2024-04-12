@@ -27,6 +27,11 @@ namespace GettingStarted_UST
             this.value2 = val;
             this.name = String.Empty;
         }
+
+        public static int operator +(SimpleClass classOne, SimpleClass classTwo)
+        {
+            return classOne.value1 + classTwo.value1;
+        }
         public int Value { get { return this.value1; } }
 
         public string Name { get { return this.name; } }
@@ -52,14 +57,11 @@ namespace GettingStarted_UST
             return new SimpleClass(this.value1);
         }
 
-<<<<<<< HEAD
-=======
         public int myIntReturningMethod(int param1, string param2) {
             Console.WriteLine("Execuring this inthe SimpleClass.myINtReturn Method");
             return 0;
         }
 
 
->>>>>>> suresh-trainer
     }
 }

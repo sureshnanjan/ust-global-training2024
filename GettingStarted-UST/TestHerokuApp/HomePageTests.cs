@@ -8,20 +8,23 @@ namespace TestHerokuApp
     public class HomePageTests
     {
         /// <summary>
-        /// 
+        /// Test case to verify the home page title 
         /// </summary>
         [Test]
-        public void homePageTitleisCorrect() {
+        public void homePageTitleisCorrect()
+        {
             // Arrange
             IHomePage page = null;
             string expectedTitle = "Welcome to the-internet";
-            // A
+            // Action
             string actualTitle = page.getTitle();
-            // A
+            // Assert
             Assert.That(actualTitle, Is.EqualTo(expectedTitle)); // NUNIT
                 
         }
-
+        /// <summary>
+        /// Test case to verify the Home page Sub Title 
+        /// </summary>
         [Test]
         public void homePageSubTitleisCorrect() {
             IHomePage page = null;
@@ -32,6 +35,10 @@ namespace TestHerokuApp
             Assert.That(actualTitle, Is.EqualTo(expectedSubTitle)); // NUNIT
         }
 
+        /// <summary>
+        /// Test case to verify the all the 44 links 
+        /// </summary>
+
         [Test]
         public void homePageHas44Links() {
             IHomePage page = null;
@@ -40,6 +47,10 @@ namespace TestHerokuApp
             Assert.That(actual, Is.EqualTo(expectedCount));
         }
 
+
+        /// <summary>
+        /// Test case to verify the Example page title 
+        /// </summary>
         [Test]
         public void visintingAExamplePageWorks() {
             IHomePage page = null;
@@ -50,5 +61,18 @@ namespace TestHerokuApp
             Assert.That(actualTitle, Is.EqualTo(expectedTitle));
         }
 
+        /// <summary>
+        /// Test case to verify the Example page title 
+        /// </summary>
+        
+        [TestCaseSource(typeof(MyDataClass), nameof(MyDataClass.TestCases))]
+        public void visintingAllPageWorks(string pagetovisit,string expectedTitle)
+        {
+            IHomePage page = null;
+            
+            page.goToExample(pagetovisit);
+            string actualTitle = page.getTitle();
+            Assert.That(actualTitle, Is.EqualTo(expectedTitle));
+        }
     }
 }

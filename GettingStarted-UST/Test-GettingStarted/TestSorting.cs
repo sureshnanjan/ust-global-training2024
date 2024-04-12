@@ -1,50 +1,46 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using GettingStarted_UST;
 
 namespace Test_GettingStarted
 {
-    /// <summary>
-    /// Sorted Array Test Cases
-    /// </summary>
     [TestClass]
-    public class TestSortedArray
+    public class TestSorting
     {
-
         [TestMethod]
-        //Expecting result as a Sorted Array 
-        public void SortedArray()
-        {
-            //Integers Array
-            int[] intArray = new int[] { 9, 2, 4, 3, 1, 5 };
-            Console.WriteLine("Sorted Array");
-            //Array.Sort takes Array as an input and sorts the array in ascending order 
-            Array.Sort(intArray);
-            foreach (int i in intArray)
-            {
-                Console.WriteLine(i + "");
-            }
+        public void default_sort_works() {
+            // AAA
+            SimpleClass cl1 = new SimpleClass(8, "zA");
+            SimpleClass cl2 = new SimpleClass(2, "xB");
+            SimpleClass cl3 = new SimpleClass(9, "oZ");
+            SimpleClass cl4 = new SimpleClass(1, "AD");
+            SimpleClass cl5 = new SimpleClass(3, "bB");
+            SimpleClass[] mycoll = { cl1, cl1, cl3, cl4, cl5 };
+            // form the expected result
+            // Act
+            Array.Sort(mycoll);
+            // assert that the result is as per expectation
+        }
+        [TestMethod]
+        public void sort_works_with_name() {
+            // AAA
+            SimpleClass cl1 = new SimpleClass(8, "zA");
+            SimpleClass cl2 = new SimpleClass(2, "xB");
+            SimpleClass cl3 = new SimpleClass(9, "oZ");
+            SimpleClass cl4 = new SimpleClass(1, "AD");
+            SimpleClass cl5 = new SimpleClass(3, "bB");
+            SimpleClass[] mycoll = { cl1, cl1, cl3, cl4, cl5 };
+            NameSorter sorter = new NameSorter();
+            // Act
+            Array.Sort(mycoll,sorter);
+            //CollectionAssert TDD
+
         }
 
-        [TestMethod]
-        //By default sorting will be based on the first element   
-        public void Sorting_FromFirstElement()
-        {
-            //Integers Array
-            int[] intArray = new int[] { 9, 2, 4, 3, 1, 5 };
-            //If array length is 6 elements theb by default sorting will be based on 1st element
-            //Sort the array till the last element. If first value is found to be equal then sort happens based on the second value and so on
 
-            Array.Sort(intArray, 1, 5);
-            foreach (int i in intArray)
-            {
-                Console.WriteLine(i + "");
-            }
-        }
 
 
     }

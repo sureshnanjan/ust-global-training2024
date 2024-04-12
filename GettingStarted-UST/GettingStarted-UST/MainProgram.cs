@@ -6,27 +6,72 @@ using System.Threading.Tasks;
 using MyLIbrary;
 using WebdriverDotnet;
 
+
+
+
 namespace GettingStarted_UST
 {
     delegate int typeIntTakeintStr(int param1, string some);
-    //public delegate TResult Func<in T, out TResult>(T arg);
-    public class MainProgram
+        public class MainProgram
     {
 
-        // Fields
-        // Properties
-        // Methods
-        // Events
-        // Indexers
-        // Operators
+
         public static void Main(string[] args)
         {
+
+            //Assignment 1 : using Literals
+            Console.WriteLine("Assignment 1 : using Literals -");
+            UsingLiterals objLit= new UsingLiterals();
+            objLit.myAssignment();
+            
+            //Assignment 2 : Calculator
+             CalculatorTest objCal = new CalculatorTest();
+             Console.WriteLine("\n\nAssignment 2 : Calculator -");
+             objCal.ValidateAddition();
+             objCal.ValidateSubtraction();
+             objCal.ValidateMultiplication();
+
+            //Assignment 3 : Sorting
+            TestSortingOfNumbers testSort = new TestSortingOfNumbers();
+            Console.WriteLine("\n\nAssignment 3 : Sorting -");
+            testSort.TestDefaultSorting();
+            testSort.TestSortingByName();
+            
+
+            //Assignment 4 : Binary search
+            TestBinarySearch objBin = new TestBinarySearch();
+            Console.WriteLine("\n\nAssignment 4 : Binary search -");
+            objBin.test_for_existing_values();
+            objBin.test_for_non_existing_items();
+            objBin.testing_non_existent_item();
+            objBin.test_for_existing_values_inbeginning();
+
+
             //genericsDemo();
 
-            MyBrowser brower = new MyBrowser();
-            brower.OpenWebsite("https://petstore.octoperf.com/actions/Catalog.action");
-            Console.WriteLine(brower.GetTitle());
+            //MyBrowser brower = new MyBrowser();
+            // brower.OpenWebsite("https://petstore.octoperf.com/actions/Catalog.action");
+            // Console.WriteLine(brower.GetTitle());
         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         private static void genericsDemo()
         {
             //OperatorIndexerAssignment();

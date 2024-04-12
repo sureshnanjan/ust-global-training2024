@@ -1,5 +1,10 @@
-﻿
-namespace Test_GettingStarted
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace GettingStarted_UST
 {
     internal class BinarySearcher
     {
@@ -17,18 +22,18 @@ namespace Test_GettingStarted
 
 
             int searchValue = Array.BinarySearch(myinputArray, searchTerm);
-            
-            
-                if (searchValue >= 0)
-                {
-                    return searchValue + 1;
-                }
-                else
-                {
-                    return searchValue - 1;
-                }
-            
-            
+
+
+            if (searchValue >= 0)
+            {
+                return searchValue + 1;
+            }
+            else
+            {
+                return searchValue - 1;
+            }
+
+
             throw new NotImplementedException();
         }
     }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GettingStarted_UST
 {
-    internal class LastCharSorter : IComparer<SimpleClass>
+    public class LastCharSorter : IComparer<SimpleClass>
     {
         public int Compare(SimpleClass? x, SimpleClass? y)
         {

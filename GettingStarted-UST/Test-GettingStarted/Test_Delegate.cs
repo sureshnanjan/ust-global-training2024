@@ -13,8 +13,10 @@ namespace Test_GettingStarted
     [TestClass]
     public class Test_Delegate
     {
+        /// <summary>
+        /// Add all values with In Line Lambda expression
+        /// </summary>
         [TestMethod]
-        //Add all values with In Line Lambda expression
         public void Lambda_Aggregation_TestAddition()
         {
             int[] numbers = { 10, 20, 30, 55, 115 };
@@ -22,16 +24,20 @@ namespace Test_GettingStarted
             Console.WriteLine($"Total Aggregated value: {actual}");
             Assert.AreEqual(230, actual);
         }
+        /// <summary>
+        /// Multiply all values with In Line Lambda expression
+        /// </summary>
         [TestMethod]
-        //Multiply all values with In Line Lambda expression
         public void Lambda_Aggregation_TestMultiplication() {
             int[] numbers = { 10, 20, 30, 10 };
             int actual  =   numbers.Aggregate((b, c) => b * c);
             Console.WriteLine($" Multiplication of All values: {actual}" );
             Assert.AreEqual(60000,actual);
         }
+        /// <summary>
+        /// Find values less than 10 with Func Delegate
+        /// </summary>
         [TestMethod]
-        //Find values less than 10 with Func Delegate
         public void DelegateTestFunc_Lessthan5Values() { 
             DelegateClass dc = new DelegateClass();
             int[] inputArray = { 1, 2, 2, 3, 5, 4, 2, 6, 17, 28, 59, 12 };
@@ -44,8 +50,10 @@ namespace Test_GettingStarted
             }
             Assert.IsTrue(actual.SequenceEqual(expected));
                   }
+        /// <summary>
+        /// Display values with the help of Action Delegate
+        /// </summary>
         [TestMethod]
-        // Display values with the help of Action Delegate
         public  void DelegateTestAction_StringMerge()
         {
             string expectedMessage = "first Value: 2  and Second Value: 10";

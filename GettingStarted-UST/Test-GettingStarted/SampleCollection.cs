@@ -15,7 +15,9 @@ namespace Test_GettingStarted
     {
         List<SampleClass> list;
 
-        //COnstructor for sample collection
+        /// <summary>
+        /// Constructor for sample collection
+        /// </summary>
         public SampleCollection()
         {
             list = new List<SampleClass>();
@@ -26,18 +28,29 @@ namespace Test_GettingStarted
             list.Add(new SampleClass(5));
         }
 
-        //Overloadin the index specifier
+        /// <summary>
+        /// Overloadin the index specifier
+        /// </summary>
+        /// <param name="i"></param>
+        /// <returns>i value</returns>
         public SampleClass this[int i]
         {
             get => list[i];
             set => list[i] = value;
         }
-
+        /// <summary>
+        /// Get the enumerator details of sample class
+        /// </summary>
+        /// <returns>enumerator from List</returns>
         IEnumerator<SampleClass> IEnumerable<SampleClass>.GetEnumerator()
         {
             return list.GetEnumerator();
         }
 
+        /// <summary>
+        /// Overload the GetEnumerator method
+        /// </summary>
+        /// <returns>Enumenator from the list</returns>
         public IEnumerator GetEnumerator()
         {
             return list.GetEnumerator();

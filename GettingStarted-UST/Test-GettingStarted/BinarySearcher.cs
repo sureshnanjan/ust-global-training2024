@@ -6,32 +6,50 @@ namespace Test_GettingStarted
     /// </summary>
     internal class BinarySearcher
     {
+
         private int[] myinputArray;
         private int searchTerm;
         private int[,] myinputArray1;
         private float[] myinputArray2;
 
-        
-        //Constructor to load values
+
+        /// <summary>
+        /// Constructor to load values
+        /// </summary>
+        /// <param name="myinputArray"></param>
+        /// <param name="searchTerm"></param>
         public BinarySearcher(int[] myinputArray, int searchTerm)
         {
             this.myinputArray = myinputArray;
             this.searchTerm = searchTerm;
         }
 
-        // Constructor to handle multi dimentional array 
+        /// <summary>
+        /// Constructor to handle multi dimentional array 
+        /// </summary>
+        /// <param name="myinputArray1"></param>
+        /// <param name="searchTerm"></param>
+        /// <exception cref="RankException"></exception>
         public BinarySearcher(int[,] myinputArray1, int searchTerm)
         {
             throw new RankException();
         }
 
-        //Constructor to search invalid search element type
+        /// <summary>
+        /// Constructor to search invalid search element type
+        /// </summary>
+        /// <param name="myinputArray2"></param>
+        /// <param name="searchTerm"></param>
+        /// <exception cref="ArgumentException"></exception>
         public BinarySearcher(int[] myinputArray2, float searchTerm)
         {
             throw new ArgumentException();
         }
 
-        //Perform search action
+        /// <summary>
+        /// Perform search action
+        /// </summary>
+        /// <returns> Positive 1 for greater than 0 values and -1 for rest all</returns>
         internal int doSearch()
         {
             int searchValue = Array.BinarySearch(myinputArray, searchTerm);
@@ -50,13 +68,21 @@ namespace Test_GettingStarted
             
         }
 
-        //Method declartion for invalid call
+        /// <summary>
+        /// Method declartion for invalid call
+        /// </summary>
+        /// <returns>exception</returns>
+        /// <exception cref="InvalidOperationException"></exception>
         internal int doSearchandCompare()
         {
             throw new InvalidOperationException();
         }
 
-        //Verify given array is sorted or not
+        /// <summary>
+        /// Verify given array is sorted or not
+        /// </summary>
+        /// <param name="myinputArray"></param>
+        /// <returns>bool true</returns>
         private bool confirmsortedarray(int[] myinputArray)
         {
             for(int i = 1;i< myinputArray.Length; i++)

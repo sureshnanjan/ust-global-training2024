@@ -13,7 +13,9 @@ namespace Test_GettingStarted
     [TestClass]
     public class TestOperatorAndIndex
     {
-        //Test case to validate + operator overloading
+        /// <summary>
+        /// Test case to validate + operator overloading
+        /// </summary>
         [TestMethod]
         public void verifyPlusOperatorOverloading()
         {
@@ -24,7 +26,9 @@ namespace Test_GettingStarted
 
         }
 
-        //Test case to validate < operator overloading
+        /// <summary>
+        /// Test case to validate less than operator overloading
+        /// </summary>
         [TestMethod]
         public void verifyLessOperatorOverloading()
         {
@@ -38,7 +42,9 @@ namespace Test_GettingStarted
             Assert.IsTrue((element1 < element2).status);
 
         }
-        //Test case to validate > operator overloading
+        /// <summary>
+        /// Test case to validate greater than operator overloading
+        /// </summary>
         [TestMethod]
         public void verifyGreaterOperatorOverloading()
         {
@@ -53,7 +59,9 @@ namespace Test_GettingStarted
         }
 
 
-        //Test case to validate Indexer overloading
+        /// <summary>
+        /// Test case to validate Indexer overloading
+        /// </summary>
         [TestMethod]
         public void verifyIndexerOverloading()
         {

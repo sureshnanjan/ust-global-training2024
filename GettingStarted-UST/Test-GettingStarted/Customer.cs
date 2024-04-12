@@ -6,24 +6,37 @@
     /// </summary>
     internal class Customer
     {
-        //Variable hold the name of the customer
+        /// <summary>
+        /// Variable hold the name of the customer
+        /// </summary>
         private string name;
-        public string notification,notification2;
+        public string notification = null,notification2 = null;
 
-        //Constructor to instantiate 
+        /// <summary>
+        /// Constructor to instantiate 
+        /// </summary>
+        /// <param name="name"></param>
         public Customer(string name)
         {
             this.name = name;
         }
 
-        //Adding the Order food status to Event Argument 
+        /// <summary>
+        /// Adding the Order food status to Event Argument 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="args"></param>
         public void OrderFood(object sender, EventArgs? args)
         {
             Console.WriteLine($"{this.name} is ordering the Food");
             notification= $"{this.name} is ordering the Food";
         }
 
-        //Adding the Bill Payment details to event Arguments
+        /// <summary>
+        /// Adding the Bill Payment details to event Arguments
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="args"></param>
         public void BillPayment(object sender, EventArgs? args)
         {
             Console.WriteLine($"{this.name} is Paying the Bill");

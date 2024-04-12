@@ -4,7 +4,9 @@
     {
         public event Action<object, EventArgs> FoodISReady;
         
-        //Preparing the food and Invoking all the events as Publisher
+        /// <summary>
+        /// Preparing the food and Invoking all the events as Publisher
+        /// </summary>
         public void PrepareTheFood()
         {
             Thread.Sleep(2000);
@@ -17,7 +19,10 @@
         }
 
 
-        //Adding the Event as arguments 
+        /// <summary>
+        /// Adding the Event as arguments 
+        /// </summary>
+        /// <param name="handler"></param>
         public void PlaceOrder(Action<object, EventArgs> handler)
         {
 

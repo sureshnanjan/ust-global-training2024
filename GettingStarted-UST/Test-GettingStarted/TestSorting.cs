@@ -7,9 +7,15 @@ using GettingStarted_UST;
 
 namespace Test_GettingStarted
 {
+    /// <summary>
+    /// Validate Sorting of Elements
+    /// </summary>
     [TestClass]
     public class TestSorting
     {
+        /// <summary>
+        /// Test case to validate first element sorting
+        /// </summary>
         [TestMethod]
         public void default_sort_works() {
             // AAA
@@ -30,6 +36,10 @@ namespace Test_GettingStarted
             Console.WriteLine(actual);
             
         }
+
+        /// <summary>
+        /// Validate sorting of elements by name
+        /// </summary>
         [TestMethod]
         public void sort_works_with_name() {
             // AAA
@@ -51,9 +61,5 @@ namespace Test_GettingStarted
             }
             Assert.AreEqual("1-AD , 3-bB , 9-oZ , 8-zA , 8-zA , ", actual);
         }
-
-
-
-
     }
 }

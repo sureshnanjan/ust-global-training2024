@@ -5,19 +5,27 @@
     /// </summary>
     internal class Cashier
     {
-        //Capture Cashier details
-        string name;
+        /// <summary>
+        /// Capture Cashier details
+        /// </summary>
         string orderId;
         int id;
         public string notification;
 
-        //COnstructor for Id fetch
+        /// <summary>
+        /// COnstructor for Id fetch
+        /// </summary>
+        /// <param name="id"></param>
         public Cashier(int id)
         {
             this.id = id;
         }
 
-        //Shows status of collected monet details
+        /// <summary>
+        /// Shows status of collected monet details
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="args"></param>
         public void CollectMoney(object sender, EventArgs? args)
         {
             notification = $"Cashier {this.id} is collecting the Money";

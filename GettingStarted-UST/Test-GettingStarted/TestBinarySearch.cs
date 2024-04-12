@@ -17,8 +17,10 @@ namespace Test_GettingStarted
     [TestClass]
     public  class TestBinarySearch
     {
+        /// <summary>
+        /// Test case for search value in the end 
+        /// </summary>
         [TestMethod]
-        //Test case for search value in the end 
         public void test_for_existing_values_inend() { 
         
             int[] myinputArray =  { 1, 2, 3 };
@@ -29,8 +31,10 @@ namespace Test_GettingStarted
             Assert.AreEqual(expected, actual);
         }
 
+        /// <summary>
+        /// Test case for search value in the middle 
+        /// </summary>
         [TestMethod]
-        //Test case for search value in the middle 
         public void test_for_existing_values_inmiddle()
         {
 
@@ -42,8 +46,10 @@ namespace Test_GettingStarted
             Assert.AreEqual(expected, actual);
         }
 
+        /// <summary>
+        /// Test case for search value in the beginning 
+        /// </summary>
         [TestMethod]
-        //Test case for search value in the beginning 
         public void test_for_existing_values_inbeginning() {
             int[] myinputArray = { 1, 2, 3 };
             int searchTerm = 1;
@@ -53,8 +59,10 @@ namespace Test_GettingStarted
             Assert.AreEqual(expected, actual);
         }
 
+        /// <summary>
+        /// Test case for non available search value in the array
+        /// </summary>
         [TestMethod]
-        //Test case for non available search value in the array
         public void test_for_non_existing_items_higher() {
             int[] myinputArray = { 1, 2, 3 };
             int searchTerm = 4;
@@ -65,9 +73,10 @@ namespace Test_GettingStarted
 
         }
 
-
+        /// <summary>
+        /// Test case for non available search value in the array which the lowest of all  
+        /// </summary>
         [TestMethod]
-        //Test case for non available search value in the array which the lowest of all  
         public void testing_non_existent_item_lower() {
 
             // If value is not found and value is less than one or more elements in array, the negative number returned is the
@@ -80,9 +89,11 @@ namespace Test_GettingStarted
             Assert.AreEqual(expected, actual);
 
         }
-        
+
+        /// <summary>
+        /// Test case for non available search value in the array which has both greater and lesser values in array 
+        /// </summary>
         [TestMethod]
-        //Test case for non available search value in the array which has both greater and lesser values in array 
         public void testing_non_existent_item_middle()
         {
 
@@ -97,8 +108,10 @@ namespace Test_GettingStarted
 
         }
 
+        /// <summary>
+        /// Test case for non sorted array and unavailable item 
+        /// </summary>
         [TestMethod]
-        // Test case for non sorted array and unavailable item 
         public void testing_nonsortedarray_non_existent_item()
         {
             //Value less than non sorted array minimum value 
@@ -115,8 +128,11 @@ namespace Test_GettingStarted
             actual = searcher.doSearch();
             Assert.IsTrue(actual < 0);
         }
+
+        /// <summary>
+        /// Test case for non sorted array and available item 
+        /// </summary>
         [TestMethod]
-        // Test case for non sorted array and available item 
         public void testing_nonsortedarray_existent_item()
         {
 
@@ -136,7 +152,9 @@ namespace Test_GettingStarted
         ArgumentException value is of a type that is not compatible with the elements of array.
         InvalidOperationException value does not implement comparison mechanism.
         */
-        // Test case for null array
+        /// <summary>
+        /// Test case for null array
+        /// </summary>
         [TestMethod]
         [ExpectedException(typeof(ArgumentNullException),
          "An Empty Array is given and couldn't be processed ")]
@@ -150,7 +168,9 @@ namespace Test_GettingStarted
             int actual = searcher.doSearch();
             
         }
-        // Test case for Multi Dimentional array
+        /// <summary>
+        /// Test case for Multi Dimentional array
+        /// </summary>
         [TestMethod]
         [ExpectedException(typeof(RankException),
          "Multi dimensional Array is given and couldn't be processed ")]
@@ -161,7 +181,9 @@ namespace Test_GettingStarted
             BinarySearcher searcher = new BinarySearcher(myinputArray, searchTerm);
         }
 
-        // Test case for non int type array
+        /// <summary>
+        /// Test case for non int type array
+        /// </summary>
         [TestMethod]
         [ExpectedException(typeof(ArgumentException),
          "Incorrect value type given in Array to search and couldn't be processed ")]
@@ -172,7 +194,9 @@ namespace Test_GettingStarted
             BinarySearcher searcher = new BinarySearcher(myinputArray, searchTerm);
         }
 
-        // Test case for non int type array -InvalidOperationException value does not implement comparison mechanism.
+        /// <summary>
+        /// Test case for non int type array -InvalidOperationException value does not implement comparison mechanism.
+        /// </summary>
         [TestMethod]
         [ExpectedException(typeof(InvalidOperationException),
          "Incorrect method is called and couldn't be processed ")]

@@ -7,13 +7,19 @@ namespace Test_GettingStarted
     /// </summary>
     internal class SampleClass
     {
-        //Constructor with integer type
+        /// <summary>
+        /// Constructor with integer type
+        /// </summary>
+        /// <param name="v"></param>
         public SampleClass(int v)
         {
             number = v;
         }
 
-        //Constructor with Boolean type
+        /// <summary>
+        /// Constructor with Boolean type
+        /// </summary>
+        /// <param name="v"></param>
         public SampleClass(bool v)
         {
             status = v;

@@ -13,6 +13,9 @@ namespace Test_GettingStarted
     [TestClass]
     public class TestEventHandling
     {
+        /// <summary>
+        /// Event handling test case to validate the Order management in Hotel
+        /// </summary>
         [TestMethod]
         public void eventHandling()
         {

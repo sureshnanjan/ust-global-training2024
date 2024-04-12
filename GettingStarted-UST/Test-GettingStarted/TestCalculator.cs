@@ -9,8 +9,10 @@ namespace Test_GettingStarted
     [TestClass]
     public class TestCalculator
     {
+        /// <summary>
+        /// TC1 - Verify 10+20 =30
+        /// </summary>
         [TestMethod]
-        //TC1 - Verify 10+20 =30
         public void additionof10and20shouldbe30()
         {
             Calculator calculator = new Calculator();
@@ -20,8 +22,10 @@ namespace Test_GettingStarted
             Console.WriteLine("Result 30 displayed");
         }
 
+        /// <summary>
+        /// TC2 - Verify 10000+20000 =30000
+        /// </summary>
         [TestMethod]
-        //TC2 - Verify 10000+20000 =30000
         public void additionof100000and20000shouldbe300000()
         {
             Calculator calculator = new Calculator();
@@ -30,8 +34,10 @@ namespace Test_GettingStarted
             Assert.AreEqual(expected, actual);
         }
 
+        /// <summary>
+        /// TC3 - Verify 10-8 =2
+        /// </summary>
         [TestMethod]
-        //TC3 - Verify 10-8 =2
         public void subtracting10and8shouldbe2()
         {
             Calculator calculator = new Calculator();
@@ -40,8 +46,10 @@ namespace Test_GettingStarted
             Assert.AreEqual(expected, actual);
         }
 
+        /// <summary>
+        /// TC4 - Verify 0-2 =-2
+        /// </summary>
         [TestMethod]
-        ////TC4 - Verify 0-2 =-2
         public void subtracting0and2shouldbeminus2()
         {
             Calculator calculator = new Calculator();

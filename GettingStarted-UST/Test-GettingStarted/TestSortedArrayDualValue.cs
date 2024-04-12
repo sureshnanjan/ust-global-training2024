@@ -16,19 +16,21 @@ namespace Test_GettingStarted
     [TestClass]
     public class TestSortedArrayDualValue
     {
-
+        /// <summary>
+        /// Verify the format of v1-v2
+        /// </summary>
         [TestMethod]
-        // Verify the format of v1-v2
         public  void verifyFormat()
         {
             SortingClass simpleClass = new(2, 3);
             string sExpected = "2-3";
             Assert.AreEqual(sExpected, simpleClass.ToString());
         }
-        
-        
+
+        /// <summary>
+        /// Verify when there is no Dublicate 
+        /// </summary>
         [TestMethod]
-        // Verify when there is no Dublicate 
         public void uniqueSorting(){
 
             SortingClass[] myInputArray = { new SortingClass(1, 9), new SortingClass(5, 4), new SortingClass(4, 2), new SortingClass(3, 1), new SortingClass(8, 6), };
@@ -50,8 +52,10 @@ namespace Test_GettingStarted
             Assert.AreEqual("1-9, 3-1, 4-2, 5-4, 8-6, ", actual);
         }
 
+        /// <summary>
+        /// TC to verify sorting when first value is duplicate
+        /// </summary>
         [TestMethod]
-        //TC to verify sorting when first value is duplicate
         public void firstValueDuplicateSorting()
         {
 
@@ -72,8 +76,10 @@ namespace Test_GettingStarted
             }
             Assert.AreEqual("1-1 , 1-2 , 3-1 , 5-4 , 8-6 , ", actual);
         }
+        /// <summary>
+        /// TC to verify sorting when both values duplicate
+        /// </summary>
         [TestMethod]
-        //TC to verify sorting when both values duplicate
         public void bothValuesDuplicateSorting()
         {
 
@@ -94,8 +100,10 @@ namespace Test_GettingStarted
             }
             Assert.AreEqual("1-1 , 4-2 , 5-4 , 5-4 , 8-6 , ", actual);
         }
+        /// <summary>
+        /// TC to verify sorting when second value is duplicate
+        /// </summary>
         [TestMethod]
-        //TC to verify sorting when second value is duplicate
         public void secondValueDuplicateSorting()
         {
 

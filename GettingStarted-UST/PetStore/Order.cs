@@ -6,6 +6,9 @@
 
     internal partial class Order
     {
+        /// <summary>
+        /// Properties of Order
+        /// </summary>
         private long id;
         private long petId;
         private int quantity;

@@ -6,6 +6,9 @@
     
     internal class Apiresponse
     {
+        /// <summary>
+        /// API response properties 
+        /// </summary>
         private int code;
         private string message;
         private string type;

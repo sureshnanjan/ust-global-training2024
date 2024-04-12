@@ -6,6 +6,9 @@
 
     public partial class Pet
     {
+        /// <summary>
+        /// Properties of pet
+        /// </summary>
         private long id = 10;
         private string name;
         private string photourls;

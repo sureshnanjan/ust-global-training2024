@@ -6,6 +6,9 @@
     
     internal class Category 
     {
+        /// <summary>
+        /// Properties of Category 
+        /// </summary>
         private long id;
         private string name;
     }

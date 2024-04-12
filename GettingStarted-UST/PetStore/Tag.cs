@@ -5,6 +5,9 @@
     /// </summary>
     internal class Tag 
     {
+        /// <summary>
+        /// Properties of Tag
+        /// </summary>
         private long id;
         private string name;
     }

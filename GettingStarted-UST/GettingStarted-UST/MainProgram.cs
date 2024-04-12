@@ -4,11 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MyLIbrary;
+using PetStoreAutomation;
+using Test_GettingStarted;
+
 
 namespace GettingStarted_UST
 {
     delegate int typeIntTakeintStr(int param1, string some);
     //public delegate TResult Func<in T, out TResult>(T arg);
+    //public delegate int Number(int n);
+
     public class MainProgram
     {
 
@@ -18,17 +23,50 @@ namespace GettingStarted_UST
         // Events
         // Indexers
         // Operators
-        public static void Main(string[] args)
-        {
-            //OperatorIndexerAssignment();
 
-            GenericSimpleClass<int,string> genericSimpleClass = new GenericSimpleClass<int,string>();
-            genericSimpleClass.MyCounter = 0;
-            GenericSimpleClass<float,string> genericSimpleClass1 = new GenericSimpleClass<float,string>();
-            genericSimpleClass1.MyCounter = 1.2f;
-            Action<int, float, string> action1 = (a,b,c) => { };
+
+        public static void Main(string[] args)
+
+        {
+
+            //Operatorindexer
+            OperatorIndexer Index = new OperatorIndexer();
+            Index[0] = "D";
+            Index[1] = "arf";
+            Index[2] = "asdf";
+            Console.WriteLine("First value = {0}", Index[0]);
+            Console.WriteLine("Second value = {0}", Index[1]);
+            Console.WriteLine("Third value = {0}", Index[2]);
+
+
+
+            //PetStore Automation
+
+            MyBrowser brower = new MyBrowser();
+            brower.OpenWebsite("https://petstore.octoperf.com/actions/Catalog.action");
+            Console.WriteLine(brower.GetTitle());
+
+
+
+            //OperatorIndexerAssignment();
+            List<int> numbers = new List<int>() { 3, 6, 9, 5, 2 };
+            LamdaAssign LamdaExpress = new LamdaAssign(numbers);
+            LamdaExpress.ShowList();
+            LamdaExpress.AddNumbers();
+            LamdaExpress.SubNumbers();
+            LamdaExpress.MultipliesNumbers();
+            LamdaExpress.SquareofNumbers();
 
         }
+
+
+
+        /* GenericSimpleClass<int, string> genericSimpleClass = new GenericSimpleClass<int, string>();
+   genericSimpleClass.MyCounter = 0;
+   GenericSimpleClass<float, string> genericSimpleClass1 = new GenericSimpleClass<float, string>();
+   genericSimpleClass1.MyCounter = 1.2f;
+   Action<int, float, string> action1 = (a, b, c) => { };   */
+
 
         private static void OperatorIndexerAssignment()
         {
@@ -116,7 +154,8 @@ namespace GettingStarted_UST
             pointer(10, "");
         }
 
-        static bool lessthn3Filter(int param) {
+        static bool lessthn3Filter(int param)
+        {
             // param => param < 3
             return param < 3;
         }
@@ -133,12 +172,14 @@ namespace GettingStarted_UST
             return param == 3;
         }
 
-        static int myMethod(int para1, string param2) {
+        static int myMethod(int para1, string param2)
+        {
             Console.WriteLine("Execuring this inthe myMethod");
             return 0;
         }
 
-        private static int someOtherMethod(int para, string para2) {
+        private static int someOtherMethod(int para, string para2)
+        {
             Console.WriteLine("SOMEOTHER METHOD");
             return 0;
         }
@@ -171,21 +212,13 @@ namespace GettingStarted_UST
             }
         }
 
-        private static void comparableDemo()
+        public static void comparableDemo()
         {
             int[] mynumbers = { 8, 3, 19, 21, 1, 2, 3, 4 };
             SimpleClass[] myInstances = { new SimpleClass(8), new SimpleClass(3) , new SimpleClass(19) , new SimpleClass(21),
             new SimpleClass(1), new SimpleClass(2) , new SimpleClass(3) , new SimpleClass(4)};
-            List<int> ints = new List<int>();
 
-            SimpleCollection mycoll = new SimpleCollection();
-
-            foreach (var item in mycoll)
-            {
-
-            }
-
-            string[] strings = { "A-One", "B-Two", "C-Three" };
+            string[] strings = { "\nA-One", "B-Two", "C-Three" };
 
             Array.Sort(strings);
             //strings.
@@ -219,15 +252,16 @@ namespace GettingStarted_UST
                 Console.Write($"{item} , ");
 
             }
-        }
 
+        }
+        /*
         private static void oeverridesDemo()
         {
             int test = 10;
-            int another = 10;
-            SimpleClass scInstance = new SimpleClass(0);
-            SimpleClass scInstance2 = new SimpleClass(10);
-            SimpleClass scInsstance3 = new SimpleClass(10);
+            int another = 10;          
+            SimpleClass scInstance = new SimpleClass(0,2);
+            SimpleClass scInstance2 = new SimpleClass(10, 5);
+            SimpleClass scInsstance3 = new SimpleClass(10,5);
             SimpleClass refer = scInsstance3;
             Console.WriteLine(test);
             Console.WriteLine(scInstance.ToString());
@@ -237,147 +271,140 @@ namespace GettingStarted_UST
             Console.WriteLine(another.Equals(test));
         }
 
-        private static void demo03April()
-        {
-            //showDemoforTypes();
-            // Launch a Browser
-            // Navigate to a url
-            // Find the link for logo OOPs
-            // Abstraction
-            // Encapsulation
-            // Hiding all the implementation deatils and exposing only the needed ineterface
-            // Inheritance
-            // Polymorphism - static 
-            //  dynamic / runtime 
-            // demoClassCreation();
+        */
 
-            //Pet mypet = new Pet();
-            Fish fish = new Fish();
+        /* private static void demo03April()
+             {
+                 //showDemoforTypes();
+                 // Launch a Browser
+                 // Navigate to a url
+                 // Find the link for logo OOPs
+                 // Abstraction
+                 // Encapsulation
+                 // Hiding all the implementation deatils and exposing only the needed ineterface
+                 // Inheritance
+                 // Polymorphism - static 
+                 //  dynamic / runtime 
+                 // demoClassCreation();
 
-            List<Fish> mypets = new List<Fish>();
-            mypets.Add(fish);
-            mypets.Add(new Fish());
+                 //Pet mypet = new Pet();
+                 Fish fish = new Fish();
 
-
-
-            foreach (var item in mypets)
-            {
-                item.Feed();
-
-            }
-
-            // myBrosweer = chrome
+                 List<Fish> mypets = new List<Fish>();
+                 mypets.Add(fish);
+                 mypets.Add(new Fish());
 
 
 
-            // conside rall ingredenents and prepare for cookijg
-            // Salt, Rice, Fish, Oil  class Salt : Coo
-            List<IMoveable> allmymovingthings = new List<IMoveable>();
-            List<ICookable> ingredenients = new List<ICookable>();
-            ingredenients.Add(fish);
-            ingredenients.Add(new Rice());
-            //ingredenients.Add(new Salt())
-            foreach (var item in ingredenients)
-            {
-                item.GetCooked();
-            }
-        }
+                 foreach (var item in mypets)
+                 {
+                     item.Feed();
 
-        private static void Move(string direction) {
+                 }
 
-            switch (direction)
-            {
-                case "left":
-                default:
-                    break;
-            }
+                 // myBrosweer = chrome
+                 // conside rall ingredenents and prepare for cookijg
+                 // Salt, Rice, Fish, Oil  class Salt : Coo
+                 List<IMoveable> allmymovingthings = new List<IMoveable>();
+                 List<ICookable> ingredenients = new List<ICookable>();
+                 ingredenients.Add(fish);
+                 ingredenients.Add(new Rice());
+                 //ingredenients.Add(new Salt())
+                 foreach (var item in ingredenients)
+                 {
+                     item.GetCooked();
+                 }
+             }
 
-        }
+             private static void Move(string direction)
+             {
 
-        private static void Move(Directions dir) {
-            switch (dir)
-            {
-                case Directions.left:
-                    break;
-                case Directions.right:
-                    break;
-                case Directions.forward:
-                    break;
-                case Directions.backward:
-                    break;
-                default:
-                    break;
-            }
-        }
+                 switch (direction)
+                 {
+                     case "left":
+                     default:
+                         break;
+                 }
 
+             }
 
-
-        private static void demoClassCreation()
-        {
-            MyClassDemo inst = new MyClassDemo("Red", 40, 25);
-            inst.Move(10);
-            MyClassDemo inst1 = new MyClassDemo("Blue", 40, 25);
-            inst1.Move(10);
-            Console.WriteLine($"{MyClassDemo.NoOfObjects} are cteated");
-            MyClassDemo inst2 = new MyClassDemo("Grey", 40, 25);
-
-            MyClassDemo defparamInstance = new MyClassDemo();
-
-            inst2.Move(10);
-            MyClassDemo.CommonMethod();
-        }
-
-        private static void showDemoforTypes()
-        {
-            UsingTypesClass myclass = new UsingTypesClass();
-            UsingTypesStruct mystruct = new UsingTypesStruct();
-            UsingTypesEnum mynumber = UsingTypesEnum.third;
-
-            int result = Int32.MaxValue;
-            int result1 = Int32.MinValue;
-            Console.WriteLine($"When I add 1,2 the resut is {result} when i subtract 2, 1 the result is {result1}");
-            Console.WriteLine(mynumber);
+             private static void Move(Directions dir)
+             {
+                 switch (dir)
+                 {
+                     case Directions.left:
+                         break;
+                     case Directions.right:
+                         break;
+                     case Directions.forward:
+                         break;
+                     case Directions.backward:
+                         break;
+                     default:
+                         break;
+                 }
+             }
 
 
-            Months month = Months.february;
 
-            switch (month)
-            {
-                case Months.february: Console.WriteLine(); ; break;
-                case Months.january: Console.WriteLine(); ; break;
-            }
-        }
+             private static void demoClassCreation()
+             {
+                 MyClassDemo inst = new MyClassDemo("Red", 40, 25);
+                 inst.Move(10);
+                 MyClassDemo inst1 = new MyClassDemo("Blue", 40, 25);
+                 inst1.Move(10);
+                 Console.WriteLine($"{MyClassDemo.NoOfObjects} are cteated");
+                 MyClassDemo inst2 = new MyClassDemo("Grey", 40, 25);
+
+                 MyClassDemo defparamInstance = new MyClassDemo();
+
+                 inst2.Move(10);
+                 MyClassDemo.CommonMethod();
+             }
+
+         private static void showDemoforTypes()
+             {
+                 UsingTypesClass myclass = new UsingTypesClass();
+                 UsingTypesStruct mystruct = new UsingTypesStruct();
+                 UsingTypesEnum mynumber = UsingTypesEnum.third;
+
+                 int result = Int32.MaxValue;
+                 int result1 = Int32.MinValue;
+                 Console.WriteLine($"When I add 1,2 the resut is {result} when i subtract 2, 1 the result is {result1}");
+                 Console.WriteLine(mynumber);
+
+
+                 Months month = Months.february;
+
+                 switch (month)
+                 {
+                     case Months.february: Console.WriteLine(); ; break;
+                     case Months.january: Console.WriteLine(); ; break;
+                 }
+             }
+         }
+
+         class Human
+         {
+             int age;
+             string skincolor;
+             string nationality;
+             string gender;
+             string name;
+         }
+
+         class Employee
+         {
+             int age;
+             //string skincolor;
+             string nationality;
+             string gender;
+             string name;
+             string emp_code;
+             string skills;
+             DateTime doj;
+         }*/
+
+
     }
-
-    class Human {
-        int age;
-        string skincolor;
-        string nationality;
-        string gender;
-        string name;
-    }
-
-    class Employee {
-        int age;
-        //string skincolor;
-        string nationality;
-        string gender;
-        string name;
-        string emp_code;
-        string skills;
-        DateTime doj;
-    }
-
-    class DateingPartner {
-    
-    }
-
-    enum FavColor {
-        Black,
-        Blue
-    }
-
-    
-
-
 }

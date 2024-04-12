@@ -23,68 +23,60 @@ namespace GettingStarted_UST
             UsingLiterals usingLiterals = new UsingLiterals();
             usingLiterals.ShowUsage();
 
-            Console.WriteLine("Example of Delegate :- ");
-            InbuiltDelegateDemo();
             UserDefinedDelegate();
-            EventHandlingDemo();
 
+            Console.WriteLine("Sorting Instances :- ");
             InstancesSort();
 
+            Console.WriteLine("Example of Lambda :- ");
+            LambdaDemo();
+
+            Console.WriteLine("Example of Delegate :- ");
+            DelegateUsage();
+
+            Console.WriteLine("Example of Event handling :-");
+            EventHandlingDemo();
+
+            Console.WriteLine("Lauching website of JPet Store:- ");
             LaunchWebsiteDemo();
         }
 
         /// <summary>
-        /// To Lauch & Close Website
+        /// To sort instances
         /// </summary>
-        private static void LaunchWebsiteDemo()
+        private static void InstancesSort()
         {
-            HomePage homePage = new HomePage();
-            homePage.OpenWebsite("https://petstore.octoperf.com/actions/Catalog.action");
-            string title = homePage.GetTitle();
-            Console.WriteLine($"Title is {title}");
-            homePage.CloseWebsite("https://petstore.octoperf.com/actions/Catalog.action");
+            SimpleClass[] myInstances = { new SimpleClass(1, 2), new SimpleClass(1, 3), new SimpleClass(0, 1), new SimpleClass(1, 0) };
+            Console.WriteLine("\n Original Values in My Instances");
+            foreach (var item in myInstances)
+            {
+                Console.Write($"{item} , ");
+
+            }
+            Array.Sort(myInstances);
+            Console.WriteLine("\n AFTER SORTING  Values in MYINSTANCES ");
+            foreach (var item in myInstances)
+            {
+                Console.Write($"{item} , ");
+
+            }
+            Console.WriteLine("\n");
         }
 
         /// <summary>
-        /// To demonstrate Event handling mechanism
+        /// Example of Lambda usage
         /// </summary>
-        private static void EventHandlingDemo()
+        public static void LambdaDemo()
         {
-            Console.WriteLine("Event handling :- ");
+            int[] value = { 1, 2, 3, 4, 5, 6, 7, 4, 8, 9 };
+            Func<int, bool> predicate = x => x == 4; // Lambda
 
-            Kitchen kfc = new Kitchen();
+            int results = value.Where(predicate).Count();
+            Console.WriteLine($"Count of repeated element 4 is {results}");
 
-            Cook cook1 = new Cook("kfc103", "Biriyani", "Cook1", 001);
-            Cook cook2 = new Cook("kfc106", "Pizza", "Cook2", 002);
-            Cook cook3 = new Cook("kfc109", "Pizza", "Cook3", 003);
+            int results1 = value.Aggregate((arg1, arg2) => (arg1 + arg2));
+            Console.WriteLine($"Addition of all elements in mynumbers is {results1}");
 
-            Waiter waiter1 = new Waiter(001, "Biriyani", "kfc103");
-            Waiter waiter2 = new Waiter(002, "Pizza", "kfc106");
-            Waiter waiter3 = new Waiter(003, "Soup", "kfc109");
-
-
-            kfc.PlaceOrder(cook1.PrepareFood);
-            kfc.PlaceOrder(cook2.PrepareFood);
-            kfc.PlaceOrder(cook3.PrepareFood);
-
-            kfc.PlaceOrder(waiter1.ServeFood);
-            kfc.PlaceOrder(waiter2.ServeFood);
-            kfc.PlaceOrder(waiter3.ServeFood);
-
-            kfc.PlaceOrder(waiter1.CleanTable);
-            kfc.PlaceOrder(waiter2.CleanTable);
-            kfc.PlaceOrder(waiter3.CleanTable);
-
-            Cashier cashier1 = new Cashier("C001");
-            kfc.PlaceOrder(cashier1.CollectMoney);
-
-            Cashier cashier2 = new Cashier("C002");
-            kfc.PlaceOrder(cashier2.CollectMoney);
-
-            Cashier cashier3 = new Cashier("C003");
-            kfc.PlaceOrder(cashier3.CollectMoney);
-
-            kfc.CollectOrder();
         }
 
         /// <summary>
@@ -130,41 +122,69 @@ namespace GettingStarted_UST
         }
 
         /// <summary>
-        /// Example of inbuilt delegate usage
+        /// To demonstrate usage of Delegate
         /// </summary>
-        public static void InbuiltDelegateDemo()
+        private static void DelegateUsage()
         {
-            int[] value = { 1, 2, 3, 4, 5, 6, 7, 4, 8, 9 };
-            Func<int, bool> predicate = x => x == 4; // Lambda
-
-            int results = value.Where(predicate).Count();
-            Console.WriteLine($"Count of repeated element 4 is {results}");
-
-            int results1 = value.Aggregate((arg1, arg2) => (arg1 + arg2));
-            Console.WriteLine($"Addition of all elements in mynumbers is {results1}");
-
+            DelegateDemo delegateDemo = new DelegateDemo();
+            AddNum SumOfNum = new AddNum(delegateDemo.Add);
+            Product ProdOfNum = new Product(delegateDemo.Mutliply);
+            SumOfNum(12, 2);
+            ProdOfNum(12, 2);
         }
 
         /// <summary>
-        /// To sort instances
+        /// To demonstrate Event handling mechanism
         /// </summary>
-        private static void InstancesSort()
+        private static void EventHandlingDemo()
         {
-            SimpleClass[] myInstances = { new SimpleClass(1, 2), new SimpleClass(1, 3), new SimpleClass(0, 1), new SimpleClass(1, 0) };
-            Console.WriteLine("\n Original Values in My Instances");
-            foreach (var item in myInstances)
-            {
-                Console.Write($"{item} , ");
+            Console.WriteLine("Event handling :- ");
 
-            }
-            Array.Sort(myInstances);
-            Console.WriteLine("\n AFTER SORTING  Values in MYINSTANCES ");
-            foreach (var item in myInstances)
-            {
-                Console.Write($"{item} , ");
+            Kitchen kfc = new Kitchen();
 
-            }
-            Console.WriteLine("\n");
+            Cook cook1 = new Cook("kfc103", "Biriyani", "Cook1", 001);
+            Cook cook2 = new Cook("kfc106", "Pizza", "Cook2", 002);
+            Cook cook3 = new Cook("kfc109", "Pizza", "Cook3", 003);
+
+            Waiter waiter1 = new Waiter(001, "Biriyani", "kfc103");
+            Waiter waiter2 = new Waiter(002, "Pizza", "kfc106");
+            Waiter waiter3 = new Waiter(003, "Soup", "kfc109");
+
+
+            kfc.PlaceOrder(cook1.PrepareFood);
+            kfc.PlaceOrder(cook2.PrepareFood);
+            kfc.PlaceOrder(cook3.PrepareFood);
+
+            kfc.PlaceOrder(waiter1.ServeFood);
+            kfc.PlaceOrder(waiter2.ServeFood);
+            kfc.PlaceOrder(waiter3.ServeFood);
+
+            kfc.PlaceOrder(waiter1.CleanTable);
+            kfc.PlaceOrder(waiter2.CleanTable);
+            kfc.PlaceOrder(waiter3.CleanTable);
+
+            Cashier cashier1 = new Cashier("C001");
+            kfc.PlaceOrder(cashier1.CollectMoney);
+
+            Cashier cashier2 = new Cashier("C002");
+            kfc.PlaceOrder(cashier2.CollectMoney);
+
+            Cashier cashier3 = new Cashier("C003");
+            kfc.PlaceOrder(cashier3.CollectMoney);
+
+            kfc.CollectOrder();
+        }
+
+        /// <summary>
+        /// To Lauch & Close Website
+        /// </summary>
+        private static void LaunchWebsiteDemo()
+        {
+            HomePage homePage = new HomePage();
+            homePage.OpenWebsite("https://petstore.octoperf.com/actions/Catalog.action");
+            string title = homePage.GetTitle();
+            Console.WriteLine($"Title is {title}");
+            homePage.CloseWebsite("https://petstore.octoperf.com/actions/Catalog.action");
         }
     }
 }

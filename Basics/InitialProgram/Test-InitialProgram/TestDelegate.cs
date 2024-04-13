@@ -31,10 +31,10 @@ namespace Test_InitialProgram
         [TestMethod]
         public void Aggregation_TestMultiply_Lambda()
         {
-            int[] numbers = { 10, 10, 30, 20 };
+            int[] numbers = { 10, 10, 30, 10 };
             int actual = numbers.Aggregate((b, c) => b * c);
             Console.WriteLine($"Multiplication of Values: {actual}");
-            Assert.AreEqual(230, actual);
+            Assert.AreEqual(30000, actual);
 
         }
 

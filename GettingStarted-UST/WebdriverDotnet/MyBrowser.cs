@@ -13,7 +13,8 @@ namespace WebdriverDotnet
         public MyBrowser()
         {
             //this.driver = new RemoteWebDriver(new Uri("http://localhost:6565"), new FirefoxOptions());
-            this.driver = new ChromeDriver();
+            this.driver = new ChromeDriver(); // driver-manager
+            //this.driver.
 
                 
         }

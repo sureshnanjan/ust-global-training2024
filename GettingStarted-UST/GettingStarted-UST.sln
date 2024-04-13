@@ -9,9 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyLIbrary", "MyLIbrary\MyLI
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test-GettingStarted", "Test-GettingStarted\Test-GettingStarted.csproj", "{50131221-1495-4CF8-B7A8-A6FFE46F8188}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetStore_New", "PetStore_New\PetStore_New.csproj", "{5A95BF9A-1AB7-4A48-90B6-5B45E34B85FA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebdriverDotnet", "WebdriverDotnet\WebdriverDotnet.csproj", "{7BA4B7AE-D9D4-4DFC-AD6B-15590A7D742A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetStoreImplementation", "ConsoleApp1\PetStoreImplementation.csproj", "{F06F87C0-30C3-4E4A-A24B-661D8DBFDDFD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HerokuAppOperations", "HerokuAppOperations\HerokuAppOperations.csproj", "{5D55DC41-B727-47AC-9DC2-553F0913D78A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestHerokuApp", "TestHerokuApp\TestHerokuApp.csproj", "{D9B346FC-18AA-478F-ABA7-CC56D8563560}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,14 +33,6 @@ Global
 		{50131221-1495-4CF8-B7A8-A6FFE46F8188}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{50131221-1495-4CF8-B7A8-A6FFE46F8188}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{50131221-1495-4CF8-B7A8-A6FFE46F8188}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5A95BF9A-1AB7-4A48-90B6-5B45E34B85FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5A95BF9A-1AB7-4A48-90B6-5B45E34B85FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5A95BF9A-1AB7-4A48-90B6-5B45E34B85FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5A95BF9A-1AB7-4A48-90B6-5B45E34B85FA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F06F87C0-30C3-4E4A-A24B-661D8DBFDDFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F06F87C0-30C3-4E4A-A24B-661D8DBFDDFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F06F87C0-30C3-4E4A-A24B-661D8DBFDDFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F06F87C0-30C3-4E4A-A24B-661D8DBFDDFD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

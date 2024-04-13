@@ -10,7 +10,7 @@ namespace PetStoreAssignment
         /// This contains order details id,petId,quantity,shipDate and complete
         /// </summary>
 
-        internal partial class Order
+        internal class Order
         {
             private long id;
             private long petId;

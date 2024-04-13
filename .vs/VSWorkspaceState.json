@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\GettingStarted-UST",
+    "\\GettingStarted-UST\\ConsoleApp1",
+    "\\references"
   ],
+  "SelectedNode": "\\GettingStarted-UST\\GettingStarted-UST.sln",
   "PreviewInSolutionExplorer": false
 }

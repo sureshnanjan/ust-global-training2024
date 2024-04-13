@@ -6,6 +6,9 @@
     
     internal class Order
     {
+        /// <summary>
+        /// Properties of Order
+        /// </summary>
         public long id;
         public long petId;
         public int quantity;

@@ -6,6 +6,9 @@
     
     internal class User
     {
+        /// <summary>
+        /// Properties of User
+        /// </summary>
         private long id;
         private string username;
         private string firstName;

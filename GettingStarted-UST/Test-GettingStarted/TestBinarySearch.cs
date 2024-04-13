@@ -17,7 +17,9 @@ namespace Test_GettingStarted
     [TestClass]
     public class TestBinarySearch
     {
+        /// <summary>
         //Test case for search value in the end 
+        /// <summary>
         [TestMethod]
         public void ExistingValueTest_Atend()
         {
@@ -30,7 +32,9 @@ namespace Test_GettingStarted
             Assert.AreEqual(expected, actual);
         }
 
+        /// <summary>
         //Test case for search value in the middle 
+        /// <summary>
         [TestMethod]
         public void ExistingValueTest_Atmiddle()
         {
@@ -43,7 +47,9 @@ namespace Test_GettingStarted
             Assert.AreEqual(expected, actual);
         }
 
+        /// <summary>
         //Test case for search value in the beginning 
+        /// <summary>
         [TestMethod]
         public void ExistingValueTest_Atbeginning()
         {
@@ -57,7 +63,9 @@ namespace Test_GettingStarted
 
         }
 
+        /// <summary>
         //Test case for non available search value in the array which the highest of all
+        /// <summary>
         [TestMethod]
         public void NonExistingValueTest_higherval()
         {
@@ -70,7 +78,9 @@ namespace Test_GettingStarted
 
         }
 
+        /// <summary>
         //Test case for non available search value in the array which the lowest of all 
+        /// <summary>
         [TestMethod]
         public void NonExistingValueTest_lowerval()
         {
@@ -86,7 +96,9 @@ namespace Test_GettingStarted
 
         }
 
+        /// <summary>
         //Test case for non available search value in the array which has both greater and lesser values in array
+        /// <summary>
         [TestMethod]
         public void NonExistingValueTest_middleval()
         {
@@ -102,7 +114,9 @@ namespace Test_GettingStarted
 
         }
 
+        /// <summary>
         // Test case for non sorted array and unavailable item
+        /// <summary>
         [TestMethod]
         public void NonSortedArray_NonExistentValueTest()
         {
@@ -121,7 +135,9 @@ namespace Test_GettingStarted
             Assert.IsTrue(actual < 0);
         }
 
+        /// <summary>
         // Test case for non sorted array and available item 
+        /// <summary>
         [TestMethod]
         public void NonSortedArray_ExistentValueTest()
         {
@@ -137,7 +153,9 @@ namespace Test_GettingStarted
             Assert.IsTrue(actual < 0);
         }
 
+        /// <summary>
         // Test case for Null Input Array throws ArgumentNullException
+        /// <summary>
         [TestMethod]
         public void NullInputArray_Throws_ArgumentNullException()
         {
@@ -146,6 +164,41 @@ namespace Test_GettingStarted
             int searchItem = 0;
             BinarySearcher searcher = new BinarySearcher(input, searchItem);
             Assert.ThrowsException<ArgumentNullException>(() => searcher.doSearch());
+        }
+
+        /// <summary>
+        /// Test case for non int type array -InvalidOperationException value does not implement comparison mechanism.
+        /// </summary>
+        [TestMethod]
+        public void InvalidImplementation_ExceptionTest()
+        {
+            int[] myinputArray = { 2, 6, 9 };
+            int searchItem = 4;
+            BinarySearcher searcher = new BinarySearcher(myinputArray, searchItem);
+            int actual = searcher.doSearchandCompare();
+
+        }
+
+        /// <summary>
+        /// Test case for Multidimentional Array
+        /// </summary>
+        [TestMethod]
+        public void MultiDimArray_ExceptionTest()
+        {
+            int[,] myinputArray = { { 1, 2, 3, 4 }, { 1, 3, 4, 6 } };
+            int searchItem = 7;
+            BinarySearcher searcher = new BinarySearcher(myinputArray, searchItem);
+        }
+
+        /// <summary>
+        /// Test case for non int type array
+        /// </summary>
+        [TestMethod]
+        public void IncorrectTypeArray_ExceptionTest()
+        {
+            int[] myinputArray = { 1, 5, 4 ,3};
+            float searchItem = 7.5f;
+            BinarySearcher searcher = new BinarySearcher(myinputArray, searchItem);
         }
 
     }

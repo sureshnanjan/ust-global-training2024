@@ -11,6 +11,9 @@ namespace StorePet
     [TestClass]
     internal partial class Pet
     {
+        /// <summary>
+        /// Properties of Pet
+        /// </summary>
         private int id = 10;
         private string name;
         private string photourls;

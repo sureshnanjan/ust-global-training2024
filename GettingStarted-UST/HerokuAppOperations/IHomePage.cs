@@ -6,14 +6,14 @@
     public interface IHomePage
     {
         /// <summary>
-        /// 
+        /// Get the titke of the Page 
         /// </summary>
-        /// <returns></returns>
+        /// <returns>Title</returns>
         string getTitle();
         /// <summary>
-        /// 
+        /// Get the sub title of the page 
         /// </summary>
-        /// <returns></returns> 
+        /// <returns>SubTitle</returns> 
         string getSubTitle();
         /// <summary>
         /// 

@@ -8,22 +8,29 @@ using NUnit.Framework;
 
 namespace TestHerokuApp
 {
+    /// <summary>
+    /// Data calss to hold all the 44 page data
+    /// </summary>
     public class MyDataClass
     {
+        /// <summary>
+        /// Test case to get links one by one 
+        /// </summary>
         public static IEnumerable TestCases
-        {
+        {   
             get
             {
+               /*
                 yield return new TestCaseData("A / B Testing", "A/B Test Control");
                 yield return new TestCaseData("Broken Images", "Broken Images");
                 yield return new TestCaseData("Challenging DOM", "Challenging DOM");
                 yield return new TestCaseData("Dropdown", "Dropdown");
                 yield return new TestCaseData("Drag and Drop", "Drag and Drop");
                 yield return new TestCaseData("Exit Intent", "Exit Intent");
+               */
 
 
-
-                /*
+                
                 yield return new TestCaseData("A/B Testing", "XXX");
                 yield return new TestCaseData("Add/Remove Elements", "XXX");
                 yield return new TestCaseData("Basic Auth", "XXX");
@@ -67,7 +74,7 @@ namespace TestHerokuApp
                 yield return new TestCaseData("Sortable Data Tables", "XXX");
                 yield return new TestCaseData("Status Codes", "XXX");
                 yield return new TestCaseData("Typos", "XXX");
-                yield return new TestCaseData("WYSIWYG Editor", "XXX");*/
+                yield return new TestCaseData("WYSIWYG Editor", "XXX");
 
             }
         }

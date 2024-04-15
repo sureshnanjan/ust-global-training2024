@@ -15,13 +15,13 @@ namespace HerokuAppOperations
         /// Test method to validate - Input Increase Value
         /// </summary>
         /// <returns></returns>
-        int InputIncreaseValue();
+        public int InputIncreaseValue();
 
         /// <summary>
         /// Test method to validate - Input Decrease Value
         /// </summary>
         /// <returns></returns>
-        int InputDecreaseValue();
+        public int InputDecreaseValue();
 
     }
 }

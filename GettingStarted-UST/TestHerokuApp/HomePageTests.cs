@@ -14,6 +14,7 @@ namespace TestHerokuApp
         public void homePageTitleisCorrect() {
             // Arrange
             IHomePage page = null;
+            // page.goToExample*().AddElement().CheckIfDisplayed()
             string expectedTitle = "Welcome to the-internet";
             // A
             string actualTitle = page.getTitle();
@@ -48,6 +49,29 @@ namespace TestHerokuApp
             page.goToExample(pagetovisit);
             string actualTitle = page.getTitle();
             Assert.That(actualTitle, Is.EqualTo(expectedTitle));
+        }
+
+        [Test]
+        public void testingIfFirstItemisDisabled() {
+            IHomePage page = null;
+            string itemToTest = "Disabled";
+            bool expectedTitle = false;
+            page.getStatus(itemToTest)
+            Assert.That(actualTitle, Is.EqualTo(expectedTitle));
+
+
+        }
+
+        [Test]
+        public void testingIfPDFItemIsEnabled()
+        {
+            IHomePage page = null;
+            string itemToTest = "ENABLED-Download-Pdf";
+            bool expectedTitle = true;
+            bool actual = page.getStatus(itemToTest);
+            Assert.That(actualTitle, Is.EqualTo(expectedTitle));
+
+
         }
 
     }

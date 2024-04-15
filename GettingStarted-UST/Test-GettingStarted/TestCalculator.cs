@@ -5,40 +5,76 @@ namespace Test_GettingStarted
     [TestClass]
     public class TestCalculator
     {
+        int expected, actual;
+
         [TestMethod]
-        public void additionof10and20shouldbe30()
+        public void ValidateAddition()
         {
-            Calculator calculator = new Calculator();
-            int expected = 30;
-            int actual = calculator.add(10, 20);
+            // Test PASS
+            expected = 30;
+            actual = AddTwo(10, 20);
+            Console.WriteLine("VAlidatiing the addition : ");
+            Console.WriteLine("The test Passed the answer is :" + actual);
+            Assert.AreEqual(expected, actual);
+
+            // Test Fail
+
+            expected = 40;
+            actual = AddTwo(15, 20);
+            Console.WriteLine("The test failed the answer is :" + actual);
             Assert.AreEqual(expected, actual);
         }
 
         [TestMethod]
-        public void additionof100000and20000shouldbe300000()
+        public void ValidateSubtraction()
         {
-            Calculator calculator = new Calculator();
-            int expected = 30000;
-            int actual = calculator.add(10000, 20000);
+            // Test PASS
+            expected = 30;
+            actual = SubtractTwo(50, 20);
+            Console.WriteLine("VAlidatiing the Subtraction : ");
+            Console.WriteLine("The test Passed the answer is :" + actual);
+            Assert.AreEqual(expected, actual);
+
+            // Test Fail
+            expected = 40;
+            actual = SubtractTwo(80, 20);
+            Console.WriteLine("The test failed the answer is :" + actual);
             Assert.AreEqual(expected, actual);
         }
 
         [TestMethod]
-        public void subtracting10and8shouldbe2()
+        public void ValidateMultiplication()
         {
-            Calculator calculator = new Calculator();
-            int expected = 2;
-            int actual = calculator.subtract(10,8);
+            // Test PASS
+            expected = 30;
+            actual = MultTwo(6, 5);
+            Console.WriteLine("VAlidatiing the Multiplication : ");
+            Console.WriteLine("The test Passed the answer is :" + actual);
             Assert.AreEqual(expected, actual);
+
+            // Test Fail
+            expected = 40;
+            actual = MultTwo(6, 6);
+            Console.WriteLine("The test failed the answer is :" + actual);
+            Assert.AreEqual(expected, actual);
+        }
+        //  calculator methods
+
+        public int AddTwo(int firstNum, int secNum)
+        {
+            return firstNum + secNum;
+        }
+        //subtraction
+        public int SubtractTwo(int firstNum, int secNum)
+        {
+            return firstNum - secNum;
         }
 
-        [TestMethod]
-        public void subtracting0and2shouldbeminus2()
+        //Multiplication
+        public int MultTwo(int firstNum, int secNum)
         {
-            Calculator calculator = new Calculator();
-            int expected = -2;
-            int actual = calculator.subtract(0, 2);
-            Assert.AreEqual(expected, actual);
+            return firstNum * secNum;
         }
+
     }
 }

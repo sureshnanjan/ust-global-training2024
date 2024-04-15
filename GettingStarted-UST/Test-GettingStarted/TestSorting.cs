@@ -19,10 +19,19 @@ namespace Test_GettingStarted
             SimpleClass cl4 = new SimpleClass(1, "AD");
             SimpleClass cl5 = new SimpleClass(3, "bB");
             SimpleClass[] mycoll = { cl1, cl1, cl3, cl4, cl5 };
-            // form the expected result
+            // form the expected result 
+            String actual = "Test";
             // Act
             Array.Sort(mycoll);
+            //printing result
+            Console.WriteLine("The Default sorting is : ");  
+            foreach (var myitem in mycoll)
+            {
+                Console.WriteLine(myitem);
+            }
             // assert that the result is as per expectation
+
+            Assert.AreEqual(mycoll.Length, actual.Length);
         }
         [TestMethod]
         public void sort_works_with_name() {
@@ -33,11 +42,22 @@ namespace Test_GettingStarted
             SimpleClass cl4 = new SimpleClass(1, "AD");
             SimpleClass cl5 = new SimpleClass(3, "bB");
             SimpleClass[] mycoll = { cl1, cl1, cl3, cl4, cl5 };
+             
             NameSorter sorter = new NameSorter();
             // Act
             Array.Sort(mycoll,sorter);
-            //CollectionAssert TDD
+            // form the expected result 
+            String actual = null;
+                        
+            //printing result
+            Console.WriteLine("The Default sorting is : ");
+            foreach (var myitem in mycoll)
+            {
+                Console.WriteLine(myitem);
+            }
+            // assert that the result is as per expectation
 
+            Assert.AreEqual(mycoll.Length, actual.Length);
         }
 
 

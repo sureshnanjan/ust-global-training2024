@@ -32,10 +32,10 @@ namespace GettingStarted_UST
              objCal.ValidateMultiplication();
 
             //Assignment 3 : Sorting
-            TestSortingOfNumbers testSort = new TestSortingOfNumbers();
-            Console.WriteLine("\n\nAssignment 3 : Sorting -");
-            testSort.TestDefaultSorting();
-            testSort.TestSortingByName();
+           // TestSortingOfNumbers testSort = new TestSortingOfNumbers();
+          //  Console.WriteLine("\n\nAssignment 3 : Sorting -");
+          //  testSort.TestDefaultSorting();
+           // testSort.TestSortingByName();
             
 
             //Assignment 4 : Binary search

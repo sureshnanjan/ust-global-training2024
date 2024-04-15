@@ -18,9 +18,15 @@ namespace HerokuAppOperations
         public string getTitle();
 
         /// <summary>
+        /// this method will retrieve the current position of the slidebar and returns current position as float
+        /// <returns>float</returns> 
+        public float getSlidePosition();
+
+
+        /// <summary>
         /// this method performs forward and backward sliding on the bar
         /// <returns></returns> 
-        public void SlidetheBar();
+        public void SlidetheBar(int n);
 
 
         /// <summary>

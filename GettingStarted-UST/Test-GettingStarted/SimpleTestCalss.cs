@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GettingStarted_UST
+namespace Test_GettingStarted
 {
     public class SimpleTestCalss : IComparable<SimpleTestCalss>, ICloneable
 

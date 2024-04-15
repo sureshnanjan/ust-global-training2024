@@ -7,34 +7,26 @@ using System.Threading.Tasks;
 namespace HerokuAppOperations
 {
     /// <summary>
-    ///  This provides operations on File Upload Link 
+    ///  This provides operations on Input Link 
     /// </summary>
-    public interface IHomePageFileUploadLink
+    public interface IInputs
     {
         /// <summary>
         /// Test Method to get Title
         /// </summary>
         /// <returns></returns>
         string getTitle();
-
         /// <summary>
-        /// Test method to validate - Choose File Button
+        /// Test method to validate - Input Increase Value
         /// </summary>
         /// <returns></returns>
-        public void ChooseFileButton();
+        public int IncreaseValue();
 
         /// <summary>
-        /// Test method to validate - Upload Button
+        /// Test method to validate - Input Decrease Value
         /// </summary>
         /// <returns></returns>
-        public void UploadButton();
+        public int DecreaseValue();
 
-
-        /// <summary>
-        /// Test method to validate - Upload File Message
-        /// </summary>
-        /// <returns></returns>
-        string getUploadedFileMessage();
-       
     }
 }

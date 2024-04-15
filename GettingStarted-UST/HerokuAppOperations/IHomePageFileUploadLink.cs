@@ -31,10 +31,10 @@ namespace HerokuAppOperations
 
 
         /// <summary>
-        /// Test method to validate - Upload File
+        /// Test method to validate - Upload File Message
         /// </summary>
         /// <returns></returns>
-        public void UploadedFile();
+        string getUploadedFileMessage();
        
     }
 }

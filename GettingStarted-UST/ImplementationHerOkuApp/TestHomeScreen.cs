@@ -60,7 +60,7 @@ namespace ImplementationHerOkuApp
         /// Test case to verify visting A/B testing Link  
         /// </summary>
         [Test]
-        public void visintingAExamplePageWorks()
+        public void visitingAExamplePageWorks()
         {
             IHomeScreen page = null;
             string pagetovisit = "A/B Testing";

@@ -11,6 +11,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test-GettingStarted", "Test
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebdriverDotnet", "WebdriverDotnet\WebdriverDotnet.csproj", "{7BA4B7AE-D9D4-4DFC-AD6B-15590A7D742A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HerokuAppOperations", "HerokuAppOperations\HerokuAppOperations.csproj", "{5D55DC41-B727-47AC-9DC2-553F0913D78A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestHerokuApp", "TestHerokuApp\TestHerokuApp.csproj", "{D9B346FC-18AA-478F-ABA7-CC56D8563560}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{7BA4B7AE-D9D4-4DFC-AD6B-15590A7D742A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7BA4B7AE-D9D4-4DFC-AD6B-15590A7D742A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7BA4B7AE-D9D4-4DFC-AD6B-15590A7D742A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D55DC41-B727-47AC-9DC2-553F0913D78A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D55DC41-B727-47AC-9DC2-553F0913D78A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D55DC41-B727-47AC-9DC2-553F0913D78A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D55DC41-B727-47AC-9DC2-553F0913D78A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9B346FC-18AA-478F-ABA7-CC56D8563560}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9B346FC-18AA-478F-ABA7-CC56D8563560}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9B346FC-18AA-478F-ABA7-CC56D8563560}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9B346FC-18AA-478F-ABA7-CC56D8563560}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

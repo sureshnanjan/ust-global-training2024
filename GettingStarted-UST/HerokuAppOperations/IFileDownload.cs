@@ -13,6 +13,10 @@ namespace HerokuAppOperations
         /// This method helps to verify whether correct URL loaded or not
         /// </summary>       
         string getURL();
+        /// <summary>
+        /// This method verify the title displayed correctly
+        /// </summary>
+      
         string getTitle();
         /// <summary>
         /// Verify the title of the  page

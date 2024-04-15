@@ -4,12 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MyLIbrary;
-<<<<<<< HEAD
 using PetStoreImplementations;
-
-=======
 using WebdriverDotnet;
->>>>>>> suresh-trainer
+
 
 namespace GettingStarted_UST
 {
@@ -26,7 +23,6 @@ namespace GettingStarted_UST
         // Operators
         public static void Main(string[] args)
         {
-<<<<<<< HEAD
             HomePage browser= new HomePage();
             browser.OpenWebsite("https://petstore.octoperf.com/actions/Catalog.action");
             Console.WriteLine(browser.GetTitle());
@@ -54,7 +50,7 @@ namespace GettingStarted_UST
             //GenericSimpleClass<float,string> genericSimpleClass1 = new GenericSimpleClass<float,string>();
             //genericSimpleClass1.MyCounter = 1.2f;
             //Action<int, float, string> action1 = (a,b,c) => { };
-=======
+
             //genericsDemo();
 
             MyBrowser brower = new MyBrowser();
@@ -66,7 +62,6 @@ namespace GettingStarted_UST
             //OperatorIndexerAssignment();
 
             //GenericsIntro();
->>>>>>> suresh-trainer
 
             Calculator calculator = new Calculator();
             //var results = calculator.add(10.1, 20.0);

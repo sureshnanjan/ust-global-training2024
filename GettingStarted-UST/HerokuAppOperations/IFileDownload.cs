@@ -31,8 +31,11 @@ namespace HerokuAppOperations
         /// </summary>
         /// 
         void downloadFilebyPosition(int pos);
+        /// <summary>
+        /// This method verifies the download status
+        /// </summary>        
+        string getDownloadstatus(string fileStatus);
 
-        void verifyDownloadstatus(string exp);
 
     }
 }

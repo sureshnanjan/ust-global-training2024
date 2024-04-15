@@ -6,20 +6,35 @@ using System.Threading.Tasks;
 
 namespace GettingStarted_UST
 {
-    internal class OperatorOverloading
+    /// <summary>
+    /// Class to showcase Operator Overloading
+    /// </summary>
+    public class OperatorOverloading
     {
         private int number;
 
+        /// <summary>
+        /// Constructor with single parameter
+        /// </summary>
+        /// <param name="num">Number</param>
         public OperatorOverloading(int num)
         {
             this.number = num;
         }
 
+        /// <summary>
+        /// Constructor with no parameters
+        /// </summary>
         public OperatorOverloading()
         {
         }
 
-        // Overloading of Binary "+" operator
+        /// <summary>
+        /// Overloading of Binary "+" operator
+        /// </summary>
+        /// <param name="Calc1">First object of OperatorOverloading class</param>
+        /// <param name="Calc2">Second object of OperatorOverloading class</param>
+        /// <returns></returns>
         public static OperatorOverloading operator +(OperatorOverloading Calc1,
                                              OperatorOverloading Calc2)
         {
@@ -28,7 +43,9 @@ namespace GettingStarted_UST
             return Calc3;
         }
 
-        // function to display result
+        /// <summary>
+        /// Function to display result
+        /// </summary>
         public void display()
         {
             Console.WriteLine("{0}", number);

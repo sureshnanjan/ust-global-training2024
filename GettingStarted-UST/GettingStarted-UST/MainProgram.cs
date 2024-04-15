@@ -23,18 +23,22 @@ namespace GettingStarted_UST
             UsingLiterals usingLiterals = new UsingLiterals();
             usingLiterals.ShowUsage();
 
-            UserDefinedDelegate();
-
             Console.WriteLine("Sorting Instances :- ");
             InstancesSort();
 
             Console.WriteLine("Example of Lambda :- ");
             LambdaDemo();
+            LambdaToGetList();
 
             Console.WriteLine("Example of Delegate :- ");
             DelegateUsage();
 
-            Console.WriteLine("Example of Event handling :-");
+            Console.WriteLine("Operator Overloading :- ");
+            OperatorOverloaded();
+
+            Console.WriteLine("Index Overloading :- ");
+
+            Console.WriteLine("Example of Event handling :- ");
             EventHandlingDemo();
 
             Console.WriteLine("Lauching website of JPet Store:- ");
@@ -75,7 +79,7 @@ namespace GettingStarted_UST
             Console.WriteLine($"Count of repeated element 4 is {results}");
 
             int results1 = value.Aggregate((arg1, arg2) => (arg1 + arg2));
-            Console.WriteLine($"Addition of all elements in mynumbers is {results1}");
+            Console.WriteLine($"Addition of all elements in mynumbers is {results1} \n");
 
         }
 
@@ -90,7 +94,7 @@ namespace GettingStarted_UST
         /// <summary>
         /// Showcase the delagate usability
         /// </summary>
-        private static void UserDefinedDelegate()
+        private static void LambdaToGetList()
         {
             int[] myNumbers = { 1, 2, 3, 4, 5, 6, 7, 8 };
             var result = myNumbers.Where(param => param>2).ToList();
@@ -131,6 +135,21 @@ namespace GettingStarted_UST
             Product ProdOfNum = new Product(delegateDemo.Mutliply);
             SumOfNum(12, 2);
             ProdOfNum(12, 2);
+        }
+
+        private static void OperatorOverloaded()
+        {
+            OperatorOverloading num1 = new OperatorOverloading(200);
+            OperatorOverloading num2 = new OperatorOverloading(40);
+            OperatorOverloading num3 = new OperatorOverloading();
+
+            num3 = num1 + num2;
+
+            num1.display(); // Displays 200
+
+            num2.display(); // Displays 40
+
+            num3.display(); // Displays 240
         }
 
         /// <summary>

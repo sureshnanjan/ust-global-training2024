@@ -11,7 +11,7 @@ namespace GettingStarted_UST
     /// </summary>
     public class OperatorOverloading
     {
-        private int number;
+        private int number, number1, number2;
 
         /// <summary>
         /// Constructor with single parameter
@@ -41,6 +41,19 @@ namespace GettingStarted_UST
             OperatorOverloading Calc3 = new OperatorOverloading(0);
             Calc3.number = Calc2.number + Calc1.number;
             return Calc3;
+        }
+
+        /// <summary>
+        /// Overloading of Unary "-" operator
+        /// </summary>
+        /// <param name="Calc1">First object of OperatorOverloading class</param>
+        /// <param name="Calc2">Second object of OperatorOverloading class</param>
+        /// <returns></returns>
+        public static OperatorOverloading operator -(OperatorOverloading Calc1)
+        {
+            OperatorOverloading Calc2= new OperatorOverloading(0);
+            Calc2.number = -Calc1.number;
+            return Calc2;
         }
 
         /// <summary>

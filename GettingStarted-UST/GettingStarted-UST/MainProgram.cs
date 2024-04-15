@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MyLIbrary;
+using WebdriverDotnet;
 
 namespace GettingStarted_UST
 {
@@ -20,6 +21,14 @@ namespace GettingStarted_UST
         // Operators
         public static void Main(string[] args)
         {
+            //genericsDemo();
+
+            MyBrowser brower = new MyBrowser();
+            brower.OpenWebsite("https://petstore.octoperf.com/actions/Catalog.action");
+            Console.WriteLine(brower.GetTitle());
+        }
+        private static void genericsDemo()
+        {
             //OperatorIndexerAssignment();
 
             //GenericsIntro();
@@ -33,12 +42,6 @@ namespace GettingStarted_UST
             int res = calculator.compare<int>(20, 20);
             int res1 = calculator.compare<string>("", "");
             int res2 = calculator.compare<SimpleClass>(new SimpleClass(0), new SimpleClass(10));
-;
-
-
-
-           
-
         }
 
         private static void GenericsIntro()
@@ -97,7 +100,7 @@ namespace GettingStarted_UST
             //a0ril04Demo();
             //DelegatesDemo();
             int[] numbers = { 1, 2, 3, 4, 5, 6, 7, 8, 9, -9 };
-            int result = numbers.Aggregate((arg1, arg2) => arg1 * arg2);
+            int result = numbers.Aggregate((arg1, arg2) => arg1 * arg2)
             Console.WriteLine(result);
             bool isallnumbersGT0 = numbers.All(x => x > 0);
             Console.WriteLine(isallnumbersGT0);

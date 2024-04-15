@@ -15,33 +15,33 @@ namespace HerokuAppOperations
         public void VerifyTitle(String name);
 
         /// <summary>
-        /// Add/Remove the button by passing the argument
+        /// Add the button by passing the argument
         /// </summary>
         /// <action> </action>
-        public void PerformOpertion();
+        public void PerformAddOpertion();
 
         /// <summary>
         /// Click on the checkbox option
         /// </summary>
         /// <returns></returns>
-        public void ClickonCheckbox();
+        public void Check_Checkbox();
         /// <summary>
         /// Add the option
         /// </summary>
         /// <action> Add the Checkbox  </action>
-        public void ClickAddButton();
+        public void PerformRemoveOperation();
         
         /// <summary>
         /// Click on the Enable button and verify
         /// </summary>
         /// <returns></returns>
-        public void ClickonEnableOption();
+        public void PerformEnableOperation();
 
         /// <summary>
         /// Click on the Disable button and verify
         /// </summary>
         /// <returns></returns>
-        public void ClickonDisableOption();
+        public void PerformDisableOperation();
 
         /// <summary>
         /// Method to verify if the field "Enable/Disable" is enabled/Disabled

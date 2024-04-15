@@ -15,17 +15,22 @@ namespace HerokuAppOperations
         public void VerifyTitle(String name);
 
         /// <summary>
-        /// Remove the option
+        /// Add/Remove the button by passing the argument
         /// </summary>
-        /// <action> Removing the Checkbox available </action>
-        public void ClickRemoveButton();
+        /// <action> </action>
+        public void PerformOpertion();
 
         /// <summary>
         /// Click on the checkbox option
         /// </summary>
         /// <returns></returns>
         public void ClickonCheckbox();
-
+        /// <summary>
+        /// Add the option
+        /// </summary>
+        /// <action> Add the Checkbox  </action>
+        public void ClickAddButton();
+        
         /// <summary>
         /// Click on the Enable button and verify
         /// </summary>
@@ -37,5 +42,18 @@ namespace HerokuAppOperations
         /// </summary>
         /// <returns></returns>
         public void ClickonDisableOption();
+
+        /// <summary>
+        /// Method to verify if the field "Enable/Disable" is enabled/Disabled
+        /// </summary>
+        /// <returns>Returns True or False based on if field is enabled/disabled</returns>
+        public bool GetFieldEnabledOption();
+
+
+        /// <summary>
+        /// Verify the error message displayed on the any functionality
+        /// </summary>
+        /// <returns>True or false based on Message match</returns>
+        public bool GetMessage(String errmsg);
     }
 }

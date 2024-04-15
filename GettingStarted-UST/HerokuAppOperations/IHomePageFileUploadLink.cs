@@ -12,19 +12,22 @@ namespace HerokuAppOperations
     public interface IHomePageFileUploadLink
     {
         /// <summary>
+        /// Test Method to get Title
+        /// </summary>
+        /// <returns></returns>
+        string getTitle();
+
+        /// <summary>
         /// Test method to validate - Choose File Button
         /// </summary>
         /// <returns></returns>
         public void ChooseFileButton();
-
-
 
         /// <summary>
         /// Test method to validate - Upload Button
         /// </summary>
         /// <returns></returns>
         public void UploadButton();
-
 
 
         /// <summary>

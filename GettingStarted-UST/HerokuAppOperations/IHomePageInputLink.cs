@@ -12,6 +12,11 @@ namespace HerokuAppOperations
     public interface IHomePageInputLink
     {
         /// <summary>
+        /// Test Method to get Title
+        /// </summary>
+        /// <returns></returns>
+        string getTitle();
+        /// <summary>
         /// Test method to validate - Input Increase Value
         /// </summary>
         /// <returns></returns>

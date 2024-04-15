@@ -29,10 +29,28 @@ namespace TestHerokuApp
         [Test]
         public void verifyHorizontalSliderIncrement() {
             IHorizontalSlider slider = null;
-            int 
+            int currentPosition = slider.getPosition();
+            slider.performHorizontalSlide(1);
+            int expectedPosition = currentPosition + 
         }
 
+        /// <summary>
+        /// Verify Horizontal Slide Decrement
+        /// </summary>
         [Test]
         public void verifyHorizontalSliderPageDecrement() { }
+
+        /// <summary>
+        /// Verify the Minimum Posiition 
+        /// </summary>
+        [Test]
+        public void verifyMinimumPosition() { }
+
+        /// <summary>
+        /// Verify the Maximum Position 
+        /// </summary>
+        [Test]
+        public void verifyMaximumPosition() { }
+
     }
 }

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using HerokuAppOperations;
+using HerokuWebdriverImplemention;
 
 namespace TestHerokuApp
 {
@@ -20,7 +21,7 @@ namespace TestHerokuApp
         public void HomePageTitleisCorrect()
         {
             // Arrange
-            IHomePage page = null;
+            IHomePage page = new HomePage();
             string expectedTitle = "Welcome to the-internet";
             // A
             string actualTitle = page.GetTitle();
@@ -35,7 +36,7 @@ namespace TestHerokuApp
         [Test]
         public void HomePageSubTitleisCorrect()
         {
-            IHomePage page = null;
+            IHomePage page = new HomePage();
             string expectedSubTitle = "Available Examples";
             // A
             string actualTitle = page.GetSubTitle();
@@ -49,7 +50,7 @@ namespace TestHerokuApp
         [Test]
         public void HomePageHas44Links()
         {
-            IHomePage page = null;
+            IHomePage page = new HomePage();
             int expectedCount = 44;
             int actual = page.GetAvailableExamples().Length;
             Assert.That(actual, Is.EqualTo(expectedCount));
@@ -61,7 +62,7 @@ namespace TestHerokuApp
         [TestCaseSource(nameof(exampleUtility))]
         public void VisintingAExamplePageWorks(string actual, string expected)
         {
-            IHomePage page = null;
+            IHomePage page = new HomePage();
             page.GoToExample(actual);
             string actualTitle = page.GetTitle();
             Assert.That(actualTitle, Is.EqualTo(expected));

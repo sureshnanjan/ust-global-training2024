@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HerokuAppOperations", "Hero
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestHerokuApp", "TestHerokuApp\TestHerokuApp.csproj", "{F3793468-DD38-4110-8A05-C61197532FF5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HerokuWebdriverImplemention", "HerokuWebdriverImplemention\HerokuWebdriverImplemention.csproj", "{BB5E041F-DFDD-41E4-B071-0920B0EB0C6E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{F3793468-DD38-4110-8A05-C61197532FF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F3793468-DD38-4110-8A05-C61197532FF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F3793468-DD38-4110-8A05-C61197532FF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB5E041F-DFDD-41E4-B071-0920B0EB0C6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB5E041F-DFDD-41E4-B071-0920B0EB0C6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB5E041F-DFDD-41E4-B071-0920B0EB0C6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB5E041F-DFDD-41E4-B071-0920B0EB0C6E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

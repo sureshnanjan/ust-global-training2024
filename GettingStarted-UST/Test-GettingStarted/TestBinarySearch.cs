@@ -76,7 +76,9 @@ namespace Test_GettingStarted
         }
 
         public void someroutine() {
-        
+        // assert color
+        // assert position
+        // assert font
         
         }
     }

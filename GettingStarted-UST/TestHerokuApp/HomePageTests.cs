@@ -1,4 +1,5 @@
 ﻿using HerokuAppOperations;
+using HerokuWebdriverImplemention;
 using NUnit.Framework;
 using NUnit.Framework.Constraints;
 using System.Security.Cryptography;
@@ -14,7 +15,8 @@ namespace TestHerokuApp
         public void homePageTitleisCorrect()
         {
             // Arrange
-            IHomePage page = null;
+            IHomePage page = new HomePage();
+            // page.goToExample*().AddElement().CheckIfDisplayed()
             string expectedTitle = "Welcome to the-internet";
             // Action
             string actualTitle = page.getTitle();
@@ -61,18 +63,28 @@ namespace TestHerokuApp
             Assert.That(actualTitle, Is.EqualTo(expectedTitle));
         }
 
-        /// <summary>
-        /// Test case to verify the Example page title 
-        /// </summary>
-        
-        [TestCaseSource(typeof(MyDataClass), nameof(MyDataClass.TestCases))]
-        public void visintingAllPageWorks(string pagetovisit,string expectedTitle)
+        [Test]
+        public void testingIfFirstItemisDisabled() {
+            IHomePage page = null;
+            //bool itemToTest = "Disabled";
+            bool expectedTitle = false;
+            //string actualTitle = page.getStatus(itemToTest);
+            //Assert.That(actualTitle, Is.EqualTo(expectedTitle));
+
+
+        }
+
+        [Test]
+        public void testingIfPDFItemIsEnabled()
         {
             IHomePage page = null;
-            
-            page.goToExample(pagetovisit);
-            string actualTitle = page.getTitle();
-            Assert.That(actualTitle, Is.EqualTo(expectedTitle));
+            string itemToTest = "ENABLED-Download-Pdf";
+            bool expectedTitle = true;
+            bool actual = page.getStatus(itemToTest);
+            //Assert.That(actualTitle, Is.EqualTo(expectedTitle));
+
+
         }
+
     }
 }

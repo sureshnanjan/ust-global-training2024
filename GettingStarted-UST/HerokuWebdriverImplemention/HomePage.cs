@@ -45,12 +45,9 @@ namespace HerokuWebdriverImplemention
             throw new NotImplementedException();
         }
 
-        public bool getStatus(string locator)
+        public string getStatus1(string locator)
         {
-            // Take screen shopt as part of this operation
-            //throw new NotImplementedException();
-            ITakesScreenshot mycamera = (ITakesScreenshot) this.browser;
-            mycamera.GetScreenshot();
+            throw new NotImplementedException();
         }
 
         public string getSubTitle()
@@ -63,7 +60,12 @@ namespace HerokuWebdriverImplemention
             return browser.Title;
         }
 
-       IHerokuAppOperations IHomePage.goToExample(string exampleName)
+        string IHomePage.getStatus1(string locator)
+        {
+            throw new NotImplementedException();
+        }
+
+        IHerokuAppOperations IHomePage.goToExample(string exampleName)
         {
             switch (exampleName)
             {

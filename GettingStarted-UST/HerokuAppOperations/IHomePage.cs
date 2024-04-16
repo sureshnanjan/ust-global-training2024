@@ -36,6 +36,7 @@
         /// </example>
         /// <returns></returns>
         bool getStatus(string locator);
+        string getStatus1(string locator);
 
     }
 }

@@ -15,7 +15,6 @@ namespace HerokuAppOperations
         string getRepoDetails();
 
         string getFooterDetails();
-
-
+        bool getStatus(string locator);
     }
 }

@@ -1,4 +1,5 @@
 ﻿using HerokuAppOperations;
+using OpenQA.Selenium;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,8 @@ namespace HerokuWebdriverImplemention
 {
     public class HerokuApp : IHerokuAppOperations
     {
+        private ITakesScreenshot browser;
+
         public void closeBrowser()
         {
             throw new NotImplementedException();
@@ -22,6 +25,15 @@ namespace HerokuWebdriverImplemention
         public string getRepoDetails()
         {
             throw new NotImplementedException();
+        }
+
+        public bool getStatus(string locator)
+        {
+            // Take screen shopt as part of this operation
+            //throw new NotImplementedException();
+            ITakesScreenshot mycamera = (ITakesScreenshot) this.browser;
+            mycamera.GetScreenshot();
+            return true;
         }
 
         public void goToHome()

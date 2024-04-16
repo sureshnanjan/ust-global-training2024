@@ -15,9 +15,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HerokuAppOperations", "Hero
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestHerokuApp", "TestHerokuApp\TestHerokuApp.csproj", "{D9B346FC-18AA-478F-ABA7-CC56D8563560}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ImplementPetStore", "ImplementPetStore\ImplementPetStore.csproj", "{9ECF346F-2F21-4EC4-A746-C944FC6217DC}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetStoreProject", "PetStoreProject\PetStoreProject.csproj", "{2338853D-1CF1-40DD-864C-C130657E0967}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HerokuWebdriverImplemention", "HerokuWebdriverImplemention\HerokuWebdriverImplemention.csproj", "{0A947F70-4D22-475C-87F0-324E70002589}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,14 +47,10 @@ Global
 		{D9B346FC-18AA-478F-ABA7-CC56D8563560}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D9B346FC-18AA-478F-ABA7-CC56D8563560}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D9B346FC-18AA-478F-ABA7-CC56D8563560}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9ECF346F-2F21-4EC4-A746-C944FC6217DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9ECF346F-2F21-4EC4-A746-C944FC6217DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9ECF346F-2F21-4EC4-A746-C944FC6217DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9ECF346F-2F21-4EC4-A746-C944FC6217DC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2338853D-1CF1-40DD-864C-C130657E0967}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2338853D-1CF1-40DD-864C-C130657E0967}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2338853D-1CF1-40DD-864C-C130657E0967}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2338853D-1CF1-40DD-864C-C130657E0967}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A947F70-4D22-475C-87F0-324E70002589}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A947F70-4D22-475C-87F0-324E70002589}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A947F70-4D22-475C-87F0-324E70002589}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A947F70-4D22-475C-87F0-324E70002589}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

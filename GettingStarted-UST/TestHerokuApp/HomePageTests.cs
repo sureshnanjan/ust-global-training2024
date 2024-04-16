@@ -1,4 +1,5 @@
 ﻿using HerokuAppOperations;
+using HerokuWebdriverImplemention;
 using NUnit.Framework;
 using NUnit.Framework.Constraints;
 using System.Security.Cryptography;
@@ -13,7 +14,8 @@ namespace TestHerokuApp
         [Test]
         public void homePageTitleisCorrect() {
             // Arrange
-            IHomePage page = null;
+            IHomePage page = new HomePage();
+            // page.goToExample*().AddElement().CheckIfDisplayed()
             string expectedTitle = "Welcome to the-internet";
             // A
             string actualTitle = page.getTitle();
@@ -72,6 +74,29 @@ namespace TestHerokuApp
         /// </summary>
 
 
+
+        [Test]
+        public void testingIfFirstItemisDisabled() {
+            IHomePage page = null;
+            //bool itemToTest = "Disabled";
+            bool expectedTitle = false;
+            //string actualTitle = page.getStatus(itemToTest);
+            //Assert.That(actualTitle, Is.EqualTo(expectedTitle));
+
+
+        }
+
+        [Test]
+        public void testingIfPDFItemIsEnabled()
+        {
+            IHomePage page = null;
+            string itemToTest = "ENABLED-Download-Pdf";
+            bool expectedTitle = true;
+            bool actual = page.getStatus(itemToTest);
+            //Assert.That(actualTitle, Is.EqualTo(expectedTitle));
+
+
+        }
 
     }
 }

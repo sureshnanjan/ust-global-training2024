@@ -4,13 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MyLIbrary;
-using PetStoreAutomation;
+using WebdriverDotnet;
+using Test_GettingStarted;
 
 
 namespace GettingStarted_UST
 {
     delegate int typeIntTakeintStr(int param1, string some);
     //public delegate TResult Func<in T, out TResult>(T arg);
+    //public delegate int Number(int n);
+
     public class MainProgram
     {
 
@@ -21,9 +24,23 @@ namespace GettingStarted_UST
         // Indexers
         // Operators
 
+
         public static void Main(string[] args)
 
         {
+
+            //Operatorindexer
+            OperatorIndexer Index = new OperatorIndexer();
+            Index[0] = "D";
+            Index[1] = "arf";
+            Index[2] = "asdf";
+            Console.WriteLine("First value = {0}", Index[0]);
+            Console.WriteLine("Second value = {0}", Index[1]);
+            Console.WriteLine("Third value = {0}", Index[2]);
+
+
+
+            //PetStore Automation
 
             MyBrowser brower = new MyBrowser();
             brower.OpenWebsite("https://petstore.octoperf.com/actions/Catalog.action");
@@ -31,6 +48,14 @@ namespace GettingStarted_UST
 
 
 
+            //genericsDemo();
+
+            //MyBrowser brower = new MyBrowser();
+            // brower.OpenWebsite("https://petstore.octoperf.com/actions/Catalog.action");
+            //Console.WriteLine(brower.GetTitle());
+        }
+        private static void genericsDemo()
+        {
             //OperatorIndexerAssignment();
             List<int> numbers = new List<int>() { 3, 6, 9, 5, 2 };
             LamdaAssign LamdaExpress = new LamdaAssign(numbers);
@@ -40,12 +65,37 @@ namespace GettingStarted_UST
             LamdaExpress.MultipliesNumbers();
             LamdaExpress.SquareofNumbers();
 
+            //GenericsIntro();
+
+            Calculator calculator = new Calculator();
+            //var results = calculator.add(10.1, 20.0);
+
+            Func<int, bool> mytester = (str) => str > 10;
+            mytester(0);
+
+            int res = calculator.compare<int>(20, 20);
+            int res1 = calculator.compare<string>("", "");
+            int res2 = calculator.compare<SimpleClass>(new SimpleClass(0), new SimpleClass(10));
         }
-        /* GenericSimpleClass<int, string> genericSimpleClass = new GenericSimpleClass<int, string>();
+
+        private static void GenericsIntro()
+        {
+            // Constructed Type
+            GenericSimpleClass<int, string> genericSimpleClass = new GenericSimpleClass<int, string>();
             genericSimpleClass.MyCounter = 0;
             GenericSimpleClass<float, string> genericSimpleClass1 = new GenericSimpleClass<float, string>();
             genericSimpleClass1.MyCounter = 1.2f;
-            Action<int, float, string> action1 = (a, b, c) => { };   */
+            Action<int, float, string> action1 = (a, b, c) => { };
+        }
+
+
+
+
+        /* GenericSimpleClass<int, string> genericSimpleClass = new GenericSimpleClass<int, string>();
+    genericSimpleClass.MyCounter = 0;
+    GenericSimpleClass<float, string> genericSimpleClass1 = new GenericSimpleClass<float, string>();
+    genericSimpleClass1.MyCounter = 1.2f;
+    Action<int, float, string> action1 = (a, b, c) => { };   */
 
 
         private static void OperatorIndexerAssignment()
@@ -86,7 +136,8 @@ namespace GettingStarted_UST
             kfc.PlaceOrder(waiter2.ServeFood);
             kfc.PlaceOrder(waiter3.ServeFood);
             kfc.PlaceOrder(cashier.CollectMoney);
-            kfc.PrepareTheFood(); }
+            kfc.PrepareTheFood();
+        }
 
         private static void April06Demo()
         {
@@ -133,7 +184,8 @@ namespace GettingStarted_UST
             pointer(10, "");
         }
 
-        static bool lessthn3Filter(int param) {
+        static bool lessthn3Filter(int param)
+        {
             // param => param < 3
             return param < 3;
         }
@@ -150,12 +202,14 @@ namespace GettingStarted_UST
             return param == 3;
         }
 
-        static int myMethod(int para1, string param2) {
+        static int myMethod(int para1, string param2)
+        {
             Console.WriteLine("Execuring this inthe myMethod");
             return 0;
         }
 
-        private static int someOtherMethod(int para, string para2) {
+        private static int someOtherMethod(int para, string para2)
+        {
             Console.WriteLine("SOMEOTHER METHOD");
             return 0;
         }
@@ -382,5 +436,6 @@ namespace GettingStarted_UST
          }*/
 
 
-   }
+    }
+
 }

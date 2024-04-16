@@ -1,6 +1,7 @@
 ﻿using HerokuAppOperations;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.DevTools.V121.Debugger;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -49,12 +50,12 @@ namespace HerokuWebdriverImplemention
 
         public string getSubTitle()
         {
-            throw new NotImplementedException();
+            return browser.FindElement(subHeadingLocator).Text;
         }
 
         public string getTitle()
         {
-            return browser.Title;
+            return browser.FindElement(headingLocator).Text;
         }
 
         public void goToExample(string exampleName)

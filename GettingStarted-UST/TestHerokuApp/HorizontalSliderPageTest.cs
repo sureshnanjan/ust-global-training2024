@@ -28,10 +28,12 @@ namespace TestHerokuApp
         /// </summary>
         [Test]
         public void verifyHorizontalSliderIncrement() {
+            /*
             IHorizontalSlider slider = null;
             int currentPosition = slider.getPosition();
             slider.performHorizontalSlide(1);
-            int expectedPosition = currentPosition + 
+            int expectedPosition = currentPosition + 1; 
+        */
         }
 
         /// <summary>

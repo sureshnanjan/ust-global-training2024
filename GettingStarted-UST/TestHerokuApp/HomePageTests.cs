@@ -20,6 +20,7 @@ namespace TestHerokuApp
             string expectedTitle = "Welcome to the-internet";
             // Action
             string actualTitle = page.getTitle();
+            Console.WriteLine(actualTitle);
             // Assert
             Assert.That(actualTitle, Is.EqualTo(expectedTitle)); // NUNIT
                 
@@ -29,7 +30,7 @@ namespace TestHerokuApp
         /// </summary>
         [Test]
         public void homePageSubTitleisCorrect() {
-            IHomePage page = null;
+            IHomePage page = new HomePage();
             string expectedSubTitle = "Available Examples";
             // A
             string actualTitle = page.getSubTitle();

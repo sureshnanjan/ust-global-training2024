@@ -2,6 +2,11 @@
 using HerokuWebdriverImplemention;
 using NUnit.Framework;
 using NUnit.Framework.Constraints;
+using OpenQA.Selenium.Chromium;
+using OpenQA.Selenium.DevTools;
+using OpenQA.Selenium.Internal;
+using OpenQA.Selenium.VirtualAuth;
+using OpenQA.Selenium;
 using System.Security.Cryptography;
 namespace TestHerokuApp
 {
@@ -59,7 +64,7 @@ namespace TestHerokuApp
             IHomePage page = null;
             string pagetovisit = "A/B Testing";
             string expectedTitle = "A/B Test Variation 1";
-            page.goToExample(pagetovisit);
+            (IABTestOpetration) page.goToExample(pagetovisit);
             string actualTitle = page.getTitle();
             Assert.That(actualTitle, Is.EqualTo(expectedTitle));
         }
@@ -88,4 +93,11 @@ namespace TestHerokuApp
         }
 
     }
+
+    public class ChromeDriver : ChromiumDriver,
+        IWebDriver, IDisposable, ISearchContext, IJavaScriptExecutor,
+        IFindsElement, ITakesScreenshot, ISupportsPrint, IActionExecutor,
+        IAllowsFileDetection, IHasCapabilities, IHasCommandExecutor, IHasSessionId,
+        ICustomDriverCommandExecutor, IHasVirtualAuthenticator, ISupportsLogs, IDevTools
+    { }
 }

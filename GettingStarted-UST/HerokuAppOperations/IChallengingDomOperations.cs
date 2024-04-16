@@ -9,7 +9,7 @@ namespace HerokuAppOperations
     /// <summary>
     /// Heroku App Home page operation details
     /// </summary>
-    public interface IChallengingDomOperations
+    public interface IChallengingDomOperations: IHerokuAppOperations
     {
         /// <summary>
         /// This method fetched the current Url opened in the browser.

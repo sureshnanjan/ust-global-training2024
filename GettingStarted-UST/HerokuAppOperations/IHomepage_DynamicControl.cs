@@ -12,7 +12,7 @@ namespace HerokuAppOperations
         /// Verify the title displayed
         /// </summary>
         /// <param name="name"></param>
-        public void VerifyTitle(String name);
+        string VerifyTitle();
 
         /// <summary>
         /// Remove the option

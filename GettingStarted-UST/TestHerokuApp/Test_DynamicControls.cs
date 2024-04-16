@@ -18,13 +18,11 @@ namespace TestHerokuApp
         public void PageTitleverification()
         {
             //Arrange
-            IHomepage_DynamicControl Controls = null;
+            IHomepage_DynamicControl page = null;
             string expectedTitle = "Dynamic Controls";
-          
             //Action
-            string actualTitle = Controls.VerifyTitle(string name);
+            string actualTitle = page.VerifyTitle();
             //Assert
-
             Assert.That(actualTitle, Is.EqualTo(expectedTitle));
 
         }

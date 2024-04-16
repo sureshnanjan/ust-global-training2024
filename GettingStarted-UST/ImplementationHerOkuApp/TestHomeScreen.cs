@@ -3,7 +3,7 @@ using NUnit.Framework.Constraints;
 using HerokuAppOperations;
 using HerokuAppWebdriverImplementation;
 using System.Security.Cryptography;
-namespace TestHerokuApp
+namespace Test_HerokuApp
 {
     /// <summary>
     /// Home Screen Tests for HerokuApp

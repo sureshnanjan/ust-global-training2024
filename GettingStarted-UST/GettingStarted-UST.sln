@@ -13,7 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StorePet", "StorePet\StoreP
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ImplementationPetStore", "ImplementationPetStore\ImplementationPetStore.csproj", "{E7AA5E64-0ADC-49E0-B604-CD1B6059909B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestHerokuApp", "ImplementationHerOkuApp\TestHerokuApp.csproj", "{5CA73EE4-211C-4C5D-BE98-16DFC333342F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test-HerokuApp", "ImplementationHerOkuApp\Test-HerokuApp.csproj", "{5CA73EE4-211C-4C5D-BE98-16DFC333342F}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HerokuAppOperations", "HerokuAppOperations\HerokuAppOperations.csproj", "{612DC07B-273C-4D70-B344-4BDDC11294AB}"
 EndProject

@@ -71,12 +71,31 @@ namespace HerokuAppOperations
         /// <returns> The answer value as string</returns>
         string getResult();
 
+        /// <summary>
+        /// This method retireves the table headings in the table  
+        /// </summary>
+        /// <returns> The table headings are returned as array string</returns>
         string[] getTableHeadings();
 
+        /// <summary>
+        /// This method performs edit action on the row 
+        /// </summary>
+        /// <param name="rownum"/> The row number which needs to be edited </param>
+        /// <returns> </returns>
         void editRow(int rownum);
 
+        /// <summary>
+        /// This method performs delete action on the row 
+        /// </summary>
+        /// <param name="rownum"/> The row number which needs to be deleted </param>
+        /// <returns> </returns>
         void deleteRow(int rownum);
 
+        /// <summary>
+        /// This method retrieves the data information of the row
+        /// </summary>
+        /// <param name="rownum"/> The row number for which data has to be fetched </param>
+        /// <returns> the row data as a string array </returns>
         string[] getRowData(int rownum);
     }
 }

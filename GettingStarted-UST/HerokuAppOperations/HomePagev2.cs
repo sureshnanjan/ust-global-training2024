@@ -13,7 +13,7 @@ namespace HerokuAppOperations
         IShop shoppingCart;
         IDisplay display;
 
-        public HomePage(ILogo lg, IShop shopcart, ISearch serch, ISpecialDeviceOps)
+        public HomePage(ILogo lg, IShop shopcart, ISearch serch)
         {
             
         }
@@ -37,9 +37,10 @@ namespace HerokuAppOperations
         }
 
         private void setup() {
+            /*
             // Open for extension, closed for modification
-            HomePage v1 = new HomePage(new Logov1());
-            HomePage v2 = new HomePage(new LogoV2());
+            //HomePage v1 = new HomePage(new Logov1());
+           // HomePage v2 = new HomePage(new LogoV2());
 
             int result1020 = v1.add1020();
             int result100200 = v2.add100200();
@@ -49,6 +50,7 @@ namespace HerokuAppOperations
 
             v1.LogoOperation();
             v2.LogoOperation();
+            */
 
         }
 

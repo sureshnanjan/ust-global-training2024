@@ -21,7 +21,10 @@ namespace HerokuAppOperations
         /// Test method to validate - Choose File Button
         /// </summary>
         /// <returns></returns>
-        public void ChooseFile();
+        public void ChooseFile(string filePath)
+        {
+           
+        }
 
         /// <summary>
         /// Test method to validate - Upload Button

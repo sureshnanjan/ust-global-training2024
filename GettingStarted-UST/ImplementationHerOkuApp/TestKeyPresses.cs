@@ -3,7 +3,7 @@ using NUnit.Framework.Constraints;
 using HerokuAppOperations;
 using System.Security.Cryptography;
 
-namespace ImplementationHerOkuApp
+namespace TestHerokuApp
 {
     /// <summary>
     /// KeyPresses Tests for HerokuApp

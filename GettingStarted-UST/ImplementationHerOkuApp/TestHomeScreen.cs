@@ -1,8 +1,9 @@
 ﻿using NUnit.Framework;
 using NUnit.Framework.Constraints;
 using HerokuAppOperations;
+using HerokuAppWebdriverImplementation;
 using System.Security.Cryptography;
-namespace ImplementationHerOkuApp
+namespace TestHerokuApp
 {
     /// <summary>
     /// Home Screen Tests for HerokuApp
@@ -17,8 +18,8 @@ namespace ImplementationHerOkuApp
         public void HomeScreenTitleIsCorrect()
         {
             //Arrange
-            IHomeScreen page= null;
-            string expectedTitle = " Welcome to the-Internet";
+            IHomeScreen page= new HomeScreen(); 
+            string expectedTitle = "The Internet";
             //Action
             string actualTitle = page.getTitle();
             //Assert
@@ -33,7 +34,7 @@ namespace ImplementationHerOkuApp
         public void HomeScreenSubTitleIsCorrect()
         {
             //Arrange
-            IHomeScreen page= null;
+            IHomeScreen page= new HomeScreen();
             string expectedSubTitle = "Available Examples";
             //Action 
             string actualSubTitle = page.getSubTitle();

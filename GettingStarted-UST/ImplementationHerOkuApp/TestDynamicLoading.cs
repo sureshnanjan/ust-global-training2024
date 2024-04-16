@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using HerokuAppOperations;
 using NUnit.Framework;
 
-namespace ImplementationHerOkuApp
+namespace TestHerokuApp
 {
     /// <summary>
     /// Dynamic Loading Tests for HerokuApp

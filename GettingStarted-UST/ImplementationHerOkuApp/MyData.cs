@@ -8,7 +8,7 @@ using NUnit.Framework;
 using NUnit.Framework.Internal;
 
 
-namespace ImplementationHerOkuApp
+namespace TestHerokuApp
 {
     public class MyData
     {

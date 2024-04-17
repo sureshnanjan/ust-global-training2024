@@ -111,6 +111,15 @@ namespace Test_GettingStarted
 
         }
 
+<<<<<<< HEAD
+=======
+        public void someroutine() {
+        // assert color
+        // assert position
+        // assert font
+        
+        }
+>>>>>>> suresh-trainer
     }
 }
 

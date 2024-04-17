@@ -1,6 +1,12 @@
 ﻿using HerokuAppOperations;
+using HerokuWebdriverImplemention;
 using NUnit.Framework;
 using NUnit.Framework.Constraints;
+using OpenQA.Selenium.Chromium;
+using OpenQA.Selenium.DevTools;
+using OpenQA.Selenium.Internal;
+using OpenQA.Selenium.VirtualAuth;
+using OpenQA.Selenium;
 using System.Security.Cryptography;
 namespace TestHerokuApp
 {
@@ -14,7 +20,8 @@ namespace TestHerokuApp
         public void homePageTitleisCorrect()
         {
             // Arrange
-            IHomePage page = null;
+            IHomePage page = new HomePage();
+            // page.goToExample*().AddElement().CheckIfDisplayed()
             string expectedTitle = "Welcome to the-internet";
 
             // Act
@@ -61,11 +68,12 @@ namespace TestHerokuApp
             IHomePage page = null;
             string pagetovisit = "A/B Testing";
             string expectedTitle = "A/B Test Variation 1";
-            page.goToExample(pagetovisit);
+            (IABTestOpetration) page.goToExample(pagetovisit);
             string actualTitle = page.getTitle();
             Assert.That(actualTitle, Is.EqualTo(expectedTitle));
         }
 
+<<<<<<< HEAD
         /// <summary>
         /// Tests visiting an example page with specific page name and expected title.
         /// </summary>
@@ -90,7 +98,37 @@ namespace TestHerokuApp
 
             // Assert
             Assert.That(actualTitle, Is.EqualTo(expectedTitle));
+=======
+        [Test]
+        public void testingIfFirstItemisDisabled() {
+            IHomePage page = null;
+            //bool itemToTest = "Disabled";
+            bool expectedTitle = false;
+            //string actualTitle = page.getStatus(itemToTest);
+            //Assert.That(actualTitle, Is.EqualTo(expectedTitle));
+
+
+        }
+
+        [Test]
+        public void testingIfPDFItemIsEnabled()
+        {
+            IHomePage page = null;
+            string itemToTest = "ENABLED-Download-Pdf";
+            bool expectedTitle = true;
+            bool actual = page.getStatus(itemToTest);
+            //Assert.That(actualTitle, Is.EqualTo(expectedTitle));
+
+
+>>>>>>> suresh-trainer
         }
 
     }
+
+    public class ChromeDriver : ChromiumDriver,
+        IWebDriver, IDisposable, ISearchContext, IJavaScriptExecutor,
+        IFindsElement, ITakesScreenshot, ISupportsPrint, IActionExecutor,
+        IAllowsFileDetection, IHasCapabilities, IHasCommandExecutor, IHasSessionId,
+        ICustomDriverCommandExecutor, IHasVirtualAuthenticator, ISupportsLogs, IDevTools
+    { }
 }

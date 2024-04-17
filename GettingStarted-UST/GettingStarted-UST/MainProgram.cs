@@ -36,12 +36,13 @@ namespace GettingStarted_UST
             Console.WriteLine("Operator Overloading :- ");
             OperatorOverloaded();
 
-            Console.WriteLine("Index Overloading :- ");
+            Console.WriteLine("\nIndex Overloading :- ");
+            IndexerOverloaded();
 
-            Console.WriteLine("Example of Event handling :- ");
+            Console.WriteLine("\nExample of Event handling :- ");
             EventHandlingDemo();
 
-            Console.WriteLine("Lauching website of JPet Store:- ");
+            Console.WriteLine("\nLauching website of JPet Store:- ");
             LaunchWebsiteDemo();
         }
 
@@ -150,6 +151,20 @@ namespace GettingStarted_UST
             num2.display(); // Displays 40
 
             num3.display(); // Displays 240
+        }
+
+        /// <summary>
+        /// Indexer Overloading
+        /// </summary>
+        private static void IndexerOverloaded()
+        {
+            IndexerOverloading IndexOver = new IndexerOverloading();
+
+            IndexOver[0] = "Hello"; // Value of word[0] 
+
+            IndexOver[1.0f] = " Team"; // Value of word[1] 
+
+            Console.WriteLine(IndexOver[0] + IndexOver[1.0f]);
         }
 
         /// <summary>

@@ -11,6 +11,7 @@
   <ItemGroup>
     <ProjectReference Include="..\ImplementationPetStore\ImplementationPetStore.csproj" />
     <ProjectReference Include="..\MyLIbrary\MyLIbrary.csproj" />
+    <ProjectReference Include="..\WebdriverDotnet\WebdriverDotnet.csproj" />
   </ItemGroup>
 
 </Project>

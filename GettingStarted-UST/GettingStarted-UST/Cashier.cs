@@ -8,16 +8,24 @@ namespace GettingStarted_UST
 {
     internal class Cashier
     {
-        private string cashierid;
+        string name;
+        string orderId;
+        int id;
 
-        public Cashier(string cashierid)
+        public Cashier(int id)
         {
-            this.cashierid = cashierid;
+            this.id = id;
         }
+
+
+        // Wait for a order completion
+        // Consumer - Receiver - Subscriber  - Pub-Sub - Chat
+
 
         public void CollectMoney(object sender, EventArgs? args)
         {
-            Console.WriteLine($"Cashier {this.cashierid} is collecting money");
+            Console.WriteLine($"{this.id} is collecting the Money");
+            //Console.WriteLine($"{this.id} is Cleaning the Table");
         }
     }
 }

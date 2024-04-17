@@ -44,23 +44,61 @@ namespace GettingStarted_UST
             bool mybool = true;
             bool mybool1 = false;
 
-            Console.WriteLine($" Integer value of Decimal 89 is {decINt}");
-            Console.WriteLine($" Integer value of Hexa-Decimal 59 is {hexInt}");
-            Console.WriteLine($" Integer value of Binary 1011001 is {binInt} \n");
+     //      Second assignment on Literals
 
-            Console.WriteLine($" Float value of double 123.456 is {doublefloat}");
-            Console.WriteLine($" Float value of float 10.2 is {myFloat}");
-            Console.WriteLine($" Float value of exponential 3.14E-2 is {expfloat} \n");
+            double numDouble = 89.9;
+            float myFloat = 89.7f;
+            double baseNum = 89;
+            double exponNum = 2;
+            double reSult = Math.Pow(baseNum, exponNum);
 
-            Console.WriteLine($" Character literal in single quote M is {mychar}");
-            Console.WriteLine($" Character literal in unicode 0061 is {mychar1}");
-            Console.WriteLine($" Character literal in Escape sequence new line is {mychar2} \n");
+            /// <summary>
+            /// Character Literals
+            /// </summary>
 
-            // String Interpolation
-            Console.WriteLine($" String literals in double quote is {mystr}");
-            Console.WriteLine($" String literals in double quote with prefix of @ is {mystr1} \n");
-            
-            Console.WriteLine($" Boolean literals are {mybool} & {mybool1} \n");
+            Char myChar = 'C';
+            Char uniCode = '\u0061';
+            Char escSequence = '\0';
+
+            /// <summary>
+            /// String Literals
+            /// </summary>
+
+            string myString = "Pooja";
+            string newPath = @"C:\Users\Administrator\ust-global-training2024\BasicProgram";
+            string firstString = "Padmappa";
+            string lastName = "Salian";
+            string name = $"{myString} {firstString} {lastName} ";
+
+            /// <summary>
+            /// Null Literals
+            /// </summary>
+            string s = null;
+
+            /// <summary>
+            /// Boolean Literals
+            /// </summary>
+
+            bool gG = true;
+            bool rR = false;
+
+            /// <summary>
+            /// Printing C# Litterrals
+            /// </summary>
+
+            //Console.WriteLine("Integer -Decimal literals \t\t     : " + decINt + " \nInteger- Hexa-decimal literals \t\t     : " + hexInt + " \nInteger- Binary literals \t\t     : " + binaryInt);
+            Console.WriteLine("Floating Literals- double \t\t     : " + numDouble + "\nFloating Literals- float \t\t     : " + myFloat + "\nFloating Literals- Exponentialvalue \t     : " + reSult);
+            Console.WriteLine("Character Literals - Single quote \t     : " + myChar + "\nCharacter Literals - Unicode Representation : " + uniCode + "\nCharacter Literals - Escape Sequence\t   : " + escSequence);
+            Console.WriteLine("String Literals -single \t\t   : " + myString + "\nString Literals -Path declaration\t   :" + newPath + "\nString Literals - Interpolation \t   : " + name);
+            Console.WriteLine("Null Literals\t\t\t\t   : " + s);
+            Console.WriteLine("Boolean Literals \t\t\t   : " + gG + "\nBoolean Literals\t\t\t   : " + rR);
+
         }
+
+
+
     }
+
+
+    
 }

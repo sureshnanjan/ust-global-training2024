@@ -1,32 +1,36 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace GettingStarted_UST
 {
-    internal class Waiter
+    internal class Waiter 
     {
         int Waiterid;
         string name;
         string orderId;
+        int id;
 
-        public Waiter(int Waiterid, string name, string orderId)
+        public Waiter(int id)
         {
-            this.Waiterid = Waiterid;
-            this.name = name;
-            this.orderId = orderId;
-        }
-        public void ServeFood(object sender, EventArgs? args) 
-        {
-            Console.WriteLine($"Waiter {this.Waiterid} is serving {this.name} for order {this.orderId}");
+            this.id = id;
+            this.name = "Pizza";
+            this.orderId = "001";
         }
 
-        public void CleanTable(object sender, EventArgs? args)
-        {
-            Console.WriteLine($"Waiter {this.Waiterid} is cleaning the table");
+        
+    // Wait for a order completion
+    // Consumer - Receiver - Subscriber  - Pub-Sub - Chat
 
+
+    public void ServeFood(object sender , EventArgs? args) {
+        Console.WriteLine($"{this.id} is Serving the Food");
+            Console.WriteLine($"{this.id } is Cleaning the Table");
         }
+
+       
     }
 }

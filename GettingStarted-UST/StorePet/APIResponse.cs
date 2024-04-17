@@ -1,14 +1,14 @@
 namespace StorePet
 {
-    /// <summary>
+    /// <summary>>
     /// Contains API response details like code, message and type
-    /// </summary>
+    /// </summary>>
     
     internal class APIResponse
     {
-        /// <summary>
+        /// <summary>>
         /// API response properties 
-        /// </summary>
+        /// </summary>>
         private int code;
         private string message;
         private string type;

@@ -103,7 +103,7 @@ namespace GettingStarted_UST
             //a0ril04Demo();
             //DelegatesDemo();
             int[] numbers = { 1, 2, 3, 4, 5, 6, 7, 8, 9, -9 };
-            int result = numbers.Aggregate((arg1, arg2) => arg1 * arg2)
+            int result = numbers.Aggregate((arg1, arg2) => arg1 * arg2);
             Console.WriteLine(result);
             bool isallnumbersGT0 = numbers.All(x => x > 0);
             Console.WriteLine(isallnumbersGT0);

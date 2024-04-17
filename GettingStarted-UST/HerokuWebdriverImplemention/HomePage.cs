@@ -1,6 +1,8 @@
 ﻿using HerokuAppOperations;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Firefox;
+using OpenQA.Selenium.Safari;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,10 +14,11 @@ using static System.Net.Mime.MediaTypeNames;
 
 namespace HerokuWebdriverImplemention
 {
-    public class HomePage : IHomePage
+    public class HomePage : HerokuApp, IHomePage
     {
         private string herokuUrl; 
         private IWebDriver browser;
+        //private ChromeDriver driver
         private By headingLocator;
         private By subHeadingLocator;
         private By exapleLocator;
@@ -44,7 +47,10 @@ namespace HerokuWebdriverImplemention
 
         public bool getStatus(string locator)
         {
-            throw new NotImplementedException();
+            // Take screen shopt as part of this operation
+            //throw new NotImplementedException();
+            ITakesScreenshot mycamera = (ITakesScreenshot) this.browser;
+            mycamera.GetScreenshot();
         }
 
         public string getSubTitle()
@@ -57,9 +63,15 @@ namespace HerokuWebdriverImplemention
             return browser.Title;
         }
 
-        public void goToExample(string exampleName)
+       IHerokuAppOperations IHomePage.goToExample(string exampleName)
         {
-            throw new NotImplementedException();
+            switch (exampleName)
+            {
+                case "AddRemove":
+                    return new AddRemovePage();
+                default: throw new NotImplementedException();
+
+            }
         }
     }
 }

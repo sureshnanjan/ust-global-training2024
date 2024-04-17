@@ -45,12 +45,9 @@ namespace HerokuWebdriverImplemention
             throw new NotImplementedException();
         }
 
-        public string GetStatus(string locator)
+        public bool GetStatus(string locator)
         {
-            // Take screen shopt as part of this operation
-            //throw new NotImplementedException();
-            ITakesScreenshot mycamera = (ITakesScreenshot) this.browser;
-            mycamera.GetScreenshot();
+            throw new NotImplementedException();
         }
 
         public string getSubTitle()

@@ -12,10 +12,11 @@ namespace TestHerokuApp
     [TestClass]
     public class AddRemoveElementsPage
     {
-      /// <summary>
-     /// this method is used to validate if the page elelement is displayed on the page   
-     /// </summary> 
         IAddRemoveElements IaddRem = null;
+        /// <summary>
+        /// this method is used to validate if the page elelement is displayed on the page   
+        /// </summary> 
+        ///<returns> boolean value (true/false) depending on the visiility of the flag </returns>
 
         [TestMethod]
         public bool validatePageElementisDisplayed()
@@ -29,12 +30,12 @@ namespace TestHerokuApp
             return FlagsAttribute;
         }
 
+        [TestMethod]
         /// <summary>
         /// this method is used to validate if user can add elemetnts
         /// </summary> 
         
-        [TestMethod]
-        public void AddElements()
+        public void ValidateAddingElements()
         {
             if(validatePageElementisDisplayed())
             {
@@ -49,7 +50,7 @@ namespace TestHerokuApp
         /// </summary> 
         
         [TestMethod]
-        public void DeleteElements()
+        public void ValidateDeleteElements()
         {
             if (IaddRem.checkForPresenceofDeleteButton())
             {

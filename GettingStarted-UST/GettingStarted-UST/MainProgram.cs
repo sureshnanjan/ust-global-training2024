@@ -173,7 +173,7 @@ namespace GettingStarted_UST
         /// <summary>
         /// To demonstrate Event handling mechanism
         /// </summary>
-        private static void EventHandlingDemo()
+        public static void EventHandlingDemo()
         {
             Console.WriteLine("Event handling :- ");
 

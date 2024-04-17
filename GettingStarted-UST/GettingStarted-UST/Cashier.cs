@@ -9,7 +9,7 @@ namespace GettingStarted_UST
     /// <summary>
     /// Class for Cashier
     /// </summary>
-    internal class Cashier
+    public class Cashier
     {
         private string cashierId;
 

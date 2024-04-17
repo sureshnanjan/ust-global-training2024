@@ -9,7 +9,7 @@ namespace GettingStarted_UST
     /// <summary>
     /// Class of Waiter
     /// </summary>
-    internal class Waiter
+    public class Waiter
     {
         int waiterId;
         string name;

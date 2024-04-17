@@ -9,7 +9,7 @@ namespace GettingStarted_UST
     /// <summary>
     /// Class of cook
     /// </summary>
-    internal class Cook
+    public class Cook
     {
         
         private string orderId;
@@ -40,7 +40,7 @@ namespace GettingStarted_UST
         public void PrepareFood(object sender, EventArgs? args) 
         {
             Console.WriteLine($"{this.cookName} is starting preparation of order {this.orderId}");
-            Console.WriteLine($"Food preparation for order {this.orderId} is complete and passing food to Waiter {this.waiterId}");
+            //Console.WriteLine($"Food preparation for order {this.orderId} is complete and passing food to Waiter {this.waiterId}");
         }
     }
 }

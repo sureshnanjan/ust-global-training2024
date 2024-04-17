@@ -3,7 +3,7 @@
     /// <summary>
     /// Main class
     /// </summary>
-    internal class Kitchen
+    public class Kitchen
     {
 
         public event Action<object, EventArgs> FoodIsReady;
@@ -25,5 +25,6 @@
         {
             FoodIsReady += handler;
         }
+
     }
 }

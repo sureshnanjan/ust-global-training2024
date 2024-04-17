@@ -56,7 +56,7 @@ namespace TestHerokuApp
             IHomePage page = null;
             string pagetovisit = "A/B Testing";
             string expectedTitle = "A/B Test Variation 1";
-            (IABTestOpetration) page.goToExample(pagetovisit);
+            IHerokuAppOperations getpage = (IABTestOpetration) page.goToExample(pagetovisit);
             string actualTitle = page.getTitle();
             Assert.That(actualTitle, Is.EqualTo(expectedTitle));
         }
@@ -104,11 +104,12 @@ namespace TestHerokuApp
         }
 
     }
-
+    /*
     public class ChromeDriver : ChromiumDriver,
         IWebDriver, IDisposable, ISearchContext, IJavaScriptExecutor,
         IFindsElement, ITakesScreenshot, ISupportsPrint, IActionExecutor,
         IAllowsFileDetection, IHasCapabilities, IHasCommandExecutor, IHasSessionId,
         ICustomDriverCommandExecutor, IHasVirtualAuthenticator, ISupportsLogs, IDevTools
     { }
+    */
 }

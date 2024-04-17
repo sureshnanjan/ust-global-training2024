@@ -17,12 +17,12 @@ namespace TestHerokuApp
 
         }
         [Test]
-        public void EnterandVerifyvalue(int value)
+        public void EnterandVerifyvalue()
         {
         }
 
         [Test]
-        public void nonnumericvalue(string value)
+        public void nonnumericvalue()
         {
         }
 

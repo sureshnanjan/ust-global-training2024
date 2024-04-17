@@ -45,7 +45,7 @@ namespace HerokuWebdriverImplemention
             throw new NotImplementedException();
         }
 
-        public bool getStatus(string locator)
+        public string GetStatus(string locator)
         {
             // Take screen shopt as part of this operation
             //throw new NotImplementedException();

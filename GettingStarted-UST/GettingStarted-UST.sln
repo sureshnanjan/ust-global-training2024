@@ -17,7 +17,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test-HerokuApp", "Implement
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HerokuAppOperations", "HerokuAppOperations\HerokuAppOperations.csproj", "{612DC07B-273C-4D70-B344-4BDDC11294AB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HerokuAppWebdriverImplementation", "HerOkuAppImplementation\HerokuAppWebdriverImplementation.csproj", "{DE8AD103-C815-4178-81C2-6964FAE62C29}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HerokuAppWebdriverImplementation", "HerOkuAppImplementation\HerokuAppWebdriverImplementation.csproj", "{DE8AD103-C815-4178-81C2-6964FAE62C29}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

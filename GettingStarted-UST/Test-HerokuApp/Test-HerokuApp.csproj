@@ -23,6 +23,7 @@
   <ItemGroup>
     <ProjectReference Include="..\HerOkuAppImplementation\HerokuAppWebdriverImplementation.csproj" />
     <ProjectReference Include="..\HerokuAppOperations\HerokuAppOperations.csproj" />
+    <ProjectReference Include="..\HerokuAppWebDriverImplementation\HerokuAppWebdriverImplementation.csproj" />
   </ItemGroup>
 
 </Project>

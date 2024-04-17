@@ -9,11 +9,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyLIbrary", "MyLIbrary\MyLI
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test-GettingStarted", "Test-GettingStarted\Test-GettingStarted.csproj", "{50131221-1495-4CF8-B7A8-A6FFE46F8188}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebdriverDotnet", "WebdriverDotnet\WebdriverDotnet.csproj", "{7BA4B7AE-D9D4-4DFC-AD6B-15590A7D742A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebdriverDotnet", "WebdriverDotnet\WebdriverDotnet.csproj", "{7BA4B7AE-D9D4-4DFC-AD6B-15590A7D742A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HerokuAppOperations", "HerokuAppOperations\HerokuAppOperations.csproj", "{5D55DC41-B727-47AC-9DC2-553F0913D78A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HerokuAppOperations", "HerokuAppOperations\HerokuAppOperations.csproj", "{5D55DC41-B727-47AC-9DC2-553F0913D78A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestHerokuApp", "TestHerokuApp\TestHerokuApp.csproj", "{D9B346FC-18AA-478F-ABA7-CC56D8563560}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestHerokuApp", "TestHerokuApp\TestHerokuApp.csproj", "{D9B346FC-18AA-478F-ABA7-CC56D8563560}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HerokuWebdriverImplemention", "HerokuWebdriverImplemention\HerokuWebdriverImplemention.csproj", "{0A947F70-4D22-475C-87F0-324E70002589}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AcceptanceTests", "AcceptanceTests\AcceptanceTests.csproj", "{FD412EFA-4411-4DA3-A6BE-6C791CA21AFD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetStore", "PetStore\PetStore.csproj", "{098CBB3D-6ABA-48CF-8E61-8DA0E34B66AA}"
 EndProject
@@ -47,10 +51,14 @@ Global
 		{D9B346FC-18AA-478F-ABA7-CC56D8563560}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D9B346FC-18AA-478F-ABA7-CC56D8563560}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D9B346FC-18AA-478F-ABA7-CC56D8563560}.Release|Any CPU.Build.0 = Release|Any CPU
-		{098CBB3D-6ABA-48CF-8E61-8DA0E34B66AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{098CBB3D-6ABA-48CF-8E61-8DA0E34B66AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{098CBB3D-6ABA-48CF-8E61-8DA0E34B66AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{098CBB3D-6ABA-48CF-8E61-8DA0E34B66AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A947F70-4D22-475C-87F0-324E70002589}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A947F70-4D22-475C-87F0-324E70002589}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A947F70-4D22-475C-87F0-324E70002589}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A947F70-4D22-475C-87F0-324E70002589}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD412EFA-4411-4DA3-A6BE-6C791CA21AFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD412EFA-4411-4DA3-A6BE-6C791CA21AFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD412EFA-4411-4DA3-A6BE-6C791CA21AFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD412EFA-4411-4DA3-A6BE-6C791CA21AFD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

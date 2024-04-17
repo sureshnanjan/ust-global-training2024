@@ -6,10 +6,18 @@ using System.Threading.Tasks;
 
 namespace GettingStarted_UST
 {
+    /// <summary>
+    /// Index Overloading Class
+    /// </summary>
     public class IndexerOverloading
     {
         private string[] word = new string[2];
 
+        /// <summary>
+        /// this indexer gets executed when IndexOver[0] gets executed 
+        /// </summary>
+        /// <param name="flag"></param>
+        /// <returns></returns>
         public string this[int flag]
         {
 
@@ -27,6 +35,11 @@ namespace GettingStarted_UST
             }
         }
 
+        /// <summary>
+        ///  This is an Overloaded indexer which will execute when IndexOver[1.0f] gets executed 
+        /// </summary>
+        /// <param name="flag">Method parameter</param>
+        /// <returns></returns>
         public string this[float flag]
         {
 
@@ -43,10 +56,7 @@ namespace GettingStarted_UST
 
                 // it will set value of the private string assigned in main 
                 word[1] = value;
-
             }
         }
-
-
     }
 }

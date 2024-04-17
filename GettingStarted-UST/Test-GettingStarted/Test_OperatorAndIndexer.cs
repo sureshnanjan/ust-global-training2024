@@ -7,6 +7,9 @@ using GettingStarted_UST;
 
 namespace Test_GettingStarted
 {
+    /// <summary>
+    /// Test class to verify Operator & Indexer Overloading
+    /// </summary>
     [TestClass]
     public class Test_OperatorAndIndexer
     {
@@ -35,6 +38,18 @@ namespace Test_GettingStarted
             Equals(expected, actual);
         }
 
-
+        /// <summary>
+        /// To check Indexer Overloading
+        /// </summary>
+        [TestMethod]
+        public void ToCheckIndexOverloading()
+        {
+            IndexerOverloading OndexObj = new IndexerOverloading();
+            OndexObj[0] = "Hi";
+            OndexObj[1] = " Trainer";
+            string actual = OndexObj[0] + OndexObj[1];
+            string expected = "Hi Trainer";
+            Equals(expected, actual);
+        }
     }
 }

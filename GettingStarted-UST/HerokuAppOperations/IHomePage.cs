@@ -3,7 +3,7 @@
     /// <summary>
     ///  This provides access to all operations on heroku Home Page
     /// </summary>
-    public interface IHomePage
+    public interface IHomePage: IHerokuAppOperations
     {
         /// <summary>
         /// 
@@ -19,7 +19,7 @@
         /// 
         /// </summary>
         /// <param name="exampleName"></param>
-        void goToExample(string exampleName);
+        IHerokuAppOperations goToExample(string exampleName);
         /// <summary>
         /// 
         /// </summary>

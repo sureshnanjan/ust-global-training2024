@@ -40,7 +40,7 @@ namespace TestHerokuApp
         /// Verify Horizontal Slide Decrement
         /// </summary>
         [Test]
-        public void verifyHorizontalSliderPageDecrement() { }
+        public void verifyHorizontalSliderDecrement() { }
 
         /// <summary>
         /// Verify the Minimum Posiition 

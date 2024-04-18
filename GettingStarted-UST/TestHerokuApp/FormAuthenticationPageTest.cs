@@ -14,7 +14,9 @@ namespace TestHerokuApp
         ///  Verify the Login Page Title
         /// </summary>
         [Test]
-        public void verifyLoginPageTitle() { }
+        public void verifyLoginPageTitle() { 
+        
+        }
 
         /// <summary>
         /// Verify the Successful Login screen

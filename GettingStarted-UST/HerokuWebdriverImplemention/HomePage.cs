@@ -51,6 +51,7 @@ namespace HerokuWebdriverImplemention
             //throw new NotImplementedException();
             ITakesScreenshot mycamera = (ITakesScreenshot) this.browser;
             mycamera.GetScreenshot();
+            return true;
         }
 
         public string getSubTitle()
@@ -69,6 +70,7 @@ namespace HerokuWebdriverImplemention
             {
                 case "AddRemove":
                     return new AddRemovePage();
+                
                 default: throw new NotImplementedException();
 
             }

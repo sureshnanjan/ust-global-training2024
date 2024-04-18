@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Test_InitialProgram
 {
-    /// <summary>
+    /// <summary>>
     /// Assignment of Delegate and Lambda
-    /// </summary>
+    /// </summary>>
     /// 
     [TestClass]
     public class Test_Delegate
@@ -52,7 +52,7 @@ namespace Test_InitialProgram
         }
 
         /// <summary>
-        ///  Find values less than 10 with Func Delegate
+        ///  Find values less than 10 with Function Delegate
         /// </summary>
         [TestMethod]
         public void DelegateTestFunc_Lessthan10Values()

@@ -14,8 +14,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -24,7 +28,7 @@
               "RelativeDocumentMoniker": "Test-InitialProgram\\TestDelegate.cs",
               "ToolTip": "C:\\Users\\Administrator\\ust-global-training2024\\Basics\\InitialProgram\\Test-InitialProgram\\TestDelegate.cs",
               "RelativeToolTip": "Test-InitialProgram\\TestDelegate.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAABIAAAAUAAAA",
+              "ViewState": "AQIAADUAAAAAAAAAAAAkwD8AAAA9AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-13T03:43:40.131Z",
               "EditorCaption": ""

@@ -32,7 +32,10 @@ namespace HerokuAppWebdriverImplementation
             this.browser.Url = this.herokuUrl;
         }
 
-
+        public string getUrl()
+        {
+            return browser.Title;
+        }
 
         public string getTitle()
         {

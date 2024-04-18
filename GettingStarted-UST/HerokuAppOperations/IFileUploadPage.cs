@@ -12,7 +12,7 @@ namespace HerokuAppOperations
     public interface IFileUploadPage
     {
         /// <summary>
-        /// Test Method to get Title of the Page
+        /// Test Method to get Title
         /// </summary>
         /// <returns></returns>
         string getTitle();

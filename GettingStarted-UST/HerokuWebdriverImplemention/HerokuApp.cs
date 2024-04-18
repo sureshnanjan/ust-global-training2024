@@ -4,29 +4,43 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using OpenQA.Selenium;
+using OpenQA.Selenium.Chrome;
 
 namespace HerokuWebdriverImplemention
 {
     public class HerokuApp : IHerokuAppOperations
     {
+        private readonly IWebDriver driver;
+        private readonly By footerLocator;
+        private readonly By repoLocator;
+        private string appUrl;
+
+        public HerokuApp()
+        {
+            this.footerLocator = By.XPath("");
+            this.repoLocator = By.XPath("");
+            this.appUrl = "https://the-internet.herokuapp.com/";
+        }
         public void closeBrowser()
         {
-            throw new NotImplementedException();
+           this.driver.Quit();
         }
 
         public string getFooterDetails()
         {
-            throw new NotImplementedException();
+            return this.driver.FindElement(footerLocator).Text;
         }
 
         public string getRepoDetails()
         {
-            throw new NotImplementedException();
+            return this.driver.FindElement(repoLocator).Text;
         }
 
         public void goToHome()
         {
-            throw new NotImplementedException();
+            //this.driver.Url = this.appUrl;
+            this.driver.Navigate().GoToUrl(this.appUrl);
         }
     }
 }

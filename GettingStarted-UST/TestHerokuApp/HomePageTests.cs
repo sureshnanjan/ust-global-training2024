@@ -80,7 +80,17 @@ namespace TestHerokuApp
 
         }
 
+        [Test]
+        public void addRemoveElementPageObjectImplementationworks() {
+            IHomePage page = new HomePage();
+            page.goToHome();
+            IAddRemoveOperations addremPage = (IAddRemoveOperations)page.goToExample("AddRemove");
+            addremPage.goToHome();
+
+        }
+
     }
+
 
     public class ChromeDriver : ChromiumDriver,
         IWebDriver, IDisposable, ISearchContext, IJavaScriptExecutor,
@@ -92,4 +102,7 @@ namespace TestHerokuApp
         {
         }
     }
+
+    
+
 }

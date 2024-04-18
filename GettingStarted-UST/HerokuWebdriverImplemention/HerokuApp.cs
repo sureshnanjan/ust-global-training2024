@@ -6,11 +6,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using OpenQA.Selenium;
+using OpenQA.Selenium.Chrome;
 
 namespace HerokuWebdriverImplemention
 {
     public class HerokuApp : IHerokuAppOperations
     {
+
         private ITakesScreenshot browser;
 
         public void CloseBrowser()
@@ -18,9 +21,22 @@ namespace HerokuWebdriverImplemention
             throw new NotImplementedException();
         }
 
+
+        private readonly IWebDriver driver;
+        private readonly By footerLocator;
+        private readonly By repoLocator;
+        private string appUrl;
+
+        public HerokuApp()
+        {
+            this.footerLocator = By.XPath("");
+            this.repoLocator = By.XPath("");
+            this.appUrl = "https://the-internet.herokuapp.com/";
+        }
+
         public void closeBrowser()
         {
-            throw new NotImplementedException();
+           this.driver.Quit();
         }
 
         public string GetFooterDetails()
@@ -30,7 +46,7 @@ namespace HerokuWebdriverImplemention
 
         public string getFooterDetails()
         {
-            throw new NotImplementedException();
+            return this.driver.FindElement(footerLocator).Text;
         }
 
         public string GetRepoDetails()
@@ -40,7 +56,7 @@ namespace HerokuWebdriverImplemention
 
         public string getRepoDetails()
         {
-            throw new NotImplementedException();
+            return this.driver.FindElement(repoLocator).Text;
         }
 
         public bool GetStatus(string locator)
@@ -70,7 +86,8 @@ namespace HerokuWebdriverImplemention
 
         public void goToHome()
         {
-            throw new NotImplementedException();
+            //this.driver.Url = this.appUrl;
+            this.driver.Navigate().GoToUrl(this.appUrl);
         }
 
         string IHerokuAppOperations.GetStatus(string locator)

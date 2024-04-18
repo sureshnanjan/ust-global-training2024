@@ -9,7 +9,7 @@ namespace HerokuAppOperations
     public interface IDynamicControlPage
     {
         /// <summary>
-        /// Verify the title displayed
+        /// Verify the title is displayed
         /// </summary>
         /// <param name="name"></param>
         public void VerifyTitle(String name);

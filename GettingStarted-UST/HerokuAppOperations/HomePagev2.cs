@@ -15,14 +15,15 @@ namespace HerokuAppOperations
 
         public HomePage(ILogo lg, IShop shopcart, ISearch serch)
         {
-            
+
         }
 
         public void Search() {
             this.search.ToString();
         }
 
-        public void LogoOperation() { 
+        public void LogoOperation()
+        {
             this.logo.ToString();
         }
         public int add1020() {
@@ -66,15 +67,16 @@ namespace HerokuAppOperations
         void doLogoOps(ILogo instance);
     }
 
-    
+
 
     class Logov1 : ILogo { }
-   class LogoV2: ILogo { 
-    
-    
+    class LogoV2 : ILogo
+    {
+
+
     }
 
-    
+
 
 
 

@@ -35,7 +35,9 @@
         /// </paramref>
         /// </example>
         /// <returns></returns>
-        bool getStatus(string locator);
+        bool GetStatus(string locator);
 
+        //string GetStatus(string locator);
+        
     }
 }

@@ -74,7 +74,7 @@ namespace TestHerokuApp
             IHomePage page = null;
             string itemToTest = "ENABLED-Download-Pdf";
             bool expectedTitle = true;
-            bool actual = page.getStatus(itemToTest);
+            //bool actual = page.GetStatus(itemToTest);
             //Assert.That(actualTitle, Is.EqualTo(expectedTitle));
 
 
@@ -91,5 +91,18 @@ namespace TestHerokuApp
 
     }
 
+
+    public class ChromeDriver : ChromiumDriver,
+        IWebDriver, IDisposable, ISearchContext, IJavaScriptExecutor,
+        IFindsElement, ITakesScreenshot, ISupportsPrint, IActionExecutor,
+        IAllowsFileDetection, IHasCapabilities, IHasCommandExecutor, IHasSessionId,
+        ICustomDriverCommandExecutor, IHasVirtualAuthenticator, ISupportsLogs, IDevTools
+    {
+        protected ChromeDriver(ChromiumDriverService service, ChromiumOptions options, TimeSpan commandTimeout) : base(service, options, commandTimeout)
+        {
+        }
+    }
+
     
+
 }

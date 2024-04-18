@@ -5,34 +5,32 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GettingStarted_UST
+namespace Test_GettingStarted
 {
-    internal class Kitchen
+    public class Kitchen
     {
-        //int value;
-        public event Action<object,EventArgs> FoodISReady;
-        // Notify that the food is ready
-        // Publisher
-        private string[] ordersWaiting;
-      
-        public void ReceiveOrder(string name, string orderid) { }
+        public event Action<object, EventArgs> FoodISReady;
 
-        public void PrepareTheFood() {
-           Thread.Sleep(2000);
-            Console.WriteLine("Step1");
+        //Preparing the food and Invoking all the events as Publisher
+        public void PrepareTheFood()
+        {
+            Thread.Sleep(2000);
+            Console.WriteLine("All Waiters Arrived");
             Thread.Sleep(3000);
-            Console.WriteLine("Step2");
+            Console.WriteLine("Cooking Completed");
             Thread.Sleep(5000);
             Console.WriteLine("Plate the food");
             FoodISReady?.Invoke(this, EventArgs.Empty);
         }
 
-        public void PlaceOrder(Action<object,EventArgs> handler) {
 
-            FoodISReady += handler;         
+        //Adding the Event as arguments 
+        public void PlaceOrder(Action<object, EventArgs> handler)
+        {
+
+            FoodISReady += handler;
         }
 
-        
 
     }
 }

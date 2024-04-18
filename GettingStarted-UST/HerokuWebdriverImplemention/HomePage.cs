@@ -33,10 +33,14 @@ namespace HerokuWebdriverImplemention
             return new string[] { "" };
         }
 
-        public bool getStatus(string locator)
+        public bool GetStatus(string locator)
         {
+
+            throw new NotImplementedException();
+
             //throw new NotImplementedException();
             return true;
+
         }
 
         public string getSubTitle()

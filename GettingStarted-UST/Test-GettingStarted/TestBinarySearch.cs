@@ -32,6 +32,7 @@ namespace Test_GettingStarted
         /// Tests binary search for an existing value at the beginning of the input array.
         /// </summary>
         [TestMethod]
+
         public void Test_for_existing_values_inbeginning() {
             int[] myinputArray = { 1,2, 3 };
             int searchItem = 1;
@@ -43,6 +44,20 @@ namespace Test_GettingStarted
         /// <summary>
         /// Tests binary search for an existing value in the middle of the input array.
         /// </summary>
+
+        public void test_for_existing_values_inbeginning() {
+
+            int[] myinputArray = { 1, 2, 3 };
+            int searchTerm = 1;
+            int expected = 1;
+            BinarySearcher searcher = new BinarySearcher(myinputArray, searchTerm);
+            int actual = searcher.doSearch();
+
+            Assert.AreEqual(expected, actual);
+
+        }
+
+
         [TestMethod]
         public void Test_for_existing_values_inmiddle()
         {
@@ -107,19 +122,17 @@ namespace Test_GettingStarted
             BinarySearcher searcher = new BinarySearcher(input, searchTerm);
 
             Assert.ThrowsException<ArgumentNullException>(() => { searcher.doSearch(); });
-            
+
 
         }
 
-<<<<<<< HEAD
-=======
+
         public void someroutine() {
         // assert color
         // assert position
         // assert font
-        
+
         }
->>>>>>> suresh-trainer
     }
 }
 

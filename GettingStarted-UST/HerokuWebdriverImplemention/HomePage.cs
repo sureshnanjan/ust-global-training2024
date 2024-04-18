@@ -51,6 +51,7 @@ namespace HerokuWebdriverImplemention
             //throw new NotImplementedException();
             ITakesScreenshot mycamera = (ITakesScreenshot) this.browser;
             mycamera.GetScreenshot();
+            return true;
         }
 
         public string getSubTitle()

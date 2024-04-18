@@ -73,7 +73,7 @@ namespace TestHerokuApp
             Assert.That(actualTitle, Is.EqualTo(expectedTitle));
         }
 
-<<<<<<< HEAD
+
         /// <summary>
         /// Tests visiting an example page with specific page name and expected title.
         /// </summary>
@@ -120,7 +120,7 @@ namespace TestHerokuApp
             //Assert.That(actualTitle, Is.EqualTo(expectedTitle));
 
 
->>>>>>> suresh-trainer
+
         }
 
     }

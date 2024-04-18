@@ -9,33 +9,23 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyLIbrary", "MyLIbrary\MyLI
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test-GettingStarted", "Test-GettingStarted\Test-GettingStarted.csproj", "{50131221-1495-4CF8-B7A8-A6FFE46F8188}"
 EndProject
-<<<<<<< HEAD
-<<<<<<< HEAD
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetStore", "PetStore\PetStore.csproj", "{739D60CB-EC88-4476-956B-0B7AB97F1D3C}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "C#Assignments", "C#Assignments\C#Assignments.csproj", "{91BE8299-B730-4E6A-B3C2-E4DD57720669}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTestsAssignments", "UnitTestsAssignments\UnitTestsAssignments.csproj", "{75B807ED-E527-44CB-914C-FD8A76F08270}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetStoreImplementations", "PetStoreImplementations\PetStoreImplementations.csproj", "{BA982A8C-E1C3-4D6C-A516-2D1B6F89277C}"
-=======
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebdriverDotnet", "WebdriverDotnet\WebdriverDotnet.csproj", "{7BA4B7AE-D9D4-4DFC-AD6B-15590A7D742A}"
-=======
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetStoreImplementations", "PetStoreImplementations\PetStoreImplementations.csproj", "{BA982A8C-E1C3-4D6C-A516-2D1B6F89277C}"
+EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebdriverDotnet", "WebdriverDotnet\WebdriverDotnet.csproj", "{7BA4B7AE-D9D4-4DFC-AD6B-15590A7D742A}"
->>>>>>> suresh-trainer
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HerokuAppOperations", "HerokuAppOperations\HerokuAppOperations.csproj", "{5D55DC41-B727-47AC-9DC2-553F0913D78A}"
 EndProject
-<<<<<<< HEAD
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestHerokuApp", "TestHerokuApp\TestHerokuApp.csproj", "{D9B346FC-18AA-478F-ABA7-CC56D8563560}"
->>>>>>> suresh-trainer
-=======
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestHerokuApp", "TestHerokuApp\TestHerokuApp.csproj", "{D9B346FC-18AA-478F-ABA7-CC56D8563560}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HerokuWebdriverImplemention", "HerokuWebdriverImplemention\HerokuWebdriverImplemention.csproj", "{0A947F70-4D22-475C-87F0-324E70002589}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AcceptanceTests", "AcceptanceTests\AcceptanceTests.csproj", "{FD412EFA-4411-4DA3-A6BE-6C791CA21AFD}"
->>>>>>> suresh-trainer
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,7 +45,6 @@ Global
 		{50131221-1495-4CF8-B7A8-A6FFE46F8188}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{50131221-1495-4CF8-B7A8-A6FFE46F8188}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{50131221-1495-4CF8-B7A8-A6FFE46F8188}.Release|Any CPU.Build.0 = Release|Any CPU
-<<<<<<< HEAD
 		{739D60CB-EC88-4476-956B-0B7AB97F1D3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{739D60CB-EC88-4476-956B-0B7AB97F1D3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{739D60CB-EC88-4476-956B-0B7AB97F1D3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -72,7 +61,6 @@ Global
 		{BA982A8C-E1C3-4D6C-A516-2D1B6F89277C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BA982A8C-E1C3-4D6C-A516-2D1B6F89277C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BA982A8C-E1C3-4D6C-A516-2D1B6F89277C}.Release|Any CPU.Build.0 = Release|Any CPU
-=======
 		{7BA4B7AE-D9D4-4DFC-AD6B-15590A7D742A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7BA4B7AE-D9D4-4DFC-AD6B-15590A7D742A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7BA4B7AE-D9D4-4DFC-AD6B-15590A7D742A}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -85,9 +73,6 @@ Global
 		{D9B346FC-18AA-478F-ABA7-CC56D8563560}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D9B346FC-18AA-478F-ABA7-CC56D8563560}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D9B346FC-18AA-478F-ABA7-CC56D8563560}.Release|Any CPU.Build.0 = Release|Any CPU
-<<<<<<< HEAD
->>>>>>> suresh-trainer
-=======
 		{0A947F70-4D22-475C-87F0-324E70002589}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0A947F70-4D22-475C-87F0-324E70002589}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0A947F70-4D22-475C-87F0-324E70002589}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -96,7 +81,6 @@ Global
 		{FD412EFA-4411-4DA3-A6BE-6C791CA21AFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FD412EFA-4411-4DA3-A6BE-6C791CA21AFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FD412EFA-4411-4DA3-A6BE-6C791CA21AFD}.Release|Any CPU.Build.0 = Release|Any CPU
->>>>>>> suresh-trainer
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

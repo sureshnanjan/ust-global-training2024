@@ -6,7 +6,7 @@
     public interface IHomePage: IHerokuAppOperations
     {
         /// <summary>
-        /// 
+        /// Title 
         /// </summary>
         /// <returns></returns>
         string getTitle(); // zget Title // Print The document // saving title to some report

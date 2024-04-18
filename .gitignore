@@ -261,3 +261,5 @@ FakesAssemblies/
 
 # Visual Studio 6 workspace options file
 *.opt
+/GettingStarted-UST/GettingStarted-UST/obj/Debug/net6.0/GettingStarted-UST.AssemblyInfoInputs.cache
+/GettingStarted-UST/Test-GettingStarted/obj/Debug/net6.0/Test-GettingStarted.AssemblyInfoInputs.cache

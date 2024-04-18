@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MyLIbrary;
+using WebdriverDotnet;
 
 namespace GettingStarted_UST
 {
@@ -20,14 +21,37 @@ namespace GettingStarted_UST
         // Operators
         public static void Main(string[] args)
         {
+            //genericsDemo();
+
+            MyBrowser brower = new MyBrowser();
+            brower.OpenWebsite("https://petstore.octoperf.com/actions/Catalog.action");
+            Console.WriteLine(brower.GetTitle());
+        }
+        private static void genericsDemo()
+        {
             //OperatorIndexerAssignment();
 
-            GenericSimpleClass<int,string> genericSimpleClass = new GenericSimpleClass<int,string>();
-            genericSimpleClass.MyCounter = 0;
-            GenericSimpleClass<float,string> genericSimpleClass1 = new GenericSimpleClass<float,string>();
-            genericSimpleClass1.MyCounter = 1.2f;
-            Action<int, float, string> action1 = (a,b,c) => { };
+            //GenericsIntro();
 
+            Calculator calculator = new Calculator();
+            //var results = calculator.add(10.1, 20.0);
+
+            Func<int, bool> mytester = (str) => str > 10;
+            mytester(0);
+
+            int res = calculator.compare<int>(20, 20);
+            int res1 = calculator.compare<string>("", "");
+            int res2 = calculator.compare<SimpleClass>(new SimpleClass(0), new SimpleClass(10));
+        }
+
+        private static void GenericsIntro()
+        {
+            // Constructed Type
+            GenericSimpleClass<int, string> genericSimpleClass = new GenericSimpleClass<int, string>();
+            genericSimpleClass.MyCounter = 0;
+            GenericSimpleClass<float, string> genericSimpleClass1 = new GenericSimpleClass<float, string>();
+            genericSimpleClass1.MyCounter = 1.2f;
+            Action<int, float, string> action1 = (a, b, c) => { };
         }
 
         private static void OperatorIndexerAssignment()

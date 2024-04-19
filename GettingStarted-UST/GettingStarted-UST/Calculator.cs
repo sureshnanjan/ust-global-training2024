@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -22,15 +23,11 @@ namespace GettingStarted_UST
             return param1 + param2; 
         }
 
-        /// <summary>
-        /// Method to perform subtraction of integers
-        /// </summary>
-        /// <param name="param1">First Integer of subtraction</param>
-        /// <param name="param2">Second Integer of subtraction</param>
-        /// <returns></returns>
-        public int Subtract(int param1, int param2)
-        { 
-            return param1 - param2; 
-        } 
+        public int subtract(int param1, int param2) { return param1 - param2; }
+
+        public int compare<T1>(T1? param1, T1? param2) where T1 : IComparable<T1>
+        {
+            return param1.CompareTo(param2);
+        }
     }
 }

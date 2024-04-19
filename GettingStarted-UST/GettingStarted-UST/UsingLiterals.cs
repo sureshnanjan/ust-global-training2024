@@ -12,55 +12,65 @@ namespace GettingStarted_UST
     /// </summary>
     internal class UsingLiterals
     {
+        // Integer Literals
+        // Decimal literals (Base 10)
+        // Hexa-decimal literals (Base 16)
+        // Binary literals (Base 2)
+        // Floating-point Literals
+
+        // double
+        // float
+        // exponential
+
+            // double 123.45 
+            // float
+            // exponential
+
+        // Character Literals
+        // Single quote
+        // Unicode Representation
+        // Escape Sequence
+        // String Literals
+        // ""
+        // @""
+        // string interpolation "The value of varname is :{varname}"
+        // Null Literals
+        // Boolean Literals
         /// <summary>
-        /// Method to show the examples of literals
+        /// 
         /// </summary>
-        public void ShowUsage()
+        public void showUsage()
         {
 
-            // Integer Literals, TODO: value 89
-            int decINt = 89;
-            int hexInt = 0x59;
-            int binInt = 0b1011001;
+            //TODO: value 89
+            int decINt = 89; // 4 byte - max mim // 1010 - 4 bytes 
+            long mylong = 0; // 8 bytes // 1020 - 1029, 1021, 1022, 1024, --- 1028
+            int hexInt = 0x1F; // 15 X16 ^0 + 1 X 16 ^1
+            double mydbl = 123.45;
+            float nyflt = 123.45f;
+            //float @float 
+            //null != "null";
+            char newline = '\u0D19'; //1000  a 97 A 65 
+            string mynameinmalayalam = "\u0d19\u0d19";
 
-            // Floating-point Literals
-            float doublefloat = 123.456f;
-            float myFloat = 10.2f;
-            float expfloat = 3.14E-2f;
+            List<string> students = new List<string>();
 
-            // Character Literals
-            char myChar = 'M';
-            char myChar1 = '\u0061';
-            char myChar2 = '\n';
+            for (int studnum = 0; studnum < students.Count; studnum++)
+            {
+                Console.WriteLine(students[studnum]);
+            }
 
-            // String Literals
-            string myStr = "Hi Team!";
-            string myStr1 = @"Hello Team!";
+            foreach (var item in students)
+            {
+                
+            }
 
-            //Null literal
-            string? s;
 
-            // Boolean Literals
-            bool myBool = true;
-            bool myBool1 = false;
 
-            Console.WriteLine($" Integer value of Decimal 89 is {decINt}");
-            Console.WriteLine($" Integer value of Hexa-Decimal 59 is {hexInt}");
-            Console.WriteLine($" Integer value of Binary 1011001 is {binInt} \n");
 
-            Console.WriteLine($" Float value of double 123.456 is {doublefloat}");
-            Console.WriteLine($" Float value of float 10.2 is {myFloat}");
-            Console.WriteLine($" Float value of exponential 3.14E-2 is {expfloat} \n");
 
-            Console.WriteLine($" Character literal in single quote M is {myChar}");
-            Console.WriteLine($" Character literal in unicode 0061 is {myChar1}");
-            Console.WriteLine($" Character literal in Escape sequence new line is {myChar2} \n");
-
-            // String Interpolation
-            Console.WriteLine($" String literals in double quote is {myStr}");
-            Console.WriteLine($" String literals in double quote with prefix of @ is {myStr1} \n");
-            
-            Console.WriteLine($" Boolean literals are {myBool} & {myBool1} \n");
         }
+
+
     }
 }

@@ -1,4 +1,4 @@
-﻿Feature: HerokuApp
+﻿Feature: Feature1
 
 A short summary of the feature
 

@@ -7,32 +7,17 @@ using System.Threading.Tasks;
 namespace HerokuAppOperations
 {
     /// <summary>
-    /// Interface with operations that can be done on Heroku homepage
+    ///  This provides access to all operations on heroku Home Page
     /// </summary>
-    public interface IHomePage
     {
         /// <summary>
-        /// Fetches Title of HomePage
         /// </summary>
-        /// <returns>Title in string format</returns>
-        string GetTitle();
+        /// <summary>
+        /// </summary>
+        /// <summary>
+        /// </summary>
 
         /// <summary>
-        /// Fetches Sub Title of HomePage
         /// </summary>
-        /// <returns>Sub Title in string format</returns>
-        string GetSubTitle();
-
-        /// <summary>
-        /// Redirects to other pages
-        /// </summary>
-        /// <param name="exampleName">Name of link available in HomePage</param>
-        void GoToExample(string exampleName);
-
-        /// <summary>
-        /// Fetches all the available links in HomePage
-        /// </summary>
-        /// <returns>List of Links</returns>
-        string[] GetAvailableExamples();
     }
 }

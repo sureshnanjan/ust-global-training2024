@@ -10,7 +10,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\MyLIbrary\MyLIbrary.csproj" />
-    <ProjectReference Include="..\PetStoreImplementation\PetStoreImplementation.csproj" />
+    <ProjectReference Include="..\WebdriverDotnet\WebdriverDotnet.csproj" />
+    <ProjectReference Include="..\PetStoreAutomation\PetStoreAutomation.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,30 +1,20 @@
-﻿namespace GettingStarted_UST
-{
+﻿{
     /// <summary>
     /// Main class
     /// </summary>
     public class Kitchen
     {
+        public event Action<object, EventArgs> FoodISReady;
 
-        public event Action<object, EventArgs> FoodIsReady;
-
-        /// <summary>
-        /// Method to invoke Event
-        /// </summary>
-        public void CollectOrder()
+        //Preparing the food and Invoking all the events as Publisher
+        public void PrepareTheFood()
         {
-            
-            FoodIsReady?.Invoke(this, EventArgs.Empty);        
         }
 
-        /// <summary>
-        /// Method to handle event
-        /// </summary>
-        /// <param name="handler"> Object of EventArgs</param>
         public void PlaceOrder(Action<object, EventArgs> handler)
         {
-            FoodIsReady += handler;
         }
+
 
     }
 }

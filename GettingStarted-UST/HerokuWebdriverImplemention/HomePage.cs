@@ -1,18 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using HerokuAppOperations;
+﻿using HerokuAppOperations;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Firefox;
+using OpenQA.Selenium.Safari;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Runtime.CompilerServices;
+using System.Text;
+using System.Threading.Tasks;
+using static OpenQA.Selenium.PrintOptions;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace HerokuWebdriverImplemention
 {
-    /// <summary>
-    /// Implementation of Home page Interface
-    /// </summary>
-    public class HomePage : IHomePage
     {
 
         private string herokuUrl;
@@ -20,9 +21,7 @@ namespace HerokuWebdriverImplemention
         private By headingLocator;
         private By subHeadingLocator;
         private By exapleLocator;
-        private By repositoryLocator;
-        private By footerLocator;
-
+            
         /// <summary>
         /// Constructor to take elements to variables
         /// </summary>
@@ -35,45 +34,29 @@ namespace HerokuWebdriverImplemention
             this.exapleLocator = By.XPath("//*[@id=\"content\"]/ul/li[2]/a");
             this.browser.Url = this.herokuUrl;
         }
-
-        /// <summary>
-        /// Fetches all the available links in HomePage
-        /// </summary>
-        /// <returns>List of available examples</returns>
-        /// <exception cref="NotImplementedException"></exception>
-        public string[] GetAvailableExamples()
+        public string[] getAvailableExamples()
         {
-            throw new NotImplementedException();
+            // TO DO: Extract the Links Text and send the result
+            this.browser.FindElements(exapleLocator);
+            return new string[] { "" };
         }
 
-        /// <summary>
-        /// Fetches Sub Title of HomePage
-        /// </summary>
-        /// <returns>Sub Title in string format</returns>
-        /// <exception cref="NotImplementedException"></exception>
-        public string GetSubTitle()
         {
+
             throw new NotImplementedException();
+
+            //throw new NotImplementedException();
+            return true;
+
         }
 
-        /// <summary>
-        /// Fetches Title of HomePage
-        /// </summary>
-        /// <returns>Title of page</returns>
-        /// <exception cref="NotImplementedException"></exception>
-        public string GetTitle()
         {
-            throw new NotImplementedException();
         }
 
-        /// <summary>
-        /// Redirects to other pages
-        /// </summary>
-        /// <param name="exampleName">Link to which it needs to be redirected</param>
-        /// <exception cref="NotImplementedException"></exception>
-        public void GoToExample(string exampleName)
         {
-            throw new NotImplementedException();
+        }
+
+            {
         }
     }
 }

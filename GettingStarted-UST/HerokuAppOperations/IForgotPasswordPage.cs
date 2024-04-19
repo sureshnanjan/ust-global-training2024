@@ -9,7 +9,7 @@ namespace HerokuAppOperations
     /// <summary>
     /// Represents the interface for a forgot password page.
     /// </summary>
-    internal interface IForgotPasswordPage
+    public interface IForgotPasswordPage
     {
         /// <summary>
         /// Gets the title of the forgot password page.

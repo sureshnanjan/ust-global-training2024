@@ -6,44 +6,55 @@ using System.Threading.Tasks;
 
 namespace HerokuAppOperations
 {
-    internal interface IDynamicLoadingPage
+    public interface IDynamicLoadingPage
     {
         ///<summary>
-        ///Get the Title
+        ///Get the Title of the Page 
         ////<summary>
-        public void GetTitle();
+        /// /// <returns>Title</returns>
+        string getTitle();
 
         /// <summary>
-        /// Get the Description
+        /// Get the content of DynamicLoading Page
         /// </summary>
-        public void GetDescription();
+        ///  /// <returns>Content</returns>
+        string getDescription();
+
+        /// <summary>
+        /// Get the count of Example Links on DynamicLoading Page
+        /// </summary>
+        /// <returns>Count</returns>
+        string[] getExamplesCount();
+
+
+        /// <summary>
+        /// Visit the Example Links on DynamicLoading Page
+        /// </summary>
+        void goToExampleLinks(string exampleName);
 
         /// <summary>
         /// get the subtitle -Example 1 Element on the page that is hidden
         /// </summary>
-        public void SubTitleExample1();
+        /// <returns>SubTitle of Example1 Page</returns>
+        string getSubTitleExample1();
 
         /// <summary>
-        /// get the subtitle - Element rendered after the fact
+        /// get the subtitle - Example 2 Element rendered after the fact
         /// </summary>
-        public void subTitleExample2();
-
+        /// <returns>SubTitle of Example2 Page</returns>
+        string getSubTitleExample2();
 
         /// <summary>
-        /// clicking on Example1
+        /// This method is used to Enable Start
         /// </summary>
-        public void clickOneExample1();
+        /// <returns></returns> 
+        public void enableStart();
 
         /// <summary>
-        /// clicking on Example2
+        /// This method validates the start message
         /// </summary>
-        public void clickOneExample2();
-
-        /// <summary>
-        /// click on the Button - Start
-        /// </summary>
-
-        public void ButtonStart();
+        /// <returns>Hello World!</returns> 
+        public string getStartMessage();
 
 
     }

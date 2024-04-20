@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using HerokuAppOperations;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using NUnit.Framework.Internal;
+using Xunit.Sdk;
 
 namespace TestHerokuApp
 {

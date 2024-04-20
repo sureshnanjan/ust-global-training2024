@@ -9,16 +9,16 @@ namespace HerokuAppOperations
     public interface IDynamicControlPage
     {
         /// <summary>
-        /// Verify the title is displayed
+        /// Get the title displayed in the page
         /// </summary>
-        /// <param name="name"></param>
-        public void VerifyTitle(String name);
+        /// <returns>String value with Title</returns>
+        public string getTitle();
 
         /// <summary>
         /// Add the button by passing the argument
         /// </summary>
-        /// <action> </action>
-        public void PerformAddOpertion();
+        /// <action> returns if the button is present or not</action>
+        public bool PerformAddOpertion();
 
         /// <summary>
         /// Click on the checkbox option

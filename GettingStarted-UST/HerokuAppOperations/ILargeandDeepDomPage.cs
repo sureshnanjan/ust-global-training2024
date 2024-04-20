@@ -14,9 +14,9 @@ namespace HerokuAppOperations
     {
 
         /// <summary>
-        /// Verify the title displayed
+        /// Get the title displayed in the page
         /// </summary>
-        public void verifypagetitle();
+        public string Getpagetitle();
         /// <summary>
         /// Get list of elements in nth nest  - Deep -Document Object Model
         /// </summary>

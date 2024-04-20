@@ -8,12 +8,13 @@ using NUnit.Framework;
 
 namespace TestHerokuApp
 {
+    
     public class ChallengingDomTests
     {
         /// <summary>
         /// Verify whether the page title is correct or not
         /// </summary>
-        /// [Test]
+         [Test]
         public void PageTitleverification()
         {
             //Arrange

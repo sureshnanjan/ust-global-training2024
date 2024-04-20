@@ -1,0 +1,112 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20240326105253
+Username: EE978B5F153D56B\Administrator
+RunAs User: EE978B5F153D56B\Administrator
+Configuration Name: 
+Machine: EE978B5F153D56B (Microsoft Windows NT 10.0.19045.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 2752
+PSVersion: 5.1.19041.4046
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.4046
+BuildVersion: 10.0.19041.4046
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is Lekshmi.log
+PS C:\Users\Administrator> New-Item -Path "C:\Users\Administrator\Desktop\QAAutomation" -Name ‘QA-Training’ -ItemType Directory
+New-Item : An item with the specified name C:\Users\Administrator\Desktop\QAAutomation\QA-Training already exists.
+At line:1 char:1
++ New-Item -Path "C:\Users\Administrator\Desktop\QAAutomation" -Name ‘Q ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ResourceExists: (C:\Users\Admini...ion\QA-Training:String) [New-Item], IOException
+    + FullyQualifiedErrorId : DirectoryExist,Microsoft.PowerShell.Commands.NewItemCommand
+New-Item : An item with the specified name C:\Users\Administrator\Desktop\QAAutomation\QA-Training already exists.
+At line:1 char:1
++ New-Item -Path "C:\Users\Administrator\Desktop\QAAutomation" -Name ‘Q ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ResourceExists: (C:\Users\Admini...ion\QA-Training:String) [New-Item], IOException
+    + FullyQualifiedErrorId : DirectoryExist,Microsoft.PowerShell.Commands.NewItemCommand
+
+PS C:\Users\Administrator> Invoke-WebRequest -Uri https://github.com/git-for-windows/git/releases/download/v2.44.0.windows.1/Git-2.44.0-64-bit.exe -OutFile git-installer.exe
+PS C:\Users\Administrator> .\git-installer.exe /VERYSILENT /NORESTART
+PS C:\Users\Administrator> git --Version
+unknown option: --Version
+usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--config-env=<name>=<envvar>] <command> [<args>]
+PS C:\Users\Administrator> git clone https://github.com/sureshnanjan/ust-global-training2024.git
+Cloning into 'ust-global-training2024'...
+remote: Enumerating objects: 72, done.
+remote: Counting objects: 100% (72/72), done.
+remote: Compressing objects: 100% (66/66), done.
+remote: Total 72 (delta 25), reused 48 (delta 4), pack-reused 0
+Receiving objects: 100% (72/72), 16.90 KiB | 540.00 KiB/s, done.
+Resolving deltas: 100% (25/25), done.
+PS C:\Users\Administrator> git status
+fatal: not a git repository (or any of the parent directories): .git
+PS C:\Users\Administrator> 1. git checkout -b Lekshmi-branch
+At line:1 char:4
++ 1. git checkout -b Lekshmi-branch
++    ~~~
+Unexpected token 'git' in expression or statement.
+At line:1 char:4
++ 1. git checkout -b Lekshmi-branch
++    ~~~
+Unexpected token 'git' in expression or statement.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : UnexpectedToken
+
+PS C:\Users\Administrator> 1. git checkout -b Lekshmi.log -branch
+At line:1 char:4
++ 1. git checkout -b Lekshmi.log -branch
++    ~~~
+Unexpected token 'git' in expression or statement.
+At line:1 char:4
++ 1. git checkout -b Lekshmi.log -branch
++    ~~~
+Unexpected token 'git' in expression or statement.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : UnexpectedToken
+
+PS C:\Users\Administrator> 1. git checkout -b Lekshmi -branch
+At line:1 char:4
++ 1. git checkout -b Lekshmi -branch
++    ~~~
+Unexpected token 'git' in expression or statement.
+At line:1 char:4
++ 1. git checkout -b Lekshmi -branch
++    ~~~
+Unexpected token 'git' in expression or statement.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : UnexpectedToken
+
+PS C:\Users\Administrator> git checkout -b Lekshmi-branch
+fatal: not a git repository (or any of the parent directories): .git
+PS C:\Users\Administrator> git status
+fatal: not a git repository (or any of the parent directories): .git
+PS C:\Users\Administrator> git checkout -b Lekshmi1202-branch
+fatal: not a git repository (or any of the parent directories): .git
+PS C:\Users\Administrator> git clone https://github.com/sureshnanjan/ust-global-training2024.git
+fatal: destination path 'ust-global-training2024' already exists and is not an empty directory.
+PS C:\Users\Administrator> Set-Location ust-global-training2024
+PS C:\Users\Administrator\ust-global-training2024> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+PS C:\Users\Administrator\ust-global-training2024> git checkout -b Lekshmi-branch
+Switched to a new branch 'Lekshmi-branch'
+PS C:\Users\Administrator\ust-global-training2024> git status
+On branch Lekshmi-branch
+nothing to commit, working tree clean
+PS C:\Users\Administrator\ust-global-training2024> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20240326111528
+**********************

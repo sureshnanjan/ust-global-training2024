@@ -10,6 +10,9 @@ namespace Test_GettingStarted
     [TestClass]
     public class TestSorting
     {
+        /// <summary>
+        /// Default sort of array
+        /// </summary>
         [TestMethod]
         public void default_sort_works() {
             // AAA
@@ -24,6 +27,9 @@ namespace Test_GettingStarted
             Array.Sort(mycoll);
             // assert that the result is as per expectation
         }
+        /// <summary>
+        /// Sort the array with name
+        /// </summary>
         [TestMethod]
         public void sort_works_with_name() {
             // AAA

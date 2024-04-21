@@ -86,4 +86,8 @@ GET	/session/{session id}/ element /{ element id}/ screenshot   Take Element Scr
 POST	/session/{session id}/ print Print Page
         */
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> c563b00e8aee5048f982a3c8d276ae70eefdcaa9

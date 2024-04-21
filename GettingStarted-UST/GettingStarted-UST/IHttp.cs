@@ -11,4 +11,8 @@ namespace GettingStarted_UST
         void send(string data);
         string receive();
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> c563b00e8aee5048f982a3c8d276ae70eefdcaa9

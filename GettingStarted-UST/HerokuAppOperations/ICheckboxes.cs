@@ -9,7 +9,7 @@ namespace HerokuAppOperations
         /// This provides details on functionality of checkbox in HerokuApp
         /// </summary>
         /// <returns></returns>
-    internal interface ICheckboxes
+    public interface ICheckboxes
     {
         /// <summary>
         /// Method to read title of the page

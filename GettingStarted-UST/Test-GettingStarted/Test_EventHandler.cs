@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using GettingStarted_UST;
-
-namespace Test_GettingStarted
+﻿namespace Test_GettingStarted
 {
     [TestClass]
     public class Test_EventHandler

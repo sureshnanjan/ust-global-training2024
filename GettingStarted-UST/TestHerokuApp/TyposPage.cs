@@ -1,39 +1,36 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using HerokuAppOperations;
+﻿using HerokuAppOperations;
 using NUnit.Framework;
 
 namespace TestHerokuApp
 {
-    [TestClass]
+    [TestFixture]
+
+    
     public class TyposPageTest
     {
         ITypos typo = null;
         /// <summary>
         /// this method is used to get the title of the page and validate it it matches the expected title
         /// </summary>         
-        [TestMethod]
+        [Test]
         public void validatePageTitle()
         {
-            String expectedTitle = "Test";
+            String expectedTitle = "Typos";
             String actualTitle;
             actualTitle = typo.getTitle();
-            Assert.AreEqual(expectedTitle, actualTitle);
+            Assert.Equals(expectedTitle, actualTitle);
         }
 
         /// <summary>
         /// this method is used to get the message displayed on the page and validate it it matches the expected message
         /// </summary>         
-        [TestMethod]
+        [Test]
         public void validatePageContent()
         {
-            String expectedContent = "Test";
+            String expectedContent = "This example demonstrates a typo being introduced. It does it randomly on each page load.\r\n\r\nSometimes you'll see a typo, other times you won,t.";
             String actualContent;
             actualContent = typo.pageContent();
-            Assert.AreEqual(expectedContent, actualContent);
+            Assert.Equals(expectedContent, actualContent);
         }
     }
 }

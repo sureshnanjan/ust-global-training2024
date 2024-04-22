@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-//Delegate initialization
+﻿//Delegate initialization
 public delegate int Number(int n);
 namespace Test_GettingStarted
 {

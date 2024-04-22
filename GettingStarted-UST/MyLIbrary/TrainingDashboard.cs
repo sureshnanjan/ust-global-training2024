@@ -1,7 +1,4 @@
-﻿using System.Reflection.Metadata;
-using System.Runtime.InteropServices;
-
-namespace MyLIbrary
+﻿namespace MyLIbrary
 {
     /// <summary>
     /// This class perform all Training Dashboard

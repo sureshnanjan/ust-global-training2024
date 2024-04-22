@@ -1,19 +1,4 @@
-﻿using GettingStarted_UST;
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Net;
-using System.Reflection.Metadata;
-using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
-using static System.Collections.Specialized.BitVector32;
-using static System.Net.Mime.MediaTypeNames;
-using System.Xml.Linq;
-
-namespace GettingStarted_UST
+﻿namespace GettingStarted_UST
 {
     internal interface IWebDriverSpec
     {

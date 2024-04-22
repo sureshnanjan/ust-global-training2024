@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-/// <summary>
+﻿/// <summary>
 /// delegate declaration
 /// </summary>
 public delegate int Number(int n);
-namespace GettingStarted_UST{
+namespace GettingStarted_UST
+{
     public class DelegateAssignment
     {
         static int Num = 10;

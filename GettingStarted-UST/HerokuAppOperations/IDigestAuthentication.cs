@@ -19,7 +19,7 @@ namespace HerokuAppOperations
         string GetSignInStatus();
 
         /// <summary>
-        /// Action to be performed on clicking signin button using the username & Password provided in the textboxes
+        /// Action to be performed on clicking signin button using the username and Password provided in the textboxes
         /// </summary>
         /// <param name="userName">Username of User in Digest Authentication Web Page</param>
         /// <param name="password">Password of User in Digest Authentication Web Page</param>

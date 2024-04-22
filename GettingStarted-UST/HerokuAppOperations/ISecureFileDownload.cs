@@ -20,7 +20,7 @@ namespace HerokuAppOperations
         string SignInStatus();
 
         /// <summary>
-        /// Action to be performed on clicking signin button using the username & Password provided in the textboxes of Secure File download page
+        /// Action to be performed on clicking signin button using the username and Password provided in the textboxes of Secure File download page
         /// </summary>
         /// <param name="userName">Username of User in Secure File download page</param>
         /// <param name="password">Password of User in Secure File download page</param>

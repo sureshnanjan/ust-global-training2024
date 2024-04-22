@@ -24,6 +24,7 @@ namespace TestHerokuApp
             IFileDownload fileDownload = null;
             string expectedUrl = "https://the-internet.herokuapp.com/download";
             string actualUrl = fileDownload.getURL();
+            Assert.That(actualUrl, Is.EqualTo(expectedUrl));
         }
 
         /// <summary>
@@ -61,22 +62,45 @@ namespace TestHerokuApp
             List<string> actual = new List<string>();
             foreach (var item in actual)
             {
-                Assert.That(actual, Is.EqualTo(expected));
+                actual.Add(item);
             }
+            Assert.That(actual, Is.EqualTo(expected));
         }
 
         /// <summary>
-        /// To verify whether file download is successful by clicking on name
+        /// To verify whether file download is successful by clicking on name of file
         /// </summary>
         [Test]
         public void DownloadByNameIsSuccess()
         {
             IFileDownload fileDownload = null;
             string expectedMsg = "Success";
-            string fileStatus = fileDownload.downloadFile("");
-            string actualMsg = fileDownload.getDownloadstatus(fileStatus);
+            string actualMsg = fileDownload.downloadFile("First File");
             Assert.That(actualMsg, Is.EqualTo(expectedMsg));
+        }
 
+        /// <summary>
+        /// To verify whether file download is successful by clicking based on the position of file
+        /// </summary>
+        [Test]
+        public void DownloadByPosistionIsSuccess()
+        {
+            IFileDownload fileDownload = null;
+            string expectedMsg = "Success";
+            string actualMsg = fileDownload.downloadFilebyPosition(3);
+            Assert.That(actualMsg, Is.EqualTo(expectedMsg));
+        }
+
+        /// <summary>
+        /// To verify the downlod status of files by their names
+        /// </summary>
+        [Test]
+        public void DownloadByPositionIsSuccess()
+        {
+            IFileDownload fileDownload = null;
+            string expectedMsg = "Success";
+            string actualMsg = fileDownload.getDownloadstatus("File name");
+            Assert.That(actualMsg, Is.EqualTo(expectedMsg));
         }
     }
 }

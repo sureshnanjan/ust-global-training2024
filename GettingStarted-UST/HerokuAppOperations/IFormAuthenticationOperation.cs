@@ -33,7 +33,7 @@ namespace HerokuAppOperations
         /// this method validates the login scussess message
         /// </summary>
         /// <returns></returns> 
-        public void getSuccessMessage();
+        public string getSuccessMessage();
 
         /// <summary>
         /// this method validates the login failed message

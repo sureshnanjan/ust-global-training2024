@@ -14,24 +14,27 @@ namespace HerokuAppOperations
 
         /// <summary>
         /// this returns the title of the page
-        /// <returns></returns> 
+        /// </summary>
+        /// <returns>Title</returns> 
         public string getTitle();
 
         /// <summary>
         /// this method will retrieve the current position of the slidebar and returns current position as float
-        /// <returns>float</returns> 
-        public float getSlidePosition();
+        /// </summary>
+        /// <returns>Position</returns> 
+        public string getSlidePosition();
 
 
         /// <summary>
         /// this method performs forward and backward sliding on the bar
-        /// <returns></returns> 
+        /// </summary>
         public void SlidetheBar(int n);
-
+        
 
         /// <summary>
-        /// this method validates the text present on the screen
-        /// <returns></returns> 
-        public Boolean validateScreenText(string text);
+        /// this method returns the text present on the screen
+        /// </summary>
+        /// <returns>Content</returns> 
+        public string getScreenContent();
     }
 }

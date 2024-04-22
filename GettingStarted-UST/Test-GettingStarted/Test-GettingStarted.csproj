@@ -20,8 +20,4 @@
     </PackageReference>
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\GettingStarted-UST\GettingStarted-UST.csproj" />
-  </ItemGroup>
-
 </Project>

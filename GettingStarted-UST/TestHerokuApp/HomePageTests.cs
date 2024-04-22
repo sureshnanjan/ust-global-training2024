@@ -5,7 +5,14 @@ using System.Text;
 using System.Threading.Tasks;
 using HerokuAppOperations;
 using HerokuWebdriverImplemention;
-
+using NUnit.Framework;
+using NUnit.Framework.Constraints;
+using OpenQA.Selenium.Chromium;
+using OpenQA.Selenium.DevTools;
+using OpenQA.Selenium.Internal;
+using OpenQA.Selenium.VirtualAuth;
+using OpenQA.Selenium;
+using System.Security.Cryptography;
 namespace TestHerokuApp
 {
     /// <summary>
@@ -15,65 +22,103 @@ namespace TestHerokuApp
     public class HomePageTests
     {
         /// <summary>
-        /// Verify Title of Homepage
+        /// 
         /// </summary>
         [Test]
-        public void HomePageTitleisCorrect()
-        {
+        public void homePageTitleisCorrect() {
             // Arrange
             IHomePage page = new HomePage();
+            // page.goToExample*().AddElement().CheckIfDisplayed()
             string expectedTitle = "Welcome to the-internet";
             // A
-            string actualTitle = page.GetTitle();
+            string actualTitle = page.getTitle();
             // A
-            Assert.That(actualTitle, Is.EqualTo(expectedTitle));
-
+            Assert.That(actualTitle, Is.EqualTo(expectedTitle)); // NUNIT
+                
         }
 
         /// <summary>
         /// Verify Subtitle of HomePage
         /// </summary>
         [Test]
-        public void HomePageSubTitleisCorrect()
-        {
-            IHomePage page = new HomePage();
+        public void homePageSubTitleisCorrect() {
+            IHomePage page = null;
             string expectedSubTitle = "Available Examples";
             // A
-            string actualTitle = page.GetSubTitle();
+            string actualTitle = page.getSubTitle();
             // A
-            Assert.That(actualTitle, Is.EqualTo(expectedSubTitle));
+            Assert.That(actualTitle, Is.EqualTo(expectedSubTitle)); // NUNIT
         }
 
         /// <summary>
         /// Verify HomePage has 44 links available
         /// </summary>
         [Test]
-        public void HomePageHas44Links()
-        {
+        public void homePageHas44Links() {
             IHomePage page = new HomePage();
             int expectedCount = 44;
-            int actual = page.GetAvailableExamples().Length;
+            int actual = page.getAvailableExamples().Length;
             Assert.That(actual, Is.EqualTo(expectedCount));
         }
 
-        /// <summary>
-        /// Verify each link in HomePage redirects to correct link
-        /// </summary>
-        [TestCaseSource(nameof(exampleUtility))]
-        public void VisintingAExamplePageWorks(string actual, string expected)
-        {
-            IHomePage page = new HomePage();
-            page.GoToExample(actual);
-            string actualTitle = page.GetTitle();
-            Assert.That(actualTitle, Is.EqualTo(expected));
-            Assert.AreEqual(expected, actual);
+        [Test]
+        public void visintingAExamplePageWorks() {
+            IHomePage page = null;
+            string pagetovisit = "A/B Testing";
+            string expectedTitle = "A/B Test Variation 1";
+            //(IABTestOpetration) page.goToExample(pagetovisit);
+            string actualTitle = page.getTitle();
+            Assert.That(actualTitle, Is.EqualTo(expectedTitle));
         }
 
-        public static object[] exampleUtility =
-        {
-            new object[] { "A/B Testing", "" },
+        [Test]
+        public void testingIfFirstItemisDisabled() {
+            IHomePage page = null;
+            //bool itemToTest = "Disabled";
+            bool expectedTitle = false;
+            //string actualTitle = page.getStatus(itemToTest);
+            //Assert.That(actualTitle, Is.EqualTo(expectedTitle));
 
-        };
+
+        }
+
+        [Test]
+        public void testingIfPDFItemIsEnabled()
+        {
+            IHomePage page = null;
+            string itemToTest = "ENABLED-Download-Pdf";
+            bool expectedTitle = true;
+            //bool actual = page.GetStatus(itemToTest);
+            //Assert.That(actualTitle, Is.EqualTo(expectedTitle));
+
+
+        }
+
+        [Test]
+        public void addRemoveElementPageObjectImplementationworks() {
+            IHomePage page = new HomePage();
+            page.goToHome();
+            IAddRemoveOperations addremPage = (IAddRemoveOperations)page.goToExample("AddRemove");
+            addremPage.goToHome();
+
+        }
 
     }
+
+
+    public class ChromeDriver : ChromiumDriver,
+        IWebDriver, IDisposable, ISearchContext, IJavaScriptExecutor,
+        IFindsElement, ITakesScreenshot, ISupportsPrint, IActionExecutor,
+        IAllowsFileDetection, IHasCapabilities, IHasCommandExecutor, IHasSessionId,
+        ICustomDriverCommandExecutor, IHasVirtualAuthenticator, ISupportsLogs, IDevTools
+    {
+        protected ChromeDriver(ChromiumDriverService service, ChromiumOptions options, TimeSpan commandTimeout) : base(service, options, commandTimeout)
+        {
+        }
+    }
+
+    
+        };
+
+}
 }

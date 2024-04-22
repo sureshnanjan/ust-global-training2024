@@ -7,36 +7,38 @@ using System.Threading.Tasks;
 namespace HerokuAppOperations
 {
     /// <summary>
-    /// Interface with operations that can be done on ChallengingDom homepage
+    /// 
     /// </summary>
-    public interface IChallengingDomOperations
+    public interface IChallengingDomOperations: IHerokuAppOperations
     {
-        string GetURL();
+        /// <summary>
+        /// This method fetched the current Url opened in the browser.
+        /// </summary>
+        /// <returns></returns>
+        string getURL();
+        string getTitle();
 
-        string GetTitle();
+        string getMainContent();
 
-        string GetMainContent();
+        void doOperation1();
 
-        string GetOperation1Label();
+        string getOperation1Label();
 
-        void DoOperation1();
+        void doOperation2();
 
-        string GetOperation2Label();
+        string getOperation2Label();
+        void doOperation3();
 
-        void DoOperation2();
+        string getOperation3Label();
 
-        string GetOperation3Label();
+        string getResult();
 
-        void DoOperation3();
+        string[] getTableHeadings();
 
-        string GetResult();
+        void editRow(int rownum);
 
-        string[] GetTableHeadings();
+        void deleteRow(int rownum);
 
-        void EditRow(int rownum);
-
-        void DeleteRow(int rownum);
-
-        string[] GetRowData(int rownum);
+        string[] getRowData(int rownum);
     }
 }

@@ -4,32 +4,31 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GettingStarted_UST
+namespace Test_GettingStarted
 {
     /// <summary>
-    /// Class for Cashier
+    /// Capture cashier details and Billing status
     /// </summary>
     public class Cashier
     {
-        private string cashierId;
+        //Capture Cashier details
+        string name;
+        string orderId;
+        int id;
+        public string notification;
 
-        /// <summary>
-        /// Constructor of Cashier
-        /// </summary>
-        /// <param name="cashierId"> Id of cashier</param>
-        public Cashier(string cashierId)
+        //COnstructor for Id fetch
+        public Cashier(int id)
         {
-            this.cashierId = cashierId;
+            this.id = id;
         }
 
-        /// <summary>
-        /// Method for collecting money
-        /// </summary>
-        /// <param name="sender">First Parameter of the object Sender</param>
-        /// <param name="args">Object of Events</param>
+        //Shows status of collected monet details
         public void CollectMoney(object sender, EventArgs? args)
         {
-            Console.WriteLine($"Cashier {this.cashierId} is collecting money");
+            notification = $"Cashier {this.id} is collecting the Money";
+            Console.WriteLine($"Cashier {this.id} is collecting the Money");
+            //Console.WriteLine($"{this.id} is Cleaning the Table");
         }
     }
 }

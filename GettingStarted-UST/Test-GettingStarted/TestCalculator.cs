@@ -9,7 +9,7 @@ namespace Test_GettingStarted
     public class TestCalculator
     {
         /// <summary>
-        /// Test method for addition of 10 & 20
+        /// Addition of 10 and 20
         /// </summary>
         [TestMethod]
         public void Additionof10and20shouldbe30()
@@ -19,6 +19,9 @@ namespace Test_GettingStarted
             int actual = calculator.Add(10, 20);
             Assert.AreEqual(expected, actual);
         }
+        /// <summary>
+        /// Addition of 10000 and 20000
+        /// </summary>
 
         /// <summary>
         /// Test method for addition of 100000 & 200000
@@ -31,6 +34,9 @@ namespace Test_GettingStarted
             int actual = calculator.Add(10000, 20000);
             Assert.AreEqual(expected, actual);
         }
+        /// <summary>
+        /// Substraction of 10 and 8
+        /// </summary>
 
         /// <summary>
         /// Test method for subtraction of 10 & 8
@@ -43,6 +49,9 @@ namespace Test_GettingStarted
             int actual = calculator.Subtract(10,8);
             Assert.AreEqual(expected, actual);
         }
+        /// <summary>
+        /// Substracting 0 and 2
+        /// </summary>
 
         /// <summary>
         /// Test method for subtraction of 0 & 2

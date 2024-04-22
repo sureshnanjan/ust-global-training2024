@@ -4,224 +4,438 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MyLIbrary;
-using PetStoreImplementation;
+using WebdriverDotnet;
+using Test_GettingStarted;
+
 
 namespace GettingStarted_UST
 {
-    /// <summary>
-    /// Main class with the entry point of GettingStarted-UST project
-    /// </summary>
+    delegate int typeIntTakeintStr(int param1, string some);
+    //public delegate TResult Func<in T, out TResult>(T arg);
+    //public delegate int Number(int n);
+
     public class MainProgram
     {
-        /// <summary>
-        /// Entry point of execution
-        /// </summary>
-        /// <param name="args">Arguments</param>
+
+        // Fields
+        // Properties
+        // Methods
+        // Events
+        // Indexers
+        // Operators
+
+
         public static void Main(string[] args)
+
         {
-            Console.WriteLine("Literals :");
-            UsingLiterals usingLiterals = new UsingLiterals();
-            usingLiterals.ShowUsage();
 
-            Console.WriteLine("Sorting Instances :- ");
-            InstancesSort();
+            //Operatorindexer
+            OperatorIndexer Index = new OperatorIndexer();
+            Index[0] = "D";
+            Index[1] = "arf";
+            Index[2] = "asdf";
+            Console.WriteLine("First value = {0}", Index[0]);
+            Console.WriteLine("Second value = {0}", Index[1]);
+            Console.WriteLine("Third value = {0}", Index[2]);
 
-            Console.WriteLine("Example of Lambda :- ");
-            LambdaDemo();
-            LambdaToGetList();
 
-            Console.WriteLine("Example of Delegate :- ");
-            DelegateUsage();
 
-            Console.WriteLine("Operator Overloading :- ");
-            OperatorOverloaded();
+            //PetStore Automation
 
-            Console.WriteLine("\nIndex Overloading :- ");
-            IndexerOverloaded();
+            MyBrowser brower = new MyBrowser();
+            brower.OpenWebsite("https://petstore.octoperf.com/actions/Catalog.action");
+            Console.WriteLine(brower.GetTitle());
 
-            Console.WriteLine("\nExample of Event handling :- ");
-            EventHandlingDemo();
 
-            Console.WriteLine("\nLauching website of JPet Store:- ");
-            LaunchWebsiteDemo();
+
+            //genericsDemo();
+
+            //MyBrowser brower = new MyBrowser();
+            // brower.OpenWebsite("https://petstore.octoperf.com/actions/Catalog.action");
+            //Console.WriteLine(brower.GetTitle());
+        }
+        private static void genericsDemo()
+        {
+            //OperatorIndexerAssignment();
+            List<int> numbers = new List<int>() { 3, 6, 9, 5, 2 };
+            LamdaAssign LamdaExpress = new LamdaAssign(numbers);
+            LamdaExpress.ShowList();
+            LamdaExpress.AddNumbers();
+            LamdaExpress.SubNumbers();
+            LamdaExpress.MultipliesNumbers();
+            LamdaExpress.SquareofNumbers();
+
+            //GenericsIntro();
+
+            Calculator calculator = new Calculator();
+            //var results = calculator.add(10.1, 20.0);
+
+            Func<int, bool> mytester = (str) => str > 10;
+            mytester(0);
+
+            int res = calculator.compare<int>(20, 20);
+            int res1 = calculator.compare<string>("", "");
+            int res2 = calculator.compare<SimpleClass>(new SimpleClass(0), new SimpleClass(10));
         }
 
-        /// <summary>
-        /// To sort instances
-        /// </summary>
-        private static void InstancesSort()
+        private static void GenericsIntro()
         {
-            SimpleClass[] myInstances = { new SimpleClass(1, 2), new SimpleClass(1, 3), new SimpleClass(0, 1), new SimpleClass(1, 0) };
-            Console.WriteLine("\n Original Values in My Instances");
-            foreach (var item in myInstances)
+            // Constructed Type
+            GenericSimpleClass<int, string> genericSimpleClass = new GenericSimpleClass<int, string>();
+            genericSimpleClass.MyCounter = 0;
+            GenericSimpleClass<float, string> genericSimpleClass1 = new GenericSimpleClass<float, string>();
+            genericSimpleClass1.MyCounter = 1.2f;
+            Action<int, float, string> action1 = (a, b, c) => { };
+        }
+
+
+
+
+        /* GenericSimpleClass<int, string> genericSimpleClass = new GenericSimpleClass<int, string>();
+    genericSimpleClass.MyCounter = 0;
+    GenericSimpleClass<float, string> genericSimpleClass1 = new GenericSimpleClass<float, string>();
+    genericSimpleClass1.MyCounter = 1.2f;
+    Action<int, float, string> action1 = (a, b, c) => { };   */
+
+
+        private static void OperatorIndexerAssignment()
+        {
+            //EventsDemo();
+            int aNumber = 10;
+            int another = 100;
+            int result = aNumber + another;
+            SimpleClass class1 = new SimpleClass(10);
+            SimpleClass class2 = new SimpleClass(100);
+            // Assignemnt for Operators and Indexers
+            /*
+            var result = class1 + class2; // Operator 
+            if (class2 > class1) 
             {
-                Console.Write($"{item} , ");
-
+                Console.WriteLine();
             }
-            Array.Sort(myInstances);
-            Console.WriteLine("\n AFTER SORTING  Values in MYINSTANCES ");
-            foreach (var item in myInstances)
-            {
-                Console.Write($"{item} , ");
 
-            }
-            Console.WriteLine("\n");
+            int[] mysequence = { 1, 2, 3 };
+
+            Console.WriteLine(mysequence[0]);
+            SimpleCollection scCollection = new SimpleCollection();
+            Console.WriteLine(scCollection[0]); // Indexer
+            */
         }
 
         /// <summary>
-        /// Example of Lambda usage
+        /// This method produces a Publisher Subscriber
         /// </summary>
-        public static void LambdaDemo()
+        private static void EventsDemo()
         {
-            int[] value = { 1, 2, 3, 4, 5, 6, 7, 4, 8, 9 };
-            Func<int, bool> predicate = x => x == 4; // Lambda
-
-            int results = value.Where(predicate).Count();
-            Console.WriteLine($"Count of repeated element 4 is {results}");
-
-            int results1 = value.Aggregate((arg1, arg2) => (arg1 + arg2));
-            Console.WriteLine($"Addition of all elements in mynumbers is {results1} \n");
-
-        }
-
-        /// <summary>
-        /// Delegate demo
-        /// </summary>
-        /// <param name="param1">First argument</param>
-        /// <param name="param2">Second argument</param>
-        /// <returns></returns>
-        public delegate int TypeIntTakeIntStr(int param1, string param2);
-
-        /// <summary>
-        /// Showcase the delagate usability
-        /// </summary>
-        private static void LambdaToGetList()
-        {
-            int[] myNumbers = { 1, 2, 3, 4, 5, 6, 7, 8 };
-            var result = myNumbers.Where(param => param>2).ToList();
-            Console.Write("Resulting list is : ");
-            foreach (var item in result)
-            {
-                Console.Write($"{item} ,");
-            }
-            Console.WriteLine("\n");
-
-            // Pointing a method
-            //Func<int, bool> func = x => x>2;
-            //SimpleClass myIns = new SimpleClass(20);
-            TypeIntTakeIntStr pointer = MyMethod;
-            pointer(30, "");
-
-        }
-
-        /// <summary>
-        /// Normal method
-        /// </summary>
-        /// <param name="param1">First Argument</param>
-        /// <param name="param2">Second Argument</param>
-        /// <returns></returns>
-        public static int MyMethod(int param1, string param2)
-        {
-            Console.WriteLine("Executing in the myMethod \n");
-            return 0;
-        }
-
-        /// <summary>
-        /// To demonstrate usage of Delegate
-        /// </summary>
-        private static void DelegateUsage()
-        {
-            DelegateDemo delegateDemo = new DelegateDemo();
-            AddNum SumOfNum = new AddNum(delegateDemo.Add);
-            Product ProdOfNum = new Product(delegateDemo.Mutliply);
-            SumOfNum(12, 2);
-            ProdOfNum(12, 2);
-        }
-
-        /// <summary>
-        /// Operator Overloading
-        /// </summary>
-        private static void OperatorOverloaded()
-        {
-            OperatorOverloading num1 = new OperatorOverloading(200);
-            OperatorOverloading num2 = new OperatorOverloading(40);
-            OperatorOverloading num3 = new OperatorOverloading();
-
-            num3 = num1 + num2;
-
-            num1.display(); // Displays 200
-
-            num2.display(); // Displays 40
-
-            num3.display(); // Displays 240
-        }
-
-        /// <summary>
-        /// Indexer Overloading
-        /// </summary>
-        private static void IndexerOverloaded()
-        {
-            IndexerOverloading IndexOver = new IndexerOverloading();
-
-            IndexOver[0] = "Hello"; // Value of word[0] 
-
-            IndexOver[1.0f] = " Team"; // Value of word[1] 
-
-            Console.WriteLine(IndexOver[0] + IndexOver[1.0f]);
-        }
-
-        /// <summary>
-        /// To demonstrate Event handling mechanism
-        /// </summary>
-        public static void EventHandlingDemo()
-        {
-            Console.WriteLine("Event handling :- ");
-
-            Kitchen kfc = new Kitchen();
-
-            Cook cook1 = new Cook("kfc103", "Biriyani", "Cook1", 001);
-            Cook cook2 = new Cook("kfc106", "Pizza", "Cook2", 002);
-            Cook cook3 = new Cook("kfc109", "Pizza", "Cook3", 003);
-
-            Waiter waiter1 = new Waiter(001, "Biriyani", "kfc103");
-            Waiter waiter2 = new Waiter(002, "Pizza", "kfc106");
-            Waiter waiter3 = new Waiter(003, "Soup", "kfc109");
-
-
-            kfc.PlaceOrder(cook1.PrepareFood);
-            kfc.PlaceOrder(cook2.PrepareFood);
-            kfc.PlaceOrder(cook3.PrepareFood);
-
+            Kitchen kfc = new Kitchen(); // Publisher
+            Waiter waiter1 = new Waiter(1); // Consumers
+            Waiter waiter2 = new Waiter(2);
+            Waiter waiter3 = new Waiter(3);
+            Cashier cashier = new Cashier(1);
             kfc.PlaceOrder(waiter1.ServeFood);
             kfc.PlaceOrder(waiter2.ServeFood);
             kfc.PlaceOrder(waiter3.ServeFood);
-
-            kfc.PlaceOrder(waiter1.CleanTable);
-            kfc.PlaceOrder(waiter2.CleanTable);
-            kfc.PlaceOrder(waiter3.CleanTable);
-
-            Cashier cashier1 = new Cashier("C001");
-            kfc.PlaceOrder(cashier1.CollectMoney);
-
-            Cashier cashier2 = new Cashier("C002");
-            kfc.PlaceOrder(cashier2.CollectMoney);
-
-            Cashier cashier3 = new Cashier("C003");
-            kfc.PlaceOrder(cashier3.CollectMoney);
-
-            kfc.CollectOrder();
+            kfc.PlaceOrder(cashier.CollectMoney);
+            kfc.PrepareTheFood();
         }
 
-        /// <summary>
-        /// To Lauch & Close Website
-        /// </summary>
-        private static void LaunchWebsiteDemo()
+        private static void April06Demo()
         {
-            HomePage homePage = new HomePage();
-            homePage.OpenWebsite("https://petstore.octoperf.com/actions/Catalog.action");
-            string title = homePage.GetTitle();
-            Console.WriteLine($"Title is {title}");
-            homePage.CloseWebsite("https://petstore.octoperf.com/actions/Catalog.action");
+            //a0ril04Demo();
+            //DelegatesDemo();
+            int[] numbers = { 1, 2, 3, 4, 5, 6, 7, 8, 9, -9 };
+            int result = numbers.Aggregate((arg1, arg2) => arg1 * arg2);
+            Console.WriteLine(result);
+            bool isallnumbersGT0 = numbers.All(x => x > 0);
+            Console.WriteLine(isallnumbersGT0);
+            Func<int, int, string> mystringCovertor = (param1, param2) => (param1 - param2).ToString();
         }
+
+        private static void DelegatesDemo()
+        {
+            Func<int, bool> predicate = x => x > 3; // Lambda
+            int[] mynumbers = { 1, 2, 3, 4, 5 };
+            var results = mynumbers.Where(param => param > 3).ToList();
+
+            foreach (int value in results)
+            {
+                Console.WriteLine(value);
+            }
+            results = mynumbers.Where(input => input < 3).ToList();
+            foreach (int value in results)
+            {
+                Console.WriteLine(value);
+            }
+
+            results = mynumbers.Where(input => input == 3).ToList();
+            foreach (int value in results)
+            {
+                Console.WriteLine(value);
+            }
+
+            SimpleClass myIns = new SimpleClass(10);
+            typeIntTakeintStr pointer = myMethod;
+
+            Func<int, string, int> myrefUsingFunc = myMethod;
+            pointer(10, "");
+            myrefUsingFunc = myIns.myIntReturningMethod;
+            pointer(10, "");
+            myrefUsingFunc = someOtherMethod;
+            pointer(10, "");
+        }
+
+        static bool lessthn3Filter(int param)
+        {
+            // param => param < 3
+            return param < 3;
+        }
+
+        static bool greaterthn3Filter(int param)
+        {
+            // param => param > 3
+            return param > 3;
+        }
+
+        static bool get3Filter(int param)
+        {
+            //param => param == 3
+            return param == 3;
+        }
+
+        static int myMethod(int para1, string param2)
+        {
+            Console.WriteLine("Execuring this inthe myMethod");
+            return 0;
+        }
+
+        private static int someOtherMethod(int para, string para2)
+        {
+            Console.WriteLine("SOMEOTHER METHOD");
+            return 0;
+        }
+
+        private static void a0ril04Demo()
+        {
+            SimpleClass cl1 = new SimpleClass(8, "zA");
+            SimpleClass cl2 = new SimpleClass(2, "xB");
+            SimpleClass cl3 = new SimpleClass(9, "oZ");
+            SimpleClass cl4 = new SimpleClass(1, "AD");
+            SimpleClass cl5 = new SimpleClass(3, "bB");
+            SimpleClass[] mycoll = { cl1, cl1, cl3, cl4, cl5 };
+            Console.WriteLine("Sorting Default");
+            Array.Sort(mycoll);
+            foreach (var item in mycoll)
+            {
+                Console.WriteLine(item);
+            }
+            Console.WriteLine("Sorting By Name ");
+            Array.Sort(mycoll, new NameSorter());
+            foreach (var item in mycoll)
+            {
+                Console.WriteLine(item);
+            }
+            Console.WriteLine("Sorting By Last Char ");
+            Array.Sort(mycoll, new LastCharSorter()); // AAA-HR-1234
+            foreach (var item in mycoll)
+            {
+                Console.WriteLine(item);
+            }
+        }
+
+        public static void comparableDemo()
+        {
+            int[] mynumbers = { 8, 3, 19, 21, 1, 2, 3, 4 };
+            SimpleClass[] myInstances = { new SimpleClass(8), new SimpleClass(3) , new SimpleClass(19) , new SimpleClass(21),
+            new SimpleClass(1), new SimpleClass(2) , new SimpleClass(3) , new SimpleClass(4)};
+
+            string[] strings = { "\nA-One", "B-Two", "C-Three" };
+
+            Array.Sort(strings);
+            //strings.
+
+            Console.WriteLine("Original Values in My Instances");
+            foreach (var item in myInstances)
+            {
+                Console.Write($"{item} , ");
+
+            }
+
+            Console.WriteLine("\n Original Values in My Integer array mynumbers");
+            foreach (var item in mynumbers)
+            {
+                Console.Write($"{item} , ");
+
+            }
+
+            Array.Sort(mynumbers);
+            Console.WriteLine("\n AFTER SORTING  Values in My Integer array mynumbers");
+            foreach (var item in mynumbers)
+            {
+                Console.Write($"{item} , ");
+
+            }
+
+            Array.Sort(myInstances);
+            Console.WriteLine("\n AFTER SORTING  Values in My Integer MYINSTANCES ");
+            foreach (var item in myInstances)
+            {
+                Console.Write($"{item} , ");
+
+            }
+
+        }
+        /*
+        private static void oeverridesDemo()
+        {
+            int test = 10;
+            int another = 10;          
+            SimpleClass scInstance = new SimpleClass(0,2);
+            SimpleClass scInstance2 = new SimpleClass(10, 5);
+            SimpleClass scInsstance3 = new SimpleClass(10,5);
+            SimpleClass refer = scInsstance3;
+            Console.WriteLine(test);
+            Console.WriteLine(scInstance.ToString());
+            Console.WriteLine(scInstance2.Equals(scInstance)); // False
+            Console.WriteLine(scInsstance3.Equals(scInstance2));
+            Console.WriteLine(refer.Equals(scInsstance3));
+            Console.WriteLine(another.Equals(test));
+        }
+
+        */
+
+        /* private static void demo03April()
+             {
+                 //showDemoforTypes();
+                 // Launch a Browser
+                 // Navigate to a url
+                 // Find the link for logo OOPs
+                 // Abstraction
+                 // Encapsulation
+                 // Hiding all the implementation deatils and exposing only the needed ineterface
+                 // Inheritance
+                 // Polymorphism - static 
+                 //  dynamic / runtime 
+                 // demoClassCreation();
+
+                 //Pet mypet = new Pet();
+                 Fish fish = new Fish();
+
+                 List<Fish> mypets = new List<Fish>();
+                 mypets.Add(fish);
+                 mypets.Add(new Fish());
+
+
+
+                 foreach (var item in mypets)
+                 {
+                     item.Feed();
+
+                 }
+
+                 // myBrosweer = chrome
+                 // conside rall ingredenents and prepare for cookijg
+                 // Salt, Rice, Fish, Oil  class Salt : Coo
+                 List<IMoveable> allmymovingthings = new List<IMoveable>();
+                 List<ICookable> ingredenients = new List<ICookable>();
+                 ingredenients.Add(fish);
+                 ingredenients.Add(new Rice());
+                 //ingredenients.Add(new Salt())
+                 foreach (var item in ingredenients)
+                 {
+                     item.GetCooked();
+                 }
+             }
+
+             private static void Move(string direction)
+             {
+
+                 switch (direction)
+                 {
+                     case "left":
+                     default:
+                         break;
+                 }
+
+             }
+
+             private static void Move(Directions dir)
+             {
+                 switch (dir)
+                 {
+                     case Directions.left:
+                         break;
+                     case Directions.right:
+                         break;
+                     case Directions.forward:
+                         break;
+                     case Directions.backward:
+                         break;
+                     default:
+                         break;
+                 }
+             }
+
+
+
+             private static void demoClassCreation()
+             {
+                 MyClassDemo inst = new MyClassDemo("Red", 40, 25);
+                 inst.Move(10);
+                 MyClassDemo inst1 = new MyClassDemo("Blue", 40, 25);
+                 inst1.Move(10);
+                 Console.WriteLine($"{MyClassDemo.NoOfObjects} are cteated");
+                 MyClassDemo inst2 = new MyClassDemo("Grey", 40, 25);
+
+                 MyClassDemo defparamInstance = new MyClassDemo();
+
+                 inst2.Move(10);
+                 MyClassDemo.CommonMethod();
+             }
+
+         private static void showDemoforTypes()
+             {
+                 UsingTypesClass myclass = new UsingTypesClass();
+                 UsingTypesStruct mystruct = new UsingTypesStruct();
+                 UsingTypesEnum mynumber = UsingTypesEnum.third;
+
+                 int result = Int32.MaxValue;
+                 int result1 = Int32.MinValue;
+                 Console.WriteLine($"When I add 1,2 the resut is {result} when i subtract 2, 1 the result is {result1}");
+                 Console.WriteLine(mynumber);
+
+
+                 Months month = Months.february;
+
+                 switch (month)
+                 {
+                     case Months.february: Console.WriteLine(); ; break;
+                     case Months.january: Console.WriteLine(); ; break;
+                 }
+             }
+         }
+
+         class Human
+         {
+             int age;
+             string skincolor;
+             string nationality;
+             string gender;
+             string name;
+         }
+
+         class Employee
+         {
+             int age;
+             //string skincolor;
+             string nationality;
+             string gender;
+             string name;
+             string emp_code;
+             string skills;
+             DateTime doj;
+         }*/
+
+
     }
+
 }

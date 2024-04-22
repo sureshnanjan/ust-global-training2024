@@ -7,32 +7,43 @@ using System.Threading.Tasks;
 namespace HerokuAppOperations
 {
     /// <summary>
-    /// Interface with operations that can be done on Heroku homepage
+    ///  This provides access to all operations on heroku Home Page
     /// </summary>
-    public interface IHomePage
+    public interface IHomePage: IHerokuAppOperations
     {
         /// <summary>
-        /// Fetches Title of HomePage
+        /// 
         /// </summary>
-        /// <returns>Title in string format</returns>
-        string GetTitle();
+        /// <returns></returns>
+        string getTitle(); // zget Title // Print The document // saving title to some report
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns> 
+        string getSubTitle();
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="exampleName"></param>
+        IHerokuAppOperations goToExample(string exampleName);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        string[] getAvailableExamples();
 
         /// <summary>
-        /// Fetches Sub Title of HomePage
+        /// 
         /// </summary>
-        /// <returns>Sub Title in string format</returns>
-        string GetSubTitle();
+        /// <param name="locator"> This is a patterns which will identify nested elemensts eg level1: level2: ... levelN</param>
+        /// .<example>
+        /// If there are 3 level of Menu item please refer <paramref name="locator"> enabled/download/pdf
+        /// </paramref>
+        /// </example>
+        /// <returns></returns>
+        bool GetStatus(string locator);
 
-        /// <summary>
-        /// Redirects to other pages
-        /// </summary>
-        /// <param name="exampleName">Name of link available in HomePage</param>
-        void GoToExample(string exampleName);
-
-        /// <summary>
-        /// Fetches all the available links in HomePage
-        /// </summary>
-        /// <returns>List of Links</returns>
-        string[] GetAvailableExamples();
+        //string GetStatus(string locator);
+        
     }
 }

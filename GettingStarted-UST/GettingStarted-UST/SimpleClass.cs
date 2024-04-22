@@ -1,68 +1,51 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace GettingStarted_UST
 {
-    /// <summary>
-    /// Class to perform comparison and string conversion
-    /// </summary>
-    public class SimpleClass : IComparable<SimpleClass>
+    public class SimpleClass: IComparable<SimpleClass>, ICloneable
     {
-        int value, value2;
-        private int v;
+        int value1; // simpleClass(1,2)  simpleClass(1,3), simple(0,1), simpl(1,0)
+        int value2;
+        string name;
 
-        /// <summary>
-        /// constructor with 2 parameters
-        /// </summary>
-        /// <param name="val"></param>
-        /// <param name="val2"></param>
-        public SimpleClass(int val, int val2)
+
+        public SimpleClass(int val, string name)
         {
-            this.value = val;
-            this.value2 = val2;
-        }
+            this.value1 = val;
 
-        /// <summary>
-        /// Constructor with single parameter
-        /// </summary>
-        /// <param name="v"></param>
-        public SimpleClass(int v)
+           this.name = name;
+
+         }
+        public SimpleClass(int val, int val1)
         {
-            this.v = v;
-        }
+            this.value1 = val;
 
-        /// <summary>
-        /// To get Value3
-        /// </summary>
-        public int Value3 
-        { 
-            get 
-            { 
-                return this.value; 
-            } 
-        }
+            this.value2 = val1;
 
-        /// <summary>
-        /// To get Value4
-        /// </summary>
-        public int Value4 
-        { 
-            get 
-            {
-                return this.value2; 
-            } 
         }
+        public SimpleClass(int val)
+        {
+            this.value1 = val;
+            this.value2 = val;
+            this.name = String.Empty;
+        }
+        public int Value { get { return this.value1; } }
 
-        /// <summary>
-        /// Overriden method to perform string conversion
-        /// </summary>
-        /// <returns>Returns string in the format item-item</returns>
+        public string Name { get { return this.name; } }
+
         public override string? ToString()
         {
-            return this.value.ToString() + "-" + this.value2.ToString();
+            return $"{this.value1}-{this.name}"; // SimpleClass(1,2) prints as  "value1-value2"
+        }
+
+        public override bool Equals(object? obj)
+        {
+            return this.value1.Equals(((SimpleClass)obj).Value);
         }
 
         /// <summary>
@@ -72,11 +55,21 @@ namespace GettingStarted_UST
         /// <returns>Returns value after comparison</returns>
         public int CompareTo(SimpleClass? other)
         {
-            if ((value.CompareTo(other.value)) == 0)
-            {
-                return value2.CompareTo(other.value2);
-            }
-            return value.CompareTo(other.value);
+            return this.value1.CompareTo(other.Value);  //SimpleClass(1,2) SimpleClass(1,0),SimpleClass(2,2) SimpleClass(3,0),
         }
+
+        public object Clone()
+        {
+
+            return new SimpleClass(this.value1);
+        }
+
+        public int myIntReturningMethod(int param1, string param2) 
+        {
+            Console.WriteLine("Execuring this inthe SimpleClass.myINtReturn Method");
+            return 0;
+        }
+
+
     }
 }

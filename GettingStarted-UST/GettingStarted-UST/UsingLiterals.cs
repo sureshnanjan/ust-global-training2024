@@ -12,55 +12,127 @@ namespace GettingStarted_UST
     /// </summary>
     internal class UsingLiterals
     {
+        // Integer Literals
+        // Decimal literals (Base 10)
+        // Hexa-decimal literals (Base 16)
+        // Binary literals (Base 2)
+        // Floating-point Literals
+
+        // double
+        // float
+        // exponential
+
+            // double 123.45 
+            // float
+            // exponential
+
+        // Character Literals
+        // Single quote
+        // Unicode Representation
+        // Escape Sequence
+        // String Literals
+        // ""
+        // @""
+        // string interpolation "The value of varname is :{varname}"
+        // Null Literals
+        // Boolean Literals
         /// <summary>
-        /// Method to show the examples of literals
+        /// 
         /// </summary>
-        public void ShowUsage()
+        public void showUsage()
         {
 
-            // Integer Literals, TODO: value 89
+            //TODO: value 89
+
+            /// <summary>
+            /// Integer literral declaration
+            /// </summary>
+
             int decINt = 89;
-            int hexInt = 0x59;
-            int binInt = 0b1011001;
+            int hexInt = 0x89;
+            int binaryInt = 1011001;
+           
+            /// <summary>
+            /// Floating-point Literals
+            /// </summary>
 
-            // Floating-point Literals
-            float doublefloat = 123.456f;
-            float myFloat = 10.2f;
-            float expfloat = 3.14E-2f;
+           // int decINt = 89; // 4 byte - max mim // 1010 - 4 bytes 
+            long mylong = 0; // 8 bytes // 1020 - 1029, 1021, 1022, 1024, --- 1028
+           // int hexInt = 0x1F; // 15 X16 ^0 + 1 X 16 ^1
+            double mydbl = 123.45;
+            float nyflt = 123.45f;
+            //float @float 
+            //null != "null";
+            char newline = '\u0D19'; //1000  a 97 A 65 
+            string mynameinmalayalam = "\u0d19\u0d19";
 
-            // Character Literals
-            char myChar = 'M';
-            char myChar1 = '\u0061';
-            char myChar2 = '\n';
+            List<string> students = new List<string>();
 
-            // String Literals
-            string myStr = "Hi Team!";
-            string myStr1 = @"Hello Team!";
+            for (int studnum = 0; studnum < students.Count; studnum++)
+            {
+                Console.WriteLine(students[studnum]);
+            }
 
-            //Null literal
-            string? s;
+            foreach (var item in students)
+            {
+                
+            }
 
-            // Boolean Literals
-            bool myBool = true;
-            bool myBool1 = false;
 
-            Console.WriteLine($" Integer value of Decimal 89 is {decINt}");
-            Console.WriteLine($" Integer value of Hexa-Decimal 59 is {hexInt}");
-            Console.WriteLine($" Integer value of Binary 1011001 is {binInt} \n");
 
-            Console.WriteLine($" Float value of double 123.456 is {doublefloat}");
-            Console.WriteLine($" Float value of float 10.2 is {myFloat}");
-            Console.WriteLine($" Float value of exponential 3.14E-2 is {expfloat} \n");
 
-            Console.WriteLine($" Character literal in single quote M is {myChar}");
-            Console.WriteLine($" Character literal in unicode 0061 is {myChar1}");
-            Console.WriteLine($" Character literal in Escape sequence new line is {myChar2} \n");
 
-            // String Interpolation
-            Console.WriteLine($" String literals in double quote is {myStr}");
-            Console.WriteLine($" String literals in double quote with prefix of @ is {myStr1} \n");
+        
+//----------------------------My Second assignment
+
+            double numDouble = 89.9;
+            float myFloat = 89.7f;
+            double baseNum = 89;
+            double exponNum = 2;
+            double reSult = Math.Pow(baseNum, exponNum);
+           
+            /// <summary>
+            /// Character Literals
+            /// </summary>
+
+            Char myChar = 'C';
+            Char uniCode = '\u0061';
+            Char escSequence = '\0';            
+
+            /// <summary>
+            /// String Literals
+            /// </summary>
+
+            string myString = "Chandni";
+            string newPath = @"C:\Users\Administrator\ust-global-training2024\BasicProgram";
+            string firstString = "Gopalakrishnan";
+            string lastName = "Nair";
+            string name = $"{myString} {firstString} {lastName} ";
             
-            Console.WriteLine($" Boolean literals are {myBool} & {myBool1} \n");
+            /// <summary>
+            /// Null Literals
+            /// </summary>
+            string s = null;            
+
+            /// <summary>
+            /// Boolean Literals
+            /// </summary>
+             
+            bool gG = true;
+            bool rR = false;
+
+            /// <summary>
+            /// Printing C# Litterrals
+            /// </summary>
+             
+            Console.WriteLine("Integer -Decimal literals \t\t     : " + decINt + " \nInteger- Hexa-decimal literals \t\t     : " + hexInt + " \nInteger- Binary literals \t\t     : " + binaryInt);
+            Console.WriteLine("Floating Literals- double \t\t     : " + numDouble + "\nFloating Literals- float \t\t     : " + myFloat + "\nFloating Literals- Exponentialvalue \t     : " + reSult);
+            Console.WriteLine("Character Literals - Single quote \t     : " + myChar + "\nCharacter Literals - Unicode Representation : " + uniCode + "\nCharacter Literals - Escape Sequence\t   : " + escSequence);
+            Console.WriteLine("String Literals -single \t\t   : " + myString + "\nString Literals -Path declaration\t   :" + newPath + "\nString Literals - Interpolation \t   : " + name);
+            Console.WriteLine("Null Literals\t\t\t\t   : " + s);
+            Console.WriteLine("Boolean Literals \t\t\t   : " + gG + "\nBoolean Literals\t\t\t   : " + rR);
+
         }
+
     }
 }

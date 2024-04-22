@@ -1,6 +1,4 @@
 ﻿using HerokuAppOperations;
-using OpenQA.Selenium;
-using OpenQA.Selenium.DevTools.V121.Debugger;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,38 +6,42 @@ using System.Text;
 using System.Threading.Tasks;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using Utilities;
 
 namespace HerokuWebdriverImplemention
 {
     public class HerokuApp : IHerokuAppOperations
     {
-
-        private ITakesScreenshot browser;
-
-        public void CloseBrowser()
-        {
-            throw new NotImplementedException();
-        }
-
-
-        private readonly IWebDriver driver;
+        protected readonly IWebDriver driver;
         private readonly By footerLocator;
         private readonly By repoLocator;
         private string appUrl;
 
-        public HerokuApp()
+        public HerokuApp(IWebDriver argDriver)
         {
+            if (this.driver == default)
+            {
+                this.driver = argDriver;
+
+            }
+
+            this.appUrl = AppUtil.getAppUrl();
             this.footerLocator = By.XPath("");
             this.repoLocator = By.XPath("");
-            this.appUrl = "https://the-internet.herokuapp.com/";
+
         }
 
+        public HerokuApp() {
+            this.appUrl = AppUtil.getAppUrl();
+            this.driver = WebdriverFactory.getBrowser();
+            goToHome();
+        }
         public void closeBrowser()
         {
            this.driver.Quit();
         }
 
-        public string GetFooterDetails()
+        public void CloseBrowser()
         {
             throw new NotImplementedException();
         }
@@ -49,7 +51,7 @@ namespace HerokuWebdriverImplemention
             return this.driver.FindElement(footerLocator).Text;
         }
 
-        public string GetRepoDetails()
+        public string GetFooterDetails()
         {
             throw new NotImplementedException();
         }
@@ -59,19 +61,14 @@ namespace HerokuWebdriverImplemention
             return this.driver.FindElement(repoLocator).Text;
         }
 
-        public bool GetStatus(string locator)
+        public string GetRepoDetails()
         {
             throw new NotImplementedException();
         }
 
-        public bool GetStatus()
+        public string GetStatus(string locator)
         {
-            // Take screen shopt as part of this operation
-            //throw new NotImplementedException();
-            ITakesScreenshot mycamera = (ITakesScreenshot) this.browser;
-            mycamera.GetScreenshot();
-            return true;
-            
+            throw new NotImplementedException();
         }
 
         public string getStatus(string locator)
@@ -79,7 +76,7 @@ namespace HerokuWebdriverImplemention
             throw new NotImplementedException();
         }
 
-        public void GoToHome()
+        public bool GetStatus()
         {
             throw new NotImplementedException();
         }
@@ -90,7 +87,7 @@ namespace HerokuWebdriverImplemention
             this.driver.Navigate().GoToUrl(this.appUrl);
         }
 
-        string IHerokuAppOperations.GetStatus(string locator)
+        public void GoToHome()
         {
             throw new NotImplementedException();
         }

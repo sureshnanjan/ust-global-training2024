@@ -41,7 +41,7 @@ namespace TestHerokuApp
 
         [Test]
         public void homePageHas44Links() {
-            IHomePage page = null;
+            IHomePage page = new HomePage();
             int expectedCount = 44;
             int actual = page.getAvailableExamples().Length;
             Assert.That(actual, Is.EqualTo(expectedCount));

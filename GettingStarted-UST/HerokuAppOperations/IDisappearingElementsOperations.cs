@@ -11,7 +11,7 @@ namespace HerokuAppOperations
         /// <summary>
         /// This method fetched the current Url opened in the browser.
         /// </summary>
-        /// <returns></returns>
+        /// <returns> </returns>
         string GetURL();
 
         /// <summary>

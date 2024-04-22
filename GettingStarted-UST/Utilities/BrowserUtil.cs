@@ -6,7 +6,7 @@ namespace Utilities
         public static string getBrowser()
         {
             // Read the setting in APP.config and passe
-            return "firefox";
+            return "Chrome";
         }
     }
 }

@@ -8,15 +8,16 @@ using System.Threading.Tasks;
 namespace Test_GettingStarted
 {
     [TestClass]
-    public  class TestBinarySearch
+    public class TestBinarySearch
     {
         [TestMethod]
-        public void test_for_existing_values() { 
-        
-            int[] myinputArray =  { 1, 2, 3 };
+        public void test_for_existing_values()
+        {
+
+            int[] myinputArray = { 1, 2, 3 };
             int searchTerm = 3;
             int expected = 3;
-            BinarySearcher searcher = new BinarySearcher(myinputArray, searchTerm);
+            BinarySearch searcher = new BinarySearch(myinputArray, searchTerm);
             int actual = searcher.doSearch();
             Assert.AreEqual(expected, actual);
 
@@ -28,7 +29,7 @@ namespace Test_GettingStarted
             int[] myinputArray = { 1, 2, 3 };
             int searchTerm = 1;
             int expected = 1;
-            BinarySearcher searcher = new BinarySearcher(myinputArray, searchTerm);
+            BinarySearch searcher = new BinarySearch(myinputArray, searchTerm);
             int actual = searcher.doSearch();
 
             Assert.AreEqual(expected, actual);
@@ -40,7 +41,7 @@ namespace Test_GettingStarted
             int[] myinputArray = { 1, 2, 3 };
             int searchTerm = 4;
             int expected = ~4;
-            BinarySearcher searcher = new BinarySearcher(myinputArray, searchTerm);
+            BinarySearch searcher = new BinarySearch(myinputArray, searchTerm);
             int actual = searcher.doSearch();
             Assert.AreEqual(expected, actual);
 
@@ -55,7 +56,7 @@ namespace Test_GettingStarted
             int[] myinputArray = { 1, 2, 3 };
             int searchTerm = 0;
             int expected = ~1;
-            BinarySearcher searcher = new BinarySearcher(myinputArray, searchTerm);
+            BinarySearch searcher = new BinarySearch(myinputArray, searchTerm);
             int actual = searcher.doSearch();
             Assert.AreEqual(expected, actual);
 
@@ -67,19 +68,17 @@ namespace Test_GettingStarted
         public void nullinputarray_throws_ArgumentNullException() {
             int[] input = null;
             int searchTerm = 0;
-            BinarySearcher searcher = new BinarySearcher(input, searchTerm);
+            BinarySearch searcher = new BinarySearch(input, searchTerm);
 
             Assert.ThrowsException<ArgumentNullException>(() => { searcher.doSearch(); });
-            
-
-
         }
 
-        public void someroutine() {
-        // assert color
-        // assert position
-        // assert font
-        
+        public void someroutine()
+        {
+            // assert color
+            // assert position
+            // assert font
+
         }
     }
 }

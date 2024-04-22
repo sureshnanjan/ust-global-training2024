@@ -25,7 +25,8 @@ namespace TestHerokuApp
         /// 
         /// </summary>
         [Test]
-        public void homePageTitleisCorrect() {
+        public void homePageTitleisCorrect()
+        {
             // Arrange
             IHomePage page = new HomePage();
             // page.goToExample*().AddElement().CheckIfDisplayed()
@@ -34,14 +35,15 @@ namespace TestHerokuApp
             string actualTitle = page.getTitle();
             // A
             Assert.That(actualTitle, Is.EqualTo(expectedTitle)); // NUNIT
-                
+
         }
 
         /// <summary>
         /// Verify Subtitle of HomePage
         /// </summary>
         [Test]
-        public void homePageSubTitleisCorrect() {
+        public void homePageSubTitleisCorrect()
+        {
             IHomePage page = null;
             string expectedSubTitle = "Available Examples";
             // A
@@ -54,7 +56,8 @@ namespace TestHerokuApp
         /// Verify HomePage has 44 links available
         /// </summary>
         [Test]
-        public void homePageHas44Links() {
+        public void homePageHas44Links()
+        {
             IHomePage page = new HomePage();
             int expectedCount = 44;
             int actual = page.getAvailableExamples().Length;
@@ -62,7 +65,8 @@ namespace TestHerokuApp
         }
 
         [Test]
-        public void visintingAExamplePageWorks() {
+        public void visintingAExamplePageWorks()
+        {
             IHomePage page = null;
             string pagetovisit = "A/B Testing";
             string expectedTitle = "A/B Test Variation 1";
@@ -72,7 +76,8 @@ namespace TestHerokuApp
         }
 
         [Test]
-        public void testingIfFirstItemisDisabled() {
+        public void testingIfFirstItemisDisabled()
+        {
             IHomePage page = null;
             //bool itemToTest = "Disabled";
             bool expectedTitle = false;
@@ -95,7 +100,8 @@ namespace TestHerokuApp
         }
 
         [Test]
-        public void addRemoveElementPageObjectImplementationworks() {
+        public void addRemoveElementPageObjectImplementationworks()
+        {
             IHomePage page = new HomePage();
             page.goToHome();
             IAddRemoveOperations addremPage = (IAddRemoveOperations)page.goToExample("AddRemove");
@@ -117,8 +123,4 @@ namespace TestHerokuApp
         }
     }
 
-    
-        };
-
-}
 }

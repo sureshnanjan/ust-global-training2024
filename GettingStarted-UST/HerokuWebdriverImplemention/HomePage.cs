@@ -71,6 +71,8 @@ namespace HerokuWebdriverImplemention
             {
                 case "AddRemove":
                     return new AddRemovePage();
+                case "BrokenImages":
+                    return new BrokenImagePage();
                 default: throw new NotImplementedException();
 
             }

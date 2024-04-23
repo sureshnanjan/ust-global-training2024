@@ -9,19 +9,19 @@ namespace HerokuAppOperations
     /// <summary>
     /// Represents the interface for SlowResourcePage.
     /// </summary>
-    internal interface ISlowResourcePage
+    public interface ISlowResourcePage
     {
         /// <summary>
         /// Gets the title of the Slow Resource Page.
         /// </summary>
         /// <returns>The title of the Slow resource page as a string.</returns>
-        string GetTitle();
+        string getTitle();
 
         /// <summary>
         /// Gets the context of the Slow Resource Page.
         /// </summary>
         /// <returns>The context of the Slow resource page as a string.</returns>
-        string GetContext();
+        string getContext();
 
 
     }

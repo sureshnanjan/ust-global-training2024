@@ -16,50 +16,65 @@ namespace HerokuWebdriverImplemention
 {
     public class HomePage : HerokuApp, IHomePage
     {
+
+        private string herokuUrl;
         private IWebDriver browser;
         private By headingLocator;
         private By subHeadingLocator;
-        private By exapleLocator;
-        public HomePage():base() {
-            
+        private By exampleLocator;
+        private By repositoryLocator;
+        private By footerLocator;
+        public HomePage() {
             this.headingLocator = By.TagName("h1");
             this.subHeadingLocator = By.TagName("h2");
-            this.exapleLocator = By.XPath("//*[@id=\"content\"]/ul/li[2]/a");
+            this.exampleLocator = By.XPath("//*[@id=\"content\"]/ul/li");
+            this.repositoryLocator = By.LinkText("Fork me on github");
         }
         public string[] getAvailableExamples()
         {
-            // TO DO: Extract the Links Text and send the result
-            this.browser.FindElements(exapleLocator);
-            return new string[] { "" };
+            List<string> result = new List<string> { };
+            foreach (var item in this.driver.FindElements(exampleLocator))
+            {
+                result.Add(item.Text);
+
+            }
+
+            return result.ToArray();
+
         }
 
         public bool getStatus(string locator)
         {
+            // Take screen shopt as part of this operation
             //throw new NotImplementedException();
+            ITakesScreenshot mycamera = (ITakesScreenshot) this.driver;
+            mycamera.GetScreenshot();
             return true;
+
         }
 
         public string getSubTitle()
         {
-            return this.browser.Title;
+            throw new NotImplementedException();
         }
 
         public string getTitle()
         {
-            return browser.Title;
+            return this.driver.Title;
         }
 
-       IHerokuAppOperations IHomePage.goToExample(string exampleName)
+        bool IHomePage.GetStatus(string locator)
         {
-            // assignment " Implement this Using  ENUM ExampleNames
+            throw new NotImplementedException();
+        }
+
+        IHerokuAppOperations IHomePage.goToExample(string exampleName)
+        {
             switch (exampleName)
             {
                 case "AddRemove":
                     return new AddRemovePage();
-                case "A/B Testing":
-                    return new HerokuApp();
-                default:
-                    return new HerokuApp();
+                default: throw new NotImplementedException();
 
             }
         }

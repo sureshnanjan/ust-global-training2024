@@ -1,6 +1,6 @@
 ﻿namespace HerokuAppOperations
 {
-    public enum alignStyle
+    public enum AlignStyle
     {
     }
 }

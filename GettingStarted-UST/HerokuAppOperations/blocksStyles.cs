@@ -1,6 +1,6 @@
 ﻿namespace HerokuAppOperations
 {
-    public enum blocksStyles
+    public enum BlocksStyles
     {
     }
 }

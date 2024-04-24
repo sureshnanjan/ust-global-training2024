@@ -1,6 +1,6 @@
 ﻿namespace HerokuAppOperations
 {
-    public enum inlineStyles
+    public enum InlineStyles
     {
     }
 }

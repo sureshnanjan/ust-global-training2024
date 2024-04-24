@@ -1,0 +1,43 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20240326101433
+Username: D2479F49161155E\Administrator
+RunAs User: D2479F49161155E\Administrator
+Configuration Name: 
+Machine: D2479F49161155E (Microsoft Windows NT 10.0.19045.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 7216
+PSVersion: 5.1.19041.4046
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.4046
+BuildVersion: 10.0.19041.4046
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is Chandni1.log
+PS C:\Users\Administrator\ust-global-training2024> git clone https://github.com/sureshnanjan/ust-global-training2024.git
+Cloning into 'ust-global-training2024'...
+remote: Enumerating objects: 33, done.
+remote: Counting objects: 100% (33/33), done.
+remote: Compressing objects: 100% (30/30), done.
+remote: Total 33 (delta 8), reused 24 (delta 2), pack-reused 0
+Receiving objects: 100% (33/33), 8.12 KiB | 1.62 MiB/s, done.
+Resolving deltas: 100% (8/8), done.
+PS C:\Users\Administrator\ust-global-training2024> Set-Location ust-global-training2024
+PS C:\Users\Administrator\ust-global-training2024\ust-global-training2024> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+PS C:\Users\Administrator\ust-global-training2024\ust-global-training2024> git checkout -b Chandni-branch
+Switched to a new branch 'Chandni-branch'
+PS C:\Users\Administrator\ust-global-training2024\ust-global-training2024> git status
+On branch Chandni-branch
+nothing to commit, working tree clean
+PS C:\Users\Administrator\ust-global-training2024\ust-global-training2024> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20240326101648
+**********************

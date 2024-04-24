@@ -34,6 +34,7 @@ namespace HerokuWebdriverImplemention
         public HerokuApp() {
             this.appUrl = AppUtil.getAppUrl();
             this.driver = WebdriverFactory.getBrowser();
+            //To Navigate to Links
             goToHome();
         }
         public void closeBrowser()
@@ -85,6 +86,17 @@ namespace HerokuWebdriverImplemention
         {
             //this.driver.Url = this.appUrl;
             this.driver.Navigate().GoToUrl(this.appUrl);
+
+            /// <summary>
+            /// Click the Slow Resources Link on https://the-internet.herokuapp.com/
+            /// </summary>
+
+            //driver.FindElement(By.XPath("//*[@id=\"content\"]/ul/li[40]/a")).Click();
+
+            /// <summary>
+            /// Click the Challenging Dom Link on https://the-internet.herokuapp.com/
+            /// </summary>
+            driver.FindElement(By.XPath("//*[@id=\"content\"]/ul/li[5]/a")).Click();
         }
 
         public void GoToHome()

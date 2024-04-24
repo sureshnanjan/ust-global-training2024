@@ -9,7 +9,7 @@ using NUnit.Framework;
 namespace TestHerokuApp
 {
     [TestFixture]
-    public class Test_DynamicControls
+    public class Test_JSOnloadEventError
     {
         /// <summary>
         /// Verify whether the page title is correct or not
@@ -18,11 +18,15 @@ namespace TestHerokuApp
         public void PageTitleverification()
         {
             //Arrange
+          //  IHomepage_DynamicControl Controls = null;
+           // string expectedTitle = "Dynamic Controls";
+          
             IHomepage_DynamicControl page = null;
             string expectedTitle = "Dynamic Controls";
             //Action
-            string actualTitle = page.VerifyTitle();
+            string actualTitle = Controls.VerifyTitle(string name);
             //Assert
+
             Assert.That(actualTitle, Is.EqualTo(expectedTitle));
 
         }

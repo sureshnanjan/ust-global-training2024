@@ -10,7 +10,11 @@ namespace GettingStarted_UST
     {
         List<int> numbers = new List<int>();
 
+<<<<<<< HEAD
         public LamdaAssign(List<int> number)
+=======
+        public LamdaAssign(List <int> number)
+>>>>>>> intermediate-branch
         {
             this.numbers = number;
         }
@@ -29,7 +33,11 @@ namespace GettingStarted_UST
             foreach (int number in numbers)
             {
 
+<<<<<<< HEAD
                 Console.Write("  " + number);
+=======
+                Console.Write("  " +number);
+>>>>>>> intermediate-branch
             }
         }
         /// <summary>
@@ -66,10 +74,18 @@ namespace GettingStarted_UST
         {
             var square = numbers.Select(x => x * x);
             Console.Write("\n Squares : ");
+<<<<<<< HEAD
             foreach (var number in square)
+=======
+            foreach(var number in square)
+>>>>>>> intermediate-branch
             {
                 Console.Write("  " + number);
             }
         }
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> intermediate-branch

@@ -16,10 +16,17 @@ namespace Test_GettingStarted
         public void Lamda_Aggregate_Addition()
         {
             int[] numbers = { 2, 4, 5, 7 };
+<<<<<<< HEAD
             int actual = numbers.Aggregate((x, y) => x + y);
             int expected = 18;
             Console.WriteLine($" Total Aggregate value: {actual}");
             Assert.AreEqual(expected, actual);
+=======
+            int actual = numbers.Aggregate((x,y) => x+y);
+            int expected = 18;
+            Console.WriteLine($" Total Aggregate value: {actual}");
+            Assert.AreEqual( expected, actual );
+>>>>>>> intermediate-branch
 
         }
         /// <summary>
@@ -53,15 +60,27 @@ namespace Test_GettingStarted
         [TestMethod]
         public void Lambda_Square()
         {
+<<<<<<< HEAD
             List<int> numbers = new List<int>() { 1, 2, 5, 6 };
+=======
+            List<int> numbers = new List<int>(){ 1, 2, 5, 6 };
+>>>>>>> intermediate-branch
             var square = numbers.Select(x => x * x);
             Console.Write("\n Squares : ");
             foreach (int number in square)
             {
                 Console.Write("  " + number);
             }
+<<<<<<< HEAD
             int[] expected = { 1, 4, 25, 36 };
             Assert.AreEqual(square, expected);
         }
     }
 }
+=======
+            int [] expected = {1, 4, 25, 36 };
+            Assert.AreEqual(square, expected);
+        }
+    }
+}
+>>>>>>> intermediate-branch

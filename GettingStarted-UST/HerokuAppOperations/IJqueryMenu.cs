@@ -31,4 +31,8 @@ namespace HerokuAppOperations
         void doAction(string locator);
 
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> intermediate-branch

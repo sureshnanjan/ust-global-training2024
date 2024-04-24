@@ -15,12 +15,18 @@ namespace Test_GettingStarted
     public class TestSortedArray
 
     {
+<<<<<<< HEAD
 
         //Bydefault the sorting will be based on the first element
 
         //if first value is equal sort happens based on the second value
         // Expected result should be in sorted array 
 
+=======
+        /// <summary>
+        /// sorting of array correctly
+        /// </summary>
+>>>>>>> intermediate-branch
         [TestMethod]
         public void sorting_array_correctly()
         {
@@ -30,21 +36,38 @@ namespace Test_GettingStarted
             Array.Sort(myInstances);
             //string actual = myInstances.ToString();
             Assert.AreEqual(myInstances, Expected);
+<<<<<<< HEAD
 
 
 
         }
+=======
+        }
+        /// <summary>
+        /// Display results in 1-2 format
+        /// </summary>
+>>>>>>> intermediate-branch
         [TestMethod]
 
         public void correctformat()
         {
             SimpleClass simpleClasses = new(0, 9);
+<<<<<<< HEAD
             string expected = "0-9";
+=======
+            string expected = "0-9" ;
+>>>>>>> intermediate-branch
             string actual = simpleClasses.ToString();
             Assert.AreEqual(expected, actual);
 
 
         }
+<<<<<<< HEAD
+=======
+        /// <summary>
+        /// Sorting of first value equals from an array
+        /// </summary>
+>>>>>>> intermediate-branch
         [TestMethod]
 
         public void sorting_first_value_equal()
@@ -55,10 +78,17 @@ namespace Test_GettingStarted
             Assert.AreEqual(myInstances, Expected);
 
         }
+<<<<<<< HEAD
+=======
+        /// <summary>
+        /// Sorting of second value equals from an array
+        /// </summary>
+>>>>>>> intermediate-branch
         [TestMethod]
         public void sorting_second_value_equal()
         {
             SimpleClass[] myInstances = { new SimpleClass(1, 2), new SimpleClass(3, 2), new SimpleClass(2, 2) };
+<<<<<<< HEAD
             SimpleClass[] Expected = { new SimpleClass(1, 2), new SimpleClass(2, 2), new SimpleClass(3, 2) };
             Array.Sort(myInstances);
             Assert.AreEqual(myInstances, Expected);
@@ -67,6 +97,19 @@ namespace Test_GettingStarted
         public void sorting_array_firstvalue_zero()
         {
             SimpleClass[] myInstances = { new SimpleClass(0, 5), new SimpleClass(0, 2), new SimpleClass(0, 1) };
+=======
+            SimpleClass[] Expected = { new SimpleClass(1, 2), new SimpleClass(2,2), new SimpleClass(3, 2) };
+            Array.Sort(myInstances);
+            Assert.AreEqual(myInstances, Expected);
+        }
+        /// <summary>
+        /// Sorting of array first value as zero
+        /// </summary>
+        [TestMethod]
+        public void sorting_array_firstvalue_zero()
+        {
+            SimpleClass[] myInstances = { new SimpleClass(0, 5), new SimpleClass(0, 2), new SimpleClass(0,1) };
+>>>>>>> intermediate-branch
             SimpleClass[] Expected = { new SimpleClass(0, 1), new SimpleClass(0, 2), new SimpleClass(0, 5) };
             Array.Sort(myInstances);
             Assert.AreEqual(myInstances, Expected);

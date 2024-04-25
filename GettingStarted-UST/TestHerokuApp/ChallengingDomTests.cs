@@ -26,6 +26,7 @@ namespace TestHerokuApp
             //Assert
             Assert.That(actualTitle, Is.EqualTo(expectedTitle));
         }
+
         [Test]
         /// <summary>
         /// Verify whether the page description is correct or not
@@ -33,7 +34,7 @@ namespace TestHerokuApp
         public void PageDescriptionverification()
         {
             IChallengingDomOperations page = new ChallengingDomPage();
-            string expectedDesc = "The hardest part in automated web testing";
+            string expectedDesc = "The hardest part in automated web testing is finding the best locators (e.g., ones that well named, unique, and unlikely to change). It's more often than not that the application you're testing was not built with this concept in mind. This example demonstrates that with unique IDs, a table with no helpful locators, and a canvas element.";
             //Action
             string actualDesc = page.getMainContent();
             //Assert
@@ -68,11 +69,12 @@ namespace TestHerokuApp
             string expectedValue1 = "foo";
             string expectedValue2 = "baz";
             string expectedValue3 = "bar";
+            string expectedValue4 = "qux";
             //Action
             page.doOperation2();
             string buttonValue1 = page.getOperation2Label();
             //Assert
-            Assert.That(buttonValue1, Is.AnyOf(expectedValue1, expectedValue2, expectedValue3));
+            Assert.That(buttonValue1, Is.AnyOf(expectedValue1, expectedValue2, expectedValue3, expectedValue4));
         }
 
         /// <summary>
@@ -86,16 +88,18 @@ namespace TestHerokuApp
             string expectedValue1 = "foo";
             string expectedValue2 = "baz";
             string expectedValue3 = "bar";
+            string expectedValue4 = "qux";
             //Action
             page.doOperation3();
             string buttonValue1 = page.getOperation3Label();
             //Assert
-            Assert.That(buttonValue1, Is.AnyOf(expectedValue1, expectedValue2, expectedValue3));
+            Assert.That(buttonValue1, Is.AnyOf(expectedValue1, expectedValue2, expectedValue3, expectedValue4));
         }
 
         /// <summary>
         /// Verify whether answer is updated when the button is pressed 
         /// </summary>
+        [Test]
         public void UpdateAnswerField()
         {
             IChallengingDomOperations page = new ChallengingDomPage();
@@ -108,25 +112,25 @@ namespace TestHerokuApp
         /// <summary>
         /// Verify whether table Headers are expected
         /// </summary>
+        [Test]
         public void FetchTableHeadings()
         {
             IChallengingDomOperations page = new ChallengingDomPage();
-            string[] tableHeadings = { };
+            string[] tableHeadings = { "Lorem", "Ipsum", "Dolor", "Sit", "Amet", "Diceret", "Action" };
             string[] actualTableHeadings = page.getTableHeadings();
             Assert.That(tableHeadings, Is.EqualTo(actualTableHeadings));
-
         }
 
         /// <summary>
-        /// Verify whether table Headers are expected
+        /// Verify whether table row1 data are expected
         /// </summary>
-        public void FetchTableHeadings(int rownum)
+        [Test]
+        public void FetchTableRow1Data()
         {
             IChallengingDomOperations page = new ChallengingDomPage();
-            string[] tablerow = { };
-            string[] actualTablerow = page.getRowData(rownum);
-            Assert.That(tablerow, Is.EqualTo(actualTablerow));
-
+            string[] tablerow1num = { "Iuvaret0 Apeirian0 Adipisci0 Definiebas0 Consequuntur0 Phaedrum0 edit delete"};
+            string[] actualTablerow1 = page.getRowData();
+            Assert.That(tablerow1num, Is.EqualTo(actualTablerow1));
         }
     }
 }

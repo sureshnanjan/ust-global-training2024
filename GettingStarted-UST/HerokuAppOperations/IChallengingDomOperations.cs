@@ -97,6 +97,6 @@ namespace HerokuAppOperations
         /// </summary>
         /// <param name="rownum"/> The row number for which data has to be fetched </param>
         /// <returns> the row data as a string array </returns>
-        string[] getRowData(int rownum);
+        string[] getRowData();
     }
 }

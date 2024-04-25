@@ -16,6 +16,9 @@ namespace HerokuWebdriverImplemention
 {
     public class HomePage : HerokuApp, IHomePage
     {
+
+        private string herokuUrl;
+        private IWebDriver browser;
         private By headingLocator;
         private By subHeadingLocator;
         private By exampleLocator;

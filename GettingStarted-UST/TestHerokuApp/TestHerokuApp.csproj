@@ -6,6 +6,7 @@
     <Nullable>enable</Nullable>
 	<IsTestProject>true</IsTestProject>
 	  <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
   </PropertyGroup>
 
   <ItemGroup>
@@ -23,6 +24,10 @@
 	  </PackageReference>
     <ProjectReference Include="..\HerokuAppOperations\HerokuAppOperations.csproj" />
     <ProjectReference Include="..\HerokuWebdriverImplemention\HerokuWebdriverImplemention.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Using Include="NUnit.Framework" />
   </ItemGroup>
 
 </Project>

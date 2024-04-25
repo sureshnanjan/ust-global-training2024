@@ -16,6 +16,9 @@ namespace HerokuWebdriverImplemention
 {
     public class HomePage : HerokuApp, IHomePage
     {
+
+        private string herokuUrl;
+        private IWebDriver browser;
         private By headingLocator;
         private By subHeadingLocator;
         private By exampleLocator;
@@ -71,6 +74,8 @@ namespace HerokuWebdriverImplemention
             {
                 case "AddRemove":
                     return new AddRemovePage();
+                case "BrokenImages":
+                    return new BrokenImagePage();
                 default: throw new NotImplementedException();
 
             }

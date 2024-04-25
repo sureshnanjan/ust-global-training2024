@@ -18,5 +18,9 @@ namespace HerokuAppOperations
         /// This method verifies the content of page
         /// </summary>
         string getMainContent();
+        /// <summary>
+        /// 
+        /// </summary>
+        void disableABTesting();
     }
 }

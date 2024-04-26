@@ -6,8 +6,14 @@ using System.Threading.Tasks;
 
 namespace PetStore_Project
 {
+    /// <summary>
+    /// ApiRespons details
+    /// </summary>
     internal class ApiResponse
     {
+        private int apiCode;
+        private string apiType;
+        private string apiMessage;
         int code;
         string type;
         string message;

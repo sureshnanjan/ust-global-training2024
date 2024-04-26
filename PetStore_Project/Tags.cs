@@ -8,6 +8,8 @@ namespace PetStore_Project
 {
     public class Tags
     {
+        private int id;
+        private string name;
         long tagId;
         string tagName;
 

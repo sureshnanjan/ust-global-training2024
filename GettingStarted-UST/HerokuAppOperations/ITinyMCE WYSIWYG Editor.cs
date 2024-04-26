@@ -27,12 +27,14 @@ namespace HerokuAppOperations
         /// <summary>
         /// This method verifies the sub menu status of text editor
         /// </summary>
+        string getMenuStatus(string subMenu);
         string getMenuStatus(string locator);
 
         /// <summary>
         /// This method helps to select the sub menus of text editor
         /// </summary>
         void doAction(string locator);
+        void doAction(string subMenu);
 
         /// <summary>
         /// This method lists the text editor tools
@@ -56,20 +58,25 @@ namespace HerokuAppOperations
 
         /// <summary>
         /// This method for choosing heading style
+        /// HeadingStyles - Enum for Heading styles
         /// headingStyles - Enum for Heading styles
         /// </summary>
+        string setHeadingStyle(HeadingStyles headingText);
         string setHeadingStyle(headingStyles headingText);
 
         /// <summary>
         /// This method for choosing Inline style
         /// inlineStyles - Enum for Inline styles
+        /// InlineStyles - Enum for Inline styles
         /// </summary>
         string setInline(inlineStyles inlineText);
+        string setInline(InlineStyles inlineText);
 
         /// <summary>
         /// This method for choosing blocks style
         /// blockStyles - Enum for Blocks styles
         /// </summary>
+        string setBlocks(BlocksStyles text);
         string setBlocks(blocksStyles text);
 
         /// <summary>
@@ -77,6 +84,7 @@ namespace HerokuAppOperations
         /// alignStyles - Enum for Aling styles
         /// </summary>
         string setAlign(alignStyle textToAlign);
+        string setAlign(AlignStyle textToAlign);
 
         /// <summary>
         /// Method for converting slected text into blod

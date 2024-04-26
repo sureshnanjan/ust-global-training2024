@@ -1,5 +1,6 @@
 ﻿namespace HerokuAppOperations
 {
+    public enum InlineStyles
     public enum inlineStyles
     {
         Bold,

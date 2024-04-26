@@ -16,37 +16,42 @@ namespace HerokuWebdriverImplemention
 {
     public class HomePage : HerokuApp, IHomePage
     {
-        private string herokuUrl; 
+
+        private string herokuUrl;
         private IWebDriver browser;
-        //private ChromeDriver driver
         private By headingLocator;
         private By subHeadingLocator;
-        private By exapleLocator;
+        private By exampleLocator;
         private By repositoryLocator;
         private By footerLocator;
         public HomePage() {
-            this.herokuUrl = "https://the-internet.herokuapp.com/";
-            this.browser = new ChromeDriver();
             this.headingLocator = By.TagName("h1");
             this.subHeadingLocator = By.TagName("h2");
-            this.exapleLocator = By.XPath("//*[@id=\"content\"]/ul/li[2]/a");
-            // #content > h1
-            // JSPath document.querySelector("#content > h1")
-            // XPath //*[@id="content"]/h1
-            // /html/body/div[2]/div/h1
-            // By.TagName("h1")
-            // RelativeB
-            //  /html/body/div[2]/div/h1
-            // RelativeBy mylocaTrategy = RelativeBy.WithLocator(headingLocator);
-            this.browser.Url = this.herokuUrl;
+            this.exampleLocator = By.XPath("//*[@id=\"content\"]/ul/li");
+            this.repositoryLocator = By.LinkText("Fork me on github");
         }
         public string[] getAvailableExamples()
         {
-            throw new NotImplementedException();
+            List<string> result = new List<string> { };
+            foreach (var item in this.driver.FindElements(exampleLocator))
+            {
+                result.Add(item.Text);
+
+            }
+
+            return result.ToArray();
+
         }
 
+        public bool getStatus(string locator)
         public string getStatus1(string locator)
         {
+            // Take screen shopt as part of this operation
+            //throw new NotImplementedException();
+            ITakesScreenshot mycamera = (ITakesScreenshot) this.driver;
+            mycamera.GetScreenshot();
+            return true;
+
             throw new NotImplementedException();
         }
 
@@ -57,9 +62,15 @@ namespace HerokuWebdriverImplemention
 
         public string getTitle()
         {
-            return browser.Title;
+            return this.driver.Title;
         }
 
+        bool IHomePage.GetStatus(string locator)
+        {
+            throw new NotImplementedException();
+        }
+
+        IHerokuAppOperations IHomePage.goToExample(string exampleName)
         string IHomePage.getStatus1(string locator)
         {
             throw new NotImplementedException();

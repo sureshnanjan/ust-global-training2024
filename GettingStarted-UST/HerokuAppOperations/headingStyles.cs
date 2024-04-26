@@ -1,6 +1,7 @@
 ﻿namespace HerokuAppOperations
 {
     public enum headingStyles
+    public enum HeadingStyles
     {
         Heading1,
         Heading2,

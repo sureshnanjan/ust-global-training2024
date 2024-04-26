@@ -1,6 +1,6 @@
 ﻿namespace HerokuAppOperations
 {
-    public interface IAddRemoveElements
+    public interface IAddRemoveElements : IHerokuAppOperations
     {
         /// <summary>
         /// This method helps to verify content on page

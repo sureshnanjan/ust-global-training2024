@@ -1,4 +1,5 @@
 ﻿using HerokuAppOperations;
+using HerokuWebdriverImplemention;
 using NUnit.Framework;
 
 
@@ -6,9 +7,9 @@ using NUnit.Framework;
 namespace TestHerokuApp
 {
     [TestFixture]
-    public class AddRemoveElementsPage
+    public class AddRemoveElementsTest
     {
-        IAddRemoveElements IaddRem = null;
+        IAddRemoveElements IaddRem = new AddRemovePage();
         /// <summary>
         /// this method is used to validate if the page elelement is displayed on the page   
         /// </summary> 

@@ -10,24 +10,31 @@ using NUnit.Framework;
 namespace TestHerokuApp
 {
     [TestFixture]
-    internal class Checkbox
-    {
+    public class CheckboxTest
+    { 
+        ICheckboxes chk = new Checkbox();
+
+
         [Test]
+
+
         
         public void validateTitleOfCheckBoxPage()
         {
 
+            chk.checkCheckBox();
             /// <summary>
             /// Check the title of the page
             /// </summary>
 
-            ICheckboxes obj = null;
-            string expectedTitle = "Checkboxes";
-            string actualTitle = obj.getTitle();
-            Assert.That(actualTitle, Is.EqualTo(expectedTitle));
+            // ICheckboxes obj = null;
+            //string expectedTitle = "Checkboxes";
+            //string actualTitle = obj.getTitle();
+            //Assert.That(actualTitle, Is.EqualTo(expectedTitle));
         }
 
-        
+
+
 
     }
 

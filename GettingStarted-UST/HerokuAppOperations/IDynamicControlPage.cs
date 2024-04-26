@@ -8,17 +8,22 @@ namespace HerokuAppOperations
 {
     public interface IDynamicControlPage
     {
+
+        /// <summary>
+        /// This method helps to verify whether correct URL loaded or not
+        /// </summary>       
+        string getURL();
         /// <summary>
         /// Verify the title displayed
         /// </summary>
         /// <param name="name"></param>
-        public void VerifyTitle(String name);
+        string getTitle();
 
         /// <summary>
         /// Add the button by passing the argument
         /// </summary>
         /// <action> </action>
-        public void PerformAddOpertion();
+        public string PerformAddOpertion();
 
         /// <summary>
         /// Click on the checkbox option

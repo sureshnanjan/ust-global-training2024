@@ -25,6 +25,7 @@ namespace TestHerokuApp
             string actualTitle = page.getTitle();
             //Assert
             Assert.That(actualTitle, Is.EqualTo(expectedTitle));
+            page.closeBrowser();
         }
 
         [Test]
@@ -39,6 +40,7 @@ namespace TestHerokuApp
             string actualDesc = page.getMainContent();
             //Assert
             Assert.That(actualDesc, Is.EqualTo(expectedDesc));
+            page.closeBrowser();
         }
 
 
@@ -56,6 +58,7 @@ namespace TestHerokuApp
             string buttonValue1 = page.getOperation1Label();
             //Assert
             Assert.That(buttonValue1, Is.EqualTo(expectedValue));
+            page.closeBrowser();
         }
 
         /// <summary>
@@ -75,6 +78,7 @@ namespace TestHerokuApp
             string buttonValue1 = page.getOperation2Label();
             //Assert
             Assert.That(buttonValue1, Is.AnyOf(expectedValue1, expectedValue2, expectedValue3, expectedValue4));
+            page.closeBrowser();
         }
 
         /// <summary>
@@ -94,6 +98,7 @@ namespace TestHerokuApp
             string buttonValue1 = page.getOperation3Label();
             //Assert
             Assert.That(buttonValue1, Is.AnyOf(expectedValue1, expectedValue2, expectedValue3, expectedValue4));
+            page.closeBrowser();
         }
 
         /// <summary>
@@ -107,6 +112,7 @@ namespace TestHerokuApp
             page.doOperation1();
             string afterAnswer = page.getResult();
             Assert.That(currentAnswer, Is.EqualTo(afterAnswer));
+            page.closeBrowser();
         }
 
         /// <summary>
@@ -119,6 +125,7 @@ namespace TestHerokuApp
             string[] tableHeadings = { "Lorem", "Ipsum", "Dolor", "Sit", "Amet", "Diceret", "Action" };
             string[] actualTableHeadings = page.getTableHeadings();
             Assert.That(tableHeadings, Is.EqualTo(actualTableHeadings));
+            page.closeBrowser();
         }
 
         /// <summary>
@@ -131,6 +138,7 @@ namespace TestHerokuApp
             string[] tablerow1num = { "Iuvaret0 Apeirian0 Adipisci0 Definiebas0 Consequuntur0 Phaedrum0 edit delete"};
             string[] actualTablerow1 = page.getRowData();
             Assert.That(tablerow1num, Is.EqualTo(actualTablerow1));
+            page.closeBrowser();
         }
     }
 }

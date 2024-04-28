@@ -91,11 +91,12 @@ namespace HerokuWebdriverImplemention
             /// Click the Slow Resources Link on https://the-internet.herokuapp.com/
             /// </summary>
 
-            //driver.FindElement(By.XPath("//*[@id=\"content\"]/ul/li[40]/a")).Click();
+            ///driver.FindElement(By.XPath("//*[@id=\"content\"]/ul/li[40]/a")).Click();
 
             /// <summary>
             /// Click the Challenging Dom Link on https://the-internet.herokuapp.com/
             /// </summary>
+            /// 
             driver.FindElement(By.XPath("//*[@id=\"content\"]/ul/li[5]/a")).Click();
         }
 

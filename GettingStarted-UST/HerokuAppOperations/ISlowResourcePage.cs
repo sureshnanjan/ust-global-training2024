@@ -9,7 +9,7 @@ namespace HerokuAppOperations
     /// <summary>
     /// Represents the interface for SlowResourcePage.
     /// </summary>
-    public interface ISlowResourcePage 
+    public interface ISlowResourcePage : IHerokuAppOperations
     {
         /// <summary>
         /// Gets the title of the Slow Resource Page.

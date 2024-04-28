@@ -10,7 +10,7 @@ using NUnit.Framework;
 namespace TestHerokuApp
 {
     [TestFixture]
-    internal class SlowResourcePageTests
+    public class SlowResourcePageTests
     {
         /// <summary>
         /// Validate the Title of the Slow Resource Page
@@ -18,10 +18,11 @@ namespace TestHerokuApp
         [Test]
         public void verifySlowResourcePageTitle()
         {
-            string expectedTitle = "Slow Resources";
             ISlowResourcePage source = new SlowResourcesPage();
+            string expectedTitle = "Slow Resources";
             string actualTitle = source.getTitle();
             Assert.That(actualTitle, Is.EqualTo(expectedTitle));
+            source.closeBrowser();
         }
     }
 }

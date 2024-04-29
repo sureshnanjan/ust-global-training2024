@@ -16,9 +16,8 @@ namespace HerokuWebdriverImplemention
 {
     public class HomePage : HerokuApp, IHomePage
     {
-
+        private IWebDriver Browser;
         private string herokuUrl;
-        private IWebDriver browser;
         private By headingLocator;
         private By subHeadingLocator;
         private By exampleLocator;
@@ -70,12 +69,18 @@ namespace HerokuWebdriverImplemention
 
         IHerokuAppOperations IHomePage.goToExample(string exampleName)
         {
+            Browser = this.driver;
             switch (exampleName)
             {
                 case "AddRemove":
                     return new AddRemovePage();
                 case "BrokenImages":
                     return new BrokenImagePage();
+                case "JavaScriptAlert":
+                    return new JavaScriptAlertPage(Browser);
+                case "ExitIntent":
+                    return new ExitIntentPage(Browser);
+
                 default: throw new NotImplementedException();
 
             }

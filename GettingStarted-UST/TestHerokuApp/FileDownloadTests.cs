@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using HerokuAppOperations;
 using NUnit.Framework.Constraints;
+using NUnit.Framework.Legacy;
 
 namespace TestHerokuApp
 {
@@ -59,12 +60,8 @@ namespace TestHerokuApp
         {
             IFileDownload fileDownload = null;
             List<string> expected = new List<string>();
-            List<string> actual = new List<string>();
-            foreach (var item in actual)
-            {
-                actual.Add(item);
-            }
-            Assert.That(actual, Is.EqualTo(expected));
+            List<string> actual = fileDownload.getAvailableFiles();
+            CollectionAssert.AreEquivalent(expected, actual);
         }
 
         /// <summary>

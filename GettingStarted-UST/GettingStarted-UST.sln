@@ -3,12 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34511.84
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GettingStarted-UST", "GettingStarted-UST\GettingStarted-UST.csproj", "{A5FA325C-BD4E-409F-8FD0-8A4D7FA54CE5}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyLIbrary", "MyLIbrary\MyLIbrary.csproj", "{EDE875E4-404F-4A7D-84EA-C9357A3334D4}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test-GettingStarted", "Test-GettingStarted\Test-GettingStarted.csproj", "{50131221-1495-4CF8-B7A8-A6FFE46F8188}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebdriverDotnet", "WebdriverDotnet\WebdriverDotnet.csproj", "{7BA4B7AE-D9D4-4DFC-AD6B-15590A7D742A}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HerokuAppOperations", "HerokuAppOperations\HerokuAppOperations.csproj", "{5D55DC41-B727-47AC-9DC2-553F0913D78A}"
@@ -21,26 +15,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AcceptanceTests", "Acceptan
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Utilities", "Utilities\Utilities.csproj", "{2C1FF0A6-565F-4BEC-BA6D-7C7CE131EF40}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForUnderstanding", "ForUnderstanding\ForUnderstanding.csproj", "{FB4F39FB-5821-4B4D-87DF-896732CE5CBE}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A5FA325C-BD4E-409F-8FD0-8A4D7FA54CE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A5FA325C-BD4E-409F-8FD0-8A4D7FA54CE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A5FA325C-BD4E-409F-8FD0-8A4D7FA54CE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A5FA325C-BD4E-409F-8FD0-8A4D7FA54CE5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EDE875E4-404F-4A7D-84EA-C9357A3334D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EDE875E4-404F-4A7D-84EA-C9357A3334D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EDE875E4-404F-4A7D-84EA-C9357A3334D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EDE875E4-404F-4A7D-84EA-C9357A3334D4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{50131221-1495-4CF8-B7A8-A6FFE46F8188}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{50131221-1495-4CF8-B7A8-A6FFE46F8188}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{50131221-1495-4CF8-B7A8-A6FFE46F8188}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{50131221-1495-4CF8-B7A8-A6FFE46F8188}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7BA4B7AE-D9D4-4DFC-AD6B-15590A7D742A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7BA4B7AE-D9D4-4DFC-AD6B-15590A7D742A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7BA4B7AE-D9D4-4DFC-AD6B-15590A7D742A}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -65,10 +45,6 @@ Global
 		{2C1FF0A6-565F-4BEC-BA6D-7C7CE131EF40}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2C1FF0A6-565F-4BEC-BA6D-7C7CE131EF40}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2C1FF0A6-565F-4BEC-BA6D-7C7CE131EF40}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FB4F39FB-5821-4B4D-87DF-896732CE5CBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FB4F39FB-5821-4B4D-87DF-896732CE5CBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FB4F39FB-5821-4B4D-87DF-896732CE5CBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FB4F39FB-5821-4B4D-87DF-896732CE5CBE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

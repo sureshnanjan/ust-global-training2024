@@ -28,13 +28,13 @@ namespace HerokuAppOperations
         /// Verify the list of different kind of files available for download
         /// </summary>
         /// <returns></returns>
-        void downloadFile(string fileName);
+        string downloadFile(string fileName);
 
         /// <summary>
         /// Verify whether the listed element is clickable
         /// </summary>
         /// 
-        void downloadFilebyPosition(int pos);
+        string downloadFilebyPosition(int pos);
         /// <summary>
         /// This method verifies the download status
         /// </summary>        

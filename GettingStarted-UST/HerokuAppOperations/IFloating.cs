@@ -12,6 +12,7 @@ namespace HerokuAppOperations
     {
         string getUrl();
         void setUrl(string url);
+        void();
         ///<summary>
         ///</summary>
     }

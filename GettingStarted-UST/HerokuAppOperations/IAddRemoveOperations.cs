@@ -1,6 +1,9 @@
 ﻿namespace HerokuAppOperations
 {
-    public interface IAddRemoveOperations
+    public interface IAddRemoveOperations: IHerokuAppOperations
     {
+        // AddElemnt
+        // GetAddedElements
+        // GetHeading
     }
 }

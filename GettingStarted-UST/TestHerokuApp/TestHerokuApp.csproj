@@ -22,6 +22,8 @@
 	  </PackageReference>
     <ProjectReference Include="..\HerokuAppOperations\HerokuAppOperations.csproj" />
     <ProjectReference Include="..\HerokuWebdriverImplemention\HerokuWebdriverImplemention.csproj" />
+    <ProjectReference Include="..\Test-GettingStarted\Test-GettingStarted.csproj" />
+    <ProjectReference Include="..\Utilities\Utilities.csproj" />
   </ItemGroup>
 
 </Project>

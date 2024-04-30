@@ -11,39 +11,37 @@ namespace TestHerokuApp
     {
         IAddRemoveElements IaddRem = new AddRemovePage();
         /// <summary>
-        /// this method is used to validate if the page elelement is displayed on the page   
-        /// </summary> 
+        /// this Test is used to validate if the page elelements are displayed on the page   
         ///<returns> boolean value (true/false) depending on the visiility of the flag </returns>
-
-
-        public bool validatePageElementisDisplayed()
+        /// </summary> 
+        [Test]
+        public void validatePageElementisDisplayed()
         {
-            bool FlagsAttribute = false;
-            if (IaddRem.pageContent())
-            {
-                Console.WriteLine("Page Elements matches !");
-                FlagsAttribute = true;
-            }
-            return FlagsAttribute;
+            Console.WriteLine("Test started at : " + IaddRem.getTime());
+
+            IaddRem.pageContent();
+
+            Console.WriteLine("Test ended  at : " + IaddRem.getTime());
+
         }
 
-        [Test]
+         [Test]
         /// <summary>
-        /// this method is used to validate if user can add elemetnts
+        /// this method is used to validate if user can add elemetnts, the parameter accepts the value int; number of 
+        /// buttons to be added
         /// </summary> 
 
-        public void ValidateAddingElements()
-        {
-            if (validatePageElementisDisplayed())
-            {
-                IaddRem.clickOnAddElements();
-                Console.WriteLine("New Element Added !");
+           public void ValidateAddingElements()
+           {
+                      IaddRem.clickAddRemoveElementLink();
+                      IaddRem.clickOnAddElements(3);
+
+              
             }
-        }
+
 
         /// <summary>
-        /// this method is used to validate if user can delete elemetnts. 
-        /// Validate if delete button is displayed and click on it 
+        /// this test is used to validate if user can delete elemetnts. Validate if delete button is displayed and click on it 
         /// </summary> 
 
         [Test]
@@ -51,7 +49,7 @@ namespace TestHerokuApp
         {
             if (IaddRem.checkForPresenceofDeleteButton())
             {
-                IaddRem.clickOnDelete();
+                IaddRem.clickOnDelete(2);
             }
         }
     }

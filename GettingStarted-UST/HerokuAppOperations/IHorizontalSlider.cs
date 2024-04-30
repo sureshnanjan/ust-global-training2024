@@ -2,7 +2,7 @@
 {
     /// <summary>
     /// this interface contains methods to be implemented for Horizontal Slider page
-    /// <returns></returns> 
+    /// <returns></returns>  /// </summary>
     public interface IHorizontalSlider
     {
 

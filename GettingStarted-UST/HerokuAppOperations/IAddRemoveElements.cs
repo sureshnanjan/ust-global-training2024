@@ -12,7 +12,7 @@
         /// This method helps to verify Add Elements actionable button on the page
         /// </summary>
 
-        void clickOnAddElements();
+        void clickOnAddElements(int i);
 
         /// <summary>
         /// This method helps to verify Delete actionable button presence on the page
@@ -23,7 +23,16 @@
         /// <summary>
         /// This method helps to verify Delete operation in the page
         /// </summary>
-        void clickOnDelete();
+        void clickOnDelete(int i);
 
+        /// <summary>
+        ///  this method captures and prints the time it was called.
+        /// </summary>
+        string getTime();
+
+        /// <summary>
+        ///  this method clicks on the Add Remove Elemetns link present on the homepage.
+        /// </summary>
+        void clickAddRemoveElementLink();
     }
 }

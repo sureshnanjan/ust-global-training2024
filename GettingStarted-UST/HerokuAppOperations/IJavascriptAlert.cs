@@ -4,7 +4,7 @@
     {
         ///<summary>
         ///Get the Title
-        ////<summary>
+        ////</summary>
         public void GetTitle();
 
         /// <summary>

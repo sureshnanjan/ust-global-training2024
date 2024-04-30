@@ -25,8 +25,7 @@ namespace HerokuAppOperations
         /// <summary>
         /// Method to check the CheckBox1 is enabled
         /// </summary>
-        public void EnableCheckBox1();
-
+        public void enableDisableCheckBox1();
 
 
     }

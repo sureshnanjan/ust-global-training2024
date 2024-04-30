@@ -36,9 +36,9 @@ namespace TestHerokuApp
         /// <summary>
         /// Method to check the title of CheckBox page
         /// </summary>
-        public void validateEnablingCheckBox1()
+        public void validateEnableDisableCheckBox1()
         {
-            chk.EnableCheckBox1();
+            chk.enableDisableCheckBox1();
         }
 
     }

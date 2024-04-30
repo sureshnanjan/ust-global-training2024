@@ -37,9 +37,11 @@ namespace HerokuWebdriverImplemention
             this.driver.FindElement(checkBoxLink).Click();  
         }
 
-        void ICheckboxes.EnableCheckBox1()
+        void ICheckboxes.enableDisableCheckBox1()
         {
             IWebElement checkbox1 = this.driver.FindElement(enablecheckBox1);
+            checkbox1.Click();
+            Thread.Sleep(3000);
             checkbox1.Click();
         }
 

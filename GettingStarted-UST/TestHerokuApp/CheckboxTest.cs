@@ -17,34 +17,28 @@ namespace TestHerokuApp
 
 
         [Test]
-
+        /// <summary>
+        /// Method to click the CheckBox link
+        /// </summary>
         public void validateCheckBoxLinkClick()
         {
             chk.clickCheckBoxLink();
-            chk.getTitle();
-
-            /// <summary>
-            /// Method to click the CheckBox link
-            /// </summary>
-
         }
         [Test]
+        /// <summary>
+        /// Method to check the title of CheckBox page
+        /// </summary>
         public void validateTitleOfCheckBoxPage()
         {
-            string expectedTitle = "Checkboxes";
-            string actualTitle = chk.getTitle();
-            Assert.That(actualTitle, Is.EqualTo(expectedTitle));
-            /// <summary>
-            /// Method to check the title of CheckBox page
-            /// </summary>
+            chk.titleOfCheckBoxPage();
         }
         [Test]
+        /// <summary>
+        /// Method to check the title of CheckBox page
+        /// </summary>
         public void validateEnablingCheckBox1()
         {
             chk.EnableCheckBox1();
-            /// <summary>
-            /// Method to check Checkbox 1
-            /// </summary>
         }
 
     }

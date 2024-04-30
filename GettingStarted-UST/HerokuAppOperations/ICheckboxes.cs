@@ -14,23 +14,20 @@ namespace HerokuAppOperations
         /// <summary>
         /// Method to click the checkbox link
         /// </summary>
-
         public void clickCheckBoxLink();
 
         /// <summary>
         /// Check the title of Checkbox page
         /// </summary>
-        public string getTitle();
+
+        public void titleOfCheckBoxPage();
 
         /// <summary>
-        /// To provide the functionality of marking checbox checked
+        /// Method to check the CheckBox1 is enabled
         /// </summary>
         public void EnableCheckBox1();
 
-        /// <summary>
-        /// To provide the functionality of marking checbox unchecked
-        /// </summary>
-        public void disableBothCheckbox();
+
 
     }
 }

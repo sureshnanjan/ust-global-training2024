@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using HerokuAppOperations;
+using NUnit.Framework;
 using OpenQA.Selenium;
 
 namespace HerokuWebdriverImplemention
@@ -13,35 +14,34 @@ namespace HerokuWebdriverImplemention
         private IWebDriver browser;
         private By checkBoxLink;
         private By checkBoxTitle;
+        private By enablecheckBox1;
         public Checkbox()
         {
             this.checkBoxLink = By.XPath("//a[@href=\"/checkboxes\"]");
             this.checkBoxTitle = By.XPath("//h3[text()= 'Checkboxes']");
+            this.enablecheckBox1 = By.XPath("//input[@type='checkbox']");
+
         }
 
-        public void EnableCheckBox1()
+
+        void ICheckboxes.titleOfCheckBoxPage()
         {
-            throw new NotImplementedException();
+            string expectedTitle = "Checkboxes";
+            string actualTitle = this.driver.FindElement(checkBoxTitle).Text;
+            Assert.That(actualTitle, Is.EqualTo(expectedTitle));
+
         }
 
-        public void clickCheckBoxLink()
+        void ICheckboxes.clickCheckBoxLink()
         {
-            this.driver.FindElement(checkBoxLink).Click();
+            this.driver.FindElement(checkBoxLink).Click();  
         }
 
-        public void getCurrentStatus()
+        void ICheckboxes.EnableCheckBox1()
         {
-            throw new NotImplementedException();
+            IWebElement checkbox1 = this.driver.FindElement(enablecheckBox1);
+            checkbox1.Click();
         }
 
-        public string getTitle()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void unCheckCheckbox()
-        {
-            throw new NotImplementedException();
-        }
     }
 }

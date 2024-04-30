@@ -2,7 +2,7 @@
 {
     public interface IAddRemoveOperations: IHerokuAppOperations
     {
-        // AddElemnt
+        // AddElemnts
         // GetAddedElements
         // GetHeading
     }

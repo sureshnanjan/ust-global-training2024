@@ -12,13 +12,19 @@ namespace HerokuWebdriverImplemention
     {
         private IWebDriver browser;
         private By checkBoxLink;
+        private By checkBoxTitle;
         public Checkbox()
         {
             this.checkBoxLink = By.XPath("//a[@href=\"/checkboxes\"]");
+            this.checkBoxTitle = By.XPath("//h3[text()= 'Checkboxes']");
         }
 
+        public void EnableCheckBox1()
+        {
+            throw new NotImplementedException();
+        }
 
-        public void checkCheckBox()
+        public void clickCheckBoxLink()
         {
             this.driver.FindElement(checkBoxLink).Click();
         }

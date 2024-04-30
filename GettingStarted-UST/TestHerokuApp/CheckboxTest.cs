@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using HerokuAppOperations;
@@ -17,25 +18,36 @@ namespace TestHerokuApp
 
         [Test]
 
-
-        
-        public void validateTitleOfCheckBoxPage()
+        public void validateCheckBoxLinkClick()
         {
+            chk.clickCheckBoxLink();
+            chk.getTitle();
 
-            chk.checkCheckBox();
             /// <summary>
-            /// Check the title of the page
+            /// Method to click the CheckBox link
             /// </summary>
 
-            // ICheckboxes obj = null;
-            //string expectedTitle = "Checkboxes";
-            //string actualTitle = obj.getTitle();
-            //Assert.That(actualTitle, Is.EqualTo(expectedTitle));
+        }
+        [Test]
+        public void validateTitleOfCheckBoxPage()
+        {
+            string expectedTitle = "Checkboxes";
+            string actualTitle = chk.getTitle();
+            Assert.That(actualTitle, Is.EqualTo(expectedTitle));
+            /// <summary>
+            /// Method to check the title of CheckBox page
+            /// </summary>
+        }
+        [Test]
+        public void validateEnablingCheckBox1()
+        {
+            chk.EnableCheckBox1();
+            /// <summary>
+            /// Method to check Checkbox 1
+            /// </summary>
         }
 
-
-
-
     }
-
 }
+
+

@@ -12,27 +12,25 @@ namespace HerokuAppOperations
     public interface ICheckboxes
     {
         /// <summary>
-        /// Method to read title of the page
+        /// Method to click the checkbox link
         /// </summary>
-        /// <returns></returns>
+
+        public void clickCheckBoxLink();
+
+        /// <summary>
+        /// Check the title of Checkbox page
+        /// </summary>
         public string getTitle();
-        
+
         /// <summary>
         /// To provide the functionality of marking checbox checked
         /// </summary>
-        public void checkCheckBox();
+        public void EnableCheckBox1();
 
         /// <summary>
         /// To provide the functionality of marking checbox unchecked
         /// </summary>
-        public void unCheckCheckbox();
-        /// <summary>
-        /// To get the current status of checkbox
-        /// </summary>   
-        public void getCurrentStatus();
-
-        
-       
+        public void disableBothCheckbox();
 
     }
 }

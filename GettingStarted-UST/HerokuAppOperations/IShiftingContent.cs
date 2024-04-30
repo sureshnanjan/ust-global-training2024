@@ -6,24 +6,25 @@ using System.Threading.Tasks;
 
 namespace HerokuAppOperations
 {
-    internal interface IShiftingContent
+    public interface IShiftingContent
     {
         /// <summary>
         /// Method to fetch title of the page
         /// </summary>
         /// <returns></returns>
-        public string getTitle();
+        public string titleOfShiftingContentPage();
         
         /// <summary>
         /// To count the number of links available on the page
         /// </summary>
         /// <returns></returns>
         public int CountTheLink();
-       
+
         /// <summary>
         /// Enable the functionality to click on the links
         /// </summary>
-        public void clickTheLink();
+        public void clickShiftingContentLink();
+
         
         /// <summary>
         /// Get all the Menu Options in the Page

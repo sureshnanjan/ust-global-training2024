@@ -9,7 +9,7 @@ using HerokuWebdriverImplemention;
 namespace TestHerokuApp
 {
     /// <summary>
-    /// Test cases to verify the ExitIntent features
+    /// Test cases to verify the ExitIntent features.
     /// </summary>
     [TestFixture]
     public class ExitIntentTest

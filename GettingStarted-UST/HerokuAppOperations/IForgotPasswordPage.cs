@@ -27,14 +27,22 @@ namespace HerokuAppOperations
         /// Enters the specified email into the email input field.
         /// </summary>
         /// <param name="email">The email to be entered.</param>
-        /// <returns>True if the email is successfully entered; otherwise, false.</returns>
-        bool EnterEmail(string email);
+
+        void EnterEmail(string email);
+
+        /// <summary>
+        ///Gets the input Email.
+        /// </summary>
+        /// <returns>The Input Email</returns>
+        string GetInputEmail();
 
         /// <summary>
         /// Clicks on the 'Retrieve Password' button to initiate the password retrieval process.
         /// </summary>
-        /// <returns>True if the button is successfully clicked; otherwise, false.</returns>
-        bool ClickOnRetrievePassword();
+
+        void ClickOnRetrievePassword();
+
+        
 
     }
 }

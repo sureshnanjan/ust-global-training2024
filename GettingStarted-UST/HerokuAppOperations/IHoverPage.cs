@@ -9,7 +9,7 @@ namespace HerokuAppOperations
     /// <summary>
     /// Represents the interface for HoverPage.
     /// </summary>
-    internal interface IHoverPage
+    public interface IHoverPage
     {
         /// <summary>
         /// Gets the title of the hover page.
@@ -24,15 +24,23 @@ namespace HerokuAppOperations
         string GetSubtitle();
 
         /// <summary>
-        /// Performs the hover action on the page.
+        /// Method to perform hover action on a specific image based on its number.
         /// </summary>
-        /// <returns>True if the hover action was successful; otherwise, false.</returns>
-        bool DoHover();
+        /// <param name="imageNumber">The number of the image to hover over.</param>
+        void DoHover(string imageNumber);
 
         /// <summary>
-        /// Checks whether the user name is visible on the hover page.
+        /// Gets the user name from a specific image based on its number and.
         /// </summary>
-        /// <returns>True if the user name is visible; otherwise, false.</returns>
-        bool IsUserNameVisible();
+        /// <param name="imageNumber">The number of the image to hover over.</param>
+        /// <returns>The hover text of the image.</returns>
+        string GetUserName(string imageNumber);
+
+        /// <summary>
+        /// Methods to perform click action on view profile.
+        /// </summary>
+        /// <param name="imageNumber">The number of the image.</param>
+
+        void ClickOnViewProfile(string imageNumber);
     }
 }

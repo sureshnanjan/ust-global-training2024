@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using HerokuAppOperations;
+using OpenQA.Selenium;
 
 namespace TestHerokuApp
 {
@@ -42,6 +43,61 @@ namespace TestHerokuApp
             // Assert
             Assert.That(expectedLabel, Is.EqualTo(actualLabel), "The retrieved label is not as expected.");
         }
+
+        /// <summary>
+        /// Check if the email input box is displayed and accessible.
+        /// </summary>
+        [Test]
+        public void VerifyEmailInputBoxTest()
+        {
+            // Arrange
+            IForgotPasswordPage forgotPasswordPage = null;
+
+            // Act
+            IWebElement emailInput =default;
+
+            // Assert that the email input box is displayed and enabled
+            Assert.That(emailInput.Displayed && emailInput.Enabled,Is.True);
+        }
+        /// <summary>
+        /// Check if the button is displayed and clickable.
+        /// </summary>
+        /// 
+        [Test]
+        public void VerifyButtonTest()
+        {
+            // Arrange
+            IForgotPasswordPage forgotPasswordPage = null;
+
+            // Act
+            IWebElement button = default;
+
+            // Assert that the button is displayed and enabled
+            Assert.That(button.Displayed && button.Enabled,Is.True);
+        }
+
+        /// <summary>
+        /// Test entering an email and clicking the button.
+        /// </summary>
+        [Test]
+        public void EnterInvalidEmailTest()
+        {
+            // Arrange
+            IForgotPasswordPage forgotPasswordPage = null;
+
+            //Act
+            IWebElement emailInput = default;
+            emailInput.SendKeys("email");
+
+            // Find and click the button
+            IWebElement button = default;
+            button.Click();
+
+            // Assert any expected behavior after clicking the button
+            //Assert.IsTrue(driver.PageSource.Contains("Invalid email format"));
+        }
+
+
 
     }
 }

@@ -8,14 +8,18 @@ namespace HerokuAppOperations
 {
     public interface IHerokuAppOperations
     {
-        void goToHome();
+        void CloseBrowser();
 
-        void closeBrowser();
+        string GetRepoDetails();
 
-        string getRepoDetails();
-
+        string GetFooterDetails();
+        string GetStatus(string locator);
+     
         string getFooterDetails();
-
-
+        string getRepoDetails();
+        string getStatus(string locator);
+        void goToHome();
+        bool GetStatus();
+        
     }
 }

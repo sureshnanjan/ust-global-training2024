@@ -34,5 +34,6 @@
         ///  this method clicks on the Add Remove Elemetns link present on the homepage.
         /// </summary>
         void clickAddRemoveElementLink();
+        void closeBrowser();
     }
 }

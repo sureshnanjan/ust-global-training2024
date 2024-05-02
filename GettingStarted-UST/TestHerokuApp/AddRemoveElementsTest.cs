@@ -17,10 +17,12 @@ namespace TestHerokuApp
         [Test]
         public void validatePageElementisDisplayed()
         {
+            
+
             Console.WriteLine("Test started at : " + IaddRem.getTime());
-
+            IaddRem.clickAddRemoveElementLink();
             IaddRem.pageContent();
-
+            IaddRem.closeBrowser();
             Console.WriteLine("Test ended  at : " + IaddRem.getTime());
 
         }

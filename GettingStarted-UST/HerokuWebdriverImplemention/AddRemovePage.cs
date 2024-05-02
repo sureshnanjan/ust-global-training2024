@@ -8,7 +8,8 @@ using HerokuWebdriverImplemention;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 using NUnit.Framework;
- 
+using OpenQA.Selenium.DevTools.V121.CacheStorage;
+
 
 
 namespace HerokuWebdriverImplemention
@@ -39,6 +40,7 @@ namespace HerokuWebdriverImplemention
         /// </summary>
         public AddRemovePage()
         {
+
             this.AddREmoveLink = By.XPath("//a[@href=\"/add_remove_elements/\"]");
             this.PageTitle = By.XPath("//h3[text()='Add/Remove Elements']");
             this.AddElementButton = By.XPath("//button[@onclick=\"addElement()\"]");
@@ -52,8 +54,13 @@ namespace HerokuWebdriverImplemention
 
         bool IAddRemoveElements.checkForPresenceofDeleteButton()
         {
-
-            throw new NotImplementedException();
+            bool flag = false;
+            if(this.driver.FindElement(deleteButton).Displayed)
+            {
+                Console.WriteLine("Delet button exists");
+                flag= true;
+            }
+            return flag;
         }
 
         /// <summary>
@@ -84,14 +91,13 @@ namespace HerokuWebdriverImplemention
         /// </summary>
         void IAddRemoveElements.clickOnDelete(int i)
         {
-
+            
             for (int j = 0; j < i; j++)
             {
                 this.driver.FindElement(deleteButton).Click();
                 Console.WriteLine(i + " delete buttons removed !");
             }
-
-            throw new NotImplementedException();
+             
         }
 
         /// <summary>
@@ -112,7 +118,7 @@ namespace HerokuWebdriverImplemention
             }
             return flag;
 
-            throw new NotImplementedException();
+            
         }
 
         /// <summary>
@@ -133,6 +139,11 @@ namespace HerokuWebdriverImplemention
         void IAddRemoveElements.clickAddRemoveElementLink()
         {
             Console.WriteLine("not implemented yet");
+        }
+
+        void IAddRemoveElements.closeBrowser()
+        {
+            this.driver.Close();
         }
     }
 }

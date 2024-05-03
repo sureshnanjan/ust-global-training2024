@@ -17,14 +17,11 @@ namespace TestHerokuApp
         [Test]
         public void validatePageElementisDisplayed()
         {
-            
-
             Console.WriteLine("Test started at : " + IaddRem.getTime());
             IaddRem.clickAddRemoveElementLink();
-            IaddRem.pageContent();
+            IaddRem.verifyPageContent();
             IaddRem.closeBrowser();
             Console.WriteLine("Test ended  at : " + IaddRem.getTime());
-
         }
 
          [Test]
@@ -35,11 +32,12 @@ namespace TestHerokuApp
 
            public void ValidateAddingElements()
            {
-                      IaddRem.clickAddRemoveElementLink();
-                      IaddRem.clickOnAddElements(3);
-
-              
-            }
+            Console.WriteLine("Test started at : " + IaddRem.getTime());
+            IaddRem.clickAddRemoveElementLink();
+            IaddRem.clickOnAddElements(3);
+            IaddRem.closeBrowser();
+            Console.WriteLine("Test ended  at : " + IaddRem.getTime());
+        }
 
 
         /// <summary>
@@ -49,10 +47,16 @@ namespace TestHerokuApp
         [Test]
         public void ValidateDeleteElements()
         {
-            if (IaddRem.checkForPresenceofDeleteButton())
-            {
-                IaddRem.clickOnDelete(2);
-            }
+            Console.WriteLine("Test started at : " + IaddRem.getTime());
+            IaddRem.clickAddRemoveElementLink();
+
+            IaddRem.clickOnAddElements(1);
+            IaddRem.checkForPresenceofDeleteButton();
+            
+            IaddRem.clickOnDelete(1);
+            IaddRem.closeBrowser();
+            Console.WriteLine("Test ended  at : " + IaddRem.getTime());
         }
+
     }
 }

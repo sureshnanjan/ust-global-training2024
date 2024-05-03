@@ -6,7 +6,7 @@
         /// This method helps to verify content on page
         /// </summary>
         /// <returns>content as a string value </returns>
-        bool pageContent();
+        bool verifyPageContent();
 
         /// <summary>
         /// This method helps to verify Add Elements actionable button on the page

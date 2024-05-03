@@ -69,19 +69,13 @@ namespace HerokuWebdriverImplemention
         /// </summary>
         void IAddRemoveElements.clickOnAddElements(int i)
         {
-            if (this.clickAddRemoveElementLink())
-            {
-                if (this.driver.FindElement(AddElementButton).Displayed)
-                {
+           
                     for (int j = 0; j < i; j++)
 
                         this.driver.FindElement(AddElementButton).Click();
 
                     Console.WriteLine(i + " New Elements Added !");
-                }
-
-                else Console.WriteLine("Addremove button not displayed");
-            }
+     
 
         }
 
@@ -103,19 +97,18 @@ namespace HerokuWebdriverImplemention
         /// <summary>
         ///  this method checks and validates the page contents as per requirement
         /// </summary>
-        bool IAddRemoveElements.pageContent()
+        bool IAddRemoveElements.verifyPageContent()
         {
             String expectedTitle = "Add/Remove Elements";
             bool flag = false;
-            if (clickAddRemoveElementLink())
-            {
+           
                      Console.WriteLine("Page elements displayed properly!");
                     flag = true;
                     String strPageTitile = this.driver.FindElement(PageTitle).Text;
                   //  Assert.That(expectedTitle, strPageTitile);
                   Assert.That(expectedTitle, Is.EqualTo(strPageTitile));
 
-            }
+           
             return flag;
 
             
@@ -124,21 +117,18 @@ namespace HerokuWebdriverImplemention
         /// <summary>
         ///  this method clicks on the Add Remove Elemetns link present on the homepage.
         /// </summary>
-        public bool clickAddRemoveElementLink()
+        
+
+        void IAddRemoveElements.clickAddRemoveElementLink()
         {
-            bool flag = false;
+            
             if (this.driver.FindElement(AddREmoveLink).Displayed)
             {
                 this.driver.FindElement(AddREmoveLink).Click();
                 Console.WriteLine("Add Remove Elements link Clicked !");
-                flag = true;
+                 
             }
-            return flag;
-        }
-
-        void IAddRemoveElements.clickAddRemoveElementLink()
-        {
-            Console.WriteLine("not implemented yet");
+             
         }
 
         void IAddRemoveElements.closeBrowser()

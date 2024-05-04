@@ -42,6 +42,8 @@ namespace TestHerokuApp
             Assert.That(mwStatus, Is.True);
             Assert.That(actualTitle,Is.EqualTo(expectedTitle));
             mw.closeModalWindow();
+            mwStatus = mw.getModalWindowStatus();
+            Assert.That(mwStatus, Is.False);
             mw.CloseBrowser();
         }
     }

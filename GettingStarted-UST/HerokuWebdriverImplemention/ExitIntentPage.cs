@@ -22,6 +22,7 @@ namespace HerokuWebdriverImplemention
         private By windowTitle;
         private By windowClose;
         private By pageLink;
+        private By ModalWindow;
 
         /// <summary>
         /// Load all the webElements through Constructor
@@ -32,6 +33,7 @@ namespace HerokuWebdriverImplemention
             this.windowTitle = By.XPath("//*[@id=\"ouibounce-modal\"]/div[2]/div[1]/h3");
             this.windowClose = By.XPath("//p[text()='Close']");
             this.pageLink = By.XPath("//*[@id=\"content\"]/ul/li[16]/a");
+            this.ModalWindow = By.Id("ouibounce-modal");
             openPage();
         }
 
@@ -59,8 +61,11 @@ namespace HerokuWebdriverImplemention
         /// </summary>
         /// <returns>Boolean true or False</returns>
         public bool getModalWindowStatus()
-        {           
-            return driver.FindElement(windowTitle).Enabled;
+        {       
+            string style = driver.FindElement(ModalWindow).GetAttribute("style");
+            if (style == "display: block;")
+                return true;
+            else return false;
         }
 
         /// <summary>
@@ -90,7 +95,12 @@ namespace HerokuWebdriverImplemention
             String pos = driver.Manage().Window.Position.ToString();
             string size = driver.Manage().Window.Size.ToString();
             Console.WriteLine($"Position : {pos} Size : {size}");
-
+            
+            /*
+            PointerInputDevice mouse = new PointerInputDevice();
+            mouse.CreatePointerMove(CoordinateOrigin.Viewport, -5, -3, TimeSpan.FromSeconds(3));
+            */
+            
             IJavaScriptExecutor js = (IJavaScriptExecutor)driver;
             js.ExecuteScript("var event = new MouseEvent('mouseleave', {view: window, bubbles: true, cancelable: true}); document.body.dispatchEvent(event);");
 

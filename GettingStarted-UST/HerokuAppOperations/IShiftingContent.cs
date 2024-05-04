@@ -12,7 +12,7 @@ namespace HerokuAppOperations
         /// Method to fetch title of the page
         /// </summary>
         /// <returns></returns>
-        public string titleOfShiftingContentPage();
+        public void titleOfShiftingContentPage();
         
         /// <summary>
         /// To count the number of links available on the page

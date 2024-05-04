@@ -17,20 +17,13 @@ namespace HerokuWebdriverImplemention
 
         public ShiftingContent()
         {
-            this.shiftingContenLink = By.LinkText("Shiting Content");
+            this.shiftingContenLink = By.LinkText("Shifting Content");
             this.shiftingContentTitle = By.TagName("h3");
         }
 
-        public void titleOfShiftingContentPage()
-        {
-            string expectedTitle = "Shifting Content";
-            string actualTitle = this.driver.FindElement(shiftingContentTitle).Text;
-            Assert.That(actualTitle, Is.EqualTo(expectedTitle));
-
-        }
         public void clickShiftingContentLink()
         {
-            throw new NotImplementedException();
+            this.driver.FindElement(shiftingContenLink).Click();
         }
 
         public void clickToShiftImageLeft()
@@ -45,7 +38,16 @@ namespace HerokuWebdriverImplemention
 
         public int CountTheLink()
         {
-            throw new NotImplementedException();
+            //List<IWebElement> count = driver.FindElement(By.TagName(""));
+            // Console.WriteLine(count);
+
+            // IHomePage page = new HomePage();
+            IShiftingContent obj = new ShiftingContent();
+            int expectedCount = 3;
+            int actualCount = obj.CountTheLink();
+                
+            Assert.That(actualCount, Is.EqualTo(expectedCount));
+            Console.WriteLine("Total link on the page is " + expectedCount);
         }
 
         public List<string> getMenuElements()
@@ -58,17 +60,15 @@ namespace HerokuWebdriverImplemention
             throw new NotImplementedException();
         }
 
-        public string getTitle()
+        public void titleOfShiftingContentPage()
         {
-            throw new NotImplementedException();
+            string expectedTitle = "Shifting Content";
+            string actualTitle = this.driver.FindElement(shiftingContentTitle).Text;
+            Assert.That(actualTitle, Is.EqualTo(expectedTitle));
+
         }
 
         public string validateContentOnShiftingContent()
-        {
-            throw new NotImplementedException();
-        }
-
-        string IShiftingContent.titleOfShiftingContentPage()
         {
             throw new NotImplementedException();
         }

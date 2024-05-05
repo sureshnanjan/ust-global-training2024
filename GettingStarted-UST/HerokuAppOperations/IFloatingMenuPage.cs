@@ -9,7 +9,7 @@ namespace HerokuAppOperations
     /// <summary>
     /// Holds the Properties and Operations of Floating Menu page 
     /// </summary>
-    internal interface IFloatingMenuPage
+    public interface IFloatingMenuPage
     {
         /// <summary>
         /// Get the Title of the Page

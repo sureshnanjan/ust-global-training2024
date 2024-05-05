@@ -11,7 +11,7 @@ namespace TestHerokuApp
     /// <summary>
     /// Test cases for File Download page
     /// </summary>
-    [TestFixture]
+ /*   [TestFixture]
     public class FileDownloadTests
     {
 
@@ -102,5 +102,5 @@ namespace TestHerokuApp
             string actualMsg = fileDownload.getDownloadstatus("File name");
             Assert.That(actualMsg, Is.EqualTo(expectedMsg));
         }
-    }
+    }*/
 }

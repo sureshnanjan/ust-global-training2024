@@ -9,20 +9,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HerokuAppOperations", "Hero
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestHerokuApp", "TestHerokuApp\TestHerokuApp.csproj", "{D9B346FC-18AA-478F-ABA7-CC56D8563560}"
 EndProject
-<<<<<<< HEAD
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetStoreAutomation", "PetStoreAutomation\PetStoreAutomation.csproj", "{332F4241-38F5-443B-9AAA-5AEB1255E8E7}"
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestHerokuApp", "TestHerokuApp\TestHerokuApp.csproj", "{D9B346FC-18AA-478F-ABA7-CC56D8563560}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HerokuWebdriverImplemention", "HerokuWebdriverImplemention\HerokuWebdriverImplemention.csproj", "{0A947F70-4D22-475C-87F0-324E70002589}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AcceptanceTests", "AcceptanceTests\AcceptanceTests.csproj", "{FD412EFA-4411-4DA3-A6BE-6C791CA21AFD}"
-=======
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HerokuWebdriverImplemention", "HerokuWebdriverImplemention\HerokuWebdriverImplemention.csproj", "{0A947F70-4D22-475C-87F0-324E70002589}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AcceptanceTests", "AcceptanceTests\AcceptanceTests.csproj", "{FD412EFA-4411-4DA3-A6BE-6C791CA21AFD}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Utilities", "Utilities\Utilities.csproj", "{2C1FF0A6-565F-4BEC-BA6D-7C7CE131EF40}"
->>>>>>> origin/intermediate-branch
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -42,13 +35,10 @@ Global
 		{D9B346FC-18AA-478F-ABA7-CC56D8563560}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D9B346FC-18AA-478F-ABA7-CC56D8563560}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D9B346FC-18AA-478F-ABA7-CC56D8563560}.Release|Any CPU.Build.0 = Release|Any CPU
-<<<<<<< HEAD
 		{332F4241-38F5-443B-9AAA-5AEB1255E8E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{332F4241-38F5-443B-9AAA-5AEB1255E8E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{332F4241-38F5-443B-9AAA-5AEB1255E8E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{332F4241-38F5-443B-9AAA-5AEB1255E8E7}.Release|Any CPU.Build.0 = Release|Any CPU
-=======
->>>>>>> origin/intermediate-branch
 		{0A947F70-4D22-475C-87F0-324E70002589}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0A947F70-4D22-475C-87F0-324E70002589}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0A947F70-4D22-475C-87F0-324E70002589}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -57,13 +47,10 @@ Global
 		{FD412EFA-4411-4DA3-A6BE-6C791CA21AFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FD412EFA-4411-4DA3-A6BE-6C791CA21AFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FD412EFA-4411-4DA3-A6BE-6C791CA21AFD}.Release|Any CPU.Build.0 = Release|Any CPU
-<<<<<<< HEAD
-=======
 		{2C1FF0A6-565F-4BEC-BA6D-7C7CE131EF40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2C1FF0A6-565F-4BEC-BA6D-7C7CE131EF40}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2C1FF0A6-565F-4BEC-BA6D-7C7CE131EF40}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2C1FF0A6-565F-4BEC-BA6D-7C7CE131EF40}.Release|Any CPU.Build.0 = Release|Any CPU
->>>>>>> origin/intermediate-branch
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

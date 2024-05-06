@@ -15,13 +15,13 @@ namespace HerokuAppOperations
         /// Gets the title of the Slow Resource Page.
         /// </summary>
         /// <returns>The title of the Slow resource page as a string.</returns>
-        string getTitle();
+        public string getTitle();
 
         /// <summary>
         /// Gets the context of the Slow Resource Page.
         /// </summary>
         /// <returns>The context of the Slow resource page as a string.</returns>
-        string getContext();
+        public string getContext();
 
 
     }

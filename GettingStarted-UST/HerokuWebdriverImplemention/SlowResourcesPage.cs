@@ -20,14 +20,35 @@ using Utilities;
 
 namespace HerokuWebdriverImplemention
 {
+    /// <summary>
+    /// Class to hold the Slow Resources page Properities and Methods
+    /// </summary>
     public class SlowResourcesPage : HerokuApp, ISlowResourcePage
     {
-        private readonly By headingLocator;
+        /// <summary>
+        /// Properties of Slow Resources
+        /// </summary>
+        private By headingLocator;
+        private By pageLink;
 
-        public SlowResourcesPage()
+        /// <summary>
+        /// Load all the webElements through Constructor
+        /// </summary>
+        public SlowResourcesPage(IWebDriver driver) : base(driver)
         {
             this.headingLocator = By.XPath("//*[@id=\"content\"]/div/h3");
-        }  
+            this.pageLink = By.XPath("//*[@id=\"content\"]/ul/li[40]/a");
+            openPage();
+        }
+
+        /// <summary>
+        /// Opens the Slow Resources Page 
+        /// </summary>
+        private void openPage()
+        {
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(120);
+            driver.FindElement(pageLink).Click();
+        }
 
         public void closeBrowser()
         {
@@ -38,6 +59,10 @@ namespace HerokuWebdriverImplemention
             throw new NotImplementedException();
         }
 
+        /// <summary>
+        /// Get the title of page
+        /// </summary>
+        /// <returns>String Title</returns>
         public string getTitle()
         {
             return (this.driver.FindElement(this.headingLocator)).Text;

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace HerokuAppOperations
 {
     /// <summary>
-    /// 
+    ///  Represents the interface for ChallengingDom Page.
     /// </summary>
     public interface IChallengingDomOperations : IHerokuAppOperations
     {
@@ -95,8 +95,6 @@ namespace HerokuAppOperations
         /// <summary>
         /// This method retrieves the data information of the row
         /// </summary>
-        /// <param name="rownum"/> The row number for which data has to be fetched </param>
-        /// <returns> the row data as a string array </returns>
         string[] getRowData();
     }
 }

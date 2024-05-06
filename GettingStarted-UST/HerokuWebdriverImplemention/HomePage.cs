@@ -16,6 +16,7 @@ namespace HerokuWebdriverImplemention
 {
     public class HomePage : HerokuApp, IHomePage
     {
+        private IWebDriver Browser;
         private By headingLocator;
         private By subHeadingLocator;
         private By exampleLocator;
@@ -67,10 +68,16 @@ namespace HerokuWebdriverImplemention
 
         IHerokuAppOperations IHomePage.goToExample(string exampleName)
         {
+            Browser = this.driver;
             switch (exampleName)
             {
                 case "AddRemove":
                     return new AddRemovePage();
+                case "ChallengingDom":
+                    return new ChallengingDomPage(Browser);
+                case "SlowResources":
+                    return new SlowResourcesPage(Browser);
+
                 default: throw new NotImplementedException();
 
             }

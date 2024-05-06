@@ -9,6 +9,9 @@ using NUnit.Framework;
 
 namespace TestHerokuApp
 {
+    /// <summary>
+    /// Test cases to verify the SlowResources features
+    /// </summary>
     [TestFixture]
     public class SlowResourcePageTests
     {
@@ -18,7 +21,8 @@ namespace TestHerokuApp
         [Test]
         public void verifySlowResourcePageTitle()
         {
-            ISlowResourcePage source = new SlowResourcesPage();
+            IHomePage page = new HomePage();
+            ISlowResourcePage source = (SlowResourcesPage)page.goToExample("SlowResources");
             string expectedTitle = "Slow Resources";
             string actualTitle = source.getTitle();
             Assert.That(actualTitle, Is.EqualTo(expectedTitle));

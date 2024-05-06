@@ -22,8 +22,15 @@ using Utilities;
 
 namespace HerokuWebdriverImplemention
 {
+    /// <summary>
+    /// Class to hold the ChallengingDom page Properities and Methods
+    /// </summary>
     public class ChallengingDomPage: HerokuApp, IChallengingDomOperations
     {
+        /// <summary>
+        /// Properties of Challenging Dom
+        /// </summary>
+        private By pageLink;
         private readonly By headingLocator;
         private readonly By contentLocator;
         private readonly By button1Locator;
@@ -33,7 +40,10 @@ namespace HerokuWebdriverImplemention
         private readonly By tablerow1Locator;
         private readonly By resultLocator;
 
-        public ChallengingDomPage()
+        /// <summary>
+        /// Load all the webElements through Constructor
+        /// </summary>
+        public ChallengingDomPage(IWebDriver driver) : base(driver)
         {
             this.headingLocator = By.TagName("h3");
             this.contentLocator = By.XPath("//*[@id=\"content\"]/div/p");
@@ -43,6 +53,18 @@ namespace HerokuWebdriverImplemention
             this.tableheadingLocator = By.XPath("//*[@id=\"content\"]/div/div/div/div[2]/table/thead/tr/th");
             this.tablerow1Locator = By.XPath("//*[@id=\"content\"]/div/div/div/div[2]/table/tbody/tr[1]");
             this.resultLocator = By.XPath("//*[@id=\"content\"]/div/div/div/div[2]/div/div");
+            this.pageLink = By.XPath("//*[@id=\"content\"]/ul/li[5]/a");
+            openPage();
+
+        }
+
+        /// <summary>
+        /// Opens the ChallengingDom Page 
+        /// </summary>
+        private void openPage()
+        {
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(120);
+            driver.FindElement(pageLink).Click();
         }
 
         public void closeBrowser()
@@ -55,16 +77,25 @@ namespace HerokuWebdriverImplemention
             throw new NotImplementedException();
         }
 
+        /// <summary>
+        /// Clicks Button 1 on the Page
+        /// </summary>
         public void doOperation1()
         {
             driver.FindElement(By.XPath("/html/body/div[2]/div/div/div/div/div[1]/a[1]")).Click();
         }
 
+        /// <summary>
+        /// Clicks Button 2 on the Page
+        /// </summary>
         public void doOperation2()
         {
             driver.FindElement(By.XPath("/html/body/div[2]/div/div/div/div/div[1]/a[2]")).Click();
         }
 
+        /// <summary>
+        /// Clicks Button 3 on the Page
+        /// </summary>
         public void doOperation3()
         {
             driver.FindElement(By.XPath("/html/body/div[2]/div/div/div/div/div[1]/a[3]")).Click();
@@ -80,36 +111,58 @@ namespace HerokuWebdriverImplemention
             throw new NotImplementedException();
         }
 
+        /// <summary>
+        /// Get the Main Content of the Page
+        /// </summary>
         public string getMainContent()
         {
             return (this.driver.FindElement(this.contentLocator)).Text;
             Thread.Sleep(5000);
         }
 
+        /// <summary>
+        /// Get the button 1 label on the Page
+        /// </summary>
         public string getOperation1Label()
         {
             return (this.driver.FindElement(this.button1Locator)).Text;
             Thread.Sleep(5000);
         }
 
+        /// <summary>
+        /// Get the button 3 label on the Page
+        /// </summary>
         public string getOperation2Label()
         {
             return (this.driver.FindElement(this.button2Locator)).Text;
             Thread.Sleep(5000);
         }
 
+
+        /// <summary>
+        /// Get the button 3 label on the Page
+        /// </summary>
         public string getOperation3Label()
         {
             return (this.driver.FindElement(this.button3Locator)).Text;
             Thread.Sleep(5000);
         }
 
+        /// <summary>
+        /// Get the Result of the Page
+        /// </summary>
+        /// <returns>String Result</returns>
         public string getResult()
         {
             return (this.driver.FindElement(this.resultLocator)).Text;
             Thread.Sleep(5000);
         }
 
+
+        /// <summary>
+        /// Get the Rowdata of the Page
+        /// </summary>
+        /// <returns>String Rowdata</returns>
         public string[] getRowData()
         {
             List<string> row1data = new List<string> { };
@@ -121,6 +174,11 @@ namespace HerokuWebdriverImplemention
             return row1data.ToArray();
         }
 
+
+        /// <summary>
+        /// Get the TableHeadings of the Page
+        /// </summary>
+        /// <returns>String Table Headings</returns>
         public string[] getTableHeadings()
         {
             List<string> headings = new List<string> { };
@@ -133,6 +191,10 @@ namespace HerokuWebdriverImplemention
             return headings.ToArray();
         }
 
+        /// <summary>
+        /// Get the Title of the Page
+        /// </summary>
+        /// <returns>String Title</returns>
         public string getTitle()
         {
             return (this.driver.FindElement(this.headingLocator)).Text;

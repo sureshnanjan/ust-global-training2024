@@ -57,9 +57,11 @@ namespace HerokuWebdriverImplemention
             bool flag = false;
             if(this.driver.FindElement(deleteButton).Displayed)
             {
-                Console.WriteLine("Delet button exists");
+                Console.WriteLine("Delete button exists");
                 flag= true;
             }
+            else Console.WriteLine("Delete button not present");
+
             return flag;
         }
 
@@ -85,14 +87,12 @@ namespace HerokuWebdriverImplemention
         /// </summary>
         void IAddRemoveElements.clickOnDelete(int i)
         {
-            
-            for (int j = 0; j < i; j++)
-            {
-                this.driver.FindElement(deleteButton).Click();
+              for (int j = 0; j < i; j++)
+                {
+                    this.driver.FindElement(deleteButton).Click();
+                }
                 Console.WriteLine(i + " delete buttons removed !");
-            }
-             
-        }
+          }
 
         /// <summary>
         ///  this method checks and validates the page contents as per requirement
@@ -101,12 +101,10 @@ namespace HerokuWebdriverImplemention
         {
             String expectedTitle = "Add/Remove Elements";
             bool flag = false;
-           
-                     Console.WriteLine("Page elements displayed properly!");
-                    flag = true;
-                    String strPageTitile = this.driver.FindElement(PageTitle).Text;
-                  //  Assert.That(expectedTitle, strPageTitile);
-                  Assert.That(expectedTitle, Is.EqualTo(strPageTitile));
+            Console.WriteLine("Page elements displayed properly!");
+            flag = true;
+            String strPageTitile = this.driver.FindElement(PageTitle).Text;
+            Assert.That(expectedTitle, Is.EqualTo(strPageTitile));
 
            
             return flag;

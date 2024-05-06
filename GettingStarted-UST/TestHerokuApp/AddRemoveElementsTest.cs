@@ -14,6 +14,10 @@ namespace TestHerokuApp
         /// this Test is used to validate if the page elelements are displayed on the page   
         ///<returns> boolean value (true/false) depending on the visiility of the flag </returns>
         /// </summary> 
+        /// 
+        [SetUp]
+
+
         [Test]
         public void validatePageElementisDisplayed()
         {
@@ -34,7 +38,7 @@ namespace TestHerokuApp
            {
             Console.WriteLine("Test started at : " + IaddRem.getTime());
             IaddRem.clickAddRemoveElementLink();
-            IaddRem.clickOnAddElements(3);
+            IaddRem.clickOnAddElements(7);
             IaddRem.closeBrowser();
             Console.WriteLine("Test ended  at : " + IaddRem.getTime());
         }
@@ -50,10 +54,12 @@ namespace TestHerokuApp
             Console.WriteLine("Test started at : " + IaddRem.getTime());
             IaddRem.clickAddRemoveElementLink();
 
-            IaddRem.clickOnAddElements(1);
-            IaddRem.checkForPresenceofDeleteButton();
+            IaddRem.clickOnAddElements(5);
+            if(IaddRem.checkForPresenceofDeleteButton())
+            {
+                IaddRem.clickOnDelete(4);
+            }
             
-            IaddRem.clickOnDelete(1);
             IaddRem.closeBrowser();
             Console.WriteLine("Test ended  at : " + IaddRem.getTime());
         }

@@ -13,7 +13,6 @@ namespace HerokuWebdriverImplemention
     {
         private readonly By headinglocator;
         private readonly By contentLocator;
-        
 
         public ABTestingPage()
         {
@@ -35,7 +34,6 @@ namespace HerokuWebdriverImplemention
         public string getTitle()
         {
             return this.driver.FindElement(this.headinglocator).Text;
-           
         }
     }
 }

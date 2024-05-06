@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,30 +10,24 @@ namespace HerokuAppOperations
         /// This provides details on functionality of checkbox in HerokuApp
         /// </summary>
         /// <returns></returns>
-    internal interface ICheckboxes
+    public interface ICheckboxes
     {
         /// <summary>
-        /// Method to read title of the page
+        /// Method to click the checkbox link
         /// </summary>
-        /// <returns></returns>
-        public string getTitle();
-        
-        /// <summary>
-        /// To provide the functionality of marking checbox checked
-        /// </summary>
-        public void checkCheckBox();
+        public void clickCheckBoxLink();
 
         /// <summary>
-        /// To provide the functionality of marking checbox unchecked
+        /// Check the title of Checkbox page
         /// </summary>
-        public void unCheckCheckbox();
-        /// <summary>
-        /// To get the current status of checkbox
-        /// </summary>   
-        public void getCurrentStatus();
 
-        
-       
+        public void titleOfCheckBoxPage();
+
+        /// <summary>
+        /// Method to check the CheckBox1 is enabled
+        /// </summary>
+        public void enableDisableCheckBox1();
+
 
     }
 }

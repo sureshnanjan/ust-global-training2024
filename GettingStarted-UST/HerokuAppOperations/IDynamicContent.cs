@@ -13,7 +13,7 @@ namespace HerokuAppOperations
         /// This method verifies the title of the page
         /// </summary>
         /// 
-        void getPageTitle();
+        string getPageTitle();
 
 
         /// <summary>

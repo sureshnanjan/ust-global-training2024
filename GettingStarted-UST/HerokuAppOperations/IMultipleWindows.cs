@@ -11,7 +11,7 @@ namespace HerokuAppOperations
         /// <summary>
         /// This method helps to verifies that whether URL loaded or not
         /// </summary>       
-        string getURL();
+        string getParenttURL();
         /// <summary>
         /// This method verifies the title displayed correctly
         /// </summary>
@@ -19,11 +19,11 @@ namespace HerokuAppOperations
         /// <summary>
         /// This method helps to verify the link
         /// </summary>
-        string verifyLink();
+        void clickOnHyperlink();
         /// <summary>
         /// This method helps to verify new window
         /// </summary>
-        string verifyNewWindow();
+        void verifyNewWindow();
         /// <summary>
         /// This method verifies the title in new window
         /// </summary>

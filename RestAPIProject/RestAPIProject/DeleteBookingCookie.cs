@@ -7,19 +7,19 @@ using RestSharp;
 
 namespace RestAPIProject
 {
-    public class AuthRequest
+    public class DeleteBookingCookie
     {
-       public  async void postReq()
+        public async void deleteBookingCookie()
         {
             var options = new RestClientOptions("https://restful-booker.herokuapp.com/")
             {
                 MaxTimeout = -1,
             };
             var client = new RestClient(options);
-            var request = new RestRequest("https://restful-booker.herokuapp.com/auth", Method.Post);
-            request.AddHeader("Content-Type", "application/json");
-            var body = @"{" + "\n" +  @"    ""username"" : ""admin""," + "\n" +    @"    ""password"" : ""password123"" " + "\n" +   @"}";
-            request.AddStringBody(body, DataFormat.Json);
+            var request = new RestRequest("https://restful-booker.herokuapp.com/booking/1?id=1649", Method.Delete);
+            request.AddHeader("Cookie", "token={{envToken}}");
+            var body = @"";
+            request.AddParameter("text/plain", body, ParameterType.RequestBody);
             RestResponse response = await client.ExecuteAsync(request);
             Console.WriteLine(response.Content);
         }

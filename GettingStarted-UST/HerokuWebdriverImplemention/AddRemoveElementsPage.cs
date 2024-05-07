@@ -15,14 +15,14 @@ using OpenQA.Selenium.DevTools.V121.CacheStorage;
 namespace HerokuWebdriverImplemention
 
 {
-    public class AddRemovePage : HerokuApp, IAddRemoveElements
+    public class AddRemoveElementsPage : HomePage, IAddRemoveElements
     {
 
-        private readonly IWebDriver browser;
         private By AddREmoveLink;
         private By PageTitle;
         private By AddElementButton;
         private By deleteButton;
+       // IHomePage page = new HomePage();
 
         /// <summary>
         ///  this method captures and prints the time it was called.
@@ -38,7 +38,7 @@ namespace HerokuWebdriverImplemention
         /// <summary>
         ///  this is the constructor of this class
         /// </summary>
-        public AddRemovePage()
+        public AddRemoveElementsPage()
         {
 
             this.AddREmoveLink = By.XPath("//a[@href=\"/add_remove_elements/\"]");
@@ -105,11 +105,7 @@ namespace HerokuWebdriverImplemention
             flag = true;
             String strPageTitile = this.driver.FindElement(PageTitle).Text;
             Assert.That(expectedTitle, Is.EqualTo(strPageTitile));
-
-           
             return flag;
-
-            
         }
 
         /// <summary>
@@ -119,7 +115,8 @@ namespace HerokuWebdriverImplemention
 
         void IAddRemoveElements.clickAddRemoveElementLink()
         {
-            
+            //Launch Heroku-app and click on AddRemoveElements link
+           // page.goToExample("AddRemoveElements");
             if (this.driver.FindElement(AddREmoveLink).Displayed)
             {
                 this.driver.FindElement(AddREmoveLink).Click();

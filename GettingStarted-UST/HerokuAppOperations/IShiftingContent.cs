@@ -18,7 +18,12 @@ namespace HerokuAppOperations
         /// To count the number of links available on the page
         /// </summary>
         /// <returns></returns>
-        public int CountTheLink();
+        public void CheckLinksOfMenuLink();
+        /// <summary>
+        /// Enable the functionality to click on the links
+        /// </summary>
+
+        public void ClickListlink_CheckTitleOfPage();
 
         /// <summary>
         /// Enable the functionality to click on the links
@@ -30,7 +35,7 @@ namespace HerokuAppOperations
         /// Get all the Menu Options in the Page
         /// </summary>
         /// <returns>List of Menu options</returns>
-        List<string> getMenuElements();
+        //List<string> getMenuElements();
         
         /// <summary>
         /// Method to shift images towards left
@@ -45,16 +50,17 @@ namespace HerokuAppOperations
         /// <summary>
         /// Method to check the visibility of all the menu
         /// </summary>
-        bool getMenuItemVisibilityStatus(string item);
+       // bool getMenuItemVisibilityStatus(string item);
         
         /// <summary>
         /// Method to check content of Shifting Content link page
         /// </summary>
-        public string validateContentOnShiftingContent();
+        public void validateContentOnShiftingContentList();
+
+        public void clickHome();
 
     }
 
 
 
 }
-         

@@ -14,11 +14,32 @@ namespace HerokuWebdriverImplemention
         private IWebDriver browser;
         private By shiftingContenLink;
         private By shiftingContentTitle;
+        private By example1MenuLink;
+        private By example2AnImageLink;
+        private By example3List;
+        private By shiftingContentListTitle;
+        private By shiftingContentListText;
+        private By clickHere2;
+        private By portfolio;
+        private By clickMyHome;
+        private By clickHereInImage;
+        private By getImage;
 
         public ShiftingContent()
         {
             this.shiftingContenLink = By.LinkText("Shifting Content");
             this.shiftingContentTitle = By.TagName("h3");
+            this.example1MenuLink = By.LinkText("Example 1: Menu Element");
+            this.example2AnImageLink = By.LinkText("Example 2: An image");
+            this.example3List = By.LinkText("Example 3: List");
+            this.shiftingContentListTitle = By.TagName("h3");
+            this.shiftingContentListText = By.XPath("//*[text()='This example demonstrates a list of dynamic content with a static record that constantly moves around.']");
+            this.clickHere2 = By.XPath("//a[@href='/shifting_content/menu?pixel_shift=100']");
+            this.portfolio = By.XPath("//*[@id=\"content\"]/div/ul/li[4]/a");
+            this.clickMyHome = By.XPath("//*[@id=\"content\"]/div/ul/li[1]/a");
+            this.clickHereInImage = By.XPath("//*[@id=\"content\"]/div/p[3]/a");
+            this.getImage = By.XPath(" //img[@src = \"/img/avatar.jpg]");
+
         }
 
         public void clickShiftingContentLink()
@@ -28,7 +49,8 @@ namespace HerokuWebdriverImplemention
 
         public void clickToShiftImageLeft()
         {
-            throw new NotImplementedException();
+            this.driver.FindElement(clickHereInImage).Click();
+
         }
 
         public void clickToShiftImageRight()
@@ -36,29 +58,25 @@ namespace HerokuWebdriverImplemention
             throw new NotImplementedException();
         }
 
-        public int CountTheLink()
+        public void CheckLinksOfMenuLink()
         {
-            //List<IWebElement> count = driver.FindElement(By.TagName(""));
-            // Console.WriteLine(count);
+            this.driver.FindElement(example1MenuLink).Click();
 
-            // IHomePage page = new HomePage();
-            IShiftingContent obj = new ShiftingContent();
-            int expectedCount = 3;
-            int actualCount = obj.CountTheLink();
-                
-            Assert.That(actualCount, Is.EqualTo(expectedCount));
-            Console.WriteLine("Total link on the page is " + expectedCount);
+            this.driver.FindElement(clickHere2).Click();
+
+            bool visible = this.driver.FindElement(portfolio).Displayed;
+            if (visible == false)
+            {
+                Console.WriteLine("Portfolio menu item is invisible");
+            }
+            else
+            {
+                Console.WriteLine("Portfolio menu item is visible");
+            }
+
         }
 
-        public List<string> getMenuElements()
-        {
-            throw new NotImplementedException();
-        }
-
-        public bool getMenuItemVisibilityStatus(string item)
-        {
-            throw new NotImplementedException();
-        }
+        
 
         public void titleOfShiftingContentPage()
         {
@@ -68,9 +86,25 @@ namespace HerokuWebdriverImplemention
 
         }
 
-        public string validateContentOnShiftingContent()
+        public void clickHome()
         {
-            throw new NotImplementedException();
+            this.driver.FindElement(clickMyHome).Click();
+        }
+
+        public void ClickListlink_CheckTitleOfPage()
+        {
+            this.driver.FindElement(example3List).Click();
+            string expectedTitle = "Shifting Content: List";
+            string actualTitle = this.driver.FindElement(shiftingContentListTitle).Text;
+            Assert.That(actualTitle, Is.EqualTo(expectedTitle));
+        }
+        public void validateContentOnShiftingContentList()
+        {
+            string expectedContent = "This example demonstrates a list of dynamic content with a static record that constantly moves around.";
+            string actualContent = this.driver.FindElement(shiftingContentListText).Text;
+            Assert.That(actualContent, Is.EqualTo(expectedContent));
+
+            // this.driver.FindElement(example3List).Click;
         }
     }
 }

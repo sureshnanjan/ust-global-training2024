@@ -73,9 +73,9 @@ namespace HerokuWebdriverImplemention
             switch (exampleName)
             {
                 case "AddRemove":
-                    return new AddRemovePage();
+                    //return new AddRemovePage();
                 case "BrokenImages":
-                    return new BrokenImagePage();
+                    //return new BrokenImagePage();
                 default: throw new NotImplementedException();
 
             }

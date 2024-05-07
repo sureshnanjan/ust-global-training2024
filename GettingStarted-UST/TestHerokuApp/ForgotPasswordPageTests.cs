@@ -8,6 +8,7 @@ using OpenQA.Selenium;
 
 namespace TestHerokuApp
 {
+    [TestFixture]
     internal class ForgotPasswordPageTests
     {
         [Test]

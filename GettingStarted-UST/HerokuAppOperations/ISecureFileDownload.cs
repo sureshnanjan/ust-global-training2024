@@ -10,7 +10,7 @@ namespace HerokuAppOperations
     /// <summary>
     /// To perform operations in Secure File Download page
     /// </summary>
-    internal interface ISecureFileDownload
+    public interface ISecureFileDownload
     {
 
         /// <summary>
@@ -26,7 +26,7 @@ namespace HerokuAppOperations
         /// <param name="password">Password of User in Secure File download page</param>
         /// <param name="doCancel">Value of Cancel</param>
         /// <example></example>
-        void DoSignIn(string userName, string password, bool doCancel = false);
+        bool DoSignIn(string userName, string password, bool doCancel = false);
 
         /// <summary>
         /// Gets Title of the Secure File download Web Page opened after successful signin of Secure File download page Web Page
@@ -44,13 +44,13 @@ namespace HerokuAppOperations
         /// Download Files based on name
         /// </summary>
         /// <param name="fileName">Name of link available in Secure File Download</param>
-        void DownloadFileByName(string fileName);
+        string DownloadFileByName(string fileName);
 
         /// <summary>
         /// Download Files based on position
         /// </summary>
         /// <param name="filePosition">Position of link available in Secure File Download</param>
-        void DownloadFileByPosition(string filePosition);
+        string DownloadFileByPosition(string filePosition);
 
         /// <summary>
         /// To get status of Download

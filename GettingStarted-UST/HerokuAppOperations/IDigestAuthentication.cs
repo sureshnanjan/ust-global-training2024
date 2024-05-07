@@ -9,7 +9,7 @@ namespace HerokuAppOperations
     /// <summary>
     /// Interface to do operations in Digest Authentication page
     /// </summary>
-    internal interface IDigestAuthentication
+    public interface IDigestAuthentication
     {
 
         /// <summary>
@@ -24,7 +24,7 @@ namespace HerokuAppOperations
         /// <param name="userName">Username of User in Digest Authentication Web Page</param>
         /// <param name="password">Password of User in Digest Authentication Web Page</param>
         /// <example></example>
-        void DoSignIn(string userName, string password, bool doCancel=false);
+        bool DoSignIn(string userName, string password, bool doCancel = false);
 
         /// <summary>
         /// Gets Title of the Digest Authentication Web Page opened after successful signin of Digest Authentication Web Page

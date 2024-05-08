@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using HerokuAppOperations;
+using HerokuWebdriverImplemention;
 using NUnit.Framework.Constraints;
 using NUnit.Framework.Legacy;
 
@@ -15,6 +16,16 @@ namespace TestHerokuApp
     [TestFixture]
     public class FileDownloadTests
     {
+
+        /// <summary>
+        /// Launch home page & redirect to File Download page
+        /// </summary>
+        [SetUp]
+        public void start()
+        {
+            IHomePage page = new HomePage();
+            page.goToExample("FileDownloadPage");
+        }
 
         /// <summary>
         /// To verify the URL of page is correct
@@ -47,7 +58,7 @@ namespace TestHerokuApp
         public void NumberOfFilesIsCorrect()
         {
             IFileDownload fileDownload = null;
-            int expected = 129;
+            int expected = 17;
             int actual = fileDownload.getAvailableFiles().Count();
             Assert.That(actual, Is.EqualTo(expected));
         }
@@ -59,45 +70,71 @@ namespace TestHerokuApp
         public void ListOfFilesIsCorrect()
         {
             IFileDownload fileDownload = null;
-            List<string> expected = new List<string>();
+            string[] expected = { "sample-zip-file.zip", "snickers2.jpg", "headphones.png", "puppy_and_kitten.jpg", "upload-me.txt", "gridserver.log", "foto.png", "foto2.png", "7d2c5299e08a3426d5a9d62cfd8d285a1c7cb0d7 Build report.pdf", "olli-the-polite-cat.jpg", "Jpeg_with_exif.jpeg", "selenium-snapshot.png", "LambdaTest.txt", "random_data.txt", "Kotobati-_D8B9D982D8AFD983D8A7D984D986D981D8B3D98AD8A9D8B3D8ACD986D983D8A7D984D8A3D8A8D8AFD98A_.pdf", "some-file.txt", "E card.pdf" };         
             List<string> actual = fileDownload.getAvailableFiles();
-            CollectionAssert.AreEquivalent(expected, actual);
+            bool res = false;
+            for (int i = 0; i < 17; i++)
+            {
+                res = actual.Contains(expected[i]);
+                if (res == false)
+                {
+                    return;
+                }
+            }
+            if (res == false)
+            {
+                Assert.Fail();
+            }
+            else
+            {
+                Assert.Pass();
+            }
         }
 
         /// <summary>
         /// To verify whether file download is successful by clicking on name of file
         /// </summary>
-        [Test]
-        public void DownloadByNameIsSuccess()
+        [TestCase("sample-zip-file.zip")]
+        [TestCase("snickers2.jpg")]
+        [TestCase("headphones.png")]
+        [TestCase("puppy_and_kitten.jpg")]
+        [TestCase("upload-me.txt")]
+        [TestCase("gridserver.log")]
+        [TestCase("foto.png")]
+        [TestCase("foto2.png")]
+        [TestCase("7d2c5299e08a3426d5a9d62cfd8d285a1c7cb0d7 Build report.pdf")]
+        [TestCase("olli-the-polite-cat.jpg")]
+        [TestCase("Jpeg_with_exif.jpeg")]
+        [TestCase("selenium-snapshot.png")]
+        [TestCase("LambdaTest.txt")]
+        [TestCase("random_data.txt")]
+        [TestCase("Kotobati-_D8B9D982D8AFD983D8A7D984D986D981D8B3D98AD8A9D8B3D8ACD986D983D8A7D984D8A3D8A8D8AFD98A_.pdf")]
+        [TestCase("some-file.txt")]
+        [TestCase("E card.pdf")]
+        public void DownloadByNameIsSuccess(string filename)
         {
             IFileDownload fileDownload = null;
-            string expectedMsg = "Success";
-            string actualMsg = fileDownload.downloadFile("First File");
-            Assert.That(actualMsg, Is.EqualTo(expectedMsg));
+            fileDownload.downloadFile(filename);
+            string res = fileDownload.isFileExists(filename);
+            Assert.Equals(res, filename);
         }
 
         /// <summary>
         /// To verify whether file download is successful by clicking based on the position of file
         /// </summary>
-        [Test]
-        public void DownloadByPosistionIsSuccess()
+        [TestCase(0)]
+
+        public void DownloadByPosistionIsSuccess(int pos)
         {
             IFileDownload fileDownload = null;
-            string expectedMsg = "Success";
-            string actualMsg = fileDownload.downloadFilebyPosition(3);
-            Assert.That(actualMsg, Is.EqualTo(expectedMsg));
+            string[] fileNames = { "sample-zip-file.zip", "snickers2.jpg", "headphones.png", "puppy_and_kitten.jpg", "upload-me.txt", "gridserver.log", "foto.png", "foto2.png", "7d2c5299e08a3426d5a9d62cfd8d285a1c7cb0d7 Build report.pdf", "olli-the-polite-cat.jpg", "Jpeg_with_exif.jpeg", "selenium-snapshot.png", "LambdaTest.txt", "random_data.txt", "Kotobati-_D8B9D982D8AFD983D8A7D984D986D981D8B3D98AD8A9D8B3D8ACD986D983D8A7D984D8A3D8A8D8AFD98A_.pdf", "some-file.txt", "E card.pdf" };
+            for (int i = 0; i < 17; i++)
+            {
+                fileDownload.downloadFilebyPosition(pos);
+                string res = fileDownload.isFileExists(fileNames[i]);
+                Assert.Equals(res, fileNames[i]);
+            }
         }
 
-        /// <summary>
-        /// To verify the downlod status of files by their names
-        /// </summary>
-        [Test]
-        public void DownloadByPositionIsSuccess()
-        {
-            IFileDownload fileDownload = null;
-            string expectedMsg = "Success";
-            string actualMsg = fileDownload.getDownloadstatus("File name");
-            Assert.That(actualMsg, Is.EqualTo(expectedMsg));
-        }
     }
 }

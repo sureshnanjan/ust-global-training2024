@@ -23,7 +23,7 @@ namespace HerokuAppOperations
         /// </summary>
         /// <returns></returns>
 
-        List<string> getAvailableFiles();
+       List<string> getAvailableFiles();
         /// <summary>
         /// Verify the list of different kind of files available for download
         /// </summary>
@@ -38,7 +38,7 @@ namespace HerokuAppOperations
         /// <summary>
         /// This method verifies the download status
         /// </summary>        
-        string getDownloadstatus(string fileStatus);
+        string isFileExists(string filename);
 
 
     }

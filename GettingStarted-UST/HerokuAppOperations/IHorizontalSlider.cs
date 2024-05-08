@@ -29,7 +29,7 @@ namespace HerokuAppOperations
         /// this method performs forward and backward sliding on the bar
         /// </summary>
         public void SlidetheBar(int n);
-        
+
 
         /// <summary>
         /// this method returns the text present on the screen

@@ -9,7 +9,7 @@ namespace HerokuAppOperations
     /// <summary>
     /// Holds the Properties and Operations of Floating Menu page 
     /// </summary>
-    internal interface IFloatingMenuPage
+    public interface IFloatingMenuPage
     {
         /// <summary>
         /// Get the Title of the Page
@@ -59,6 +59,6 @@ namespace HerokuAppOperations
         /// <param name="item">Menu Item</param>
         /// <returns>Staus as True or False</returns>
         bool getMenuItemVisibilityStatus(string item = "All");
-
+        string getScreenContent();
     }
 }

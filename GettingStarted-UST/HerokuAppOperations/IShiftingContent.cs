@@ -13,7 +13,7 @@ namespace HerokuAppOperations
         /// </summary>
         /// <returns></returns>
         public void titleOfShiftingContentPage();
-        
+
         /// <summary>
         /// To count the number of links available on the page
         /// </summary>
@@ -26,7 +26,7 @@ namespace HerokuAppOperations
         public void ClickListlink_CheckTitleOfPage();
 
         /// <summary>
-        /// Enable the functionality to click on the links
+        /// Method to click on Shifting Content link available on home page
         /// </summary>
         public void clickShiftingContentLink();
 
@@ -38,14 +38,14 @@ namespace HerokuAppOperations
         //List<string> getMenuElements();
         
         /// <summary>
-        /// Method to shift images towards left
+        /// Method to shift image in left/right directions
         /// </summary>
-        public void clickToShiftImageLeft();
-        
+      //  public void clickToShiftImagesLeft();
+
         /// <summary>
-        /// Method to shift images towards left
+        /// Method to click link and get blank image
         /// </summary>
-        public void clickToShiftImageRight();
+      //  public void clickLinkForBlankImage();
        
         /// <summary>
         /// Method to check the visibility of all the menu
@@ -55,8 +55,10 @@ namespace HerokuAppOperations
         /// <summary>
         /// Method to check content of Shifting Content link page
         /// </summary>
-        public void validateContentOnShiftingContentList();
-
+        public void contentOnShiftingContentList();
+        /// <summary>
+        /// Method to go to home page from Shifting Content: Menu Element page
+        /// </summary>
         public void clickHome();
 
     }

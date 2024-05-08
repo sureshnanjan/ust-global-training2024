@@ -9,7 +9,7 @@ namespace HerokuAppOperations
     /// <summary>
     /// Holds the Infinite Scroll page Elelments and Actions
     /// </summary>
-    internal interface IInfiniteScrollPage
+    public interface IInfiniteScrollPage
     {
         /// <summary>
         /// Get the Title of the Page

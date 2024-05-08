@@ -3,7 +3,7 @@ using OpenQA.Selenium;
 
 namespace HerokuWebdriverImplemention
 {
-    public class AddRemovePage : HerokuApp, IAddRemoveOperations
+    public class AddRemovePage : HerokuApp
     {
         By hedingLocator;
         By addLocator;

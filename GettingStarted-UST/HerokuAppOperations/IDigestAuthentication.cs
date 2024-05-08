@@ -9,7 +9,7 @@ namespace HerokuAppOperations
     /// <summary>
     /// Interface to do operations in Digest Authentication page
     /// </summary>
-    internal interface IDigestAuthentication
+    public interface IDigestAuthentication
     {
 
         /// <summary>
@@ -31,6 +31,12 @@ namespace HerokuAppOperations
         /// </summary>
         /// <returns>Title of Digest Authentication Webpage</returns>
         string GetTitle();
+        /// <summary>
+        /// Directs to Digest Authentication URL from Home Page
+        /// </summary>
+        /// <returns></returns>
+
+        void openDigestAuthenticationPage();
 
     }
 }

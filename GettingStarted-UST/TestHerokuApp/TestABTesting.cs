@@ -40,12 +40,7 @@ namespace TestHerokuApp
             Assert.That(Is.Equals(actual, "NO AB Test"));
         }
 
-        [Test]
-        public void add1elements() {
-            IAddRemoveOperations page = new AddRemovePage();
 
-
-        }
 
         // Adding a single ements works
         // Adding multiple elements works

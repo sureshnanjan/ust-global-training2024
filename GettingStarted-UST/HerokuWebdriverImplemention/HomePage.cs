@@ -80,6 +80,8 @@ namespace HerokuWebdriverImplemention
                     return new JavaScriptAlertPage(Browser);
                 case "ExitIntent":
                     return new ExitIntentPage(Browser);
+                case "DigestAuthentication":
+                    return new DigestAuthenticationPage();
 
                 default: throw new NotImplementedException();
 

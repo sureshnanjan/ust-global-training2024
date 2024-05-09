@@ -72,5 +72,11 @@ namespace TestHerokuApp
             obj.clickShiftingContentLink();
             obj.ClickListlink_CheckTitleOfPage();
         }
+        [Test]
+        public void validateClickOfImageLinkOpenLink()
+        {
+            obj.clickShiftingContentLink();
+            obj.clickImagelink_ClickhereToShiftImage();
+        }
     }
 }

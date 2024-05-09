@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -30,15 +31,10 @@ namespace HerokuWebdriverImplemention
             this.shiftingContenLink = By.LinkText("Shifting Content");
             this.shiftingContentTitle = By.TagName("h3");
             this.example1MenuLink = By.XPath("//a[contains(text(), 'Example 1: Menu Element')]");
-            //By.XPath("//*[@id=\"content\"]/div/a[1]");
-            //By.XPath("//a[@href='/shifting_content/menu']");
-            //By.LinkText("Example 1: Menu Element");
             this.example2AnImageLink = By.LinkText("Example 2: An image");
             this.example3List = By.LinkText("Example 3: List");
             this.shiftingContentListTitle = By.TagName("h3");
             this.shiftingContentListText = By.XPath("//p[contains(text(), 'This example demonstrates')]");
-             
-            //By.XPath("//*[text()='This example demonstrates a list of dynamic content with a static record that constantly moves around.']");
             this.clickHere2 = By.XPath("//a[@href='/shifting_content/menu?pixel_shift=100']");
             this.portfolio = By.XPath("//*[@id=\"content\"]/div/ul/li[4]/a");
             this.clickMyHome = By.XPath("//*[@id=\"content\"]/div/ul/li[1]/a");
@@ -96,5 +92,18 @@ namespace HerokuWebdriverImplemention
             Assert.That(actualContent, Is.EqualTo(expectedContent));
 
         }
+
+        public void clickImagelink_ClickhereToShiftImage()
+        {
+            this.driver.FindElement(example2AnImageLink).Click();
+            Point P = this.driver.FindElement(By.XPath("//img[@class=\"shift\"]")).Location;
+            Console.WriteLine(P.X);
+            this.driver.FindElement(clickHereInImage).Click();
+            Point Q = this.driver.FindElement(By.XPath("//img[@class=\"shift\"]")).Location;
+            Console.WriteLine(Q.X);
+            Assert.That(P, Is.Not.EqualTo(Q));
+
+        }
     }
+   
 }

@@ -1,4 +1,5 @@
 ﻿using HerokuAppOperations;
+using HerokuWebdriverImplemention;
 using NUnit.Framework;
 
 namespace TestHerokuApp
@@ -15,10 +16,13 @@ namespace TestHerokuApp
         [Test]
         public void validatePageTitle()
         {
+            IHomePage home = new HomePage();
+            ITypos dyload = (TyposPage)home.goToExample("Typos");
             String expectedTitle = "Typos";
             String actualTitle;
             actualTitle = typo.getTitle();
             Assert.Equals(expectedTitle, actualTitle);
+            ((IHerokuAppOperations)typo).closeBrowser();
         }
 
         /// <summary>
@@ -27,10 +31,13 @@ namespace TestHerokuApp
         [Test]
         public void validatePageContent()
         {
+            IHomePage home = new HomePage();
+            ITypos dyload = (TyposPage)home.goToExample("Typos");
             String expectedContent = "This example demonstrates a typo being introduced. It does it randomly on each page load.\r\n\r\nSometimes you'll see a typo, other times you won,t.";
             String actualContent;
             actualContent = typo.pageContent();
             Assert.Equals(expectedContent, actualContent);
+            ((IHerokuAppOperations)typo).closeBrowser();
         }
     }
 }

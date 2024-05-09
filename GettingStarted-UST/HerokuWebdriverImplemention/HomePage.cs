@@ -1,4 +1,5 @@
-﻿using HerokuAppOperations;
+﻿using System;
+using HerokuAppOperations;
 using OpenQA.Selenium;
 
 namespace HerokuWebdriverImplemention
@@ -10,7 +11,8 @@ namespace HerokuWebdriverImplemention
         private By exampleLocator;
         private By repositoryLocator;
         private By footerLocator;
-        public HomePage() {
+        public HomePage()
+        {
             this.headingLocator = By.TagName("h1");
             this.subHeadingLocator = By.TagName("h2");
             this.exampleLocator = By.XPath("//*[@id=\"content\"]/ul/li");
@@ -33,7 +35,7 @@ namespace HerokuWebdriverImplemention
         {
             // Take screen shopt as part of this operation
             //throw new NotImplementedException();
-            ITakesScreenshot mycamera = (ITakesScreenshot) this.driver;
+            ITakesScreenshot mycamera = (ITakesScreenshot)this.driver;
             mycamera.GetScreenshot();
             return true;
 
@@ -56,11 +58,20 @@ namespace HerokuWebdriverImplemention
 
         IHerokuAppOperations IHomePage.goToExample(string exampleName)
         {
+            this.driver.FindElement(By.LinkText(exampleName)).Click();
+
             switch (exampleName)
             {
-                
-                case "AddRemoveElements":
+
+                case "Add/Remove Elements":
                     return new AddRemoveElementsPage();
+                case "Dynamic Loading":
+                    return new Dynamicloadingpage(this.driver);
+                case "Key Presses":
+                    return new keypressespage(this.driver);
+                case "Typos":
+                    return new TyposPage();
+                    
                 default: throw new NotImplementedException();
 
             }

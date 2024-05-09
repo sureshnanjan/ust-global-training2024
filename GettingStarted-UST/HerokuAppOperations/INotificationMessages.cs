@@ -6,27 +6,32 @@ using System.Threading.Tasks;
 
 namespace HerokuAppOperations
 {
-    internal interface INotificationMessages
+    public interface INotificationMessages
     {
         /// <summary>
         /// Retrieves the title of the current page 
         /// </summary>
-        void GetTitle();
+        string GetTitle();
 
         /// <summary>
         /// Retrieves the content of the current page 
         /// </summary>
-        void GetContent();
+        string GetContent();
 
         /// <summary>
         /// Initiates a click action, typically used for notification popup
         /// </summary>
         void ClickHere();
 
+        //<summary>
+        ///
+        ///
+        bool IsNotificationBarisVisible();
+
         /// <summary>
         /// Retrieves the title of a notification.
         /// </summary>
-        void GetNotificationTitle();
+        string GetNotificationMessage();
 
         /// <summary>
         /// Closes a notification.

@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace HerokuAppOperations
 {
-    internal interface IDragandDrop
+    public interface IDragandDrop
     {
         /// <summary>
         /// Retrieves the title of the current page.
         /// </summary>
-        void GetTitle();
+        String GetTitle();
 
         /// <summary>
         /// Drags item A to item B.

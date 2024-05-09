@@ -104,6 +104,18 @@ namespace HerokuWebdriverImplemention
             Assert.That(P, Is.Not.EqualTo(Q));
 
         }
+
+        public void clickImagelink_ClickhereRandomLoadImage()
+        {
+            this.driver.FindElement(example2AnImageLink).Click();
+            Point P = this.driver.FindElement(By.XPath("//img[@class=\"shift\"]")).Location;
+            Console.WriteLine(P.X);
+            this.driver.FindElement(clickHereInImage).Click();
+            Point Q = this.driver.FindElement(By.XPath("//img[@class=\"shift\"]")).Location;
+            Console.WriteLine(Q.X);
+            Assert.That(P, Is.EqualTo(Q));
+
+        }
     }
    
 }

@@ -14,27 +14,18 @@ namespace TestHerokuApp
         IShiftingContent obj = new ShiftingContent();
 
         [Test]
-        /// <summary>
-        /// Method to click the ShiftingContent link
-        /// </summary>
         public void validateShiftingContentLinkClick()
         {
             obj.clickShiftingContentLink();
         }
 
         [Test]
-        /// <summary>
-        /// Method to check the title of Shifting Content page
-        /// </summary>
         public void validateTitleOfShiftingContentPage()
         {
             obj.titleOfShiftingContentPage();
         }
 
         [Test]
-        /// <summary>
-        /// Method to click second link in menu element page
-        /// </summary>
         public void validateClickHereLinkInShiftContentMenuElement()
         {
             obj.clickShiftingContentLink();
@@ -42,9 +33,6 @@ namespace TestHerokuApp
         }
 
         [Test]
-        /// <summary>
-        /// Method to click Home link in menu element page
-        /// </summary>
         public void validateGoToHomeFromMenuElement()
         {
             obj.clickShiftingContentLink();
@@ -53,9 +41,6 @@ namespace TestHerokuApp
         }
 
         [Test]
-        /// <summary>
-        /// Method to check the content of Shifting Content: List page
-        /// </summary>
         public void validateContentOnShiftingContentList()
         {
             obj.clickShiftingContentLink();
@@ -64,9 +49,6 @@ namespace TestHerokuApp
         }
 
         [Test]
-        /// <summary>
-        /// Method to click the 3rd link "Example 3: List" and check title of its page
-        /// </summary>
         public void validateClickingOfListLinkAndReadItsTitlesss()
         {
             obj.clickShiftingContentLink();

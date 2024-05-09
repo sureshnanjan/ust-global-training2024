@@ -15,14 +15,15 @@ namespace HerokuAppOperations
         public void titleOfShiftingContentPage();
 
         /// <summary>
-        /// To count the number of links available on the page
+        /// To check that portfolio menu item disappears after the second "click here" link is clicked
         /// </summary>
         /// <returns></returns>
         public void CheckLinksOfMenuLink();
-        /// <summary>
-        /// Enable the functionality to click on the links
-        /// </summary>
 
+        /// <summary>
+        /// Method to check title of Shifting Content: List page
+        /// </summary>
+        
         public void ClickListlink_CheckTitleOfPage();
 
         /// <summary>
@@ -30,35 +31,14 @@ namespace HerokuAppOperations
         /// </summary>
         public void clickShiftingContentLink();
 
-        
-
+       
         /// <summary>
-        /// Get all the Menu Options in the Page
-        /// </summary>
-        /// <returns>List of Menu options</returns>
-        //List<string> getMenuElements();
-
-        /// <summary>
-        /// Method to shift image in left/right directions
-        /// </summary>
-        //  public void clickToShiftImagesLeft();
-
-        /// <summary>
-        /// Method to click link and get blank image
-        /// </summary>
-        //  public void clickLinkForBlankImage();
-
-        /// <summary>
-        /// Method to check the visibility of all the menu
-        /// </summary>
-        // bool getMenuItemVisibilityStatus(string item);
-
-        /// <summary>
-        /// Method to check content of Shifting Content link page
+        /// Method to check content of Shifting Content: List page
         /// </summary>
         public void contentOnShiftingContentList();
+        
         /// <summary>
-        /// Method to go to home page from Shifting Content: Menu Element page
+        /// Method to go to home page after clicking "Home" menu on Shifting Content: Menu Element page
         /// </summary>
         public void clickHome();
         
@@ -67,6 +47,7 @@ namespace HerokuAppOperations
         /// </summary>
         public void clickImagelink_ClickhereToShiftImage();
 
+ 
     }
 
 

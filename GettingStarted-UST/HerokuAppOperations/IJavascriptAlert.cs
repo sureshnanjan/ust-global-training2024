@@ -35,6 +35,6 @@ namespace HerokuAppOperations
         /// </summary>
         /// <returns>Result message</returns>
         public string getResult();
-
+        void CloseBrowser();
     }
 }

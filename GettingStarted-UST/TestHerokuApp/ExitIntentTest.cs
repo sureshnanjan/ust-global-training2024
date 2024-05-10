@@ -26,7 +26,7 @@ namespace TestHerokuApp
             string expectedTitle = "Exit Intent";
             string actualTitle = mw.GetTitle();
             Assert.That(actualTitle, Is.EqualTo(expectedTitle));
-            mw.CloseBrowser();
+            mw.closeBrowser();
         }
 
         /// <summary>
@@ -45,7 +45,7 @@ namespace TestHerokuApp
             mw.closeModalWindow();
             mwStatus = mw.getModalWindowStatus();
             Assert.That(mwStatus, Is.False);
-            mw.CloseBrowser();
+            mw.closeBrowser();
         }
     }
 }

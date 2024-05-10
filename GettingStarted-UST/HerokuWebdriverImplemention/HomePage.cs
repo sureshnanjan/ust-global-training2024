@@ -72,10 +72,7 @@ namespace HerokuWebdriverImplemention
             Browser = this.driver;
             switch (exampleName)
             {
-                case "AddRemove":
-                    return new AddRemovePage();
-                case "BrokenImages":
-                    return new BrokenImagePage();
+                
                 case "JavaScriptAlert":
                     return new JavaScriptAlertPage(Browser);
                 case "ExitIntent":

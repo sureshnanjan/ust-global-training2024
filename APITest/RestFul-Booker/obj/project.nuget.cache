@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "ck29+det7hPMqNLOKn0ZZ5gnpH/NlwVB8P3heXFDgJtEGXcMV3iqnOlOQPsTxt7lgSD3m6NVUfnJfpl4YcdA+A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Administrator\\ust-global-training2024\\APITest\\RestFul-Booker\\RestFul-Booker.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Administrator\\.nuget\\packages\\restsharp\\110.2.0\\restsharp.110.2.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\system.text.json\\7.0.2\\system.text.json.7.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

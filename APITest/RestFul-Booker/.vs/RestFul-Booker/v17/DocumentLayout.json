@@ -1,0 +1,60 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Administrator\\Documents\\APITest\\RestFul-Booker\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C82F3D31-059F-4304-97E2-2C8C28D48B1B}|..\\RestfulBookerTests\\RestfulBookerTests.csproj|c:\\users\\administrator\\documents\\apitest\\restfulbookertests\\bookingtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{500C2FA3-0EC8-44C2-8C33-0E2153CD2ED3}|RestFul-Booker.csproj|C:\\Users\\Administrator\\Documents\\APITest\\RestFul-Booker\\appdemo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{500C2FA3-0EC8-44C2-8C33-0E2153CD2ED3}|RestFul-Booker.csproj|solutionrelative:appdemo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BookingTests.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\APITest\\RestfulBookerTests\\BookingTests.cs",
+              "RelativeDocumentMoniker": "..\\RestfulBookerTests\\BookingTests.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\APITest\\RestfulBookerTests\\BookingTests.cs",
+              "RelativeToolTip": "..\\RestfulBookerTests\\BookingTests.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-11T09:57:04.903Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AppDemo.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\APITest\\RestFul-Booker\\AppDemo.cs",
+              "RelativeDocumentMoniker": "AppDemo.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\APITest\\RestFul-Booker\\AppDemo.cs",
+              "RelativeToolTip": "AppDemo.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABgAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-11T09:56:27.009Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

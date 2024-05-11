@@ -1,0 +1,12 @@
+C:\Users\Administrator\Documents\APITest\RestFul-Booker\bin\Debug\net6.0\RestFul-Booker.deps.json
+C:\Users\Administrator\Documents\APITest\RestFul-Booker\bin\Debug\net6.0\RestFul-Booker.dll
+C:\Users\Administrator\Documents\APITest\RestFul-Booker\bin\Debug\net6.0\RestFul-Booker.pdb
+C:\Users\Administrator\Documents\APITest\RestFul-Booker\obj\Debug\net6.0\RestFul-Booker.csproj.AssemblyReference.cache
+C:\Users\Administrator\Documents\APITest\RestFul-Booker\obj\Debug\net6.0\RestFul-Booker.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\Documents\APITest\RestFul-Booker\obj\Debug\net6.0\RestFul-Booker.AssemblyInfoInputs.cache
+C:\Users\Administrator\Documents\APITest\RestFul-Booker\obj\Debug\net6.0\RestFul-Booker.AssemblyInfo.cs
+C:\Users\Administrator\Documents\APITest\RestFul-Booker\obj\Debug\net6.0\RestFul-Booker.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Documents\APITest\RestFul-Booker\obj\Debug\net6.0\RestFul-Booker.dll
+C:\Users\Administrator\Documents\APITest\RestFul-Booker\obj\Debug\net6.0\refint\RestFul-Booker.dll
+C:\Users\Administrator\Documents\APITest\RestFul-Booker\obj\Debug\net6.0\RestFul-Booker.pdb
+C:\Users\Administrator\Documents\APITest\RestFul-Booker\obj\Debug\net6.0\ref\RestFul-Booker.dll

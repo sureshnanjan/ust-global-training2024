@@ -18,17 +18,18 @@ namespace HerokuWebdriverImplemention
     {
 
         private string herokuUrl;
-        private IWebDriver browser;
+        //private IWebDriver browser;
         private By headingLocator;
         private By subHeadingLocator;
         private By exampleLocator;
         private By repositoryLocator;
         private By footerLocator;
-        public HomePage() {
+        public HomePage() : base() {
             this.headingLocator = By.TagName("h1");
             this.subHeadingLocator = By.TagName("h2");
             this.exampleLocator = By.XPath("//*[@id=\"content\"]/ul/li");
             this.repositoryLocator = By.LinkText("Fork me on github");
+            
         }
         public string[] getAvailableExamples()
         {
@@ -36,6 +37,7 @@ namespace HerokuWebdriverImplemention
             foreach (var item in this.driver.FindElements(exampleLocator))
             {
                 result.Add(item.Text);
+
 
             }
 
@@ -67,15 +69,22 @@ namespace HerokuWebdriverImplemention
         {
             throw new NotImplementedException();
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="exampleName"></param>
+        /// <returns></returns>
+        /// <exception cref="NotImplementedException"></exception>
         IHerokuAppOperations IHomePage.goToExample(string exampleName)
         {
-            switch (exampleName)
-            {
-                case "AddRemove":
-                    return new AddRemovePage();
-                case "BrokenImages":
+            this.driver.FindElement(By.LinkText(exampleName)).Click();
+            switch (exampleName.ToLower()){
+                case "addremove":
+                    return new AddRemovePage(this.driver);
+                case "brokenimages":
                     return new BrokenImagePage();
+                case "exit intent":
+                    return new ExitIntentPage(this.driver);
                 default: throw new NotImplementedException();
 
             }

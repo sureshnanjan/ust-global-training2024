@@ -49,7 +49,7 @@ namespace AcceptanceTests.StepDefinitions
             
         }
 
-        [Given(@"I have ""(.*)"" Examples")]
+        [Given(@"I have {string} Examples")]
         public void GivenIHaveExamples(string p0)
         {
             Console.WriteLine($"The values for argument os {p0}");
@@ -59,6 +59,7 @@ namespace AcceptanceTests.StepDefinitions
         public void GivenIHaveTheFollowingTableOfData(Table table)
         {
             Console.WriteLine(table.Header.ToJson());
+           
         }
 
         [Given(@"I have a long multiline string")]
@@ -66,5 +67,20 @@ namespace AcceptanceTests.StepDefinitions
         {
             Console.WriteLine(multilineText);
         }
+
+        [Given(@"I have a number (.*) and a string '(.*)' and then i also have a float (.*)")]
+        public void GivenIHaveANumberAndAString(int p0, string suresh1, float f1)
+        {
+            Console.WriteLine($" The Value for number is {p0} and its type is {p0.GetType()}");
+            Console.WriteLine($" The Value for string is {suresh1} and its type is {suresh1.GetType()}");
+            Console.WriteLine($" The Value for string is {f1} and its type is {f1.GetType()}");
+        }
+
+        [Given(@"I have a backbround step")]
+        public void GivenBackground() {
+            Console.WriteLine("This is the BACKGROUND Activity");
+
+        }
+
     }
 }

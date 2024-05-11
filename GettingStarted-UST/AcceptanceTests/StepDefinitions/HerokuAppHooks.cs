@@ -22,12 +22,14 @@ namespace AcceptanceTests.StepDefinitions
         {
             Console.WriteLine("This is BEFORE Running My Scenario");
         }
-        
+
         [AfterScenario]
         public void TearDownHerokuScenario()
         {
             Console.WriteLine("This is AFTER Running My Scenario");
         }
+
+       
     }
 
 

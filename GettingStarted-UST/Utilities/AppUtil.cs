@@ -7,5 +7,9 @@ namespace Utilities
         {
             return "https://the-internet.herokuapp.com/";
         }
+
+        public static string getTargetApp() { 
+            return "mobile";
+        }
     }
 }

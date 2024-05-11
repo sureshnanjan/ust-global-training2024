@@ -28,6 +28,7 @@ namespace TestHerokuApp
         public void homePageTitleisCorrect()
         {
             // Arrange
+            // AUT myapp = GetTargetApp()
             IHomePage page = new HomePage();
             // page.goToExample*().AddElement().CheckIfDisplayed()
             string expectedTitle = "Welcome to the-internet";
@@ -103,24 +104,14 @@ namespace TestHerokuApp
         public void addRemoveElementPageObjectImplementationworks()
         {
             IHomePage page = new HomePage();
-            page.goToHome();
-            IAddRemoveOperations addremPage = (IAddRemoveOperations)page.goToExample("AddRemove");
-            addremPage.goToHome();
+            var expage = page.goToExample("Exit Intent");
+            ((ExitIntentPage)expage).MoveMouseOutOfViewPort();
+
 
         }
 
     }
 
 
-    public class ChromeDriver : ChromiumDriver,
-        IWebDriver, IDisposable, ISearchContext, IJavaScriptExecutor,
-        IFindsElement, ITakesScreenshot, ISupportsPrint, IActionExecutor,
-        IAllowsFileDetection, IHasCapabilities, IHasCommandExecutor, IHasSessionId,
-        ICustomDriverCommandExecutor, IHasVirtualAuthenticator, ISupportsLogs, IDevTools
-    {
-        protected ChromeDriver(ChromiumDriverService service, ChromiumOptions options, TimeSpan commandTimeout) : base(service, options, commandTimeout)
-        {
-        }
-    }
 
 }

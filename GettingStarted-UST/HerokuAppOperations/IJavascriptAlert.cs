@@ -6,33 +6,35 @@ using System.Threading.Tasks;
 
 namespace HerokuAppOperations
 {
-    internal interface IJavascriptAlert
+    public interface IJavascriptAlert :IHerokuAppOperations
     {
         ///<summary>
         ///Get the Title
         ////<summary>
-        public void GetTitle();
-
-        /// <summary>
-        /// Get the Description
-        /// </summary>
-        public void GetDescription();
+        public string GetTitle();
 
         /// <summary>
         /// Click for JS Alert
         /// </summary>
-        public void ClickJSAlert();
+        public void ClickAndAcceptJSAlert();
 
         /// <summary>
-        /// Click for JS confirm
+        /// Click and Accept the JS confirm
         /// </summary>
-        public void ClickJSConfirm();
-
+        public void ClickAndAcceptJSConfirm();
         /// <summary>
-        /// Click for JS Prompt
+        /// Click and Cancel the JS Confirm
         /// </summary>
-        public void ClickJSPromt();
-
+        public void ClickAndCancelJSConfirm();
+        /// <summary>
+        /// Click on JS Prompt and enter the string 
+        /// </summary>
+        public void ClickJSPromt(string prompt);
+        /// <summary>
+        /// Get the result section content 
+        /// </summary>
+        /// <returns>Result message</returns>
+        public string getResult();
 
     }
 }

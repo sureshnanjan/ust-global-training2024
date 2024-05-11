@@ -17,12 +17,12 @@ namespace HerokuWebdriverImplemention
         private readonly By repoLocator;
         private string appUrl;
 
+        
         public HerokuApp(IWebDriver argDriver)
         {
             if (this.driver == default)
             {
                 this.driver = argDriver;
-
             }
 
             this.appUrl = AppUtil.getAppUrl();
@@ -30,12 +30,14 @@ namespace HerokuWebdriverImplemention
             this.repoLocator = By.XPath("");
 
         }
-
+        
+        
         public HerokuApp() {
             this.appUrl = AppUtil.getAppUrl();
             this.driver = WebdriverFactory.getBrowser();
             goToHome();
         }
+        
         public void closeBrowser()
         {
            this.driver.Quit();
@@ -43,7 +45,7 @@ namespace HerokuWebdriverImplemention
 
         public void CloseBrowser()
         {
-            throw new NotImplementedException();
+            this.driver.Quit();
         }
 
         public string getFooterDetails()
@@ -87,9 +89,11 @@ namespace HerokuWebdriverImplemention
             this.driver.Navigate().GoToUrl(this.appUrl);
         }
 
+        /*
         public void GoToHome()
         {
-            throw new NotImplementedException();
+            this.driver.Navigate().GoToUrl(this.appUrl);
         }
+        */
     }
 }

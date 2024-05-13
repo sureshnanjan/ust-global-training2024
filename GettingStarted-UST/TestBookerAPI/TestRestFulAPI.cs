@@ -9,9 +9,15 @@ using NUnit.Framework;
 
 namespace TestBookerAPI
 {
+    /// <summary>
+    /// Test class to validate the Restfull APIs
+    /// </summary>
     [TestFixture]
     internal class TestRestFulAPI
     {
+        /// <summary>
+        /// Testcase to validate TOKEN generation
+        /// </summary>
         [Test]
         public void verifyAuthenticationAPI()
         {
@@ -20,43 +26,67 @@ namespace TestBookerAPI
             Console.WriteLine(response.Result);
             Assert.That(response.Result.IsSuccessStatusCode, Is.True);
         }
+        /// <summary>
+        /// Testcase to get all the Booking ids
+        /// </summary>
         [Test]
         public void verifyGetBookingIdsAPI()
         {
-            Console.WriteLine("Started");
             Task<RestSharp.RestResponse> response = RestBookerAPI.getBookingIds();
             Console.WriteLine(response.Result.Content);
-            
+            Assert.That(response.Result.IsSuccessStatusCode, Is.True);
+
         }
+        /// <summary>
+        /// Test case to verify the Booking details
+        /// </summary>
         [Test]
         public void verifyBookingsDetailsAPI()
         {
             Task<RestSharp.RestResponse> response = RestBookerAPI.getBookingDetails();
-            Console.WriteLine(response.Result.ResponseStatus);
+            Console.WriteLine(response.Result.Content);
             
         }
+        /// <summary>
+        /// Test case to create New Booking 
+        /// </summary>
         [Test]
         public void verifyBookingCreationAPI()
         {
-            RestBookerAPI.createBooking();
-            
+            Task<RestSharp.RestResponse> response = RestBookerAPI.createBooking();
+            Console.WriteLine(response.Result.Content);
         }
+        /// <summary>
+        /// Test case to verify the update booking API
+        /// </summary>
         [Test]
         public void verifyBookingUpdateAPI()
         {
-            RestBookerAPI.updateBooking();
-          
+            Task<RestSharp.RestResponse> response = RestBookerAPI.updateBooking();
+            Console.WriteLine(response.Result.Content);
+
         }
-        [Test] public void verifyPartialBookingUpdateAPI()
+        
+        /// <summary>
+        /// Testcase to verify partial booking API
+        /// </summary>
+        [Test] 
+        public void verifyPartialBookingUpdateAPI()
         {
-            RestBookerAPI.updatePartialBooking();
-         
+            Task<RestSharp.RestResponse> response = RestBookerAPI.updatePartialBooking();
+            Console.WriteLine(response.Result.Content);
+
         }
+
+        /// <summary>
+        /// Testcase to verify Delete Booking API 
+        /// </summary>
         [Test]
         public void verifyBookingDeleteAPI()
         {
-            RestBookerAPI.deleteBooking();
-            
+            Task<RestSharp.RestResponse> response = RestBookerAPI.deleteBooking();
+            Console.WriteLine(response.Result.Content);
+
         }
     }
 }

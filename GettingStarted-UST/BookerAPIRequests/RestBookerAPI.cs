@@ -5,6 +5,10 @@ using RestSharp;
 
 public class RestBookerAPI
 {
+    /// <summary>
+    /// Create new booking API request
+    /// </summary>
+    /// <returns>REst Response</returns>
     public static async Task<RestResponse> createBooking()
     {
         var options = new RestClientOptions("https://restful-booker.herokuapp.com")
@@ -41,6 +45,10 @@ public class RestBookerAPI
         return response;
     }
 
+    /// <summary>
+    /// Delete Booking API callout 
+    /// </summary>
+    /// <returns>Rest Response</returns>
     public static async Task<RestResponse> deleteBooking()
     {
         var options = new RestClientOptions("https://restful-booker.herokuapp.com")
@@ -55,6 +63,10 @@ public class RestBookerAPI
         return response;
     }
 
+    /// <summary>
+    /// Token generation API Callout
+    /// </summary>
+    /// <returns>Rest Response</returns>
     public static async Task<RestResponse> doAuth()
     {
         var options = new RestClientOptions("https://restful-booker.herokuapp.com")
@@ -77,6 +89,10 @@ public class RestBookerAPI
         return response;
     }
 
+    /// <summary>
+    /// Get Booking Details API Call out 
+    /// </summary>
+    /// <returns>Rest Response</returns>
     public static async Task<RestResponse> getBookingDetails()
     {
         var options = new RestClientOptions("https://restful-booker.herokuapp.com")
@@ -84,12 +100,16 @@ public class RestBookerAPI
             MaxTimeout = -1,
         };
         var client = new RestClient(options);
-        var request = new RestRequest("/booking/358", Method.Get);
+        var request = new RestRequest("/booking/327", Method.Get);
         RestResponse response = await client.ExecuteAsync(request);
         Console.WriteLine(response.Content);
         return response;
     }
 
+    /// <summary>
+    /// Get all booking IDs API Callout
+    /// </summary>
+    /// <returns>Rest Request</returns>
     public static async Task<RestResponse> getBookingIds()
     {
         var options = new RestClientOptions("https://restful-booker.herokuapp.com")
@@ -105,6 +125,10 @@ public class RestBookerAPI
         return response;
     }
 
+    /// <summary>
+    /// Update Booking API callout
+    /// </summary>
+    /// <returns>Rest Response</returns>
     public static async Task<RestResponse> updateBooking()
     {
         var options = new RestClientOptions("https://restful-booker.herokuapp.com")
@@ -143,6 +167,10 @@ public class RestBookerAPI
         return response;
     }
 
+    /// <summary>
+    /// Update Partial Booking API callout
+    /// </summary>
+    /// <returns>Rest Request</returns>
     public static async Task<RestResponse> updatePartialBooking()
     {
         var options = new RestClientOptions("https://restful-booker.herokuapp.com")

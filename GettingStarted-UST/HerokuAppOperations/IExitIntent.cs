@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HerokuAppOperations
 {
-    internal interface IExitIntent
+    public interface IExitIntent
     {
         ///<summary>
         ///Get the Title
@@ -17,5 +17,13 @@ namespace HerokuAppOperations
         /// Get the Description
         /// </summary>
         public void GetDescription();
+
+        public void MoveMouseOutOfViewPort();
+
+        public string GetNotificationTitle();
+
+        public string GetNotificationDescription();
+
+        public void HandleNotificationMessage(bool sayOK = true);
     }
 }

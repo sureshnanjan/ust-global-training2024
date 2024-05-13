@@ -15,7 +15,7 @@ namespace TestHerokuApp
         [Test]
         public void checkImageOne() {
             IHomePage page = new HomePage();
-            page.GoToHome();
+            page.goToHome();
             IBrokenImageOperations bpage = (IBrokenImageOperations)page.goToExample("BrokenImages");
             string expected = "img/";
             string actual = bpage.getImage1Details();

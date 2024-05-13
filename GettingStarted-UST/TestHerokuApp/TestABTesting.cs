@@ -42,7 +42,7 @@ namespace TestHerokuApp
 
         [Test]
         public void add1elements() {
-            IAddRemoveOperations page = new AddRemovePage();
+            //IAddRemoveOperations page = new AddRemovePage();
 
 
         }

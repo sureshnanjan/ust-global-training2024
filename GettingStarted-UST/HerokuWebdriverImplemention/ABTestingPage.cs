@@ -15,7 +15,7 @@ namespace HerokuWebdriverImplemention
         private readonly By contentLocator;
         
 
-        public ABTestingPage()
+        public ABTestingPage(IWebDriver currentBrowser) : base(currentBrowser)
         {
             this.headinglocator = By.Id("");
             this.contentLocator = By.TagName("p");
@@ -35,7 +35,7 @@ namespace HerokuWebdriverImplemention
         public string getTitle()
         {
             return this.driver.FindElement(this.headinglocator).Text;
-           
+
         }
     }
 }

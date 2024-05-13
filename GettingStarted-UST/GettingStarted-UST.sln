@@ -23,6 +23,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AcceptanceTests", "Acceptan
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebdriverDotnet", "WebdriverDotnet\WebdriverDotnet.csproj", "{02AC4553-7F1B-4AF3-BC83-9F9707CC9219}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestfulBookerAPI", "RestfulBookerAPI\RestfulBookerAPI.csproj", "{29EB8FBD-A022-4AD2-9AF3-F433A91696FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestRestfulBooker", "TestRestfulBooker\TestRestfulBooker.csproj", "{1F3BA252-A1FA-41D6-9F26-EDD2245E648D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +73,14 @@ Global
 		{02AC4553-7F1B-4AF3-BC83-9F9707CC9219}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{02AC4553-7F1B-4AF3-BC83-9F9707CC9219}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{02AC4553-7F1B-4AF3-BC83-9F9707CC9219}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29EB8FBD-A022-4AD2-9AF3-F433A91696FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29EB8FBD-A022-4AD2-9AF3-F433A91696FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29EB8FBD-A022-4AD2-9AF3-F433A91696FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29EB8FBD-A022-4AD2-9AF3-F433A91696FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F3BA252-A1FA-41D6-9F26-EDD2245E648D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F3BA252-A1FA-41D6-9F26-EDD2245E648D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F3BA252-A1FA-41D6-9F26-EDD2245E648D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F3BA252-A1FA-41D6-9F26-EDD2245E648D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

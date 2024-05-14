@@ -25,8 +25,12 @@ namespace AndroidImplementation
 
             var capabilities = new AppiumOptions();
             capabilities.PlatformName = "Android";
-            //capabilities.
+        //capabilities.
+
+       /// bs://d12e634be1fba516084c27ea8aa98341b1a64bf5 - copied content from BS
+
             capabilities.AddAdditionalCapability("appium:udid", "emulator-5554");
+            capabilities.AddAdditionalCapability("appium:app", "bs://d12e634be1fba516084c27ea8aa98341b1a64bf5");
             capabilities.AddAdditionalCapability("appium:automationName", "UIAutomator2");// = AutomationName.AndroidUIAutomator2;
             capabilities.AddAdditionalCapability("appium:platformVersion", "13.0");// = "Android Emulator";
             //capabilities.App = app;

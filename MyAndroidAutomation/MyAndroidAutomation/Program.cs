@@ -5,7 +5,7 @@ namespace MyAndroidAutomation
 {
     internal class Program
     {
-        
+
         static void Main(string[] args)
         {
             Console.WriteLine("Hello, World!");
@@ -24,15 +24,15 @@ namespace MyAndroidAutomation
             options.AddAdditionalCapability("browserstack.key", "EzgAiZsxW8zNtsrqFzff");
             options.AddAdditionalCapability("appium:nativeWebScreenshot", true);
             options.AddAdditionalCapability("bstack:options", new Dictionary<string, dynamic> { { "source", "appiumdesktop" } });
-        options.AddAdditionalCapability("appium:newCommandTimeout", 3600);
+            options.AddAdditionalCapability("appium:newCommandTimeout", 3600);
             options.AddAdditionalCapability("appium:connectHardwareKeyboard", true);
 
-        _driver = new AndroidDriver<AndroidElement>(serverUri, options);
+            _driver = new AndroidDriver<AndroidElement>(serverUri, options);
 
-         String ActualTitle=  _driver.FindElement(MobileBy.AndroidUIAutomator("new UiSelector().text(\"API Demos\")")).Text;
+            String ActualTitle = _driver.FindElement(MobileBy.AndroidUIAutomator("new UiSelector().text(\"API Demos\")")).Text;
             Console.WriteLine(ActualTitle);
-            
-            
+
+
         }
     }
 }
